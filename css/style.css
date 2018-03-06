@@ -36,6 +36,7 @@ p.larger{font-size:18px}
 #main-nav .dropdown-menu a{color:#FC5960}
 
 /* Footer*/
+footer{border-top: 2px solid #fff}
 footer nav{background:#fc5960;padding:.2rem 1rem}
 footer img{height:62px;margin:0 10px}
 footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
