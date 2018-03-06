@@ -17,7 +17,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 .btn,button{outline:0!important;background:#fc5960;color:#fff;font-size:15px;padding:12px 30px;border:0}
 
 /* Texts */
-h2,.larger p,p.larger,.profile h1 span{font-size:19px}
+h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 h1,h2,.watermelon,a{color:#fc5960}
 .space{margin:20px 0}
 a:hover{color:#fc5960}
