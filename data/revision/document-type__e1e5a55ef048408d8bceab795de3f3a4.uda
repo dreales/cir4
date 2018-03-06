@@ -60,7 +60,7 @@
         {
           "Key": "b5d38c69-a3bb-4e2e-b3a9-a8a6f60745bb",
           "Alias": "personalProfile",
-          "DataType": "umb://data-type/de55ff6d0a194f7f983d35bac7f09c97",
+          "DataType": "umb://data-type/9aafa0088663464eab6f3db9c03825fc",
           "Description": null,
           "Mandatory": false,
           "Name": "Personal profile",
@@ -99,12 +99,12 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
+      "Udi": "umb://data-type/9aafa0088663464eab6f3db9c03825fc",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/de55ff6d0a194f7f983d35bac7f09c97",
+      "Udi": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
       "Ordering": true,
       "Mode": 0
     },
