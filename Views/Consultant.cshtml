@@ -5,6 +5,11 @@
 	var speciality = "Consultant Orthopaedic Surgeon and Specialist Knee Surgeon";
 	var location = "Bath Hospital"
 	var qualification = "MB ChB FRCS(Orth)";
+	var phone = "0118 922 6888";
+	var email = "enquiries@circlebath.co.uk";
+	var professionalProfile =  "";
+	var personalProfile = "";
+	var currentPosition = "";
 }
 <div class="container">
   <div class="row">
@@ -14,6 +19,26 @@
     <div class="col">
         <h1>@Model.Content.Name</h1>
         <p>@speciality</p>
+        <p>@location</p>
+        <p>@phone</p>
+        <p>@email</p>
+    </div>
+  </div>
+</div>
+<div class="greyback">
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+          <h2>Professional profile</h2>
+          <p>@professionalProfile</p>
+          <h2>Personal profile</h2>
+          <p>@personalProfile</p>
+          <h2>Current NHS or research position</h2>
+          <p>@currentPosition</p>
+      </div>
+      <div class="col">
+          
+      </div>
     </div>
   </div>
 </div>
