@@ -2,4 +2,11 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
 	Layout = "Master.cshtml";
+	string heroImageUrl = "/media/1032/bath.jpg"; //default hero image
 }
+<div class="hero-image" style="background:url( @heroImageUrl )">
+  <div class="dark-overlay text-center">
+      <h1>@Model.Content.Name</h1>
+      <p>This treatment is available in Reading and Bath</p>
+  </div>
+</div>
