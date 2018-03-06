@@ -5,8 +5,8 @@
 	var speciality = @Umbraco.Field("customSpeciality", altText:"");
 	var location = @Umbraco.Field("location", altText: "");
 	
-	var phone ="";
-	var phoneforlink ="";
+	var phone = "";
+	var phoneforlink = "";
 	var email = "";
 	
 	if (location == "Bath hospital"){
@@ -15,13 +15,19 @@
 	    email = "enquiries@circlebath.co.uk";
 	} else if (location == "Reading hospital"){
 	    phone = "0118 922 6888";
-	    phoneforlink="01189226888";
+	    phoneforlink = "01189226888";
 	    email = "enquiries@circlereading.co.uk";
 	} else if (location == "Nottingham"){
 	    phone = "0115 970 5800";
-	    phoneforlink="01159705800";
+	    phoneforlink = "01159705800";
 	    email = "enquiries@circlenottingham.co.uk";
 	}
+	string customPhone = @Umbraco.Field("customPhone", altText:"");
+	if (!String.IsNullOrEmpty(customPhone)){
+	    phone = customePhone;
+	}
+
+
 }
 
 <div class="container">
