@@ -17,5 +17,5 @@
   "Name": "Consultant",
   "Alias": "Consultant",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
