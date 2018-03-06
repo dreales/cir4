@@ -30,7 +30,7 @@
     <div class="col-sm-10 offset-sm-1 text-center">
       <p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p>
       @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="adf160f1-39f5-44c0-b01d-9e2da32bf093", FormTheme="", ExcludeScripts="0"})
-      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:@Umbraco.Field("referrerNumber", altText:"01761422288").Replace("  ", string.empty);">@Umbraco.Field("referrerNumber", altText:"01761422288")</a>.</p><br />
+      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:@Umbraco.Field("referrerNumber", altText:"01761422288").Replace("  ", String.Empty);">@Umbraco.Field("referrerNumber", altText:"01761422288")</a>.</p><br />
     </div>
   </div>
 </div>
