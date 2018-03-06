@@ -11,10 +11,108 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "8865f93a-47a9-4ff1-b78d-c553bbface28",
+      "Name": "Profile",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "52f6c56c-2bb8-41a2-9ab1-7e9853d8a0c2",
+          "Alias": "location",
+          "DataType": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
+          "Description": null,
+          "Mandatory": true,
+          "Name": "location",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "8b668af9-81b8-4d67-84b0-d322db133e4a",
+          "Alias": "qualifications",
+          "DataType": "umb://data-type/989e141992ec4172a5a61f311e906051",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "qualifications",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "aa648020-7aba-4c86-a0c5-712a0c8c0b28",
+          "Alias": "customSpeciality",
+          "DataType": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "customSpeciality",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "af9ea619-00b5-4e9f-af58-aedf25474862",
+          "Alias": "professionalProfile",
+          "DataType": "umb://data-type/7f51f51f4f1d4ee080dd453785a64c27",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "professional profile",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "b5d38c69-a3bb-4e2e-b3a9-a8a6f60745bb",
+          "Alias": "personalProfile",
+          "DataType": "umb://data-type/ce3f3749a7024f3db0300a940875ac5a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Personal profile",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "c6f10fb0-e8e5-4609-a172-79d3681612ba",
+          "Alias": "currentPosition",
+          "DataType": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Current position",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7f51f51f4f1d4ee080dd453785a64c27",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/989e141992ec4172a5a61f311e906051",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ce3f3749a7024f3db0300a940875ac5a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/d19b0421e42a4f67879694cef3ce6c88",
       "Ordering": true,
@@ -24,5 +122,5 @@
   "Name": "Consultant",
   "Alias": "consultant",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
