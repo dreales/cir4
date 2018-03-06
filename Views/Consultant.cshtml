@@ -5,6 +5,14 @@
 	var speciality = @Umbraco.Field("customSpeciality", altText:"");
 	var location = @Umbraco.Field("location", altText: "");
 	
+	string phone ="";
+	string phoneforlink ="";
+	string email = "";
+
+	string customPhone = @Umbraco.Field("customPhone", altText:"");
+	if (!String.IsNullOrEmpty(customPhone)){
+	    phone = customePhone;
+	}
 
 }
 
