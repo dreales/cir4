@@ -2,7 +2,7 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
 	Layout = "Master.cshtml";
-	string speciality = @Umbraco.Field("customSpeciality", altText:"");
+	var speciality = @Umbraco.Field("customSpeciality", altText:"");
 	string location = @Umbraco.Field("location", altText: "");
 	
 
