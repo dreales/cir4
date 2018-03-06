@@ -100,7 +100,7 @@ footer svg path{fill:#fff}
 .profile svg path{fill:#fc5960}
 
 .profile2 h2{padding:20px 0 15px}
-.profile2 .row{padding-top:50px;padding-bottom:50px}
+.profile2>.row{padding-top:50px;padding-bottom:50px}
 .profile2 .waterback{padding:20px 10px}
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
 .video>div>div{position:relative;height:0;padding-bottom:56.25%}
