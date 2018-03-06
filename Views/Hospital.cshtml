@@ -17,7 +17,7 @@
     box1ImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
   }
   if (Model.Content.HasValue("box2Image") == true){
-    box2ImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+    box2ImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box2Image").Url;
   }
   
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
