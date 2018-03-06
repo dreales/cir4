@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TextboxMultiple",
+  "DatabaseType": 0,
+  "PreValues": {
+    "maxChars": "2000"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/76c7d98d09d7480d988363322cd4cee7",
+  "Dependencies": [],
+  "Name": "Hospital - Boxes info text - Textarea",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
