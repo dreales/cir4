@@ -48,13 +48,16 @@ footer svg path{fill:#fff}
 .hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 
-/* Form one (grey, eg. on Bath page) */
+/* Two column form (grey, eg. on Bath page) */
 .contactform .umbraco-forms-page{background:#f0f0f0;padding:20px 30px;margin:40px 0 20px}
-.contactform .umbraco-forms-page label{display:none}
-.contactform .umbraco-forms-page input{border:0;padding:15px 10px;margin-bottom:10px}
-.contactform .umbraco-forms-page input.btn{background:#fc5960;color:#fff;font-size:15px}
-.contactform .umbraco-forms-page input:last-child{margin:0}
-.contactform .umbraco-forms-page textarea{height:100px;padding:10px;border:0;margin-bottom:10px}
+.umbraco-forms-page label{display:none}
+.umbraco-forms-page input{border:0;padding:15px 10px;margin-bottom:10px}
+.umbraco-forms-page input.btn{background:#fc5960;color:#fff;font-size:15px}
+.umbraco-forms-page input:last-child{margin:0}
+.umbraco-forms-page textarea{height:100px;padding:10px;border:0;margin-bottom:10px}
+
+/* One column form (grey, eg. on Bath page) */
+
 
 /* Tabs */
 .nav-tabs{background:#fc5960;padding-top:10px;border:0}
