@@ -7,6 +7,7 @@
     if (Model.DisableDefaultStylesheet == false){
         Html.SetFormThemeCssFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/style.css");
     }
+    int i = 0;
 }
 <div class="umbraco-forms-page">
     @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false){
@@ -22,6 +23,7 @@
             }
             <div class="row">
                 @foreach (var c in fs.Containers){
+                    i++;
                     <div class="umbraco-forms-container col">
                         @foreach (FieldViewModel f in c.Fields){
                             bool hidden = f.HasCondition && f.ConditionActionType == FieldConditionActionType.Show;
@@ -43,7 +45,10 @@
                                     }
                                 </div>
                             </div>
-                         }
+                        }
+                        @if (i == 2){
+                            <input type="submit" class="btn primary" value="@Model.SubmitCaption"  name="__next" />
+                        }
                     </div>
                 }
             </div>
@@ -51,22 +56,5 @@
     }
     <div style="display: none">
         <input type="text" name="@Model.FormId.ToString().Replace("-", "")" />
-    </div>
-    <div class="umbraco-forms-navigation row">
-        <div class="col">
-            @if (Model.IsMultiPage){
-                if (!Model.IsFirstPage){
-                    <input class="btn prev cancel" type="submit" value="@Model.PreviousCaption" name="__prev" />
-                }
-                if (!Model.IsLastPage){
-                    <input type="submit" class="btn next" value="@Model.NextCaption" name="__next" />
-                }
-                if (Model.IsLastPage){
-                    <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="__next" />
-                }
-            } else {
-                <input type="submit" class="btn primary" value="@Model.SubmitCaption"  name="__next" />
-            }
-        </div>
     </div>
 </div>
