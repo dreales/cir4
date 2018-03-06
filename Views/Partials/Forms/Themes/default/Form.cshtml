@@ -31,20 +31,20 @@
                                 @if (!f.HideLabel){
                                     <label for="@f.Id" class="umbraco-forms-label">
                                         @f.Caption @if (f.ShowIndicator){
-                                            <span class="umbraco-forms-indicator">@Model.Indicator</span>
+<span class="umbraco-forms-indicator">@Model.Indicator</span>
                                         }
                                     </label>
                                 }
                                 @if (!string.IsNullOrEmpty(f.ToolTip)){
                                     <span class="umbraco-forms-tooltip help-block">@f.ToolTip</span>
                                 }
-                                <div class="umbraco-forms-field-wrapper">
+<div class="umbraco-forms-field-wrapper">
                                     @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
                                     @if (Model.ShowFieldValidaton){
                                         @Html.ValidationMessage(f.Id)
                                     }
-                                </div>
-                            </div>
+</div>
+</div>
                         }
                         @if (i == 2){
 <input type="submit" class="btn primary" value="@Model.SubmitCaption"  name="__next" />
