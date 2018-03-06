@@ -62,31 +62,12 @@
   "CssClass": null,
   "DisableDefaultStylesheet": false,
   "UseClientDependency": false,
-  "WorkflowIds": [
-    "06b01030-147c-4414-aeda-e627e2fc89fb"
-  ],
+  "WorkflowIds": [],
   "DataSource": null,
   "SubmitLabel": "Submit",
   "NextLabel": "Next",
   "PrevLabel": "Previous",
-  "Workflows": [
-    {
-      "Id": "06b01030-147c-4414-aeda-e627e2fc89fb",
-      "Name": "Send template email to rich@medicodigital.co.uk",
-      "Form": "04b7ffd1-8417-4f4f-9713-c3ff3494dcd7",
-      "Active": true,
-      "WorkflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
-      "ExecutesOn": 3,
-      "Settings": {
-        "Email": "rich@medicodigital.co.uk",
-        "SenderEmail": "",
-        "Subject": "The Form '{form_name}' was submitted",
-        "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
-        "Attachment": ""
-      },
-      "SortOrder": 1
-    }
-  ],
+  "Workflows": null,
   "Udi": "umb://forms-form/04b7ffd184174f4f9713c3ff3494dcd7",
   "Dependencies": [],
   "Name": "Single col form",
