@@ -26,6 +26,9 @@
                 <input type="hidden" name="FormStep" value="@Model.FormStep" />
                 <input type="hidden" name="RecordState" value="@Model.RecordState" />
                 <div class="contourPage">
+                    @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false){
+                        <h4 class="contourPageName">@Html.Raw(Model.CurrentPage.Caption)</h4>
+                    }
                     @if (Model.ShowValidationSummary){
                         @Html.ValidationSummary(false)
                     }
@@ -34,7 +37,7 @@
                             @if (string.IsNullOrEmpty(fs.Caption) == false){
                                 <legend>@Html.Raw(fs.Caption)</legend>
                             }
-                            <div class="row">
+                            <div class="row-fluid">
                                 @foreach (var c in fs.Containers){
                                     i++;
                                     <div class="col">
@@ -59,9 +62,6 @@
                                                 </div>
                                             </div>
                                         }
-                                        @if (i == 2) {
-                                            <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
-                                        }
                                     </div>
                                 }
                             </div>
@@ -70,27 +70,23 @@
                     <div style="display: none">
                         <input type="text" name="@Model.FormId.ToString().Replace("-", "")" />
                     </div>
-                    @if (Model.IsMultiPage){
-                        <div class="row">
-                            <div class="col">
-                                @if (!Model.IsFirstPage){
+                    <div class="contourNavigation row-fluid">
+                        <div class="col-md-12">
+                            @if (Model.IsMultiPage){
+                                if (!Model.IsFirstPage){
                                     <input class="btn prev cancel" type="submit" value="@Model.PreviousCaption" name="__prev" />
                                 }
-                                @if (!Model.IsLastPage){
+                                if (!Model.IsLastPage){
                                     <input type="submit" class="btn next" value="@Model.NextCaption" name="next" />
                                 }
-                                @if (Model.IsLastPage){
+                                if (Model.IsLastPage){
                                     <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
                                 }
-                            </div>
-                        </div>
-                    } else if (i != 2) {
-                        <div class="row">
-                            <div class="col">
+                            } else {
                                 <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
-                            </div>
-                        </div>    
-                    }
+                            }
+                        </div>
+                    </div>
                 </div>
             }
         </div>
