@@ -78,7 +78,7 @@ footer svg path{fill:#fff}
 /* cqc widget */
 .cqc{margin:0 0 10px;display:block;padding:5px 15px;max-width:300px;background:#fff}
 .cqc img{padding: 8px 8px 15px}
-.cqc p{color:#666}
+.cqc p,.cqc strong{color:#666}
 .cqc .name{font-size:16px;margin-bottom:0}
 .cqc .date{margin-bottom:10px}
 .cqc .good{background: #458f00;color:#fff;border-radius:4px;font-size:18px;display:inline-block;padding:7px;margin-right:10px;margin-bottom:0}
