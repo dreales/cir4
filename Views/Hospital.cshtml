@@ -17,7 +17,7 @@
     titles.Add(post.PageTitle);
     urls.Add(post.Url);
   }
-  string numberForLink = Umbraco.Field("referrerNumber", altText:"01761422288").Replace(" ", string.Empty);
+  string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
   
 }
 
