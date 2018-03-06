@@ -19,7 +19,7 @@
     @foreach (FieldsetViewModel fs in Model.CurrentPage.Fieldsets){
         <fieldset class="umbraco-forms-fieldset" id="@fs.Id">
             @if (string.IsNullOrEmpty(fs.Caption) == false){
-                <legend>@fs.Caption</legend>
+                <p>@fs.Caption</p>
             }
             <div class="row">
                 @foreach (var c in fs.Containers){
