@@ -8,11 +8,12 @@
 	string phone = "";
 	string phoneforlink = "";
 	string email = "";
+	
 	if (Model.Content.HasValue("customSpeciality")){
-	    string speciality = Model.Content.GetPropertyValue<string>("customSpeciality");
+	    speciality = Model.Content.GetPropertyValue<string>("customSpeciality");
 	}
 	if (Model.Content.HasValue("customPhone")){
-	    string customPhone = Umbraco.Field("customPhone", altText:"");
+	    customPhone = Model.Content.GetPropertyValue<string>("customPhone");
 	}
 	
 	if (location == "Bath hospital"){
@@ -32,8 +33,6 @@
 	if (!String.IsNullOrEmpty(customPhone)){
 	    phone = customePhone;
 	}
-
-
 }
 
 <div class="container">
