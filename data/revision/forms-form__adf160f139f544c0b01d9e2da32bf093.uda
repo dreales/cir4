@@ -159,7 +159,7 @@
   "ManualApproval": false,
   "StoreRecordsLocally": true,
   "CssClass": null,
-  "DisableDefaultStylesheet": false,
+  "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
   "WorkflowIds": [],
   "DataSource": null,
