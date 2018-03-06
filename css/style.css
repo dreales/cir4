@@ -91,4 +91,5 @@ footer svg path{fill:#fff}
 .cqc a{color:#6C276A;padding:9px 7px;border:1px solid #c9c6b9;box-shadow:0 1px 2px #c9c6b9;border-radius: 4px;font-weight:700;text-decoration:none;display:inline-block;margin-bottom:10px}
 
 /* consultant profiles */
-.profile img{max-height:200px;border-radius:50%}
+.profile img{height:200px;width:200px;border-radius:50%;object-fit:cover}
+
