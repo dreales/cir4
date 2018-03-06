@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TextboxMultiple",
+  "DatabaseType": 0,
+  "PreValues": {
+    "maxChars": "2000"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f9afaa358c1d4787990e1c43cfc796e8",
+  "Dependencies": [],
+  "Name": "Hospital - Self-funding info - Textarea",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
