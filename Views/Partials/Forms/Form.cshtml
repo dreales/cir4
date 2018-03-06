@@ -73,23 +73,27 @@
                     <div style="display: none">
                         <input type="text" name="@Model.FormId.ToString().Replace("-", "")" />
                     </div>
-                    <div class="contourNavigation row-fluid">
-                        <div class="col">
-                            @if (Model.IsMultiPage){
-                                if (!Model.IsFirstPage){
+                    @if (Model.IsMultiPage){
+                        <div class="row">
+                            <div class="col">
+                                @if (!Model.IsFirstPage){
                                     <input class="btn prev cancel" type="submit" value="@Model.PreviousCaption" name="__prev" />
                                 }
-                                if (!Model.IsLastPage){
+                                @if (!Model.IsLastPage){
                                     <input type="submit" class="btn next" value="@Model.NextCaption" name="next" />
                                 }
-                                if (Model.IsLastPage){
+                                @if (Model.IsLastPage){
                                     <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
                                 }
-                            } else if (i != 2) {
-                                <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
-                            }
+                            </div>
                         </div>
-                    </div>
+                    } else if (i != 2) {
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
+                            </div>
+                        </div>    
+                    }
                 </div>
             }
         </div>
