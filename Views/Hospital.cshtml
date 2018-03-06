@@ -28,9 +28,9 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
-      <p class="larger">@Umbraco.Field("welcomeMessage", altText:"Our hospitals are designed to feel different. We know a hospital visit can be daunting, so we have created a modern hospital experience which feels more like you're stepping into a luxury hotel.")</p>
+      <p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p>
       @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="adf160f1-39f5-44c0-b01d-9e2da32bf093", FormTheme="", ExcludeScripts="0"})
-      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:01761422288">01761 422288</a>.</p><br />
+      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:@Umbraco.Field("referrerNumber", altText:"01761422288").Replace("  ", string.empty);">@Umbraco.Field("referrerNumber", altText:"01761422288")</a>.</p><br />
     </div>
   </div>
 </div>
@@ -58,11 +58,11 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="self-pay" role="tabpanel" aria-labelledby="self-pay">
           <br /><p class="watermelon">Be seen by a specialist quickly for your diagnosis and treatment.</p>
-          <p>You do not have to wait for your appointment at Circle Bath Hospital. You can be seen quickly by one of our experienced consultant specialists. Our competitive fixed price packages mean that you can get better faster. Because they’re comprehensive, you do not have to worry about any hidden extras. </p>
+          <p@Umbraco.Field("selfFundingInfo", altText:"")></p>
           <button>Book an appointment</button>
         </div>
         <div class="tab-pane fade" id="insured" role="tabpanel" aria-labelledby="insured">
-          <p>Circle Bath treats patients with private medical insurance. If you have insurance, Circle Bath will invoice the insurance company for any procedures, tests and diagnostics carried out. There may be certain items not covered by your insurance company, such as private prescriptions, so you should always contact your insurer regarding their ‘excess payment policy' to check your level of cover. For items not covered under the insurance, the team at Circle Bath will contact you to discuss payment directly.</p>
+          <p>@Umbraco.Field("insuredInfo", altText:"")</p>
           <button>More information</button>
         </div>
       </div>
@@ -80,7 +80,7 @@
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
       <h2>World class patient experience</h2>
-      <p>Our founding beleif at Circle is that by combining clinical excellence, the best doctors, urses and medical care with a supurb patient experience, a calming environment and five-star hospitality, you will be more relaxed and so recover faster.</p>
+      <p>@Umbraco.Field("boxesInfoText", altText:"")</p>
     </div>
   </div>
 </div><br /><br />
@@ -89,15 +89,13 @@
     <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
     <div class="col-sm img-text-box">
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
-        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+        <p>@Umbraco.Field("box1Text", altText:"")</p>
       </div>
     </div>
     <div class="w-100"></div>
     <div class="col-sm img-text-box">
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
-        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+        <p>@Umbraco.Field("box2Text", altText:"")</p>
       </div>
     </div>
     <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
