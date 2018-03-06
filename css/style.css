@@ -1,4 +1,4 @@
-*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:13px;color:#666;text-underline-position:under}
+*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:15px;color:#666;text-underline-position:under}
 body,html{font-smoothing:antialiased}
 ::-webkit-scrollbar{display:none}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
@@ -17,12 +17,10 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 .btn,button{outline:0!important;background:#fc5960;color:#fff;font-size:15px;padding:12px 30px;border:0}
 
 /* Texts */
-h2,.larger p,p.larger{font-size:18px}
+h2,.larger p,p.larger,.profile h1 span{font-size:19px}
 h1,h2,.watermelon,a{color:#fc5960}
-
 .space{margin:20px 0}
 a:hover{color:#fc5960}
-p.larger{font-size:18px}
 
 /* Header */
 #top-nav{background:#f0f0f0}
@@ -93,10 +91,8 @@ footer svg path{fill:#fff}
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
 .profile h1{margin:50px 0 20px}
-.profile h1 span{font-size:18px}
-.profile p{font-size:16px}
-.profile a{color:#666;font-size:16px}
-.profile svg{margin: 0 5px -4px 0;}
+.profile p,profile a{font-size:16px;color:#666}
+.profile svg{margin:0 5px -4px 0;}
 .profile svg path{fill:#fc5960}
 
 .profile2 h2{padding:20px 0 15px}
