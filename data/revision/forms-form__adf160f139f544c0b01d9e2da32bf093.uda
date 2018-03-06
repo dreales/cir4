@@ -12,7 +12,7 @@
           "Containers": [
             {
               "Caption": null,
-              "Width": 12,
+              "Width": 6,
               "Fields": [
                 {
                   "Caption": "Name",
@@ -94,7 +94,13 @@
                     "Placeholder": ""
                   },
                   "PreValues": []
-                },
+                }
+              ]
+            },
+            {
+              "Caption": "",
+              "Width": 6,
+              "Fields": [
                 {
                   "Caption": "Message",
                   "ToolTip": null,
@@ -125,7 +131,13 @@
               ]
             }
           ],
-          "Condition": null
+          "Condition": {
+            "Id": "00000000-0000-0000-0000-000000000000",
+            "Enabled": false,
+            "ActionType": 0,
+            "LogicType": 0,
+            "Rules": []
+          }
         }
       ],
       "Caption": null,
@@ -159,5 +171,5 @@
   "Dependencies": [],
   "Name": "Contact Form",
   "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
