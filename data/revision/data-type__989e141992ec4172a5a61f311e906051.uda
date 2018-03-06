@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.Textbox",
+  "DatabaseType": 1,
+  "PreValues": {
+    "maxChars": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/989e141992ec4172a5a61f311e906051",
+  "Dependencies": [],
+  "Name": "Consultant - qualifications - Textbox",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
