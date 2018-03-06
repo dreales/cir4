@@ -17,6 +17,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 h2,.larger p,p.larger{font-size:18px}
 h2,.watermelon,a{color:#fc5960}
 .waterback{background:#fc5960}
+.waterback *{color:#fff}
 .space{margin:20px 0}
 a:hover{color:#fc5960}
 p.larger{font-size:18px}
