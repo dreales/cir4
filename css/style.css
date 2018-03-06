@@ -6,6 +6,9 @@ body{margin:0;background:#f0f0f0}
 main{min-height:calc(100vh - 207px);background:#fff}
 .bg-melon{background:#fc5960;padding-top:20px}
 .bg-melon *{color:#fff}
+.waterback{background:#fc5960}
+.waterback *{color:#fff}
+.greyback{background:#f0f0f0}
 
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
@@ -16,8 +19,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 /* Texts */
 h2,.larger p,p.larger{font-size:18px}
 h2,.watermelon,a{color:#fc5960}
-.waterback{background:#fc5960}
-.waterback *{color:#fff}
+
 .space{margin:20px 0}
 a:hover{color:#fc5960}
 p.larger{font-size:18px}
