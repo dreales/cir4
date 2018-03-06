@@ -8,7 +8,7 @@
   }
   var title = "";
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(numberOfPosts);
-  @foreach (ContentModels.Blogpost post in blogposts){
+  foreach (ContentModels.Blogpost post in blogposts){
     title = post.PageTitle;
   }
 }
