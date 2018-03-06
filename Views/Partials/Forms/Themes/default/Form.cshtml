@@ -9,15 +9,15 @@
     }
     int i = 0;
 }
-<div class="container-fluid">
+<div class="umbraco-forms-page">
     @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false){
-        <h2>@Model.CurrentPage.Caption</h2>
+        <h2 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h2>
     }
     @if (Model.ShowValidationSummary){
         @Html.ValidationSummary(false)
     }
     @foreach (FieldsetViewModel fs in Model.CurrentPage.Fieldsets){
-        <fieldset id="@fs.Id">
+        <fieldset class="umbraco-forms-fieldset" id="@fs.Id">
             @if (string.IsNullOrEmpty(fs.Caption) == false){
                 <p>@fs.Caption</p>
             }
