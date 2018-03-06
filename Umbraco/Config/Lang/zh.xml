@@ -36,7 +36,7 @@
     <key alias="sort">排序</key>
     <key alias="translate">翻译</key>
     <key alias="update">更新</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">禁止访问</key>
     <key alias="addNew">添加域名</key>
@@ -1200,7 +1200,7 @@
     <key alias="itemsReturned">返回的项, 在</key>
     <key alias="iWant">我要</key>
     <key alias="allContent">所有内容</key>
-    <key alias="contentOfType">类型 "%0%"的内容</key>
+    <key alias="contentOfType">类型 &quot;%0%&quot;的内容</key>
     <key alias="from">from</key>
     <key alias="websiteRoot">我的网站</key>
     <key alias="where">where</key>
@@ -1230,6 +1230,12 @@
   </area>
 
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">选择内容类别</key>
     <key alias="chooseLayout">选择一项布局</key>
     <key alias="addRows">添加一行</key>

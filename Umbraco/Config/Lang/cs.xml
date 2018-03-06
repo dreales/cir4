@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="cs" intName="Czech" localName="česky" lcid="5" culture="cs-CZ">
   <creator>
     <name>umbraco</name>
@@ -34,7 +34,7 @@
     <key alias="sort">Seřadit</key>
     <key alias="translate">Přeložit</key>
     <key alias="update">Aktualizovat</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">Přístup zakázán.</key>
     <key alias="addNew">Přidat novou doménu</key>
@@ -747,7 +747,7 @@
     <key alias="translation">Překlad</key>
     <key alias="users">Uživatelé</key>
     <key alias="help" version="7.0">Nápověda</key>
-  <key alias="forms">Forms</key></area>
+  </area>
   <area alias="settings">
     <key alias="defaulttemplate">Výchozí šablona</key>
     <key alias="dictionary editor egenskab">Klíč slovníku</key>
@@ -848,6 +848,12 @@
     <key alias="template">Šablona</key>
   </area>
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">Choose type of content</key>
     <key alias="chooseLayout">Choose a layout</key>
     <key alias="addRows">Add a row</key>

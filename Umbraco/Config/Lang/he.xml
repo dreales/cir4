@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="he" intName="Hebrew (Israel)" localName="Hebrew" lcid="" culture="he-IL">
   <creator>
     <name>The Umbraco community</name>
@@ -32,13 +32,8 @@
     <key alias="sort">מיין</key>
     <key alias="translate">תרגם</key>
     <key alias="update">עדכן</key>
-    <key alias="DeleteCMSImportAction">מחק</key>
-    <key alias="ExecuteCMSImportWizardAction">בצע</key>
-    <key alias="ScheduleCMSImportWizardAction">תזמן</key>
-    <key alias="StartCMSImportWizardAction">ייבא נתונים</key>
-    <key alias="StartCMSImportChildDefinitionAction">צור הגדרות ילדים</key>
     <key alias="LastRunInfoAction">יומן משימות מתוזמנות</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="addNew">הוסף דומיין חדש</key>
     <key alias="domain">דומיין</key>
@@ -662,7 +657,7 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="statistics">סטטיסטיקות</key>
     <key alias="translation">תירגום</key>
     <key alias="users">משתמשים</key>
-  <key alias="forms">Forms</key></area>
+  </area>
   <area alias="settings">
     <key alias="defaulttemplate">תבנית ברירת מחדל</key>
     <key alias="dictionary editor egenskab">מפתח מילון</key>
@@ -750,6 +745,12 @@ To manage your website, simply open the Umbraco back office and start adding con
     <key alias="template">תבנית</key>
   </area>
   <area alias="grid">
+      <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>
     <key alias="insertControl">Choose type of content</key>
     <key alias="chooseLayout">Choose a layout</key>
     <key alias="addRows">Add a row</key>

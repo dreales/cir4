@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="it" intName="Italian" localName="italiano" lcid="16" culture="it-IT">
   <creator>
     <name>The Umbraco community</name>
@@ -33,7 +33,7 @@
     <key alias="translate">Traduci</key>
     <key alias="unpublish">Annulla pubblicazione</key>
     <key alias="update">Aggiorna</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
    <area alias="assignDomain">
     <key alias="addNew">Aggiungi nuovo dominio</key>
     <key alias="domain">Dominio</key>
@@ -635,7 +635,7 @@ Per gestire il tuo sito web, è sufficiente aprire il back office di Umbraco e i
     <key alias="statistics">Statistiche</key>
     <key alias="translation">Traduzione</key>
     <key alias="users">Utenti</key>
-  <key alias="forms">Forms</key></area>
+  </area>
   <area alias="settings">
     <key alias="asAContentMasterType"><![CDATA[come tipo di contenuto master. Le tab del tipo di contenuto master non sono mostrate e possono essere modificate solo direttamente dal tipo di contenuto master.]]></key>
     <key alias="contentTypeEnabled">Tipo di contenuto master abilitato</key>
@@ -732,6 +732,12 @@ Per gestire il tuo sito web, è sufficiente aprire il back office di Umbraco e i
     <key alias="template">Template</key>
   </area>
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">Choose type of content</key>
     <key alias="chooseLayout">Choose a layout</key>
     <key alias="addRows">Add a row</key>

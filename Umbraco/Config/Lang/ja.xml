@@ -35,7 +35,7 @@
     <key alias="sort">並べ替え</key>
     <key alias="translate">翻訳</key>
     <key alias="update">更新</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">アクセスが拒否されました</key>
     <key alias="addNew">ドメインの割り当て</key>
@@ -976,6 +976,12 @@ Runwayをインストールして作られた新しいウェブサイトがど�
   </area>
 
   <area alias="grid">
+      <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>
     <key alias="insertControl">挿入するアイテムを選択する</key>
     <key alias="addLayout">レイアウトを選択</key>
     <key alias="addRows">行の追加</key>

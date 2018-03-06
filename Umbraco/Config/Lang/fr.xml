@@ -38,7 +38,7 @@
     <key alias="sort">Trier</key>
     <key alias="translate">Traduire</key>
     <key alias="update">Mettre à jour</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">Permission refusée.</key>
     <key alias="addNew">Ajouter un nouveau domaine</key>
@@ -1166,7 +1166,7 @@ Pour gérer votre site, ouvrez simplement le backoffice Umbraco et commencez à 
 
     <key alias="iWant">Je veux</key>   
     <key alias="allContent">tout le contenu</key>
-    <key alias="contentOfType">le contenu du type "%0%"</key>
+    <key alias="contentOfType">le contenu du type &quot;%0%&quot;</key>
     <key alias="from">à partir de</key>
     <key alias="websiteRoot">mon site web</key>
     <key alias="where">où</key>
@@ -1201,6 +1201,12 @@ Pour gérer votre site, ouvrez simplement le backoffice Umbraco et commencez à 
   </area>
   
   <area alias="grid">
+      <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>
     <key alias="insertControl">Choisissez le type de contenu</key>
     <key alias="chooseLayout">Choisissez une mise en page</key>
     <key alias="addRows">Ajouter une ligne</key>

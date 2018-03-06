@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="pt" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
   <creator>
     <name>The Umbraco community</name>
@@ -32,7 +32,7 @@
     <key alias="sort">Classificar</key>
     <key alias="translate">Traduzir</key>
     <key alias="update">Atualizar</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="addNew">Adicionar novo Domínio</key>
     <key alias="domain">Domínio</key>
@@ -627,7 +627,7 @@ Você pode publicar esta página e todas suas sub-páginas ao selecionar <em>pub
     <key alias="statistics">Estatísticas</key>
     <key alias="translation">Tradução</key>
     <key alias="users">Usuários</key>
-  <key alias="forms">Forms</key></area>
+  </area>
   <area alias="settings">
     <key alias="defaulttemplate">Modelo padrão</key>
     <key alias="dictionary editor egenskab">Chave do Dicionário</key>
@@ -715,6 +715,12 @@ Você pode publicar esta página e todas suas sub-páginas ao selecionar <em>pub
     <key alias="template">Modelo</key>
   </area>
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">Choose type of content</key>
     <key alias="chooseLayout">Choose a layout</key>
     <key alias="addRows">Add a row</key>

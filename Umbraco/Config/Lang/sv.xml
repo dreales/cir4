@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="sv" intName="Swedish" localName="Svenska" lcid="29" culture="sv-SE">
   <creator>
     <name>The Umbraco community</name>
@@ -34,7 +34,7 @@
     <key alias="translate">Översätt</key>
     <key alias="unpublish">Avpublicera</key>
     <key alias="update">Uppdatera</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="addNew">Lägg till nytt domännamn</key>
     <key alias="domain">Domännamn</key>
@@ -80,6 +80,7 @@
     <key alias="returnToList">Återvänd till lista</key>
     <key alias="save">Spara</key>
     <key alias="saveAndPublish">Spara och publicera</key>
+    <key alias="saveAndSchedule">Spara och schemalägg</key>
     <key alias="saveToPublish">Spara och skicka för godkännande</key>
     <key alias="select">Välj</key>
     <key alias="selectCurrentFolder">Välj aktuell mapp</key>
@@ -780,6 +781,12 @@
     <key alias="template">Sidmall</key>
   </area>
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">Lägg till</key>
     <key alias="chooseLayout">Choose layout</key>
     <key alias="addRows">Lägg till rad</key>

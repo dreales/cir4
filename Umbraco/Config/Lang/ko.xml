@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="ko" intName="Korean" localName="한국어" lcid="18" culture="ko-KR">
   <creator>
     <name>The Umbraco community</name>
@@ -32,7 +32,7 @@
     <key alias="sort">정렬</key>
     <key alias="translate">번역</key>
     <key alias="update">업데이트</key>
-  <key alias="exportContourForm">Export form</key><key alias="importContourForm">Import form</key><key alias="archiveContourForm">Archive form</key><key alias="unarchiveContourForm">Unarchive form</key><key alias="defaultValue">Default value</key></area>
+  </area>
   <area alias="assignDomain">
     <key alias="addNew">새로운 도메인 추가</key>
     <key alias="domain">도메인</key>
@@ -639,7 +639,7 @@
     <key alias="statistics">통계</key>
     <key alias="translation">변환</key>
     <key alias="users">사용자</key>
-  <key alias="forms">Forms</key></area>
+  </area>
   <area alias="settings">
     <key alias="defaulttemplate">기본 템플릿</key>
     <key alias="dictionary editor egenskab">사전 키</key>
@@ -727,6 +727,12 @@
     <key alias="template">템플릿</key>
   </area>
   <area alias="grid">
+    <key alias="rte">Rich Text Editor</key>
+    <key alias="media">Image</key>
+    <key alias="macro">Macro</key>
+    <key alias="embed">Embed</key>
+    <key alias="headline">Headline</key>
+    <key alias="quote">Quote</key>  
     <key alias="insertControl">Choose type of content</key>
     <key alias="chooseLayout">Choose a layout</key>
     <key alias="addRows">Add a row</key>
