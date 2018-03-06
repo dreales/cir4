@@ -99,5 +99,6 @@ footer svg path{fill:#fff}
 .profile svg{margin: 0 5px -4px 0;}
 .profile svg path{fill:#fc5960}
 
-.profile2 h2{}
-.profile2 .row{}
+.profile2 h2{padding:20px 0 15px}
+.profile2 .row{padding-top:50px}
+.profile2 .waterback{padding-top:20px}
