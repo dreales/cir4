@@ -26,9 +26,6 @@
                 <input type="hidden" name="FormStep" value="@Model.FormStep" />
                 <input type="hidden" name="RecordState" value="@Model.RecordState" />
                 <div class="contourPage">
-                    @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false){
-                        <h4 class="contourPageName">@Html.Raw(Model.CurrentPage.Caption)</h4>
-                    }
                     @if (Model.ShowValidationSummary){
                         @Html.ValidationSummary(false)
                     }
