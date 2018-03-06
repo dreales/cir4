@@ -128,6 +128,16 @@
           "Validation": null
         },
         {
+          "Key": "c5d24bf5-5016-49b6-9bd7-b7572a7a9faf",
+          "Alias": "boxesInfoText",
+          "DataType": "umb://data-type/76c7d98d09d7480d988363322cd4cee7",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Boxes info text",
+          "SortOrder": 12,
+          "Validation": null
+        },
+        {
           "Key": "cb2b075f-4ab6-4cac-a939-6e1bf46ec460",
           "Alias": "box2Image",
           "DataType": "umb://data-type/79407daaf6434780a418581f79d65c66",
@@ -170,6 +180,11 @@
     },
     {
       "Udi": "umb://data-type/68c91d7eff844e8d9580070a29b74c3f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/76c7d98d09d7480d988363322cd4cee7",
       "Ordering": true,
       "Mode": 0
     },
