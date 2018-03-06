@@ -73,3 +73,9 @@ footer svg path{fill:#fff}
 
 /* Full width map */
 .full-map #map{height:400px;margin-bottom:-20px}
+
+/* cqc widget */
+.cqc{margin:0 auto;display:block;padding:5px 15px;max-width:300px;}
+.cqc img{padding: 8px 8px 15px}
+	
+	
