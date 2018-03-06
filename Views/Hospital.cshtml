@@ -160,7 +160,7 @@
         <div style="display:none" class="cqc">
 		  <img src="https://www.circlehealth.co.uk/media/2275/asset_cqclogo_update.png" alt="CQC logo" />
 		  <p class="name">Circle @Model.Content.Name</p>
-		  <p class="date"><strong>CQC overall rating</strong> 24 April 2017</p>
+		  <p class="date"><strong>CQC overall rating</strong> @Umbraco.Field("cqcDate")</p>
 		  <p class="good">@Umbraco.Field("cqcRating")</p>
 		  <a class="widget-button-new-style" alt="See full report (opens in new window)" target="_blank" href="@Umbraco.Field("cqcLink", altText:"")">See the report</a>
 		</div>
