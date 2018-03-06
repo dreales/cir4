@@ -7,7 +7,7 @@
     bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("image").Url;
   }
   var title = "";
-  var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
+  var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5).Cast<RMSRequestProcessor.RMSMedia>();
   foreach (ContentModels.Blogpost post in blogposts){
     title = post.PageTitle;
   }
