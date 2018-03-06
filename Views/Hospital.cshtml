@@ -8,8 +8,8 @@
   }
   var title = "";
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
-  List<string> titles = new List<string>();
-  List<string> urls = new List<string>();
+  List<string> titles;
+  List<string> urls;
   foreach (ContentModels.Blogpost post in blogposts){
     titles.Add(post.PageTitle);
     urls.Add(post.Url);
@@ -81,6 +81,25 @@
     </div>
   </div>
 </div><br /><br />
+<div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
+    <div class="col-sm img-text-box">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
+        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+      </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm img-text-box">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
+        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+      </div>
+    </div>
+    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
+  </div>
+</div>      
 <div class="container">
   <div class="row no-gutters newsfeed">
       <div class="col-sm-6" style="background:url( @bannerImageUrl )">
