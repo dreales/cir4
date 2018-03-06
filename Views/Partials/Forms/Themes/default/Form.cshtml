@@ -46,13 +46,12 @@
 </div>
 </div>
                         }
-                        @if (i == Model.CurrentPage.Fieldsets.Count + 1){
+                        @if (i == fs.Containers.Count){
 <input type="submit" class="btn primary" value="@Model.SubmitCaption"  name="__next" />
                         }
                     </div>
                 }
             </div>
-        <div><p>@fs.Containers.Count</p></div>
         </fieldset>
     }
     <div style="display: none">
