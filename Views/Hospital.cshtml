@@ -8,16 +8,16 @@
   string box1ImageUrl = "/media/1032/bath.jpg"; //1st 1/2 width box image
   string box2ImageUrl = "/media/1032/bath.jpg"; //2st 1/2 width box image
   if (Model.Content.HasValue("heroImage") == true){
-    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
+    heroImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
   }
   if (Model.Content.HasValue("whyChooseImage") == true){
     bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("whyChooseImage").Url;
   }
   if (Model.Content.HasValue("box1Image") == true){
-    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+    box1ImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
   }
   if (Model.Content.HasValue("box2Image") == true){
-    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+    box2ImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
   }
   
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
