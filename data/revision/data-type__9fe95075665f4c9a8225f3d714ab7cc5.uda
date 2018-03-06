@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.Textbox",
+  "DatabaseType": 1,
+  "PreValues": {
+    "maxChars": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/9fe95075665f4c9a8225f3d714ab7cc5",
+  "Dependencies": [],
+  "Name": "Hospital - cqc Date - Textbox",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
