@@ -2,14 +2,24 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
   Layout = "Master.cshtml";
+  
   string heroImageUrl = "/media/1032/bath.jpg"; //default hero image
   string bannerImageUrl = "/media/1032/bath.jpg"; //default why visit image
   string box1ImageUrl = "/media/1032/bath.jpg"; //1st 1/2 width box image
   string box2ImageUrl = "/media/1032/bath.jpg"; //2st 1/2 width box image
-  if (Model.Content.HasValue("Image") == true){
-    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("image").Url;
+  if (Model.Content.HasValue("heroImage") == true){
+    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
   }
-  var title = "";
+  if (Model.Content.HasValue("whyChooseImage") == true){
+    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("whyChooseImage").Url;
+  }
+  if (Model.Content.HasValue("box1Image") == true){
+    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+  }
+  if (Model.Content.HasValue("box2Image") == true){
+    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+  }
+  
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
   List<string> titles = new List<string>();
   List<string> urls = new List<string>();
@@ -17,6 +27,7 @@
     titles.Add(post.PageTitle);
     urls.Add(post.Url);
   }
+  
   string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
   
 }
@@ -88,7 +99,7 @@
 </div><br /><br />
 <div class="container-fluid">
   <div class="row no-gutters">
-    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
+    <div class="col-sm" style="background:url( @box1ImageUrl )"></div>
     <div class="col-sm img-text-box">
       <div>
         <p>@Umbraco.Field("box1Text", altText:"")</p>
@@ -100,18 +111,18 @@
         <p>@Umbraco.Field("box2Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
+    <div class="col-sm" style="background:url( @box2ImageUrl )"></div>
   </div>
 </div>      
 <div class="container">
   <div class="row no-gutters newsfeed">
-      <div class="col-sm-6" style="background:url( @box1ImageUrl )">
+      <div class="col-sm-6" style="background:url( @bannerImageUrl )">
           <a href="@urls[0]">
               @titles[0]
               <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
           </a>
       </div>
-      <div class="col-sm-6" style="background:url( @box2ImageUrl )">
+      <div class="col-sm-6" style="background:url( @bannerImageUrl )">
            <a href="@urls[1]">
               @titles[1]
               <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
