@@ -4,7 +4,7 @@
   "PreValues": {
     "disableFolderSelect": null,
     "multiPicker": null,
-    "onlyImages": null,
+    "onlyImages": "1",
     "startNodeId": ""
   },
   "Parent": null,
