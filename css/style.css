@@ -92,4 +92,5 @@ footer svg path{fill:#fff}
 
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
-
+.profile h1{}
+.profile h1+p{}
