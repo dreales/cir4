@@ -98,6 +98,16 @@
           "Validation": null
         },
         {
+          "Key": "819d9eaa-f5ae-4b08-8d35-7094e29ff0f8",
+          "Alias": "cqcDate",
+          "DataType": "umb://data-type/9fe95075665f4c9a8225f3d714ab7cc5",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "cqc Date",
+          "SortOrder": 15,
+          "Validation": null
+        },
+        {
           "Key": "8cdd33df-d03e-48b1-992b-9a555a8d2149",
           "Alias": "box1Text",
           "DataType": "umb://data-type/406150973ac941b0a6e4144e4caf5611",
@@ -215,6 +225,11 @@
     },
     {
       "Udi": "umb://data-type/8d5ecffd3e264ddf9046c1f2ead3e622",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9fe95075665f4c9a8225f3d714ab7cc5",
       "Ordering": true,
       "Mode": 0
     },
