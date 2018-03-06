@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TextboxMultiple",
+  "DatabaseType": 0,
+  "PreValues": {
+    "maxChars": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/7f51f51f4f1d4ee080dd453785a64c27",
+  "Dependencies": [],
+  "Name": "Consultant - professional profile - Textarea",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
