@@ -62,6 +62,9 @@
                                                 </div>
                                             </div>
                                         }
+                                        @if (i ==2 && !Model.IsMultiPage) {
+                                            <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
+                                        }
                                     </div>
                                 }
                             </div>
@@ -71,7 +74,7 @@
                         <input type="text" name="@Model.FormId.ToString().Replace("-", "")" />
                     </div>
                     <div class="contourNavigation row-fluid">
-                        <div class="col-md-12">
+                        <div class="col">
                             @if (Model.IsMultiPage){
                                 if (!Model.IsFirstPage){
                                     <input class="btn prev cancel" type="submit" value="@Model.PreviousCaption" name="__prev" />
@@ -82,7 +85,7 @@
                                 if (Model.IsLastPage){
                                     <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
                                 }
-                            } else {
+                            } else if (i != 2) {
                                 <input type="submit" class="btn primary" value="@Model.SubmitCaption" name="submitbtn" />
                             }
                         </div>
