@@ -57,7 +57,7 @@ footer svg path{fill:#fff}
 .umbraco-forms-page textarea{height:100px;padding:10px;border:0;margin-bottom:10px}
 
 /* One column form (grey, eg. on Bath page) */
-.col1form input.btn{border:1px soild #fff}
+.col1form input.btn{border:1px #fff soild}
 
 /* Tabs */
 .nav-tabs{background:#fc5960;padding-top:10px;border:0}
