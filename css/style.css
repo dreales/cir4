@@ -1,0 +1,76 @@
+*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:13px;color:#666;text-underline-position:under}
+body,html{font-smoothing:antialiased}
+::-webkit-scrollbar{display:none}
+html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0;background:#f0f0f0}
+main{min-height:calc(100vh - 207px);background:#fff;padding-bottom:20px}
+.bg-melon{background:#fc5960;padding-top:20px}
+.bg-melon *{color:#fff}
+
+/* Inputs, button, etc */
+.navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
+input,textarea{border-radius:0!important;width:100%}
+textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!important;outline:0!important}
+.btn,button{outline:0!important;background:#fc5960;color:#fff;font-size:15px;padding:12px 30px;border:0}
+
+/* Texts */
+h2,.larger p,p.larger{font-size:18px}
+h2,.watermelon,a{color:#fc5960}
+.space{margin:20px 0}
+a:hover{color:#fc5960}
+p.larger{font-size:18px}
+
+/* Header */
+#top-nav{background:#f0f0f0}
+#top-nav li{padding:0 8px;border-left:1px solid #80808033;line-height:17px}
+#top-nav li:first-child,#top-nav li:last-child{border:0}
+#top-nav li a{color:#666;font-size:12px}
+#top-nav form{margin:0!important}
+#top-nav .number a{font-size:14px;color:#fc5960;font-weight:500}
+#main-nav{background:#fc5960;padding:.2rem 1rem}
+#main-nav img{height:62px;margin:0 10px}
+#main-nav .navbar-nav .nav-link{color:#fff;font-weight:600;margin-right:15px;letter-spacing:1px}
+#main-nav .dropdown-menu{border:1px solid #fd585f;margin-top:-10px;border-top-width:31px;border-radius:0;border-top-color:transparent}
+#main-nav .dropdown-menu a{color:#FC5960}
+
+/* Footer*/
+footer nav{background:#fc5960;padding:.2rem 1rem}
+footer img{height:62px;margin:0 10px}
+footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
+footer svg{margin:7px 6px 0}
+footer .first-social svg{margin-left:30px}
+footer svg path{fill:#fff}
+
+/* Hero image with dark overlay */
+.hero-image{background-size:cover!important;background-position:center center!important;padding:100px 20px 120px;margin-bottom:50px}
+.hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
+.hero-image .dark-overlay *{color:#fff}
+
+/* Form one (grey, eg. on Bath page) */
+.contactform .umbraco-forms-page{background:#f0f0f0;padding:20px 30px;margin:40px 0 20px}
+.contactform .umbraco-forms-page label{display:none}
+.contactform .umbraco-forms-page input{border:0;padding:15px 10px;margin-bottom:10px}
+.contactform .umbraco-forms-page input.btn{background:#fc5960;color:#fff;font-size:15px}
+.contactform .umbraco-forms-page input:last-child{margin:0}
+.contactform .umbraco-forms-page textarea{height:100px;padding:10px;border:0;margin-bottom:10px}
+
+/* Tabs */
+.nav-tabs{background:#fc5960;padding-top:10px;border:0}
+.nav-tabs li a{color:#fff;background:#f04d50;margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
+.nav-tabs li a.active{background:#fff;color:#fc5960!important}
+
+/* Boxes with a picture one side and text the other */
+.img-text-box div{padding:30px;background:#f0f0f0;min-height:200px}
+
+/* Blog feed */
+.newsfeed>.col-sm{height:200px;border:1px solid #fff}
+.newsfeed>.col-sm-6{height:240px;border:1px solid #fff}
+.newsfeed{margin-top:60px}
+.newsfeed a{position:absolute;bottom:0;color:#fff!important;font-size:16px;padding:5px;text-shadow:0 0 3px #0009}
+.newsfeed svg{margin-bottom:-3px;height:17px}
+.newsfeed svg path{fill:#fc5960}
+
+/* Full width map */
+.fmap #map{height:300px;margin-bottom:-20px}
+	
+	
