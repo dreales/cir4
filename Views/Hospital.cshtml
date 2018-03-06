@@ -60,7 +60,7 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="self-pay" role="tabpanel" aria-labelledby="self-pay">
           <br /><p class="watermelon">Be seen by a specialist quickly for your diagnosis and treatment.</p>
-          <p>@Umbraco.Field("selfFundingInfo", altText:"")></p>
+          <p>@Umbraco.Field("selfFundingInfo", altText:"")</p>
           <button>Book an appointment</button>
         </div>
         <div class="tab-pane fade" id="insured" role="tabpanel" aria-labelledby="insured">
@@ -74,7 +74,7 @@
 <div class="hero-image" style="background:url( @bannerImageUrl )">
   <div class="dark-overlay text-center">
     <h2>Why visit Circle @Model.Content.Name?</h2>
-    <p>@Umbraco.Field("tagline", altText:"")</p>
+    <p>@Umbraco.Field("whyChooseText", altText:"")</p>
     <button>Take a virtual tour of Circle Bath Hospital</button>
   </div>
 </div>
