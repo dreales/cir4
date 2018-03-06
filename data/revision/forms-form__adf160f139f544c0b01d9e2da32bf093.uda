@@ -124,7 +124,7 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
-                    "Placeholder": ""
+                    "Placeholder": "Message"
                   },
                   "PreValues": []
                 }
