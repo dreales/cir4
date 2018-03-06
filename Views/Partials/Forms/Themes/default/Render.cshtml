@@ -10,10 +10,8 @@
 @{
     Html.EnableClientValidation(true);
     Html.EnableUnobtrusiveJavaScript(true);
-    //Get the actual view to render the form html
-    var formThemedView = FormThemeResolver.GetFormView(Model);
-    //get the script.cshtml view to render client-side assets
-    var formScriptView = FormThemeResolver.GetScriptView(Model);
+    var formThemedView = FormThemeResolver.GetFormView(Model); //Get the actual view to render the form html
+    var formScriptView = FormThemeResolver.GetScriptView(Model); //get the script.cshtml view to render client-side assets
 
 }
 @* In case the form has been marked as submitted - the FormThemeResolver will return the submitted.cshtml file and look for a custom 
@@ -34,8 +32,7 @@
         }
         @if (Model.RenderScriptFiles){
             Html.RenderPartial(formScriptView);
-            @* Render required css files needed by fields on the current page*@
-            foreach (var css in Html.GetThemeCssFiles(Model)){
+            foreach (var css in Html.GetThemeCssFiles(Model)){ 
                 if (Model.UseClientDependency){
                     Html.RequiresCss(css.Value);
                 } else {
