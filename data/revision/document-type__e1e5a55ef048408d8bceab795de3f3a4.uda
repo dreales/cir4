@@ -50,7 +50,7 @@
         {
           "Key": "af9ea619-00b5-4e9f-af58-aedf25474862",
           "Alias": "professionalProfile",
-          "DataType": "umb://data-type/7f51f51f4f1d4ee080dd453785a64c27",
+          "DataType": "umb://data-type/2e49aba2b3634f55a46f7a3a56b2c4d8",
           "Description": null,
           "Mandatory": false,
           "Name": "professional profile",
@@ -60,7 +60,7 @@
         {
           "Key": "b5d38c69-a3bb-4e2e-b3a9-a8a6f60745bb",
           "Alias": "personalProfile",
-          "DataType": "umb://data-type/ce3f3749a7024f3db0300a940875ac5a",
+          "DataType": "umb://data-type/de55ff6d0a194f7f983d35bac7f09c97",
           "Description": null,
           "Mandatory": false,
           "Name": "Personal profile",
@@ -84,12 +84,12 @@
   "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+      "Udi": "umb://data-type/2e49aba2b3634f55a46f7a3a56b2c4d8",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/7f51f51f4f1d4ee080dd453785a64c27",
+      "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
       "Ordering": true,
       "Mode": 0
     },
@@ -104,7 +104,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/ce3f3749a7024f3db0300a940875ac5a",
+      "Udi": "umb://data-type/de55ff6d0a194f7f983d35bac7f09c97",
       "Ordering": true,
       "Mode": 0
     },
