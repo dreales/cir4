@@ -1,4 +1,4 @@
-*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:15px;color:#666;text-underline-position:under}
+*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:16px;line-height:1.7;color:#666;text-underline-position:under}
 body,html{font-smoothing:antialiased}
 ::-webkit-scrollbar{display:none}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
@@ -91,7 +91,7 @@ footer svg path{fill:#fff}
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
 .profile h1{margin:50px 0 20px}
-.profile p,profile a{font-size:16px;color:#666}
+.profile p,.profile a{font-size:16px;color:#666}
 .profile svg{margin:0 5px -4px 0;}
 .profile svg path{fill:#fc5960}
 
