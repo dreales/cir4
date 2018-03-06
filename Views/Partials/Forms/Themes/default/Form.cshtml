@@ -11,7 +11,7 @@
 }
 <div class="umbraco-forms-page">
     @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false){
-        <h4 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h4>
+        <h2 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h2>
     }
     @if (Model.ShowValidationSummary){
         @Html.ValidationSummary(false)
