@@ -37,12 +37,12 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
-                    "Placeholder": ""
+                    "Placeholder": "Name"
                   },
                   "PreValues": []
                 },
                 {
-                  "Caption": "Email",
+                  "Caption": "Email address",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
@@ -64,12 +64,12 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
-                    "Placeholder": ""
+                    "Placeholder": "Email"
                   },
                   "PreValues": []
                 },
                 {
-                  "Caption": "Phone Number",
+                  "Caption": "Phone number",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
@@ -91,7 +91,7 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
-                    "Placeholder": ""
+                    "Placeholder": "Phone"
                   },
                   "PreValues": []
                 }
