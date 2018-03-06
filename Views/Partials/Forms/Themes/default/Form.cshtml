@@ -46,7 +46,7 @@
 </div>
 </div>
                         }
-                        @if (i == 2){
+                        @if (i == Model.CurrentPage.Fieldsets.Length){
 <input type="submit" class="btn primary" value="@Model.SubmitCaption"  name="__next" />
                         }
                     </div>
