@@ -8,11 +8,11 @@
   }
   var title = "";
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
-  List<string> titles;
-  List<string> urls;
+  List<string> titles = new List<string>();
+  List<string> urls = new List<string>();
   foreach (ContentModels.Blogpost post in blogposts){
     titles.Add(post.PageTitle);
-    urls.Add(post.Url);
+    .Add(post.Url);
   }
 }
 
