@@ -9,6 +9,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .waterback{background:#fc5960}
 .waterback *{color:#fff}
 .greyback{background:#f0f0f0}
+.medicodigital{margin:0!important;display:absolute;height:38px!important;bottom:0;right:0;opacity:.5}
 
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
