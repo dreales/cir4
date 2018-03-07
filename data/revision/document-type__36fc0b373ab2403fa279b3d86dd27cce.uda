@@ -23,7 +23,7 @@
           "DataType": "umb://data-type/e813d65c454c45c691e38b8150802aaa",
           "Description": null,
           "Mandatory": false,
-          "Name": "heroImage",
+          "Name": "Top banner image",
           "SortOrder": 0,
           "Validation": null
         }
