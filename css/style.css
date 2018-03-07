@@ -18,7 +18,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 
 /* Texts */
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
-h1,h2,.watermelon,a,.wm-first>p:first-child{color:#fc5960}
+h1,h2,.watermelon,a,.wm-first>p:first-child,.wm-first>p:first-child span{color:#fc5960}
 .space{margin:20px 0}
 a:hover{color:#fc5960}
 
