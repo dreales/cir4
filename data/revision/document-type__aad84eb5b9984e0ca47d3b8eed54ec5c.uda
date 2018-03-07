@@ -13,7 +13,9 @@
     "umb://document-type/7483c1cea07f4c8383f960362285dc47",
     "umb://document-type/7b559f0ead4f4827b28baece3d1743f0"
   ],
-  "CompositionContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce"
+  ],
   "PropertyGroups": [
     {
       "Key": "24be2457-c942-4c31-a376-da8c5e8116df",
@@ -169,16 +171,16 @@
     {
       "Key": "dcb9f352-b4fb-405d-aed6-c22bade2a8a2",
       "Name": "Content",
-      "SortOrder": 1,
+      "SortOrder": 0,
       "PropertyTypes": [
         {
-          "Key": "41a522d6-8809-4d5d-ad34-2d8b01f93d45",
-          "Alias": "bodyText",
-          "DataType": "umb://data-type/f4084ca6fc6c40c7ab0e64888d7d869c",
-          "Description": null,
+          "Key": "09908e18-dc3b-491b-8c29-cd470f4e6063",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/62e2d23401694110ab8fc987094fa2b8",
+          "Description": "On some pages this may not be used",
           "Mandatory": false,
-          "Name": "Content",
-          "SortOrder": 0,
+          "Name": "mainContent",
+          "SortOrder": 1,
           "Validation": null
         }
       ]
@@ -203,6 +205,11 @@
       "Mode": 0
     },
     {
+      "Udi": "umb://data-type/62e2d23401694110ab8fc987094fa2b8",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true,
       "Mode": 0
@@ -213,12 +220,12 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/f4084ca6fc6c40c7ab0e64888d7d869c",
+      "Udi": "umb://data-type/f5264d17afc14070a0b6c0b205890bfe",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/f5264d17afc14070a0b6c0b205890bfe",
+      "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
       "Ordering": true,
       "Mode": 0
     },
@@ -241,5 +248,5 @@
   "Name": "Home",
   "Alias": "home",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
