@@ -82,9 +82,9 @@ footer path{fill:#fff}
 .cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
 .cqc *{color:#666}
 .cqc img{padding:8px}
-.cqc .good{color:#fff;background:#458f00;}
-.cqc a{color:#6C276A;border:1px solid #c9c6b9;}
-.cqc .good,.cqc a{padding:7px;margin:0 10px 10px 0;display:inline-block;}
+.cqc .good{color:#fff;background:#458f00}
+.cqc a{color:#6C276A;border:1px solid #c9c6b9}
+.cqc .good,.cqc a{padding:7px;margin:0 10px 10px 0;display:inline-block}
 
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
