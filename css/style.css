@@ -25,7 +25,7 @@ a:hover{color:#f04d50}/*dred*/
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
-textarea:focus,input:focus,.cqc a{box-shadow:none!important;border-color:#ced4da!important;outline:0!important}
+textarea:focus,input:focus,.cqc a{box-shadow:none!important;border:1px solid #ced4da!important;outline:0!important}
 .btn,button{outline:0!important;font-size:15px;padding:12px 30px;border:0}
 
 /* Header */
