@@ -172,7 +172,7 @@
       "ExecutesOn": 3,
       "Settings": {
         "Token": "xoxb-326667099958-3C3BISVQg59PrUF0j118fbnx",
-        "Channel": "#circle_enquiries",
+        "Channel": "#circle-enquiries",
         "Username": "circle_umbraco",
         "AvatarUrl": "http://www.zendcube.com/img/tools/umbraco.jpg"
       },
