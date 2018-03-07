@@ -21,7 +21,7 @@
           "Key": "d3a1a122-d113-4d04-8f83-f13716ed8179",
           "Alias": "heroImage",
           "DataType": "umb://data-type/e813d65c454c45c691e38b8150802aaa",
-          "Description": "This image needs to be large, at least 1400px wide, 350px high",
+          "Description": "This image needs to be large, at least 1400px wide and 350px high",
           "Mandatory": false,
           "Name": "Top banner image",
           "SortOrder": 0,
