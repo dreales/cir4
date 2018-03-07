@@ -25,7 +25,7 @@ a:hover{color:#f04d50}/*dred*/
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
-input,textarea,textarea:focus,input:focus,.cqc a{border:1px solid #ced4da;outline:0}
+input,textarea,textarea:focus,input:focus,.cqc a{border:1px solid #ced4da!important;outline:0}
 .btn,button{outline:0!important;font-size:15px;padding:12px 30px;border:0}
 
 /* Header */
@@ -57,7 +57,7 @@ footer path{fill:#fff}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
-.singlecolform input{border:0}
+.singlecolform input{border:0!important}
 
 /* Tabs */
 .toptabs{padding-top:20px}
