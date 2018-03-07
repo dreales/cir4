@@ -23,7 +23,7 @@
           "DataType": "umb://data-type/24580ae5d43e439d84a40f48285ae70b",
           "Description": "The top paragraph will turn watermelon coloured. Contact admin if you want an option added to turn this off",
           "Mandatory": false,
-          "Name": "welcomeText",
+          "Name": "welcomeMessage",
           "SortOrder": 1,
           "Validation": null
         },
