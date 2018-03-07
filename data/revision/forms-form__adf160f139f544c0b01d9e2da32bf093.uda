@@ -19,14 +19,14 @@
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
-                  "Alias": "name",
-                  "Id": "2d86134a-ca01-4da7-c720-bf48fce8b79e",
+                  "Alias": "name2c",
+                  "Id": "a9e8e7e8-a4de-4cdb-b755-fb6043d4dfd6",
                   "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
                   "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
                   "DataSourceFieldKey": null,
                   "Mandatory": true,
                   "RegEx": null,
-                  "RequiredErrorMessage": "Please leave your name",
+                  "RequiredErrorMessage": null,
                   "InvalidErrorMessage": null,
                   "Condition": {
                     "Id": "00000000-0000-0000-0000-000000000000",
@@ -36,35 +36,7 @@
                     "Rules": []
                   },
                   "Settings": {
-                    "DefaultValue": "",
                     "Placeholder": "Name"
-                  },
-                  "PreValues": []
-                },
-                {
-                  "Caption": "Email address",
-                  "ToolTip": null,
-                  "Placeholder": null,
-                  "CssClass": null,
-                  "Alias": "email",
-                  "Id": "eae61cf1-01da-4da6-f9c6-df56b0aba741",
-                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
-                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
-                  "DataSourceFieldKey": null,
-                  "Mandatory": true,
-                  "RegEx": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+",
-                  "RequiredErrorMessage": "Please enter your e-mail",
-                  "InvalidErrorMessage": "Please enter a valid e-mail",
-                  "Condition": {
-                    "Id": "00000000-0000-0000-0000-000000000000",
-                    "Enabled": false,
-                    "ActionType": 0,
-                    "LogicType": 0,
-                    "Rules": []
-                  },
-                  "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Email"
                   },
                   "PreValues": []
                 },
@@ -91,6 +63,58 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
+                    "Placeholder": "Phone"
+                  },
+                  "PreValues": []
+                },
+                {
+                  "Caption": "Email2c",
+                  "ToolTip": null,
+                  "Placeholder": null,
+                  "CssClass": null,
+                  "Alias": "email2c",
+                  "Id": "c99f64cd-b202-4a0d-f060-362b2a42b873",
+                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "DataSourceFieldKey": null,
+                  "Mandatory": true,
+                  "RegEx": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+",
+                  "RequiredErrorMessage": null,
+                  "InvalidErrorMessage": null,
+                  "Condition": {
+                    "Id": "00000000-0000-0000-0000-000000000000",
+                    "Enabled": false,
+                    "ActionType": 0,
+                    "LogicType": 0,
+                    "Rules": []
+                  },
+                  "Settings": {
+                    "Placeholder": "Email"
+                  },
+                  "PreValues": []
+                },
+                {
+                  "Caption": "Phone2s",
+                  "ToolTip": null,
+                  "Placeholder": null,
+                  "CssClass": null,
+                  "Alias": "phone2s",
+                  "Id": "bb341dba-d2c7-41d8-c549-215991ea4780",
+                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "DataSourceFieldKey": null,
+                  "Mandatory": true,
+                  "RegEx": null,
+                  "RequiredErrorMessage": null,
+                  "InvalidErrorMessage": null,
+                  "Condition": {
+                    "Id": "00000000-0000-0000-0000-000000000000",
+                    "Enabled": false,
+                    "ActionType": 0,
+                    "LogicType": 0,
+                    "Rules": []
+                  },
+                  "Settings": {
                     "Placeholder": "Phone"
                   },
                   "PreValues": []
