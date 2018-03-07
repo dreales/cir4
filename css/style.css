@@ -6,7 +6,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
-.btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
+.btn,button,.waterback *,.singlecolform *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
 .nav-tabs a,.btn:hover,button:hover{background:#f04d50}/*dred*/
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 
