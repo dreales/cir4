@@ -56,6 +56,7 @@ footer a:hover path{fill:#fffd}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
+.singlecolform textarea{height:300px}
 .singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
 .singlecolform ::placeholder{color:#fff}
 
