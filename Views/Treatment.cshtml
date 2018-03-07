@@ -3,6 +3,9 @@
 @{
 	Layout = "Master.cshtml";
 	string heroImageUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
+	if (Model.Content.HasValue("heroImage") == true){
+      heroImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
+    }
 }
 <div class="hero-image" style="background:url( @heroImageUrl )">
   <div class="dark-overlay text-center">
@@ -12,7 +15,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
-        
+        @Umbraco.Field("welcomeText", altText:"");
     </div>
   </div>
 </div>      
