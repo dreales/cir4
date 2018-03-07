@@ -28,6 +28,16 @@
           "Name": "Top section (centered)",
           "SortOrder": 1,
           "Validation": null
+        },
+        {
+          "Key": "ab04aa7d-5ee8-4eca-8e41-6dbceea21335",
+          "Alias": "grid",
+          "DataType": "umb://data-type/4b33d752a0374cf98d945a5a288b8c3a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "grid",
+          "SortOrder": 2,
+          "Validation": null
         }
       ]
     }
@@ -37,6 +47,11 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/24580ae5d43e439d84a40f48285ae70b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/4b33d752a0374cf98d945a5a288b8c3a",
       "Ordering": true,
       "Mode": 0
     },
