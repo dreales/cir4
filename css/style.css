@@ -4,10 +4,9 @@ body,html{font-smoothing:antialiased}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;background:#f0f0f0}
 main{min-height:calc(100vh - 207px);background:#fff}
-.bg-melon{background:#fc5960;padding-top:20px}
-.bg-melon *{color:#fff}
-.waterback{background:#fc5960}
-.waterback *{color:#fff}
+.bg-melon{padding-top:20px}
+.waterback,.bg-melon{background:#fc5960}
+.waterback *,.bg-melon *{color:#fff}
 .greyback{background:#f0f0f0}
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px}
 
@@ -19,7 +18,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 
 /* Texts */
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
-h1,h2,.watermelon,a{color:#fc5960}
+h1,h2,.watermelon,a,.wm-first>p:first-child{color:#fc5960}
 .space{margin:20px 0}
 a:hover{color:#fc5960}
 
@@ -37,7 +36,7 @@ a:hover{color:#fc5960}
 #main-nav .dropdown-menu a{color:#FC5960}
 
 /* Footer*/
-footer{border-top: 2px solid #fff}
+footer{border-top: 2px solid #fff;overflow-y:hidden}
 footer nav{background:#fc5960;padding:.2rem 1rem}
 footer img{height:62px;margin:0 10px}
 footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
@@ -102,4 +101,6 @@ footer svg path{fill:#fff}
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
 .video>div>div{position:relative;height:0;padding-bottom:56.25%}
 .video iframe{position:absolute;width:100%;height:100%;left:0}
+
+/* treatment pages */
 
