@@ -10,7 +10,9 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce"
+  ],
   "PropertyGroups": [
     {
       "Key": "1e56e38d-9cbb-43f4-92a6-99d0def8f013",
@@ -26,16 +28,6 @@
           "Name": "welcomeMessage",
           "SortOrder": 1,
           "Validation": null
-        },
-        {
-          "Key": "7066da7e-b250-428b-b869-fda2fd7d7a27",
-          "Alias": "heroImage",
-          "DataType": "umb://data-type/be124793dce04c06bd6f291004eaf74c",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "heroImage",
-          "SortOrder": 0,
-          "Validation": null
         }
       ]
     }
@@ -49,7 +41,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/be124793dce04c06bd6f291004eaf74c",
+      "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
       "Ordering": true,
       "Mode": 0
     },
