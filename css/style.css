@@ -4,39 +4,42 @@ body,html{font-smoothing:antialiased}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;background:#f0f0f0}
 main{min-height:calc(100vh - 207px);background:#fff}
-.bg-melon{padding-top:20px}
-.waterback,.bg-melon{background:#fc5960}
-.waterback *,.bg-melon *{color:#fff}
-.greyback{background:#f0f0f0}
+
+/* Background colors */
+.waterback,#main-nav,.toptabs,.nav-tabs,.btn,button,{background:#fc5960}/*wmelon*/
+.btn,button,.waterback *,.toptabs *,.nav-tabs *{color:#fff}
+.nav-tabs a{background:#f04d50}/*dred*/
+.greyback,#top-nav{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
 textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!important;outline:0!important}
-.btn,button{outline:0!important;background:#fc5960;color:#fff;font-size:15px;padding:12px 30px;border:0}
+.btn,button{outline:0!important;font-size:15px;padding:12px 30px;border:0}
 
 /* Texts */
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
-h1,h2,.watermelon,a,.wm-first>p:first-child,.wm-first>p:first-child span{color:#fc5960}
+.smaller,#top-nav li a{font-size:12px}
+h1,h2,.watermelon,a,.wm-first>p:first-child,.wm-first>p:first-child span{color:#fc5960}/*wmelon*/
+a:hover{color:#f04d50}/*dred*/
+#top-nav li a{color:#666}/*dgrey*/
 .space{margin:20px 0}
-a:hover{color:#fc5960}
+.spacep{padding:20px 0}
 
 /* Header */
-#top-nav{background:#f0f0f0}
 #top-nav li{padding:0 8px;border-left:1px solid #80808033;line-height:17px}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
-#top-nav li a{color:#666;font-size:12px}
 #top-nav .number a{font-size:16px;color:#fc5960;padding:4px 5px 0 10px}
 #top-nav form{margin:0!important}
-#main-nav{background:#fc5960;padding:.2rem 1rem}
+#main-nav{padding:.2rem 1rem}
 #main-nav img{height:62px;margin:0 10px}
 #main-nav .navbar-nav .nav-link{color:#fff;font-weight:600;margin-right:15px;letter-spacing:1px}
 #main-nav .dropdown-menu{border:1px solid #fd585f;margin-top:-10px;border-top-width:31px;border-radius:0;border-top-color:transparent}
 #main-nav .dropdown-menu a{color:#FC5960}
 
 /* Footer*/
-footer{border-top: 2px solid #fff;overflow-y:hidden}
+footer{border-top:2px solid #fff;overflow-y:hidden}
 footer nav{background:#fc5960;padding:.2rem 1rem}
 footer img{height:62px;margin:0 10px}
 footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
@@ -61,9 +64,10 @@ footer svg path{fill:#fff}
 .col1form input.btn{border:1px solid #fff}
 
 /* Tabs */
-.nav-tabs{background:#fc5960;padding-top:10px;border:0}
-.nav-tabs li a{color:#fff;background:#f04d50;margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
-.nav-tabs li a.active{background:#fff;color:#fc5960!important}
+.toptabs{padding-top:20px}
+.nav-tabs{padding-top:10px;border:0}
+.nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
+.nav-tabs .active{background:#fff;color:#fc5960}
 
 /* Boxes with a picture one side and text the other */
 .img-text-box div{padding:30px;background:#f0f0f0;min-height:200px}
