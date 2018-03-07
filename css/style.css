@@ -1,4 +1,4 @@
-*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:16px;line-height:1.7;color:#666;text-underline-position:under}
+*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:16px;line-height:1.7;letter-spacing:.6px;color:#666;text-underline-position:under}
 body,html{font-smoothing:antialiased}
 ::-webkit-scrollbar{display:none}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
