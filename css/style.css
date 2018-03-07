@@ -56,7 +56,6 @@ footer a:hover path{fill:#fffd}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
-.singlecolform textarea{height:300px}
 .singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
 .singlecolform ::placeholder{color:#fff}
 
@@ -91,7 +90,7 @@ footer a:hover path{fill:#fffd}
 .profile svg{margin:0 9px -4px 0}
 .profile2 h2{padding:20px 0 15px}
 .profile2>div>.row{padding-top:50px;padding-bottom:50px}
-.profile2 .waterback{padding:10px 10px 30px}
+.profile2 .waterback{padding:10px 20px}
 
 /* videos */
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
