@@ -4,6 +4,7 @@ body,html{font-smoothing:antialiased;-webkit-font-smoothing: antialiased}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;background:#f0f0f0}
 main{min-height:calc(100vh - 207px);background:#fff}
+*:focus{outline:0!important}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
