@@ -4,13 +4,13 @@ body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-siz
 main{min-height:calc(100vh - 207px);background:#fff}
 .medicodigital{display:none;margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
-/* Background colors */
+/*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
 .btn,button,.waterback *,.singlecolform *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
 .nav-tabs a,.btn:hover,button:hover{background:#f04d50}/*dred*/
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 
-/* Text */
+/*Text*/
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
@@ -52,7 +52,7 @@ footer a:hover path{fill:#fffd}
 .full-map #map{height:400px}
 
 /*Banner with dark overlay*/
-.hero-image{background-size:cover;background-position:center;padding:100px 20px 120px;margin-bottom:50px}
+.hero-image{background-size:cover;background-position:center;padding:100px 20px 120px}
 .hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 
@@ -66,7 +66,6 @@ footer a:hover path{fill:#fffd}
 .singlecolform textarea{height:200px}
 .singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
 .singlecolform ::placeholder{color:#fff}
-
 
 /* Tabs */
 .toptabs{padding-top:20px}
