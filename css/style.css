@@ -25,19 +25,17 @@ a:hover{color:#f04d50}/*dred*/
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
-input,textarea,textarea:focus,input:focus,.cqc a,button:focus{border:1px solid #ced4da!important;outline:0}
+input,textarea,textarea:focus,input:focus,.cqc a,button:focus{border:1px solid #ced4da;outline:0}
 .btn,button{padding:12px 30px;border:0}
 
-/* Header */
-#top-nav li{padding:0 8px;border-left:1px solid #80808033;line-height:17px}
+/* Header and footer */
+#top-nav li{padding:0 8px;border-left:1px solid #80808033}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
 #top-nav .number a{padding:4px 5px 0 10px}
 #main-nav,footer nav{padding:.2rem 1rem}
 #main-nav img,footer img{height:62px;margin:0 10px}
-#main-nav .navbar-nav .nav-link{color:#fff;font-weight:600;margin-right:15px;letter-spacing:1px}
-#main-nav .dropdown-menu{border:1px solid #fd585f;margin-top:-10px;border-top-width:31px;border-radius:0;border-top-color:transparent}
-
-/* Footer*/
+#main-nav .nav-link{color:#fff!important;font-weight:600;margin-right:15px}
+#main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:31px solid #0000;border-radius:0}
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer a{margin-right:15px}
 footer a:hover{text-decoration:none}
@@ -46,18 +44,18 @@ footer svg{margin-top:3px}
 footer path{fill:#fff}
 
 /* Hero image with dark overlay */
-.hero-image{background-size:cover!important;background-position:center center!important;padding:100px 20px 120px;margin-bottom:50px}
+.hero-image{background-size:cover;background-position:center;padding:100px 20px 120px;margin-bottom:50px}
 .hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 
 /* Contact forms */
 .umbraco-forms-page label{display:none}
-.umbraco-forms-page input,.umbraco-forms-page textarea{border:0;padding:15px 10px;margin-bottom:10px}
+.umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
 .umbraco-forms-page input:last-child{margin:0}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
-.singlecolform input{border:0!important}
+.singlecolform input{border:0}
 
 /* Tabs */
 .toptabs{padding-top:20px}
