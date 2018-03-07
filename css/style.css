@@ -8,7 +8,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .waterback,.bg-melon{background:#fc5960}
 .waterback *,.bg-melon *{color:#fff}
 .greyback{background:#f0f0f0}
-.medicodigital{margin:0!important;position:absolute;height:38px!important;bottom:-4px;right:-5px;opacity:.7}
+.medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
