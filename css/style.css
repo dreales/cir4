@@ -3,7 +3,7 @@ body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-siz
 ::-webkit-scrollbar,.umbraco-forms-page label{display:none}
 main{min-height:calc(100vh - 207px);background:#fff}
 .full-map #map{height:400px}
-.medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
+.medicodigital{display:none;margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 
 /* Background colors */
