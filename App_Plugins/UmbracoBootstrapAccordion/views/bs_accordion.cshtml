@@ -1,0 +1,28 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" @AccordionHelper() href="#collapse-@Model.UniqueId" class="collapsed">@Model.Header </a>
+        </h4>
+    </div>
+    <div id="collapse-@Model.UniqueId" class="panel-collapse collapse">
+        <div class="panel-body">
+            @Html.Raw(@Model.Body)
+        </div>
+        @if (Model.Footer != null && !String.IsNullOrEmpty(Convert.ToString(Model.Footer)))
+        {
+            <div class="panel-footer">
+                @Model.Footer
+            </div>
+        }
+    </div>
+</div>
+
+@helper AccordionHelper()
+{
+if (Model != null && Model.AccordionParent != null)
+{
+        @:data-parent="@Model.AccordionParent"
+    }
+}

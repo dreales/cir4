@@ -1,0 +1,17 @@
+﻿{
+  "gridEditors": [
+    {
+      "name": "Bootstrap Accordion",
+      "alias": "bs_accordion",
+      "view": "/app_plugins/UmbracoBootstrapAccordion/views/bs_accordion.html",
+      "render": "/app_plugins/UmbracoBootstrapAccordion/views/bs_accordion.cshtml",
+      "icon": "icon-multiple-windows"
+    }
+  ],
+  "javascript": [
+    "/app_plugins/UmbracoBootstrapAccordion/js/bs_accordion.controller.js"
+  ],
+  "css": [
+    "/app_plugins/UmbracoBootstrapAccordion/css/bs_accordion.css"
+  ]
+}
