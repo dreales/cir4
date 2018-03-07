@@ -10,7 +10,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
 .btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
 .nav-tabs a{background:#f04d50}/*dred*/
-.greyback,#top-nav,.contactform .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
+.greyback,#top-nav,.greytwocolumn .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 /* Text */
@@ -53,9 +53,9 @@ footer a:hover path{fill:#fffd}
 /* Contact forms */
 .umbraco-forms-page label{display:none}
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
-.contactform textarea{height:100px}
-.contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
-.singlecolform .btn{border:1px solid #fff;transition:.3s}
+.greytwocolumn textarea{height:100px}
+.greytwocolumn .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
+.singlecolform .btn{border:1px solid #fff;transition:.6s}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
 .singlecolform textarea{height:200px}
 .singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
