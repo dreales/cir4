@@ -7,7 +7,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
-.btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *,footer nav *:hover{color:#fff}
+.btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
 .nav-tabs a{background:#f04d50}/*dred*/
 .greyback,#top-nav,.contactform .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
@@ -16,16 +16,16 @@ main{min-height:calc(100vh - 207px);background:#fff}
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .smaller,#top-nav li a{font-size:12px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
+.profile path,.newsfeed path{fill:#fc5960}
 a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *{color:#666}/*dgrey*/
-.profile path,.newsfeed path{fill:#fc5960}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
-textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!important;outline:0!important}
+textarea:focus,input:focus,.cqc a{box-shadow:none!important;border-color:#ced4da!important;outline:0!important}
 .btn,button{outline:0!important;font-size:15px;padding:12px 30px;border:0}
 
 /* Header */
@@ -39,10 +39,10 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 
 /* Footer*/
 footer{border-top:2px solid #fff;overflow-y:hidden}
-footer ul a{margin-right:15px}
-footer .first-social a{margin-left:30px}
+footer a{margin-right:15px}
+footer a:hover{text-decoration:none}
+footer .first-social{margin-left:30px}
 footer svg{margin-top:3px}
-
 footer path{fill:#fff}
 
 /* Hero image with dark overlay */
@@ -80,8 +80,8 @@ footer path{fill:#fff}
 /* cqc widget */
 .cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
 .cqc img{padding:8px}
-.cqc a,.cqc .good{color:#6C276a;padding:7px;margin:0 10px 10px 0;display:inline-block;border:1px solid #c9c6b9}
-.cqc .good{color:#fff;background:#458f00;border-color:#458f00}
+.cqc a,.cqc .good{color:#6c276a;padding:7px;margin:0 10px 10px 0;display:inline-block}
+.cqc .good{color:#fff;background:#458f00;border:1px solid #458f00}
 
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
