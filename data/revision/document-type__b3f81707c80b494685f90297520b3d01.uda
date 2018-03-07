@@ -10,7 +10,9 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce"
+  ],
   "PropertyGroups": [
     {
       "Key": "4b5bb4ff-022b-4c94-a299-bbcdbad966db",
@@ -115,16 +117,6 @@
           "Mandatory": false,
           "Name": "Box 1 text",
           "SortOrder": 9,
-          "Validation": null
-        },
-        {
-          "Key": "94484289-fc27-4a63-89c4-8681b8270efc",
-          "Alias": "heroImage",
-          "DataType": "umb://data-type/a84d527061e44e11b2c724be3e3e3375",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "heroImage",
-          "SortOrder": 0,
           "Validation": null
         },
         {
@@ -234,11 +226,6 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/a84d527061e44e11b2c724be3e3e3375",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://data-type/c6f7f48ee9ca447e83505b55bfc21a22",
       "Ordering": true,
       "Mode": 0
@@ -260,6 +247,11 @@
     },
     {
       "Udi": "umb://data-type/f9afaa358c1d4787990e1c43cfc796e8",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
       "Ordering": true,
       "Mode": 0
     },
