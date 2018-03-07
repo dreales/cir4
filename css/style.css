@@ -4,7 +4,7 @@ body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
 html{font-family:'Open Sans',sans-serif!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;background:#f0f0f0}
 main{min-height:calc(100vh - 207px);background:#fff}
-*:focus{outline:0!important}
+*:focus{outline:0!important,box-shadow:none!important}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
@@ -26,7 +26,7 @@ a:hover{color:#f04d50}/*dred*/
 /* Inputs, button, etc */
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
-input,textarea,textarea:focus,input:focus,.cqc a,button:focus{border:1px solid #ced4da;outline:0}
+input,textarea,.cqc a{border:1px solid #ced4da}
 .btn,button{padding:12px 30px;border:0}
 
 /* Header and footer */
