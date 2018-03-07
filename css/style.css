@@ -57,6 +57,7 @@ footer path{fill:#fff}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
+.singlecolform input{border:0}
 
 /* Tabs */
 .toptabs{padding-top:20px}
