@@ -11,10 +11,33 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "88be8fb8-3a50-4122-a61b-ed83b7dc94ad",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "d3a1a122-d113-4d04-8f83-f13716ed8179",
+          "Alias": "heroImage",
+          "DataType": "umb://data-type/e813d65c454c45c691e38b8150802aaa",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "heroImage",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/e813d65c454c45c691e38b8150802aaa",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/9d2d4a58ea2743cd8d86e708729ceaa1",
       "Ordering": true,
