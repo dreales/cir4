@@ -40,8 +40,8 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 /* Footer*/
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer ul a{margin-right:15px}
-footer ul a.first-social{margin-left:30px}
-footer svg{margin:12px 6px 0}
+footer .first-social a{margin-left:30px}
+footer svg{margin-top:3px}
 
 footer path{fill:#fff}
 
