@@ -15,10 +15,10 @@ main{min-height:calc(100vh - 207px);background:#fff}
 /* Text */
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .smaller,#top-nav li a{font-size:12px}
-.watermelon,h1,h2,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,#top-nav .number a{color:#fc5960}/*wmelon*/
+.watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 a:hover{color:#f04d50}/*dred*/
-#top-nav li a,.profile a{color:#666}/*dgrey*/
-.profile path{fill:#fc5960},.newsfeed path{fill:#fc5960}
+#top-nav li a,.profile a,.cqc *{color:#666}/*dgrey*/
+.profile path{fill:#fc5960},.newsfeed svg path{fill:#fc5960}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 
@@ -39,7 +39,7 @@ textarea:focus,input:focus{box-shadow:none!important;border-color:#ced4da!import
 
 /* Footer*/
 footer{border-top:2px solid #fff;overflow-y:hidden}
-footer nav{background:#fc5960;padding:.2rem 1rem}
+footer nav{padding:.2rem 1rem}
 footer img{height:62px;margin:0 10px}
 footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
 footer svg{margin:7px 6px 0}
@@ -63,15 +63,15 @@ footer path{fill:#fff}
 .toptabs{padding-top:20px}
 .nav-tabs{padding-top:10px;border:0}
 .nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
-.nav-tabs .active{background:#fff;color:#fc5960}
+.nav-tabs .active{background:#fff}
 
 /* Boxes with a picture one side and text the other */
 .imgtext .greyback div{padding:30px;min-height:200px}
 
 /* Blog feed */
-.newsfeed>.col-sm{height:200px;border:1px solid #fff}
-.newsfeed>.col-sm-6{height:240px;border:1px solid #fff}
 .newsfeed{margin:60px 0}
+.newsfeed>.col-sm,.newsfeed>.col-sm-6{height:200px;border:1px solid #fff}
+.newsfeed>.col-sm-6{height:240px}
 .newsfeed a{position:absolute;bottom:0;color:#fff!important;padding:5px;text-shadow:0 0 3px #0009}
 .newsfeed svg{margin-bottom:-3px;height:17px}
 
@@ -80,11 +80,9 @@ footer path{fill:#fff}
 
 /* cqc widget */
 .cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
-.cqc *{color:#666}
 .cqc img{padding:8px}
-.cqc .good,.cqc a{padding:7px;margin:0 10px 10px 0;display:inline-block;border:1px solid #c9c6b9}
+.cqc a,.cqc .good{color:#6C276a;padding:7px;margin:0 10px 10px 0;display:inline-block;border:1px solid #c9c6b9}
 .cqc .good{color:#fff;background:#458f00;border-color:#458f00}
-.cqc a{color:#6C276A;border:1px solid #c9c6b9}
 
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
