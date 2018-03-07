@@ -41,34 +41,7 @@
                   "PreValues": []
                 },
                 {
-                  "Caption": "Phone number",
-                  "ToolTip": null,
-                  "Placeholder": null,
-                  "CssClass": null,
-                  "Alias": "phoneNumber",
-                  "Id": "21550c3d-769d-4700-8db0-f30cd95e0a95",
-                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
-                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
-                  "DataSourceFieldKey": null,
-                  "Mandatory": true,
-                  "RegEx": null,
-                  "RequiredErrorMessage": "Please enter a phone number",
-                  "InvalidErrorMessage": null,
-                  "Condition": {
-                    "Id": "00000000-0000-0000-0000-000000000000",
-                    "Enabled": false,
-                    "ActionType": 0,
-                    "LogicType": 0,
-                    "Rules": []
-                  },
-                  "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Phone"
-                  },
-                  "PreValues": []
-                },
-                {
-                  "Caption": "Email2c",
+                  "Caption": "Email",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
@@ -94,7 +67,7 @@
                   "PreValues": []
                 },
                 {
-                  "Caption": "Phone2s",
+                  "Caption": "Phone",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
@@ -126,18 +99,18 @@
               "Width": 6,
               "Fields": [
                 {
-                  "Caption": "Message",
+                  "Caption": "Message2c",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
-                  "Alias": "message",
-                  "Id": "ec9abce4-e339-45a3-f143-6ba81f5b8c1d",
+                  "Alias": "message2c",
+                  "Id": "c1ff4497-2d2a-4be0-9325-7f8e47c2fe16",
                   "FieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
                   "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
                   "DataSourceFieldKey": null,
                   "Mandatory": true,
                   "RegEx": null,
-                  "RequiredErrorMessage": "Please enter a message",
+                  "RequiredErrorMessage": null,
                   "InvalidErrorMessage": null,
                   "Condition": {
                     "Id": "00000000-0000-0000-0000-000000000000",
@@ -147,7 +120,6 @@
                     "Rules": []
                   },
                   "Settings": {
-                    "DefaultValue": "",
                     "Placeholder": "Message"
                   },
                   "PreValues": []
