@@ -29,7 +29,7 @@ input,textarea,textarea:focus,input:focus,.cqc a,button:focus{border:1px solid #
 .btn,button{padding:12px 30px;border:0}
 
 /* Header and footer */
-#top-nav li{padding:0 8px;border-left:1px solid #80808033}
+#top-nav li{padding:0 8px;border-left:1px solid #6664}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
 #top-nav .number a{padding:4px 5px 0 10px}
 #main-nav,footer nav{padding:.2rem 1rem}
