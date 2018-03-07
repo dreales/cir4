@@ -53,9 +53,9 @@ footer path{fill:#fff}
 
 /* Contact forms */
 .umbraco-forms-page label{display:none}
-.umbraco-forms-page input{border:0;padding:15px 10px;margin-bottom:10px}
+.umbraco-forms-page input,.umbraco-forms-page textarea{border:0;padding:15px 10px;margin-bottom:10px}
 .umbraco-forms-page input:last-child{margin:0}
-.umbraco-forms-page textarea{height:100px;padding:10px;border:0;margin-bottom:10px}
+.umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{background:#f0f0f0;padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
 
@@ -72,7 +72,7 @@ footer path{fill:#fff}
 .newsfeed{margin:60px 0}
 .newsfeed>.col-sm,.newsfeed>.col-sm-6{height:200px;border:1px solid #fff}
 .newsfeed>.col-sm-6{height:240px}
-.newsfeed a{position:absolute;bottom:0;color:#fff!important;padding:5px;text-shadow:0 0 3px #0009}
+.newsfeed a{position:absolute;bottom:0;color:#fff;padding:5px;text-shadow:0 0 3px #0009}
 .newsfeed svg{margin-bottom:-3px;height:17px}
 
 /* Full width map */
@@ -87,7 +87,7 @@ footer path{fill:#fff}
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
 .profile h1{margin:50px 0 20px}
-.profile svg{margin:0 5px -4px 0;}
+.profile svg{margin:0 5px -4px 0}
 .profile2 h2{padding:20px 0 15px}
 .profile2>div>.row{padding-top:50px;padding-bottom:50px}
 .profile2 .waterback{padding:10px 10px 30px}
