@@ -36,13 +36,13 @@ input,textarea,textarea:focus,input:focus,.cqc a,button:focus{border:1px solid #
 #main-nav img,footer img{height:62px;margin:0 10px}
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:31px solid #0000;border-radius:0}
-#main-nav a:hover,footer a:hover{text-decoration:none;color:#ffffff95}
+#main-nav a:hover,footer a:hover{text-decoration:none;color:#fffe}
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer a{margin-right:15px}
 footer .first-social{margin-left:30px}
 footer svg{margin-top:3px}
 footer path{fill:#fff}
-footer a:hover path{fill:#ffffff95}
+footer a:hover path{fill:#fffe}
 
 
 /* Hero image with dark overlay */
