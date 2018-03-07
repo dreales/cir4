@@ -1,5 +1,5 @@
 {
-  "Alias": "Contact Form",
+  "Alias": "Grey, two column",
   "Created": "2018-01-08T14:07:36.8717817+00:00",
   "Pages": [
     {
@@ -169,7 +169,7 @@
   "Workflows": null,
   "Udi": "umb://forms-form/adf160f139f544c0b01d9e2da32bf093",
   "Dependencies": [],
-  "Name": "Contact Form",
+  "Name": "Grey, two column",
   "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
   "__version": "2.0.11"
 }
