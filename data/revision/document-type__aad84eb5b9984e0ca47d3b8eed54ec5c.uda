@@ -122,53 +122,6 @@
       ]
     },
     {
-      "Key": "ba3b8b9a-8963-4e79-9708-1e704f721811",
-      "Name": "Hero",
-      "SortOrder": 0,
-      "PropertyTypes": [
-        {
-          "Key": "6a23d3cf-3f1a-45d9-ac5e-dabf3c7a4ab7",
-          "Alias": "HeroCtalink",
-          "DataType": "umb://data-type/e449f1bd26644e0da7b8439196b96eda",
-          "Description": null,
-          "Mandatory": true,
-          "Name": "Call To Action Link",
-          "SortOrder": 3,
-          "Validation": null
-        },
-        {
-          "Key": "6c070885-68ab-4dcf-9d88-930476a2af8f",
-          "Alias": "heroDescription",
-          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
-          "Description": "",
-          "Mandatory": true,
-          "Name": "Description",
-          "SortOrder": 1,
-          "Validation": null
-        },
-        {
-          "Key": "cfa13fe4-cec6-46f1-add0-634c17c32cb7",
-          "Alias": "heroCTACaption",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "The caption on the button",
-          "Mandatory": true,
-          "Name": "Call To Action Caption",
-          "SortOrder": 2,
-          "Validation": null
-        },
-        {
-          "Key": "e88e2cf1-431d-44c8-b09f-c245ff4dec64",
-          "Alias": "heroHeader",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "This is the main headline for the hero area on the Homepage",
-          "Mandatory": true,
-          "Name": "Header",
-          "SortOrder": 0,
-          "Validation": null
-        }
-      ]
-    },
-    {
       "Key": "dcb9f352-b4fb-405d-aed6-c22bade2a8a2",
       "Name": "Content",
       "SortOrder": 0,
@@ -181,6 +134,46 @@
           "Mandatory": false,
           "Name": "mainContent",
           "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "6a23d3cf-3f1a-45d9-ac5e-dabf3c7a4ab7",
+          "Alias": "HeroCtalink",
+          "DataType": "umb://data-type/e449f1bd26644e0da7b8439196b96eda",
+          "Description": null,
+          "Mandatory": true,
+          "Name": "Call To Action Link",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "6c070885-68ab-4dcf-9d88-930476a2af8f",
+          "Alias": "heroDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Description",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "cfa13fe4-cec6-46f1-add0-634c17c32cb7",
+          "Alias": "heroCTACaption",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The caption on the button",
+          "Mandatory": true,
+          "Name": "Call To Action Caption",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "e88e2cf1-431d-44c8-b09f-c245ff4dec64",
+          "Alias": "heroHeader",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "This is the main headline for the hero area on the Homepage",
+          "Mandatory": true,
+          "Name": "Header",
+          "SortOrder": 2,
           "Validation": null
         }
       ]
