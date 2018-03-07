@@ -2,7 +2,6 @@
 body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-size-adjust:100%;overflow-x:hidden;margin:0}
 ::-webkit-scrollbar{display:none}
 main{min-height:calc(100vh - 207px);background:#fff}
-*:focus{outline:0!important;box-shadow:none!important}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
@@ -22,6 +21,7 @@ a:hover{color:#f04d50}/*dred*/
 .spacep{padding:20px 0}
 
 /* Inputs, button, etc */
+*:focus{outline:0!important;box-shadow:none!important}
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
 input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{border:1px solid #ced4da}
