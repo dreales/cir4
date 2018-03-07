@@ -155,12 +155,30 @@
   "CssClass": null,
   "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
-  "WorkflowIds": [],
+  "WorkflowIds": [
+    "3d844958-6c33-40a6-8c38-5177434cb8f6"
+  ],
   "DataSource": null,
   "SubmitLabel": "Send Message",
   "NextLabel": "Next",
   "PrevLabel": "Previous",
-  "Workflows": null,
+  "Workflows": [
+    {
+      "Id": "3d844958-6c33-40a6-8c38-5177434cb8f6",
+      "Name": "Webform counter",
+      "Form": "87a8b37a-b171-42a0-be1d-3b14737d8c02",
+      "Active": true,
+      "WorkflowTypeId": "ccbfb0d5-adaa-4729-8b4c-4bb439dc0202",
+      "ExecutesOn": 3,
+      "Settings": {
+        "Token": "xoxb-326667099958-3C3BISVQg59PrUF0j118fbnx",
+        "Channel": "#circle_enquiries",
+        "Username": "circle_umbraco",
+        "AvatarUrl": "http://www.zendcube.com/img/tools/umbraco.jpg"
+      },
+      "SortOrder": 0
+    }
+  ],
   "Udi": "umb://forms-form/87a8b37ab17142a0be1d3b14737d8c02",
   "Dependencies": [],
   "Name": "Single col form",
