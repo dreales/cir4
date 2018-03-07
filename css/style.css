@@ -45,7 +45,6 @@ footer svg{margin:3px -10px 0 0}
 footer path{fill:#fff}
 footer a:hover path{fill:#fffd}
 
-
 /* Hero image with dark overlay */
 .hero-image{background-size:cover;background-position:center;padding:100px 20px 120px;margin-bottom:50px}
 .hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
@@ -57,7 +56,7 @@ footer a:hover path{fill:#fffd}
 .umbraco-forms-page textarea{height:100px}
 .contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
-.singlecolform input{border:0}
+.singlecolform input,.singlecolform textarea{border:0}
 
 /* Tabs */
 .toptabs{padding-top:20px}
