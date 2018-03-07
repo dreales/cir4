@@ -7,7 +7,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
-.btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
+.btn,button,.waterback *,.toptabs *,.nav-tabs *,footer nav *,footer nav *:hover{color:#fff}
 .nav-tabs a{background:#f04d50}/*dred*/
 .greyback,#top-nav,.contactform .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
