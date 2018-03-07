@@ -11,10 +11,48 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "1e56e38d-9cbb-43f4-92a6-99d0def8f013",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "6cc7ea1c-a218-4e56-b46d-9aba114fd73d",
+          "Alias": "welcomeText",
+          "DataType": "umb://data-type/24580ae5d43e439d84a40f48285ae70b",
+          "Description": "The top paragraph will turn watermelon coloured. Contact admin if you want an option added to turn this off",
+          "Mandatory": false,
+          "Name": "welcomeText",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "7066da7e-b250-428b-b869-fda2fd7d7a27",
+          "Alias": "heroImage",
+          "DataType": "umb://data-type/be124793dce04c06bd6f291004eaf74c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "heroImage",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/fa7f7e03203e404f8a443a24ad4fd378",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/24580ae5d43e439d84a40f48285ae70b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/be124793dce04c06bd6f291004eaf74c",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/2328b43aa0c54fe6907742f08b095f90",
       "Ordering": true,
@@ -24,5 +62,5 @@
   "Name": "Treatment",
   "Alias": "treatment",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
