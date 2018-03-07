@@ -9,7 +9,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .waterback,#main-nav,.toptabs,.nav-tabs,.btn,button,footer nav{background:#fc5960}/*wmelon*/
 .btn,button,.waterback *,.toptabs *,.nav-tabs *{color:#fff}
 .nav-tabs a{background:#f04d50}/*dred*/
-.greyback,#top-nav{background:#f0f0f0}/*lgrey*/
+.greyback,#top-nav,.contactform .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 /* Text */
@@ -56,7 +56,7 @@ footer path{fill:#fff}
 .umbraco-forms-page input,.umbraco-forms-page textarea{border:0;padding:15px 10px;margin-bottom:10px}
 .umbraco-forms-page input:last-child{margin:0}
 .umbraco-forms-page textarea{height:100px}
-.contactform .umbraco-forms-page{background:#f0f0f0;padding:20px 30px;margin:40px 0 20px}
+.contactform .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff}
 
 /* Tabs */
