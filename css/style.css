@@ -18,7 +18,7 @@ h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *{color:#666}/*dgrey*/
-.profile path{fill:#fc5960},.newsfeed svg path{fill:#fc5960}
+.profile path,.newsfeed path{fill:#fc5960}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 
