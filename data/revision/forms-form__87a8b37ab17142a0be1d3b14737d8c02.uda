@@ -151,7 +151,7 @@
   "GoToPageOnSubmit": null,
   "XPathOnSubmit": null,
   "ManualApproval": false,
-  "StoreRecordsLocally": true,
+  "StoreRecordsLocally": false,
   "CssClass": null,
   "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
