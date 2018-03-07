@@ -27,7 +27,7 @@ a:hover{color:#fc5960}
 #top-nav li{padding:0 8px;border-left:1px solid #80808033;line-height:17px}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
 #top-nav li a{color:#666;font-size:12px}
-#top-nav .number a{font-size:16px;color:#fc5960;font-weight:500;padding:5px 5px 0 10px}
+#top-nav .number a{font-size:16px;color:#fc5960;font-weight:500;padding:4px 5px 0 10px}
 #top-nav form{margin:0!important}
 #main-nav{background:#fc5960;padding:.2rem 1rem}
 #main-nav img{height:62px;margin:0 10px}
