@@ -1,7 +1,8 @@
 *,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:16px;line-height:1.7;letter-spacing:.6px;color:#666;text-underline-position:under}
 body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-size-adjust:100%;overflow-x:hidden;margin:0}
-::-webkit-scrollbar{display:none}
+::-webkit-scrollbar,.umbraco-forms-page label{display:none}
 main{min-height:calc(100vh - 207px);background:#fff}
+.full-map #map{height:400px}
 
 /* Background colors */
 .waterback,#main-nav,footer nav,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
@@ -9,7 +10,6 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .nav-tabs a,.btn:hover,button:hover{background:#f04d50}/*dred*/
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 .medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
-
 /* Text */
 h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
@@ -19,14 +19,12 @@ a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *{color:#666}/*dgrey*/
 .space{margin:20px 0}
 .spacep{padding:20px 0}
-
 /* Inputs, button, etc */
 *:focus{outline:0!important;box-shadow:none!important}
 .navbar-collapse:not(.show) .dropdown:hover>.dropdown-menu{display:block}
 input,textarea{border-radius:0!important;width:100%}
 input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{border:1px solid #ced4da}
 .btn,button{padding:12px 30px;border:0;transition:.6s}
-
 /* Header and footer */
 #top-nav li{padding:0 8px;border-left:1px solid #6664}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
@@ -42,14 +40,11 @@ footer .first-social{margin-left:30px}
 footer svg{margin:3px -10px 0 0}
 footer path{fill:#fff}
 footer a:hover path{fill:#fffd}
-
 /* Hero image with dark overlay */
 .hero-image{background-size:cover;background-position:center;padding:100px 20px 120px;margin-bottom:50px}
 .hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
-
 /* Contact forms */
-.umbraco-forms-page label{display:none}
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
 .greytwocolumn textarea{height:124px}
 .greytwocolumn .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
@@ -58,33 +53,25 @@ footer a:hover path{fill:#fffd}
 .singlecolform textarea{height:200px}
 .singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
 .singlecolform ::placeholder{color:#fff}
-
 /* Tabs */
 .toptabs{padding-top:20px}
 .nav-tabs{padding-top:10px;border:0}
 .nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
 .nav-tabs li a:hover{color:#fffd}
 .nav-tabs .active{background:#fff}
-
 /* Boxes with a picture one side and text the other */
 .imgtext .greyback div{padding:30px;min-height:200px}
-
 /* Blog feed */
 .newsfeed{margin:60px 0}
 .newsfeed>.col-sm,.newsfeed>.col-sm-6{height:200px;border:1px solid #fff}
 .newsfeed>.col-sm-6{height:240px}
 .newsfeed a{position:absolute;bottom:0;color:#fff;padding:5px;text-shadow:0 0 3px #0009}
 .newsfeed svg{margin-bottom:-3px;height:17px}
-
-/* Full width map */
-.full-map #map{height:400px}
-
 /* cqc widget */
 .cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
 .cqc img{padding:8px}
 .cqc a,.cqc .good{color:#6c276a;padding:7px;margin:0 10px 10px 0;display:inline-block}
 .cqc .good{color:#fff;background:#458f00;border:1px solid #458f00}
-
 /* consultant profiles */
 .profile img{height:300px;width:350px;object-fit:cover;margin:30px 0}
 .profile h1{margin:50px 0 20px}
@@ -92,7 +79,6 @@ footer a:hover path{fill:#fffd}
 .profile2 h2{padding:20px 0 15px}
 .profile2>div>.row{padding-top:50px;padding-bottom:50px}
 .profile2 .waterback{padding:10px 20px;margin:0 10px}
-
 /* videos */
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
 .video>div>div{position:relative;height:0;padding-bottom:56.25%}
