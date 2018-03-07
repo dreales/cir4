@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      @Umbraco.Field("grid", altText:"");
+      @Html.GetGridHtml(Model.Content, "grid")
     </div>
   </div>
 </div> 
