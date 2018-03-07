@@ -17,7 +17,8 @@ h2,.larger p,p.larger,.profile h1 span{font-size:18px}
 .smaller,#top-nav li a{font-size:12px}
 .watermelon,h1,h2,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,#top-nav .number a{color:#fc5960}/*wmelon*/
 a:hover{color:#f04d50}/*dred*/
-#top-nav li a{color:#666}/*dgrey*/
+#top-nav li a,.profile a{color:#666}/*dgrey*/
+.profile path{fill:#fc5960},.newsfeed path{fill:#fc5960}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 
@@ -43,7 +44,7 @@ footer img{height:62px;margin:0 10px}
 footer .navbar-nav .nav-link{color:#fff!important;margin-right:15px;letter-spacing:.8px}
 footer svg{margin:7px 6px 0}
 footer .first-social svg{margin-left:30px}
-footer svg path{fill:#fff}
+footer path{fill:#fff}
 
 /* Hero image with dark overlay */
 .hero-image{background-size:cover!important;background-position:center center!important;padding:100px 20px 120px;margin-bottom:50px}
@@ -65,35 +66,31 @@ footer svg path{fill:#fff}
 .nav-tabs .active{background:#fff;color:#fc5960}
 
 /* Boxes with a picture one side and text the other */
-.img-text-box div{padding:30px;min-height:200px}
+.imgtext .greyback div{padding:30px;min-height:200px}
 
 /* Blog feed */
 .newsfeed>.col-sm{height:200px;border:1px solid #fff}
 .newsfeed>.col-sm-6{height:240px;border:1px solid #fff}
 .newsfeed{margin:60px 0}
-.newsfeed a{position:absolute;bottom:0;color:#fff!important;font-size:16px;padding:5px;text-shadow:0 0 3px #0009}
+.newsfeed a{position:absolute;bottom:0;color:#fff!important;padding:5px;text-shadow:0 0 3px #0009}
 .newsfeed svg{margin-bottom:-3px;height:17px}
-.newsfeed svg path{fill:#fc5960}
 
 /* Full width map */
 .full-map #map{height:400px}
 
 /* cqc widget */
 .cqc{margin:0 0 10px;display:block;padding:5px 15px;max-width:300px;background:#fff}
+.cqc *{color:#666}
 .cqc img{padding: 8px 8px 15px}
-.cqc p,.cqc strong,.cqc a{color:#666;font-size:16px}
 .cqc .name{margin-bottom:0}
 .cqc .date{margin-bottom:10px}
-.cqc .good{background: #458f00;color:#fff;border-radius:4px;font-size:18px;display:inline-block;padding:7px;margin-right:10px;margin-bottom:0}
-.cqc a{color:#6C276A;padding:9px 7px;border:1px solid #c9c6b9;box-shadow:0 1px 2px #c9c6b9;border-radius: 4px;font-weight:700;text-decoration:none;display:inline-block;margin-bottom:10px}
+.cqc .good{background:#458f00;color:#fff;border-radius:4px;font-size:18px;display:inline-block;padding:7px;margin-right:10px;margin-bottom:0}
+.cqc a{color:#6C276A;padding:9px 7px;border:1px solid #c9c6b9;box-shadow:0 1px 2px #c9c6b9;border-radius:4px;font-weight:700;text-decoration:none;display:inline-block;margin-bottom:10px}
 
 /* consultant profiles */
 .profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
 .profile h1{margin:50px 0 20px}
-.profile p,.profile a{font-size:16px;color:#666}
 .profile svg{margin:0 5px -4px 0;}
-.profile svg path{fill:#fc5960}
-
 .profile2 h2{padding:20px 0 15px}
 .profile2>div>.row{padding-top:50px;padding-bottom:50px}
 .profile2 .waterback{padding:10px 10px 30px}
