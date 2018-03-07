@@ -82,12 +82,14 @@ footer path{fill:#fff}
 .cqc .good{color:#fff;background:#458f00;border:1px solid #458f00}
 
 /* consultant profiles */
-.profile img{height:300px;width:300px;border-radius:50%;object-fit:cover;display:block;margin:30px auto}
+.profile img{height:300px;width:350px;object-fit:cover;margin:30px 0}
 .profile h1{margin:50px 0 20px}
-.profile svg{margin:0 5px -4px 0}
+.profile svg{margin:0 9px -4px 0}
 .profile2 h2{padding:20px 0 15px}
 .profile2>div>.row{padding-top:50px;padding-bottom:50px}
 .profile2 .waterback{padding:10px 10px 30px}
+
+/* videos */
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
 .video>div>div{position:relative;height:0;padding-bottom:56.25%}
 .video iframe{position:absolute;width:100%;height:100%;left:0}
