@@ -51,7 +51,6 @@ footer svg path{fill:#fff}
 .hero-image .dark-overlay *{color:#fff}
 
 /* Contact forms */
-
 .umbraco-forms-page label{display:none}
 .umbraco-forms-page input{border:0;padding:15px 10px;margin-bottom:10px}
 .umbraco-forms-page input:last-child{margin:0}
@@ -66,7 +65,7 @@ footer svg path{fill:#fff}
 .nav-tabs .active{background:#fff;color:#fc5960}
 
 /* Boxes with a picture one side and text the other */
-.img-text-box div{padding:30px;background:#f0f0f0;min-height:200px}
+.img-text-box div{padding:30px;min-height:200px}
 
 /* Blog feed */
 .newsfeed>.col-sm{height:200px;border:1px solid #fff}
