@@ -141,7 +141,7 @@
     }
   ],
   "Id": "87a8b37a-b171-42a0-be1d-3b14737d8c02",
-  "FieldIndicationType": 1,
+  "FieldIndicationType": 0,
   "Indicator": "*",
   "ShowValidationSummary": false,
   "HideFieldValidation": false,
