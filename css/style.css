@@ -53,7 +53,7 @@ footer a:hover path{fill:#fffd}
 /* Contact forms */
 .umbraco-forms-page label{display:none}
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
-.greytwocolumn textarea{height:100px}
+.greytwocolumn textarea{height:124px}
 .greytwocolumn .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
 .singlecolform .btn{border:1px solid #fff;transition:.6s}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
