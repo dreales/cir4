@@ -161,12 +161,30 @@
   "CssClass": null,
   "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
-  "WorkflowIds": [],
+  "WorkflowIds": [
+    "a8ea669d-a3c5-4b39-a422-42c39fdf6343"
+  ],
   "DataSource": null,
   "SubmitLabel": "Send Message",
   "NextLabel": "Next",
   "PrevLabel": "Previous",
-  "Workflows": null,
+  "Workflows": [
+    {
+      "Id": "a8ea669d-a3c5-4b39-a422-42c39fdf6343",
+      "Name": "Slack enquiry tracker",
+      "Form": "adf160f1-39f5-44c0-b01d-9e2da32bf093",
+      "Active": true,
+      "WorkflowTypeId": "ccbfb0d5-adaa-4729-8b4c-4bb439dc0202",
+      "ExecutesOn": 3,
+      "Settings": {
+        "Token": "xoxb-326667099958-3C3BISVQg59PrUF0j118fbnx",
+        "Channel": "#circle-enquiries",
+        "Username": "circle_umbraco",
+        "AvatarUrl": "http://www.zendcube.com/img/tools/umbraco.jpg"
+      },
+      "SortOrder": 0
+    }
+  ],
   "Udi": "umb://forms-form/adf160f139f544c0b01d9e2da32bf093",
   "Dependencies": [],
   "Name": "Grey, two column",
