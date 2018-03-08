@@ -9,8 +9,8 @@
     accordion = new List<KeyValuePair<string, string>>();
     ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
     foreach(ArchetypeFieldsetModel field in fieldlist){
-      string title = field.GetValue<string>("question");
-      string panel = field.GetValue<string>("answer");
+      string title = field.GetValue<string>("title");
+      string panel = field.GetValue<string>("panel");
       accordion.Add(new KeyValuePair<string, string>(title, panel));
     }
   }           
