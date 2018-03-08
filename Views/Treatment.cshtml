@@ -4,7 +4,7 @@
 @{
   Layout = "Master.cshtml";
   List<KeyValuePair<string, string>> accordion = null;
-  int i = 0;
+  var i = 0;
   if(Model.Content.HasProperty("accordion")){
     accordion = new List<KeyValuePair<string, string>>();
     ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
