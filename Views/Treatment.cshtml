@@ -30,14 +30,14 @@
       <div class="col-md-7">
           @Umbraco.Field("welcomeText", altText:"");
           <div id="accordion">
-            @foreach(KeyValuePair<string,string> panel in accordion){
+            @foreach(var fieldset in Model.Content.GetPropertyValue<ArchetypeModel>("myProperty"))
               i++;
               <div class="card">
                 <div class="card-header">
                 <h3><a data-toggle="collapse" data-target="#collapse@i" aria-expanded="true" aria-controls="collapseOne">@panel.Key</a></h3>
               </div>
               <div id="collapse@i" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">@Html.Raw(faq.Value)</div>
+                <div class="card-body">@Html.Raw(panel.Value)</div>
               </div>
             </div>
             }
