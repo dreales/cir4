@@ -1,11 +1,22 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Treatment>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using ContentModels = Umbraco.Web.PublishedContentModels
+@using Archetype.Models
 @{
-	Layout = "Master.cshtml";
-	string heroImageUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
-	if (Model.Content.HasValue("heroImage") == true){
-      heroImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
+  Layout = "Master.cshtml";
+  List<KeyValuePair<string, string>> accordion = null;
+  if(Model.Content.HasProperty("accordion")){
+    accordion = new List<KeyValuePair<string, string>>();
+    ArchetypeModel faqList = Model.Content.GetPropertyValue<ArchetypeModel>("fAQList");
+    foreach(ArchetypeFieldsetModel faq in faqList){
+      string question = faq.GetValue<string>("question");
+      string answer = faq.GetValue<string>("answer");
+      accordion.Add(new KeyValuePair<string, string>(question, answer));
     }
+  }           
+  string heroImageUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
+  if (Model.Content.HasValue("heroImage") == true){
+    heroImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("heroImage").Url;
+  }
 }
 <div class="hero-image" style="background-image:url( @heroImageUrl )">
   <div class="dark-overlay text-center">
