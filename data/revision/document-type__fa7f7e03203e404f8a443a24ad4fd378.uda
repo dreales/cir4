@@ -38,6 +38,16 @@
           "Name": "grid",
           "SortOrder": 2,
           "Validation": null
+        },
+        {
+          "Key": "eeb76f86-a0d5-4693-bdfa-528965942ade",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 3,
+          "Validation": null
         }
       ]
     }
@@ -52,6 +62,11 @@
     },
     {
       "Udi": "umb://data-type/4b33d752a0374cf98d945a5a288b8c3a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
       "Ordering": true,
       "Mode": 0
     },
