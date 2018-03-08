@@ -7,11 +7,11 @@
   int i = 0;
   if(Model.Content.HasProperty("accordion")){
     accordion = new List<KeyValuePair<string, string>>();
-    ArchetypeModel faqList = Model.Content.GetPropertyValue<ArchetypeModel>("fAQList");
-    foreach(ArchetypeFieldsetModel faq in faqList){
-      string question = faq.GetValue<string>("question");
-      string answer = faq.GetValue<string>("answer");
-      accordion.Add(new KeyValuePair<string, string>(question, answer));
+    ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
+    foreach(ArchetypeFieldsetModel field in fieldlist){
+      string title = field.GetValue<string>("question");
+      string panel = field.GetValue<string>("answer");
+      accordion.Add(new KeyValuePair<string, string>(title, panel));
     }
   }           
   string heroImageUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
