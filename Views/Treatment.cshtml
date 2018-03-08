@@ -30,7 +30,7 @@
       <div class="col-md-7">
           @Umbraco.Field("welcomeText", altText:"");
           <div id="accordion">
-            @foreach(var panel in Model.Content.GetPropertyValue<ArchetypeModel>("myProperty")){
+            @foreach(KeyValuePair<string,string> panel in accordion){
               i++;
               <div class="card">
                 <div class="card-header">
