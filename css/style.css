@@ -22,6 +22,7 @@ a:hover{color:#f04d50}/*dred*/
 .maincontent h2{padding:20px 0 5px}
 .maincontent>div>div>div>h2:first-child{padding-top:0}
 .maincontent{padding-top:30px;padding-bottom:30px}
+.nopad{padding:0!important}
 
 /*Inputs*/
 *:focus{outline:0!important;box-shadow:none!important}
