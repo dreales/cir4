@@ -20,6 +20,7 @@ a:hover{color:#f04d50}/*dred*/
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 .maincontent h2{padding:20px 0 5px}
+.maincontent>div>div>div>h2:first-child{padding-top:0}
 .maincontent{padding-top:30px;padding-bottom:30px}
 
 /*Inputs*/
