@@ -21,6 +21,7 @@ a:hover{color:#f04d50}/*dred*/
 .spacep{padding:20px 0}
 .maincontent h2{padding:20px 0 5px}
 .maincontent{padding-top:50px;padding-bottom:50px}
+label{display:none!important}
 
 /*Inputs*/
 *:focus{outline:0!important;box-shadow:none!important}
