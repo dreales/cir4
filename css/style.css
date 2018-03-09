@@ -65,7 +65,6 @@ footer a:hover path{fill:#fffd}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
 .singlecolform textarea{height:200px}
 .singlecolform input,.singlecolform textarea{border:0}
-.singlecolform ::placeholder{color:#fff}
 
 /* Tabs */
 .toptabs{padding-top:20px}
