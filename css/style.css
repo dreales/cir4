@@ -19,8 +19,8 @@ a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *{color:#000}/*dgrey*/
 .space{margin:20px 0}
 .spacep{padding:20px 0}
-.maincontent h2{padding:20px 0 5px}
-.maincontent{padding-top:50px;padding-bottom:50px}
+.maincontent h2{padding:30px 0 5px}
+.maincontent{padding-top:30px;padding-bottom:30px}
 
 /*Inputs*/
 *:focus{outline:0!important;box-shadow:none!important}
