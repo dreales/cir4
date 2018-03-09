@@ -38,6 +38,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:31px solid #0000;border-radius:0}
 #main-nav a:hover,footer a:hover{text-decoration:none;color:#fffd}
+.topfooter h2{font-weight:700}
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer a{margin-right:25px}
 footer .first-social{margin-left:30px}
