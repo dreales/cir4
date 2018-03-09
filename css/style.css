@@ -64,7 +64,7 @@ footer a:hover path{fill:#fffd}
 .singlecolform .btn{border:1px solid #fff}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
 .singlecolform textarea{height:200px}
-.singlecolform input,.singlecolform textarea{border:0}
+.singlecolform input,.singlecolform textarea{border:0;color:#666}
 
 /*Tabs & accordion*/
 .toptabs{padding-top:20px}
