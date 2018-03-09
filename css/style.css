@@ -40,6 +40,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:40px solid #0000;border-radius:0}
 #main-nav a:hover,footer a:hover{text-decoration:none;color:#fffd}
+.topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer a{margin-right:25px}
@@ -70,12 +71,11 @@ footer a:hover path{fill:#fffd}
 .singlecolform input,.singlecolform textarea{border:0;color:#666}
 
 /*Tabs & accordion*/
-.toptabs{padding-top:20px}
+.toptabs,.tap-pane{padding-top:30px}
 .nav-tabs{padding-top:10px;border:0}
 .nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
 .nav-tabs li a:hover{color:#fffd}
 .nav-tabs .active{background:#fff}
-.tap-pane{padding-top:30px}
 .card{border-radius:0;margin-bottom:-1px}
 .card h2{font-weight:700}
 .card-body{border-top:1px solid rgba(0,0,0,.125)}
