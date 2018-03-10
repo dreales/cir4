@@ -11,7 +11,7 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page,#main-nav .dropdown-menu a:hover{background:#f0f0f0}/*lgrey*/
 
 /*Text*/
-h2,.larger p,p.larger{font-size:20px;margin:5px 0 30px}
+h2,.larger p,p.larger{font-size:20px;margin:30px 0}
 .normal{font-size:16px}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
