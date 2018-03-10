@@ -43,12 +43,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-          <h2>Professional profile</h2>
-          @Umbraco.Field("professionalProfile", altText:"")
-          <h2>Personal profile</h2>
-          @Umbraco.Field("personalProfile", altText:"")
-          <h2>Current NHS or research position</h2>
-          @Umbraco.Field("currentPosition", altText:"")
+          @Umbraco.Field("profile", altText:"")
       </div>
       <div class="col">
         @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="87a8b37a-b171-42a0-be1d-3b14737d8c02", FormTheme="", ExcludeScripts="0"})
