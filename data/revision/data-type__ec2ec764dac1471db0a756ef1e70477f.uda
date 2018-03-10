@@ -2,7 +2,7 @@
   "EditorAlias": "Umbraco.MultiNodeTreePicker2",
   "DatabaseType": 0,
   "PreValues": {
-    "filter": "Speciality",
+    "filter": "Specialty",
     "maxNumber": null,
     "minNumber": null,
     "showOpenButton": "0",
