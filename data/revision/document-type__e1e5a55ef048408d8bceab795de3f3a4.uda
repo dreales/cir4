@@ -18,6 +18,26 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "017f3c12-271a-411e-b301-a7f517a32f12",
+          "Alias": "specialities",
+          "DataType": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Specialities",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "29e79c88-8ef8-4641-ac26-5b9b9dfa0956",
+          "Alias": "units",
+          "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Units",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
           "Key": "52f6c56c-2bb8-41a2-9ab1-7e9853d8a0c2",
           "Alias": "location",
           "DataType": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
@@ -50,7 +70,7 @@
         {
           "Key": "8b668af9-81b8-4d67-84b0-d322db133e4a",
           "Alias": "qualifications",
-          "DataType": "umb://data-type/989e141992ec4172a5a61f311e906051",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "Name": "Qualifications",
@@ -60,11 +80,21 @@
         {
           "Key": "aa648020-7aba-4c86-a0c5-712a0c8c0b28",
           "Alias": "customSpeciality",
-          "DataType": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": "If not filled in the speciality will be generated from their selected specialities",
           "Mandatory": false,
           "Name": "Speciality text",
           "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "ee5311e7-b19d-49b1-af74-44c50b53daef",
+          "Alias": "treatments",
+          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Treatments",
+          "SortOrder": 5,
           "Validation": null
         }
       ]
@@ -74,12 +104,17 @@
   "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
   "Dependencies": [
     {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
       "Ordering": true,
       "Mode": 0
     },
@@ -89,12 +124,17 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/989e141992ec4172a5a61f311e906051",
+      "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
       "Ordering": true,
       "Mode": 0
     },
     {
       "Udi": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
       "Ordering": true,
       "Mode": 0
     },
