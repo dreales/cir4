@@ -28,6 +28,16 @@
           "Validation": null
         },
         {
+          "Key": "798fdd14-7a00-4cc0-b870-43203ce9b3c0",
+          "Alias": "profile",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Profile",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
           "Key": "8b668af9-81b8-4d67-84b0-d322db133e4a",
           "Alias": "qualifications",
           "DataType": "umb://data-type/989e141992ec4172a5a61f311e906051",
@@ -83,6 +93,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/2e49aba2b3634f55a46f7a3a56b2c4d8",
       "Ordering": true,
