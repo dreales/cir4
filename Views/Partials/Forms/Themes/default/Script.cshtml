@@ -38,7 +38,7 @@
         if (Model.UseClientDependency){
             Html.RequiresJs(script.Value);
         } else {
-            <script type="text/javascript" src="@Url.Content(script.Value)" defer async></script>
+            <script defer type="text/javascript" src="@Url.Content(script.Value)"></script>
         }
     }
     var commands = Html.GetFormThemeScriptCommands(Model);
