@@ -16,19 +16,14 @@
 	}
 	
 	if (location == "Bath Hospital"){
-	    phone = "01761 422 222";
-	    phoneforlink="01761422222";
+	    phone = "01761 422 222"; phoneforlink="01761422222";
 	} else if (location == "Reading Hospital"){
-	    phone = "0118 922 6888";
-	    phoneforlink = "01189226888";
+	    phone = "0118 922 6888"; phoneforlink = "01189226888";
 	} else if (location == "Nottingham"){
-	    phone = "0115 970 5800";
-	    phoneforlink = "01159705800";
+	    phone = "0115 970 5800"; phoneforlink = "01159705800";
 	}
 	
-	if (!String.IsNullOrEmpty(customPhone)){
-	    phone = customPhone;
-	}
+	if (!String.IsNullOrEmpty(customPhone)){ phone = customPhone; }
 }
 
 <div class="container">
