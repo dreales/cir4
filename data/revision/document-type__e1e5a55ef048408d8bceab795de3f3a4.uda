@@ -21,10 +21,20 @@
           "Key": "52f6c56c-2bb8-41a2-9ab1-7e9853d8a0c2",
           "Alias": "location",
           "DataType": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
-          "Description": "Currently the Bath and Reading option doesnt work - if needed it can be quickly implemented - contact admin",
+          "Description": "Currently the Bath and Reading option doesn't work - if needed it can be quickly implemented - contact admin",
           "Mandatory": true,
           "Name": "Hospital(s) worked at",
           "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "796e77bf-4728-4239-b814-3c41d36f0063",
+          "Alias": "profileImage",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Profile Image",
+          "SortOrder": 0,
           "Validation": null
         },
         {
@@ -34,7 +44,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Profile",
-          "SortOrder": 6,
+          "SortOrder": 4,
           "Validation": null
         },
         {
@@ -44,7 +54,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Qualifications",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -54,7 +64,7 @@
           "Description": "If not filled in the speciality will be generated from their selected specialities",
           "Mandatory": false,
           "Name": "Speciality text",
-          "SortOrder": 0,
+          "SortOrder": 2,
           "Validation": null
         }
       ]
@@ -70,6 +80,11 @@
     },
     {
       "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
       "Ordering": true,
       "Mode": 0
     },
