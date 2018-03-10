@@ -5,14 +5,13 @@
 @using Umbraco.Forms.Mvc.BusinessLogic
 @using Umbraco.Core
 @{ 
-  var CurrentPage = Umbraco.Content(umbraco.NodeFactory.Node.GetCurrent().Id);
   if (Model.DisableDefaultStylesheet == false){
     Html.SetFormThemeCssFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/style.css");
   }
   int i = 0;
 }
 <div class="umbraco-forms-page">
-    <h2>Fast-track your treatment with @CurrentPage.Name:</h2>
+    <h2>Fast-track your treatment with @Model.Content.Name:</h2>
     @if (Model.ShowValidationSummary){
         @Html.ValidationSummary(false)
     }
