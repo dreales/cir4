@@ -156,7 +156,7 @@
   "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
   "WorkflowIds": [
-    "9a7bd3dc-0779-44a3-885d-bb165f373c7e"
+    "9913aafb-ff60-4bfc-bce6-fd9a0367dad4"
   ],
   "DataSource": null,
   "SubmitLabel": "Send message",
@@ -164,9 +164,9 @@
   "PrevLabel": "Previous",
   "Workflows": [
     {
-      "Id": "9a7bd3dc-0779-44a3-885d-bb165f373c7e",
+      "Id": "9913aafb-ff60-4bfc-bce6-fd9a0367dad4",
       "Name": "Webform counter",
-      "Form": "87a8b37a-b171-42a0-be1d-3b14737d8c02",
+      "Form": "c3bb60b5-2836-43e0-9507-5f5c759fdb4f",
       "Active": true,
       "WorkflowTypeId": "ccbfb0d5-adaa-4729-8b4c-4bb439dc0202",
       "ExecutesOn": 3,
