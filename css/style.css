@@ -67,7 +67,8 @@ footer a:hover path{fill:#fffd}
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
 .greytwocolumn textarea{height:124px}
 .greytwocolumn .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
-.singlecolform{padding:1px 25px 25px;margin:0 10px}
+.singlecolform{padding:25px;margin:0 10px}
+.singlecolform h2{}
 .singlecolform .btn{border:1px solid #fff;color:#fff}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
 .singlecolform textarea{height:200px}
