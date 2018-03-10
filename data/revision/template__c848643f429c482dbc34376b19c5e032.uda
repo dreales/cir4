@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/Unit.cshtml",
+  "Master": null,
+  "Udi": "umb://template/c848643f429c482dbc34376b19c5e032",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Unit.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Unit",
+  "Alias": "Unit",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}
