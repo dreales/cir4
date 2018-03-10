@@ -51,9 +51,9 @@
           "Key": "aa648020-7aba-4c86-a0c5-712a0c8c0b28",
           "Alias": "customSpeciality",
           "DataType": "umb://data-type/32c0b16925ab439b8558cd433930f597",
-          "Description": null,
+          "Description": "If not filled in the speciality will be generated from their selected specialities",
           "Mandatory": false,
-          "Name": "customSpeciality",
+          "Name": "Speciality text",
           "SortOrder": 0,
           "Validation": null
         }
