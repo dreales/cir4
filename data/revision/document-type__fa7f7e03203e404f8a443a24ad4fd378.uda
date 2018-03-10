@@ -10,9 +10,7 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [
-    "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce"
-  ],
+  "CompositionContentTypes": [],
   "PropertyGroups": [
     {
       "Key": "1e56e38d-9cbb-43f4-92a6-99d0def8f013",
@@ -26,7 +24,7 @@
           "Description": "The top paragraph will turn watermelon coloured. Contact admin if you want an option added to turn this off",
           "Mandatory": false,
           "Name": "Top section (centered)",
-          "SortOrder": 1,
+          "SortOrder": 0,
           "Validation": null
         },
         {
@@ -36,7 +34,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "grid",
-          "SortOrder": 2,
+          "SortOrder": 1,
           "Validation": null
         },
         {
@@ -46,7 +44,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Accordion",
-          "SortOrder": 3,
+          "SortOrder": 2,
           "Validation": null
         }
       ]
@@ -67,11 +65,6 @@
     },
     {
       "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
       "Ordering": true,
       "Mode": 0
     },
