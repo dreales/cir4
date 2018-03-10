@@ -21,8 +21,8 @@
   <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script async src="/scripts/site.js"></script>
   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG1Gxm084eI_U0C-8BDPGOx78DmIRERU&callback=initMap"></script>
-  <style>@Html.Raw(File.ReadAllText(Server.MapPath("~/css/style.css")))</style>
-  <style>@Html.Raw(File.ReadAllText(Server.MapPath("~/css/bootstrap4.css")))</style>
+  <style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/style.css")))</style>
+  <style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/bootstrap4.css")))</style>
 </head>
 
 <body>
