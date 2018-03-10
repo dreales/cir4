@@ -104,8 +104,8 @@ footer a:hover path{fill:#fffd}
 
 body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
 body>aside *{color:#fff}
-body>aside p{}
+body>aside p{border: 1px solid #fff;margin:0 0 -1px}
 body>aside a{}
-body>aside span{display:block}
+body>aside span{display:block;font-size:12px}
 
 
