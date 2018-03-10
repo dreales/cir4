@@ -2,7 +2,7 @@
   "EditorAlias": "Umbraco.MediaPicker2",
   "DatabaseType": 0,
   "PreValues": {
-    "disableFolderSelect": "1",
+    "disableFolderSelect": "0",
     "multiPicker": null,
     "onlyImages": "1",
     "startNodeId": ""
