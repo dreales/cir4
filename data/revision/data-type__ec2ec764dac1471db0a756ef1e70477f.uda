@@ -1,0 +1,18 @@
+{
+  "EditorAlias": "Umbraco.MultiNodeTreePicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "filter": "Speciality",
+    "maxNumber": null,
+    "minNumber": null,
+    "showOpenButton": "0",
+    "startNode": "{\r\n  \"type\": \"content\",\r\n  \"id\": \"umb://document/c204a47254964aa3b25cd6dd2e136ade\"\r\n}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+  "Dependencies": [],
+  "Name": "Speciality picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
