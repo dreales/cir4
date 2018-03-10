@@ -11,18 +11,17 @@ main{min-height:calc(100vh - 207px);background:#fff}
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page{background:#f0f0f0}/*lgrey*/
 
 /*Text*/
-h2,.larger p,p.larger{font-size:20px}
+h2,.larger p,p.larger{font-size:20px;margin:5px 0 30px}
 .normal{font-size:16px}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 .profile path,.newsfeed path{fill:#fc5960}
 a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
-#top-nav li a,.profile a,.cqc *{color:#000}/*dgrey*/
+#top-nav li a,.profile a,.cqc *,.profile h2{color:#000}/*black*/
 
 /*Layout*/
 .space{margin:20px 0}
 .spacep{padding:20px 0}
-.maincontent h2{padding:20px 0 5px}
 .maincontent>div>div>div>h2:first-child{padding-top:0}
 .maincontent{padding-top:30px;padding-bottom:30px}
 .nopad{padding:0!important}
