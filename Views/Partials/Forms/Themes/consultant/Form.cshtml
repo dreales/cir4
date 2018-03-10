@@ -3,6 +3,7 @@
 @using Umbraco.Forms.Mvc
 @using Umbraco.Forms.Mvc.Models
 @using Umbraco.Forms.Mvc.BusinessLogic
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{ 
     if (Model.DisableDefaultStylesheet == false){
         Html.SetFormThemeCssFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/style.css");
