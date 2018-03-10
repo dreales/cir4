@@ -1,0 +1,21 @@
+{
+  "EditorAlias": "Umbraco.TinyMCEv3",
+  "DatabaseType": 0,
+  "PreValues": {
+    "editor": "{\r\n  \"toolbar\": [\r\n    \"code\",\r\n    \"removeformat\",\r\n    \"undo\",\r\n    \"redo\",\r\n    \"cut\",\r\n    \"copy\",\r\n    \"paste\",\r\n    \"bold\",\r\n    \"italic\",\r\n    \"bullist\",\r\n    \"link\",\r\n    \"unlink\",\r\n    \"umbmediapicker\",\r\n    \"umbembeddialog\"\r\n  ],\r\n  \"stylesheets\": [\r\n    \"style\"\r\n  ],\r\n  \"dimensions\": {\r\n    \"height\": 500\r\n  },\r\n  \"maxImageSize\": 500\r\n}",
+    "hideLabel": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+  "Dependencies": [
+    {
+      "Udi": "umb://stylesheet/style.css",
+      "Ordering": false,
+      "Mode": 1
+    }
+  ],
+  "Name": "mainContent",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
