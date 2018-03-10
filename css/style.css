@@ -15,7 +15,7 @@ h2,.larger p,p.larger,.profile h1 span{font-size:20px}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
 .watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 .profile path,.newsfeed path{fill:#fc5960}
-a:hover{color:#f04d50}/*dred*/
+a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *{color:#000}/*dgrey*/
 
 /*Layout*/
@@ -42,7 +42,6 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #main-nav img,footer img{height:62px;margin:8px}
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:40px solid #0000;border-radius:0}
-#main-nav .dropdown-menu a:hover{}
 #main-nav a:hover,footer a:hover{text-decoration:none;color:#fffd}
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
