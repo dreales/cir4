@@ -4,7 +4,6 @@
 @using Umbraco.Forms.Mvc.Models
 @using Umbraco.Forms.Mvc.BusinessLogic
 @using Umbraco.Core
-@inherits Umbraco.Web.Mvc.UmbracoViewPage<default>
 @{ 
   var CurrentPage = Umbraco.Content(umbraco.NodeFactory.Node.GetCurrent().Id);
   if (Model.DisableDefaultStylesheet == false){
