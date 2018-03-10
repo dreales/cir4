@@ -56,36 +56,6 @@
           "Name": "customSpeciality",
           "SortOrder": 0,
           "Validation": null
-        },
-        {
-          "Key": "af9ea619-00b5-4e9f-af58-aedf25474862",
-          "Alias": "professionalProfile",
-          "DataType": "umb://data-type/2e49aba2b3634f55a46f7a3a56b2c4d8",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "professional profile",
-          "SortOrder": 3,
-          "Validation": null
-        },
-        {
-          "Key": "b5d38c69-a3bb-4e2e-b3a9-a8a6f60745bb",
-          "Alias": "personalProfile",
-          "DataType": "umb://data-type/9aafa0088663464eab6f3db9c03825fc",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Personal profile",
-          "SortOrder": 4,
-          "Validation": null
-        },
-        {
-          "Key": "c6f10fb0-e8e5-4609-a172-79d3681612ba",
-          "Alias": "currentPosition",
-          "DataType": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Current position",
-          "SortOrder": 5,
-          "Validation": null
         }
       ]
     }
@@ -99,27 +69,12 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/2e49aba2b3634f55a46f7a3a56b2c4d8",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://data-type/32c0b16925ab439b8558cd433930f597",
       "Ordering": true,
       "Mode": 0
     },
     {
       "Udi": "umb://data-type/989e141992ec4172a5a61f311e906051",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/9aafa0088663464eab6f3db9c03825fc",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/9cda74b002f641208d9c72d4d01238e0",
       "Ordering": true,
       "Mode": 0
     },
