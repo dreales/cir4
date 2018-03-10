@@ -134,7 +134,7 @@
           }
         }
       ],
-      "Caption": "Fast track your treatment with @@Model.Content.Name:",
+      "Caption": "Fast track your treatment with @Model.Content.Name:",
       "SortOrder": 0,
       "Id": "00000000-0000-0000-0000-000000000000",
       "Form": "00000000-0000-0000-0000-000000000000"
