@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.CheckBoxList",
+  "DatabaseType": 1,
+  "PreValues": {
+    "0": "Bath Hospital",
+    "1": "Birmingham Hospital",
+    "2": "Reading Hospital",
+    "3": "Nottingham"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/fd5960c88272459a86e6e67d7875badc",
+  "Dependencies": [],
+  "Name": "Location checkboxes",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
