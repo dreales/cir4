@@ -1,7 +1,7 @@
 {
-  "DefaultTemplate": "umb://template/e46dd50846a0457f9f04e498ab6cd14c",
+  "DefaultTemplate": "umb://template/0b5596bb327b4baaa6d236e28aee5c6b",
   "AllowedTemplates": [
-    "umb://template/e46dd50846a0457f9f04e498ab6cd14c"
+    "umb://template/0b5596bb327b4baaa6d236e28aee5c6b"
   ],
   "Icon": "icon-bulleted-list",
   "Thumbnail": "folder.png",
@@ -23,7 +23,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://template/e46dd50846a0457f9f04e498ab6cd14c",
+      "Udi": "umb://template/0b5596bb327b4baaa6d236e28aee5c6b",
       "Ordering": true,
       "Mode": 0
     }
