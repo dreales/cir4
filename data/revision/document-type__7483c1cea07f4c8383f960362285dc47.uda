@@ -41,8 +41,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Content Page",
+  "Name": "Normal Page",
   "Alias": "contentPage",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
