@@ -12,11 +12,41 @@
   "AllowedChildContentTypes": [
     "umb://document-type/7483c1cea07f4c8383f960362285dc47"
   ],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "4879401e-67db-40a0-9233-e58938cb51ee",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "31782f5a-b5db-4e77-8454-b5702b9b32ca",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/7483c1cea07f4c8383f960362285dc47",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://document-type/7483c1cea07f4c8383f960362285dc47",
       "Ordering": false,
