@@ -11,7 +11,7 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [
-    "umb://document-type/661053679bb54fd7922c61bdc3ed3a70"
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
   ],
   "PropertyGroups": [
     {
@@ -28,16 +28,6 @@
           "Name": "Excerpt",
           "SortOrder": 2,
           "Validation": null
-        },
-        {
-          "Key": "eef288d2-eca6-430a-af9e-c35631f28dd4",
-          "Alias": "pageTitle",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "The title of the page, this is also the first text in a google search result. The ideal length is between 40 and 60 characters",
-          "Mandatory": true,
-          "Name": "Page Title",
-          "SortOrder": 0,
-          "Validation": null
         }
       ]
     }
@@ -46,17 +36,12 @@
   "Udi": "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
     },
