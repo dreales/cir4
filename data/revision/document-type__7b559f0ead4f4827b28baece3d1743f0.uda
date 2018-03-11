@@ -7,7 +7,7 @@
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
-  "IsContainer": true,
+  "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [
     "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36"
