@@ -1,6 +1,8 @@
 {
-  "DefaultTemplate": null,
-  "AllowedTemplates": [],
+  "DefaultTemplate": "umb://template/d32336a5323f49debf6413e72da6c9fa",
+  "AllowedTemplates": [
+    "umb://template/d32336a5323f49debf6413e72da6c9fa"
+  ],
   "Icon": "icon-document",
   "Thumbnail": "folder.png",
   "Description": null,
@@ -12,7 +14,13 @@
   "PropertyGroups": [],
   "PropertyTypes": [],
   "Udi": "umb://document-type/76d65113638d4a86bd7fe433bedb1d98",
-  "Dependencies": [],
+  "Dependencies": [
+    {
+      "Udi": "umb://template/d32336a5323f49debf6413e72da6c9fa",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
   "Name": "Unit",
   "Alias": "unit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
