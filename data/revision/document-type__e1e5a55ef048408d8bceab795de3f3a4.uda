@@ -25,7 +25,7 @@
           "DataType": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
           "Description": "",
           "Mandatory": false,
-          "Name": "Specialties",
+          "Name": "Specialities",
           "SortOrder": 6,
           "Validation": null
         },
