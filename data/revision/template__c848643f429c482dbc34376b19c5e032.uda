@@ -9,7 +9,7 @@
       "Mode": 0
     }
   ],
-  "Name": "Unit",
+  "Name": "Units",
   "Alias": "Unit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
   "__version": "2.0.11"
