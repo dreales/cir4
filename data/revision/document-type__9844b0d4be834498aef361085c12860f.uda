@@ -36,7 +36,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "List of units",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -46,7 +46,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "List of treatments",
-          "SortOrder": 3,
+          "SortOrder": 2,
           "Validation": null
         },
         {
