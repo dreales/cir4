@@ -10,7 +10,7 @@
   "Parent": null,
   "Udi": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
   "Dependencies": [],
-  "Name": "Location dropdown",
+  "Name": "Hospital dropdown",
   "Alias": null,
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
   "__version": "2.0.11"
