@@ -52,7 +52,7 @@
         {
           "Key": "8e5fcf7a-0976-4883-b6d9-ee8034fab4e1",
           "Alias": "bannerImage",
-          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
           "Description": null,
           "Mandatory": false,
           "Name": "Banner image",
@@ -71,12 +71,12 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
       "Ordering": true,
       "Mode": 0
     },
