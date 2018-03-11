@@ -58,7 +58,7 @@
       "Mode": 0
     }
   ],
-  "Name": "News page",
+  "Name": "News",
   "Alias": "blog",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
   "__version": "2.0.11"
