@@ -13,10 +13,33 @@
   "CompositionContentTypes": [
     "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
   ],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "58ef3454-11c0-43f9-9516-e644e86e574b",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0e7347c2-68b3-4ae4-a29a-968e7385c2de",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/8b7552ba527b4a8d84dc2129eea4ca76",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
