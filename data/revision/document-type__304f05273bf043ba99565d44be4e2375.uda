@@ -10,11 +10,18 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
   "PropertyGroups": [],
   "PropertyTypes": [],
   "Udi": "umb://document-type/304f05273bf043ba99565d44be4e2375",
   "Dependencies": [
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/674168f2639e4806b6dd06ab68144097",
       "Ordering": true,
