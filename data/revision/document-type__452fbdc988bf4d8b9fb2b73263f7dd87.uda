@@ -76,7 +76,7 @@
           "Key": "42cf33c7-12aa-43e6-967f-494d80b0a0a4",
           "Alias": "footerOption",
           "DataType": "umb://data-type/fa95764958c4478c974d110e578a14b3",
-          "Description": null,
+          "Description": "Which footer would you like displayed? This is usually the relevant location.",
           "Mandatory": false,
           "Name": "Footer option",
           "SortOrder": 0,
