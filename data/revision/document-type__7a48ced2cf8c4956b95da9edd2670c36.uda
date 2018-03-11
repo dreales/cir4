@@ -20,6 +20,16 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "51028e0a-4e79-49aa-a64d-f9cca2a106c2",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
           "Key": "86b0dd5c-255c-4b8f-a4aa-59c6e150ea09",
           "Alias": "excerpt",
           "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
@@ -35,6 +45,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true,
