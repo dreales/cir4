@@ -26,7 +26,7 @@
           "Description": "",
           "Mandatory": false,
           "Name": "Specialities",
-          "SortOrder": 6,
+          "SortOrder": 5,
           "Validation": null
         },
         {
@@ -36,7 +36,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Units",
-          "SortOrder": 7,
+          "SortOrder": 6,
           "Validation": null
         },
         {
@@ -66,7 +66,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Profile",
-          "SortOrder": 4,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -76,7 +76,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Qualifications",
-          "SortOrder": 3,
+          "SortOrder": 7,
           "Validation": null
         },
         {
@@ -96,7 +96,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Treatments",
-          "SortOrder": 5,
+          "SortOrder": 4,
           "Validation": null
         }
       ]
