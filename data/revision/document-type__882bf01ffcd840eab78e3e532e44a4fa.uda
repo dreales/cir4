@@ -28,7 +28,7 @@
       "Mode": 0
     }
   ],
-  "Name": "Speciality List",
+  "Name": "Speciality list",
   "Alias": "specialityUnitList",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
   "__version": "2.0.11"
