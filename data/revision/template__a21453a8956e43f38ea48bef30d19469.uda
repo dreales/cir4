@@ -14,8 +14,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Speciality/Unit",
+  "Name": "Speciality",
   "Alias": "SpecialityUnit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
