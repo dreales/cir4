@@ -16,16 +16,6 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
-          "Key": "42cf33c7-12aa-43e6-967f-494d80b0a0a4",
-          "Alias": "footerOption",
-          "DataType": "umb://data-type/fa95764958c4478c974d110e578a14b3",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Footer option",
-          "SortOrder": 5,
-          "Validation": null
-        },
-        {
           "Key": "cc29b8d2-52e1-4d64-997d-b08f38813eea",
           "Alias": "hideFloatingPhoneNumbers",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
@@ -73,6 +63,23 @@
           "Mandatory": false,
           "Name": "Hide from search engines",
           "SortOrder": 3,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "d9747de5-7401-4f10-a02c-aaa9b190f000",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "42cf33c7-12aa-43e6-967f-494d80b0a0a4",
+          "Alias": "footerOption",
+          "DataType": "umb://data-type/fa95764958c4478c974d110e578a14b3",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Footer option",
+          "SortOrder": 0,
           "Validation": null
         }
       ]
