@@ -85,7 +85,7 @@
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": "If not filled in the speciality will be generated from their selected specialities",
           "Mandatory": false,
-          "Name": "Speciality text",
+          "Name": "Custom speciality text",
           "SortOrder": 2,
           "Validation": null
         },
