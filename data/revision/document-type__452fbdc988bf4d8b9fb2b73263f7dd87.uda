@@ -59,9 +59,9 @@
           "Key": "e945bd18-2b9e-4b13-a858-b1850264f919",
           "Alias": "pageTitle",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "",
+          "Description": "If left blank the node name (above) will be used instead",
           "Mandatory": false,
-          "Name": "Page title",
+          "Name": "Custom page title",
           "SortOrder": 0,
           "Validation": null
         },
