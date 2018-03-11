@@ -20,12 +20,42 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "20bc7294-5b75-47e2-98f3-e18b4ebcb9d1",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
           "Key": "28247298-4f46-4e1a-9be1-f976f2c3d7be",
           "Alias": "listOfUnits",
           "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
           "Description": null,
           "Mandatory": false,
           "Name": "List of units",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "8569c38d-0d68-4cb1-929f-277faedc227c",
+          "Alias": "listOfTreatments",
+          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of treatments",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "8e5fcf7a-0976-4883-b6d9-ee8034fab4e1",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
           "SortOrder": 0,
           "Validation": null
         }
@@ -35,6 +65,21 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/9844b0d4be834498aef361085c12860f",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
       "Ordering": true,
