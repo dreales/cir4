@@ -10,11 +10,41 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "5841c313-3285-401c-8c70-238f895adcbc",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "28247298-4f46-4e1a-9be1-f976f2c3d7be",
+          "Alias": "listOfUnits",
+          "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of units",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/9844b0d4be834498aef361085c12860f",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/a21453a8956e43f38ea48bef30d19469",
       "Ordering": true,
