@@ -10,9 +10,7 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [
-    "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce"
-  ],
+  "CompositionContentTypes": [],
   "PropertyGroups": [
     {
       "Key": "4b5bb4ff-022b-4c94-a299-bbcdbad966db",
@@ -22,151 +20,161 @@
         {
           "Key": "0cb31600-8257-469f-9312-0b64817f4491",
           "Alias": "box1Image",
-          "DataType": "umb://data-type/474bafd582bd4fc69c03ca42ba9f0392",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 image",
-          "SortOrder": 8,
+          "SortOrder": 7,
           "Validation": null
         },
         {
           "Key": "231a9700-8835-4f6d-9768-5fda6e8bc33e",
           "Alias": "whyChooseText",
-          "DataType": "umb://data-type/c6f7f48ee9ca447e83505b55bfc21a22",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "why choose text",
-          "SortOrder": 7,
+          "SortOrder": 6,
           "Validation": null
         },
         {
           "Key": "4199d011-0714-4bb5-a947-2784155d5b5a",
           "Alias": "welcomeMessage",
-          "DataType": "umb://data-type/8d5ecffd3e264ddf9046c1f2ead3e622",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Welcome Message",
-          "SortOrder": 2,
+          "SortOrder": 1,
           "Validation": null
         },
         {
           "Key": "453afc5a-1623-4700-a180-1c083bb30458",
           "Alias": "selfFundingInfo",
-          "DataType": "umb://data-type/f9afaa358c1d4787990e1c43cfc796e8",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Self-funding info",
-          "SortOrder": 4,
+          "SortOrder": 3,
           "Validation": null
         },
         {
           "Key": "47786a99-b6b6-466b-8c8c-42ba45e930ea",
           "Alias": "insuredInfo",
-          "DataType": "umb://data-type/2104de84e63846a98f34998990f95ec0",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Insured Info",
-          "SortOrder": 5,
+          "SortOrder": 4,
           "Validation": null
         },
         {
           "Key": "48c8ed4a-622b-4b60-b623-f09eb5a780d7",
           "Alias": "heroTagline",
-          "DataType": "umb://data-type/68c91d7eff844e8d9580070a29b74c3f",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "heroTagline",
-          "SortOrder": 1,
+          "SortOrder": 0,
           "Validation": null
         },
         {
           "Key": "561f27fc-3968-4d00-9668-3fbb09446822",
           "Alias": "cqcLink",
-          "DataType": "umb://data-type/ca0e4ba1f13c4b4bac75be82c9ca8bc8",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "Name": "cqc link",
-          "SortOrder": 14,
+          "SortOrder": 13,
           "Validation": null
         },
         {
           "Key": "739ec62a-56c1-4348-8bdb-d44f58e637f8",
           "Alias": "whyChooseImage",
-          "DataType": "umb://data-type/5bc13e97dd58497db9c0fa8b01330d3e",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
           "Description": null,
           "Mandatory": false,
           "Name": "Why choose image",
-          "SortOrder": 6,
+          "SortOrder": 5,
           "Validation": null
         },
         {
           "Key": "819d9eaa-f5ae-4b08-8d35-7094e29ff0f8",
           "Alias": "cqcDate",
-          "DataType": "umb://data-type/9fe95075665f4c9a8225f3d714ab7cc5",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "Name": "cqc Date",
-          "SortOrder": 15,
+          "SortOrder": 14,
           "Validation": null
         },
         {
           "Key": "8cdd33df-d03e-48b1-992b-9a555a8d2149",
           "Alias": "box1Text",
-          "DataType": "umb://data-type/406150973ac941b0a6e4144e4caf5611",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 text",
-          "SortOrder": 9,
+          "SortOrder": 8,
           "Validation": null
         },
         {
           "Key": "a4dd7da5-b882-4fb2-87e1-18452a36e6dd",
           "Alias": "cqcRating",
-          "DataType": "umb://data-type/dc59f41b237d47c69038e839beb681f7",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "Name": "cqc Rating",
-          "SortOrder": 13,
+          "SortOrder": 12,
           "Validation": null
         },
         {
           "Key": "ac5ba0ed-974d-41b7-85af-57f6e1f3f348",
           "Alias": "referrerNumber",
-          "DataType": "umb://data-type/32c0c352fa8c428891f914af57bd8f39",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "Name": "Referrer Number",
-          "SortOrder": 3,
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "b5cd0883-dff5-40ab-9998-c1579f274663",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 15,
           "Validation": null
         },
         {
           "Key": "c13ca052-4ed3-4313-adc5-4dac3c35d1a7",
           "Alias": "box2Text",
-          "DataType": "umb://data-type/e372382266b04044801cbf4b5e82cdff",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 text",
-          "SortOrder": 11,
+          "SortOrder": 10,
           "Validation": null
         },
         {
           "Key": "c5d24bf5-5016-49b6-9bd7-b7572a7a9faf",
           "Alias": "boxesInfoText",
-          "DataType": "umb://data-type/76c7d98d09d7480d988363322cd4cee7",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Boxes info text",
-          "SortOrder": 12,
+          "SortOrder": 11,
           "Validation": null
         },
         {
           "Key": "cb2b075f-4ab6-4cac-a939-6e1bf46ec460",
           "Alias": "box2Image",
-          "DataType": "umb://data-type/79407daaf6434780a418581f79d65c66",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 image",
-          "SortOrder": 10,
+          "SortOrder": 9,
           "Validation": null
         }
       ]
@@ -176,82 +184,17 @@
   "Udi": "umb://document-type/b3f81707c80b494685f90297520b3d01",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/2104de84e63846a98f34998990f95ec0",
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/32c0c352fa8c428891f914af57bd8f39",
+      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/406150973ac941b0a6e4144e4caf5611",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/474bafd582bd4fc69c03ca42ba9f0392",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/5bc13e97dd58497db9c0fa8b01330d3e",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/68c91d7eff844e8d9580070a29b74c3f",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/76c7d98d09d7480d988363322cd4cee7",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/79407daaf6434780a418581f79d65c66",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/8d5ecffd3e264ddf9046c1f2ead3e622",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/9fe95075665f4c9a8225f3d714ab7cc5",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/c6f7f48ee9ca447e83505b55bfc21a22",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/ca0e4ba1f13c4b4bac75be82c9ca8bc8",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/dc59f41b237d47c69038e839beb681f7",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/e372382266b04044801cbf4b5e82cdff",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/f9afaa358c1d4787990e1c43cfc796e8",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type/36fc0b373ab2403fa279b3d86dd27cce",
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true,
       "Mode": 0
     },
