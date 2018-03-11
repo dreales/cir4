@@ -1,0 +1,18 @@
+{
+  "EditorAlias": "Umbraco.DropDown",
+  "DatabaseType": 1,
+  "PreValues": {
+    "0": "Bath Hospital",
+    "1": "Birmingham Hospital",
+    "2": "Nottingham",
+    "3": "Reading Hospital",
+    "4": "Head Office"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/fa95764958c4478c974d110e578a14b3",
+  "Dependencies": [],
+  "Name": "Location dropdown",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
