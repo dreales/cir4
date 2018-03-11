@@ -66,23 +66,6 @@
           "Validation": null
         }
       ]
-    },
-    {
-      "Key": "d9747de5-7401-4f10-a02c-aaa9b190f000",
-      "Name": "Content",
-      "SortOrder": 0,
-      "PropertyTypes": [
-        {
-          "Key": "42cf33c7-12aa-43e6-967f-494d80b0a0a4",
-          "Alias": "footerOption",
-          "DataType": "umb://data-type/fa95764958c4478c974d110e578a14b3",
-          "Description": "Which footer would you like displayed? This is usually the relevant location.",
-          "Mandatory": false,
-          "Name": "Footer option",
-          "SortOrder": 0,
-          "Validation": null
-        }
-      ]
     }
   ],
   "PropertyTypes": [],
@@ -100,11 +83,6 @@
     },
     {
       "Udi": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/fa95764958c4478c974d110e578a14b3",
       "Ordering": true,
       "Mode": 0
     }
