@@ -20,13 +20,33 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "7e815de8-f1fe-48a2-b31b-91900efa614e",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "a0863c4d-5963-4c64-b9d4-8947383fa4eb",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
           "Key": "ca0ae7c2-c2ca-4326-8287-9b260cc21d07",
           "Alias": "listOfConsultants",
           "DataType": "umb://data-type/47c6569fc8514150ac93a9ba8ab62519",
           "Description": null,
           "Mandatory": false,
           "Name": "List of consultants",
-          "SortOrder": 1,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -36,7 +56,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "List of treatments",
-          "SortOrder": 0,
+          "SortOrder": 2,
           "Validation": null
         }
       ]
@@ -46,12 +66,22 @@
   "Udi": "umb://document-type/76d65113638d4a86bd7fe433bedb1d98",
   "Dependencies": [
     {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://data-type/47c6569fc8514150ac93a9ba8ab62519",
       "Ordering": true,
       "Mode": 0
     },
     {
       "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
       "Ordering": true,
       "Mode": 0
     },
