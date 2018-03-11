@@ -1,0 +1,84 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "c0fe285b-4c47-4372-a8db-6fd54678a6d0",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "d7392e90-e08d-423d-9c24-970ee48c3397",
+          "Alias": "pageDescription",
+          "DataType": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Page description",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "dbd161eb-48e3-4836-b6b9-e60bd153adea",
+          "Alias": "hideFromSearch",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Hide from search",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "e945bd18-2b9e-4b13-a858-b1850264f919",
+          "Alias": "pageTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Page title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "f252132d-13a2-4805-956a-f127b8a5c89a",
+          "Alias": "hideFromSearchEngines",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Hide from search engines",
+          "SortOrder": 3,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Template",
+  "Alias": "template",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}
