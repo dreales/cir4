@@ -52,7 +52,7 @@
         {
           "Key": "796e77bf-4728-4239-b814-3c41d36f0063",
           "Alias": "profileImage",
-          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "DataType": "umb://data-type/83707a47d6fb4918a4910f3a00135082",
           "Description": null,
           "Mandatory": false,
           "Name": "Profile Image",
@@ -121,7 +121,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+      "Udi": "umb://data-type/83707a47d6fb4918a4910f3a00135082",
       "Ordering": true,
       "Mode": 0
     },
