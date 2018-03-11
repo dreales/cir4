@@ -10,11 +10,56 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "4f3b3f3e-52e4-43e5-b799-5c9f58aaaa0a",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "ca0ae7c2-c2ca-4326-8287-9b260cc21d07",
+          "Alias": "listOfConsultants",
+          "DataType": "umb://data-type/47c6569fc8514150ac93a9ba8ab62519",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of consultants",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e710434e-ae6a-4f44-b70d-068c45d7eec0",
+          "Alias": "listOfTreatments",
+          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of treatments",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/76d65113638d4a86bd7fe433bedb1d98",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/47c6569fc8514150ac93a9ba8ab62519",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/d32336a5323f49debf6413e72da6c9fa",
       "Ordering": true,
