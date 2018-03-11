@@ -1,6 +1,8 @@
 {
-  "DefaultTemplate": null,
-  "AllowedTemplates": [],
+  "DefaultTemplate": "umb://template/18421a89768340e9a080ee708ae22559",
+  "AllowedTemplates": [
+    "umb://template/18421a89768340e9a080ee708ae22559"
+  ],
   "Icon": "icon-document",
   "Thumbnail": "folder.png",
   "Description": null,
@@ -12,7 +14,13 @@
   "PropertyGroups": [],
   "PropertyTypes": [],
   "Udi": "umb://document-type/8b7552ba527b4a8d84dc2129eea4ca76",
-  "Dependencies": [],
+  "Dependencies": [
+    {
+      "Udi": "umb://template/18421a89768340e9a080ee708ae22559",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
   "Name": "About",
   "Alias": "about",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
