@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/TreatmentList1.cshtml",
+  "Master": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+  "Udi": "umb://template/dd6f7dcb72ea4796951a937e5be74cbe",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/TreatmentList1.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Treatment list",
+  "Alias": "TreatmentList1",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}
