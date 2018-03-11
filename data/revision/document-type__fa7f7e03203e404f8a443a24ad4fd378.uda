@@ -32,7 +32,7 @@
         {
           "Key": "3fe99f2e-691f-4f2a-a75d-be4bd59c6f58",
           "Alias": "bannerImage",
-          "DataType": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
           "Description": null,
           "Mandatory": false,
           "Name": "Banner image",
@@ -91,7 +91,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
       "Mode": 0
     },
