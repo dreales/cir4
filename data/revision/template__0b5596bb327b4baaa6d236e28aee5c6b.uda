@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/SpecialityList.cshtml",
+  "Master": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+  "Udi": "umb://template/0b5596bb327b4baaa6d236e28aee5c6b",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/SpecialityList.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Speciality list",
+  "Alias": "SpecialityList",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}
