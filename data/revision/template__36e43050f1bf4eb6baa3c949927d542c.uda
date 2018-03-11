@@ -14,7 +14,7 @@
       "Mode": 0
     }
   ],
-  "Name": "News",
+  "Name": "Normal Page",
   "Alias": "ContentPage",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
   "__version": "2.0.11"
