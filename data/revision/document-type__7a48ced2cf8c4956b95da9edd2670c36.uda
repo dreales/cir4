@@ -38,6 +38,16 @@
           "Name": "Excerpt",
           "SortOrder": 2,
           "Validation": null
+        },
+        {
+          "Key": "a26fef63-cd35-4a3b-892f-bb70549fe20b",
+          "Alias": "mainContant",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 4,
+          "Validation": null
         }
       ]
     }
@@ -45,6 +55,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
