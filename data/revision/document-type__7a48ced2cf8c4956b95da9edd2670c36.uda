@@ -40,16 +40,6 @@
           "Validation": null
         },
         {
-          "Key": "8cb2b126-a757-414e-b55a-350f37fcd280",
-          "Alias": "bodyText",
-          "DataType": "umb://data-type/1cd1f7c5f2ed4aa2ac7cfb2ab363a743",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Content",
-          "SortOrder": 3,
-          "Validation": null
-        },
-        {
           "Key": "eef288d2-eca6-430a-af9e-c35631f28dd4",
           "Alias": "pageTitle",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
@@ -67,11 +57,6 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/1cd1f7c5f2ed4aa2ac7cfb2ab363a743",
       "Ordering": true,
       "Mode": 0
     },
@@ -96,8 +81,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Blogpost",
+  "Name": "Blog post",
   "Alias": "blogpost",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }
