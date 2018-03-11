@@ -2,11 +2,12 @@
   "EditorAlias": "Umbraco.DropDown",
   "DatabaseType": 1,
   "PreValues": {
-    "0": "Bath Hospital",
-    "1": "Birmingham Hospital",
-    "2": "Nottingham",
-    "3": "Reading Hospital",
-    "4": "Head Office"
+    "0": "Default",
+    "1": "Bath Hospital",
+    "2": "Birmingham Hospital",
+    "3": "Nottingham",
+    "4": "Reading Hospital",
+    "5": "Head Office"
   },
   "Parent": null,
   "Udi": "umb://data-type/fa95764958c4478c974d110e578a14b3",
