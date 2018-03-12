@@ -29,6 +29,12 @@
   if (Model.Content.HasValue("profileImage") == true){
     profileImage = Model.Content.GetPropertyValue<IPublishedContent>("profileImage").Url;
   }
+  
+  var showVideo = (Model.Content.GetPropertyValue<string[]>("keyFeatureList").Length > 0);
+  var videoUrl = "";
+  if (showVideo){
+    videoUrl = Model.Content.GetPropertyValue<string[]>("keyFeatureList")[0];
+  }
 }
 
 <div class="container">
@@ -57,11 +63,12 @@
     </div>
   </div>
 </div>
-<div class="container video">
-  <div>
+@if (showVideo){
+  <div class="container video">
     <div>
-      <iframe src="https://www.youtube.com/embed/VA2Gc2CCdm4" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>  
+      <div>
+        <iframe src="@videoUrl" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>  
+    </div>
   </div>
-</div>
-
+}
