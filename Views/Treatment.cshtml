@@ -27,8 +27,18 @@
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
   
+  
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
-  var consultants = Umbraco.Content(1155).Children().Where("Visible").Where(x => x.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments").Where(x => x.Id == Model.Id).Length == 1);
+  var allConsultants = Umbraco.Content(1155).Children().Where("Visible");
+  var consultants = [];
+  
+  int j = 0;
+  foreach(var consultant in allConsultants ){
+    if (consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments").Where(x => x.Id == Model.Id).Length == 1){
+        consultants[j] - consultant;
+    }
+    j++;
+  }
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
