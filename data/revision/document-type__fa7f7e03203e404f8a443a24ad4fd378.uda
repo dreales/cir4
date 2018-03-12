@@ -26,7 +26,7 @@
           "DataType": "umb://data-type/fd5960c88272459a86e6e67d7875badc",
           "Description": null,
           "Mandatory": false,
-          "Name": "Location",
+          "Name": "Locations available",
           "SortOrder": 4,
           "Validation": null
         },
