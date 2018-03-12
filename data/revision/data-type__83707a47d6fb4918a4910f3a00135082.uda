@@ -3,7 +3,7 @@
   "DatabaseType": 0,
   "PreValues": {
     "disableFolderSelect": "1",
-    "multiPicker": null,
+    "multiPicker": "0",
     "onlyImages": "0",
     "startNodeId": "umb://media/6e32aed0cbb04bed9d48c8857eec0761"
   },
