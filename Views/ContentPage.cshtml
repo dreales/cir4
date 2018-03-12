@@ -1,6 +1,13 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContentPage>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-    Layout = "Master.cshtml";
+  Layout = "Master.cshtml";
+  
+  string bannerUrl = "";
+  bool showBanner = false;
+  if (Model.Content.HasValue("bannerImage") == true){
+    showBanner = true;
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
 }
 
