@@ -10,14 +10,27 @@
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
 }
-<section class="section">
-    
-  <div class="container">
-    <article>
-      <div class="blogpost-meta">
-        <small class="blogpost-date">@Model.Content.CreateDate.ToShortDateString()</small>
-      </div>
-      @Umbraco.Field("mainContent", altText:"")
-    </article>
+<article>
+  <div class="news-meta">
+    <small class="blogpost-date">@Model.Content.CreateDate.ToShortDateString()</small>
   </div>
-</section>
+  @if(showBanner){
+    <div class="hero-image" style="background-image:url( @bannerUrl )">
+      <div class="dark-overlay text-center">
+        <h1>@Model.Content.Name</h1>
+      </div>
+    </div>
+  } else {
+    <div class="maincontent">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>@Model.Content.Name</h1>
+          </div>
+        </div>        
+      </div>
+    </div>
+  }
+  <div class="container">
+      @Umbraco.Field("mainContent", altText:"")
+</article>
