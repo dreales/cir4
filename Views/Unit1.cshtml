@@ -1,6 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
   Layout = "Master.cshtml";
+  
+  string bannerUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
+  if (Model.Content.HasValue("bannerImage") == true){
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
 	
   var videoUrl = "";
   var showVideo = false;
