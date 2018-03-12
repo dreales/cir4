@@ -26,8 +26,6 @@
     showVideo = true;
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
-  
-  var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
@@ -78,10 +76,3 @@
     </div>
   </div>
 }
-<div class="greyback boxlist">
-  <p>
-    @foreach (var treatment in treatments){
-      <a href="@treatment.Url">@treatment.Name</a>
-    }
-  </p>
-</div>
