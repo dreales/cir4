@@ -16,7 +16,7 @@
   }           
   string bannerUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
   if (Model.Content.HasValue("bannerImage") == true){
-    heroImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
