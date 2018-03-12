@@ -67,16 +67,19 @@
     </div>
   </div>
 </div>
-<div class="greyback consultants">
-  <div  class="container">
-    <div class="row">
-      <div class="col">
-        <p>
-          @foreach (var consultant in consultants){
-            <a href="@consultant.Url">@consultant.Name</a>
-          }
-        </p>
+@if(consultants.Any()){
+  <div class="greyback consultants">
+    <div  class="container">
+      <div class="row">
+        <div class="col-12"><h2>Consultants who offer this treatment</h2></div>
+        <div class="col-4">
+          <p>
+            @foreach (var consultant in consultants){
+              <a href="@consultant.Url">@consultant.Name</a>
+            }
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+}
