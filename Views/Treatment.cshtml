@@ -34,7 +34,9 @@
   foreach(var consultant in allConsultants ){
     var treatments = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
     foreach(<IPublishedContent> treatment in treatments){
-      if (treatment.Id == Model.Id){
+      int treatmentId = treatment.Id;
+      int modelId = Model.Id;
+      if (treatmentId == ModelId){
         consultants.Add(consultant);
       }
     }
