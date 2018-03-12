@@ -4,7 +4,7 @@
   "PreValues": {
     "disableFolderSelect": "1",
     "multiPicker": null,
-    "onlyImages": "1",
+    "onlyImages": "0",
     "startNodeId": "umb://media/6e32aed0cbb04bed9d48c8857eec0761"
   },
   "Parent": null,
