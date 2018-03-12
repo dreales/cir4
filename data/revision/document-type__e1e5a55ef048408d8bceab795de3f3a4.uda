@@ -40,6 +40,16 @@
           "Validation": null
         },
         {
+          "Key": "4a9aa1ae-25b9-4c06-ba54-e8e196344c13",
+          "Alias": "listOfVideos",
+          "DataType": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of videos",
+          "SortOrder": 8,
+          "Validation": "https://www.youtube.com/watch[a-zA-Z0-9-.]+.[a-zA-Z]{2,}"
+        },
+        {
           "Key": "52f6c56c-2bb8-41a2-9ab1-7e9853d8a0c2",
           "Alias": "location",
           "DataType": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
@@ -112,6 +122,11 @@
     },
     {
       "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
       "Ordering": true,
       "Mode": 0
     },
