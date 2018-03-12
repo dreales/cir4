@@ -11,7 +11,8 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [
-    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+    "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda"
   ],
   "PropertyGroups": [
     {
@@ -87,6 +88,11 @@
     },
     {
       "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
       "Ordering": true,
       "Mode": 0
     },
