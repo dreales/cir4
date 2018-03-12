@@ -87,9 +87,11 @@
         <div class="col-4">
           <a href="@consultant.Url">
             <img src="@image" />
-            <h3>@consultant.Name</h3>
-            <p>@consultant.GetPropertyValue("customSpeciality")</p>
-            <p>@consultant.GetPropertyValue("location")</p>
+            <div>
+              <h3>@consultant.Name</h3>
+              <p>@consultant.GetPropertyValue("customSpeciality")</p>
+              <p>@consultant.GetPropertyValue("location")</p>
+            </div>
           </a>
         </div>
       }
