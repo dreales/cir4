@@ -34,7 +34,7 @@
   foreach(var consultant in allConsultants ){
     var treatments = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
     foreach(var treatment in treatments){
-      if (treatment.Id == (int)UmbracoContext.Current.PageId;){
+      if (treatment.Id == (int)UmbracoContext.Current.PageId){
         consultants.Add(consultant);
       }
     }
