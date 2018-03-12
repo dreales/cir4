@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleTextstring",
+  "DatabaseType": 0,
+  "PreValues": {
+    "0": "{\"Minimum\":0,\"Maximum\":0}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
+  "Dependencies": [],
+  "Name": "Youtube videos",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}
