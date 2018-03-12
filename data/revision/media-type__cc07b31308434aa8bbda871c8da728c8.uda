@@ -62,16 +62,6 @@
           "Name": "Type",
           "SortOrder": 4,
           "Validation": null
-        },
-        {
-          "Key": "982fe2be-e84a-442f-9dad-11ec2f6a3f3b",
-          "Alias": "thumbnailCropper",
-          "DataType": "umb://data-type/3e1f5b2729154fc9974fd3e8b8428574",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Thumbnail cropper",
-          "SortOrder": 5,
-          "Validation": null
         }
       ]
     }
@@ -81,11 +71,6 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/1df9f033e6d4451fb8d2e0cbc50a836f",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/3e1f5b2729154fc9974fd3e8b8428574",
       "Ordering": true,
       "Mode": 0
     },
