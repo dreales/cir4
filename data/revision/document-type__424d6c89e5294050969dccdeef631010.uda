@@ -1,0 +1,94 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "2b6d8f50-432a-465c-b6f4-57616600d431",
+      "Name": "Page options",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "72aeb2c0-d769-4cd6-ae9b-665dee0714fe",
+          "Alias": "hideFromSearchEngines",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Hide from search engines",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "aaf783e9-c39c-4276-afaf-4133f50f0caf",
+          "Alias": "hideFloatingPhoneNumbers",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Hide floating phone numbers",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "bea0a36a-ded4-45f5-8c41-54bf466475a3",
+          "Alias": "hideFromSearch",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Hide from search",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "e64058a6-2a99-40b1-8c41-dcf192e3c279",
+          "Alias": "pageTitle",
+          "DataType": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
+          "Description": "If left blank the node name (above) will be used instead",
+          "Mandatory": false,
+          "Name": "Custom page title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "e9c0cbdc-8a0e-453c-8947-a25e256a414e",
+          "Alias": "pageDescription",
+          "DataType": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Page description",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/424d6c89e5294050969dccdeef631010",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Main page template",
+  "Alias": "template1",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}
