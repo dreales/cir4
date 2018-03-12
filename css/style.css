@@ -109,7 +109,7 @@ footer a:hover path{fill:#fffd}
 
 /*Box list*/
 .boxlist h2{margin-bottom:20px}
-.boxlist a{border:1px solid #fc5960;padding:10px;margin:20px 10px 40px 0}
+.boxlist a{border:1px solid #fc5960;padding:10px;margin:10px 10px 10px 0;display:inline-block}
 .boxlist svg{margin-bottom:-3px}
 .boxlist path{fill:#fc5960}
 
