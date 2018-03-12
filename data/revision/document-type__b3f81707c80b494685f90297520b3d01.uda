@@ -3,7 +3,7 @@
   "AllowedTemplates": [
     "umb://template/74a46aef4f9f44079722b4786a5d7229"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-school",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
