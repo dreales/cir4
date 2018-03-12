@@ -13,6 +13,8 @@
     showVideo = true;
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
+  
+  var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
