@@ -108,7 +108,6 @@ footer a:hover path{fill:#fffd}
 .consultants p{margin-bottom:5px}
 
 /*Box list*/
-.boxlist h2{padding-bottom:10px}
 .boxlist a{border:1px solid #fc5960;padding:10px;margin:10px 10px 10px 0;display:inline-block}
 .boxlist svg{margin-bottom:-3px}
 .boxlist path{fill:#fc5960}
