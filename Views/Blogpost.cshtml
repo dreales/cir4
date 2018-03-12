@@ -2,8 +2,16 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
   Layout = "Master.cshtml";
+  
+  string bannerUrl = "";
+  bool showBanner = false;
+  if (Model.Content.HasValue("bannerImage") == true){
+    showBanner = true;
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
 }
 <section class="section">
+    
   <div class="container">
     <article>
       <div class="blogpost-meta">
