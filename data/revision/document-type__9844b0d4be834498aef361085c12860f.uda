@@ -3,7 +3,7 @@
   "AllowedTemplates": [
     "umb://template/a21453a8956e43f38ea48bef30d19469"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-medical-emergency",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
