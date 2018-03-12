@@ -27,7 +27,7 @@
           "Description": "",
           "Mandatory": false,
           "Name": "Specialities",
-          "SortOrder": 5,
+          "SortOrder": 6,
           "Validation": null
         },
         {
@@ -37,7 +37,17 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Units",
-          "SortOrder": 6,
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "43025a96-9047-476d-b3ac-7efb16168ea6",
+          "Alias": "imageThumbnail",
+          "DataType": "umb://data-type/3a039ae39181400d9fee720e7db0662b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Image thumbnail",
+          "SortOrder": 1,
           "Validation": null
         },
         {
@@ -47,7 +57,7 @@
           "Description": "Currently the Bath and Reading option doesn't work - if needed it can be quickly implemented - contact admin",
           "Mandatory": true,
           "Name": "Hospital(s) worked at",
-          "SortOrder": 1,
+          "SortOrder": 2,
           "Validation": null
         },
         {
@@ -67,7 +77,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Profile",
-          "SortOrder": 3,
+          "SortOrder": 4,
           "Validation": null
         },
         {
@@ -77,7 +87,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Qualifications",
-          "SortOrder": 7,
+          "SortOrder": 8,
           "Validation": null
         },
         {
@@ -87,7 +97,7 @@
           "Description": "If not filled in the speciality will be generated from their selected specialities",
           "Mandatory": false,
           "Name": "Custom speciality text",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -97,7 +107,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Treatments",
-          "SortOrder": 4,
+          "SortOrder": 5,
           "Validation": null
         }
       ]
@@ -113,6 +123,11 @@
     },
     {
       "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3a039ae39181400d9fee720e7db0662b",
       "Ordering": true,
       "Mode": 0
     },
