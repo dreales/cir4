@@ -31,6 +31,16 @@
           "Validation": null
         },
         {
+          "Key": "0a9c9472-ae3f-4167-b374-fa410c7e6277",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
           "Key": "3fe99f2e-691f-4f2a-a75d-be4bd59c6f58",
           "Alias": "bannerImage",
           "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
@@ -48,16 +58,6 @@
           "Mandatory": false,
           "Name": "Specialties",
           "SortOrder": 3,
-          "Validation": null
-        },
-        {
-          "Key": "6cc7ea1c-a218-4e56-b46d-9aba114fd73d",
-          "Alias": "welcomeText",
-          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
-          "Description": "The top paragraph will turn watermelon coloured. Contact admin if you want an option added to turn this off",
-          "Mandatory": false,
-          "Name": "Main content",
-          "SortOrder": 1,
           "Validation": null
         },
         {
