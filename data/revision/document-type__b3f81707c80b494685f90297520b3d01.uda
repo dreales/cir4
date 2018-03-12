@@ -29,7 +29,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 image",
-          "SortOrder": 7,
+          "SortOrder": 8,
           "Validation": null
         },
         {
@@ -39,7 +39,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "why choose text",
-          "SortOrder": 6,
+          "SortOrder": 7,
           "Validation": null
         },
         {
@@ -49,7 +49,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Welcome Message",
-          "SortOrder": 1,
+          "SortOrder": 2,
           "Validation": null
         },
         {
@@ -59,7 +59,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Self-funding info",
-          "SortOrder": 3,
+          "SortOrder": 4,
           "Validation": null
         },
         {
@@ -69,7 +69,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Insured Info",
-          "SortOrder": 4,
+          "SortOrder": 5,
           "Validation": null
         },
         {
@@ -89,7 +89,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "cqc link",
-          "SortOrder": 13,
+          "SortOrder": 14,
           "Validation": null
         },
         {
@@ -99,7 +99,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Why choose image",
-          "SortOrder": 5,
+          "SortOrder": 6,
           "Validation": null
         },
         {
@@ -109,7 +109,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "cqc Date",
-          "SortOrder": 14,
+          "SortOrder": 15,
           "Validation": null
         },
         {
@@ -119,7 +119,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 text",
-          "SortOrder": 8,
+          "SortOrder": 9,
           "Validation": null
         },
         {
@@ -129,7 +129,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "cqc Rating",
-          "SortOrder": 12,
+          "SortOrder": 13,
           "Validation": null
         },
         {
@@ -139,7 +139,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Referrer Number",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -149,7 +149,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Banner image",
-          "SortOrder": 15,
+          "SortOrder": 1,
           "Validation": null
         },
         {
@@ -159,7 +159,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 text",
-          "SortOrder": 10,
+          "SortOrder": 11,
           "Validation": null
         },
         {
@@ -169,7 +169,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Boxes info text",
-          "SortOrder": 11,
+          "SortOrder": 12,
           "Validation": null
         },
         {
@@ -179,7 +179,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 image",
-          "SortOrder": 9,
+          "SortOrder": 10,
           "Validation": null
         }
       ]
