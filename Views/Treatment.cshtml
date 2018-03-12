@@ -85,7 +85,7 @@
       <div class="col">
         @foreach (var consultant in consultants){
           <a href="@consultant.Url">
-            <img src="@consultant.GetPropertyValue("profileImage").Url" />
+            <img src="@consultant.GetPropertyValue("profileImage")" />
             <h3>@consultant.Name</h3>
             <p>@consultant.GetPropertyValue("customSpeciality")</p>
             <p>@consultant.GetPropertyValue("location")</p>
