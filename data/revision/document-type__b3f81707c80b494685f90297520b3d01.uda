@@ -26,9 +26,9 @@
           "Key": "561f27fc-3968-4d00-9668-3fbb09446822",
           "Alias": "cqcLink",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
+          "Description": "For example: https://www.cqc.org.uk/location/1-119269999",
           "Mandatory": false,
-          "Name": "cqc link",
+          "Name": "Link",
           "SortOrder": 3,
           "Validation": null
         },
@@ -36,9 +36,9 @@
           "Key": "819d9eaa-f5ae-4b08-8d35-7094e29ff0f8",
           "Alias": "cqcDate",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
+          "Description": "For example: 24 April 2017",
           "Mandatory": false,
-          "Name": "cqc Date",
+          "Name": "Date",
           "SortOrder": 2,
           "Validation": null
         },
@@ -46,9 +46,9 @@
           "Key": "a4dd7da5-b882-4fb2-87e1-18452a36e6dd",
           "Alias": "cqcRating",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
+          "Description": "For example: Good",
           "Mandatory": false,
-          "Name": "cqc Rating",
+          "Name": "Rating",
           "SortOrder": 1,
           "Validation": null
         }
