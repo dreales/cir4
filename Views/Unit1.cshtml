@@ -18,8 +18,8 @@
 
   List<IPublishedContent> consultants = new List<IPublishedContent>();
   foreach(var consultant in Umbraco.Content(1155).Children().Where("Visible")){
-    foreach(var treatment in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("units")){
-      if (treatment.Id == (int)UmbracoContext.Current.PageId){
+    foreach(var unit in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("units")){
+      if (unit.Id == (int)UmbracoContext.Current.PageId){
         consultants.Add(consultant);
         break;
       }
