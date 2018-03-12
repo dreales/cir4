@@ -2,7 +2,7 @@
 body,html{font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-size-adjust:100%;overflow-x:hidden;margin:0}
 ::-webkit-scrollbar,.umbraco-forms-page label,label{display:none!important}
 main{min-height:calc(100vh - 253px);background:#fff}
-.medicodigital{display:none;margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
+.medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:-5px;opacity:.7}
 
 /*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
@@ -103,6 +103,7 @@ footer a:hover path{fill:#fffd}
 .profile h1{margin:50px 0 20px}
 .profile svg{margin:0 9px -4px 0}
 .consultants img{max-width:50%}
+.consultants .col-4
 .consultants h3,.consultants p{}
 
 body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
