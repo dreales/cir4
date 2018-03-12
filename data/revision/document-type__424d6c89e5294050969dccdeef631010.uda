@@ -29,7 +29,7 @@
           "Key": "e64058a6-2a99-40b1-8c41-dcf192e3c279",
           "Alias": "pageTitle",
           "DataType": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
-          "Description": "If left blank the node name (above) will be used instead",
+          "Description": "The title on search engines and browser tabs. If left blank the node name will be used.",
           "Mandatory": false,
           "Name": "Custom page title",
           "SortOrder": 0,
