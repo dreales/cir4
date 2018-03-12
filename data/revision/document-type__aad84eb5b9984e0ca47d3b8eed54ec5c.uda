@@ -13,14 +13,14 @@
     "umb://document-type/7483c1cea07f4c8383f960362285dc47"
   ],
   "CompositionContentTypes": [
-    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+    "umb://document-type/424d6c89e5294050969dccdeef631010"
   ],
   "PropertyGroups": [],
   "PropertyTypes": [],
   "Udi": "umb://document-type/aad84eb5b9984e0ca47d3b8eed54ec5c",
   "Dependencies": [
     {
-      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Udi": "umb://document-type/424d6c89e5294050969dccdeef631010",
       "Ordering": true,
       "Mode": 0
     },
