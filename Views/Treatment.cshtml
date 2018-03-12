@@ -13,10 +13,18 @@
       string panel = field.GetValue<string>("panel");
       accordion.Add(new KeyValuePair<string, string>(title, panel));
     }
-  }           
+  }
+  
   string bannerUrl = "https://www.circlehealth.co.uk/media/1702/acl-reconstrution-surgery.jpg"; //default hero image
   if (Model.Content.HasValue("bannerImage") == true){
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
+  
+  var videoUrl = "";
+  var showVideo = false;
+  if(Model.Content.GetPropertyValue<string[]>("youtubeVideos").Length > 0){
+    showVideo = true;
+    videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
