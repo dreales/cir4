@@ -37,7 +37,7 @@
       "Mode": 0
     }
   ],
-  "Name": "Videos",
+  "Name": "Video template",
   "Alias": "videos",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
   "__version": "2.0.11"
