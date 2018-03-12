@@ -1,5 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ConsultatList>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Master.cshtml";
+  Layout = "Master.cshtml";
 }
+<div>
+  @foreach(var item in Model.Content.Children()){
+    <a title="@item.Name" href="@item.Url">@item.Name</a>
+  }
+</div>
