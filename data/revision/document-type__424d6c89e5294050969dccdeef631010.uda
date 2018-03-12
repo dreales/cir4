@@ -39,7 +39,7 @@
           "Key": "e9c0cbdc-8a0e-453c-8947-a25e256a414e",
           "Alias": "pageDescription",
           "DataType": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
-          "Description": null,
+          "Description": "Page description for search engines.",
           "Mandatory": false,
           "Name": "Page description",
           "SortOrder": 2,
