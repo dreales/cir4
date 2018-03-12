@@ -19,7 +19,7 @@
           "Key": "ac711f79-d9e7-4704-b655-944e53ec856a",
           "Alias": "youtubeVideos",
           "DataType": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
-          "Description": null,
+          "Description": "A list of youtube video urls to be displayed. Please use the format https://www.youtube.com/embed/xxxxxxxxxxxx Currently only the first video is displayed.",
           "Mandatory": false,
           "Name": "Youtube videos",
           "SortOrder": 0,
