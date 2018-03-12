@@ -94,25 +94,3 @@
     </div>
   </div>
 }
-@if(consultants.Any()){
-  <div class="greyback consultants">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"><h2>Consultants who offer this treatment</h2></div>
-        @foreach(var consultant in consultants){
-          string image = consultant.GetPropertyValue<IPublishedContent>("profileImage").Url;
-          <div class="col-4">
-            <a href="@consultant.Url">
-              <img src="@image" />
-              <div>
-                <h3 class="normal">@consultant.Name</h3>
-                <p class="smaller">@consultant.GetPropertyValue("customSpeciality")</p>
-                <p class="smaller">Circle @consultant.GetPropertyValue("location")</p>
-              </div>
-            </a>
-          </div>
-        }
-      </div>
-    </div>
-  </div>
-}
