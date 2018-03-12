@@ -79,11 +79,13 @@
 <div class="greyback boxlist">
   <div  class="container">
     <div class="row">
-      <p>
-        @foreach (var treatment in treatments){
-          <a href="@treatment.Url">@treatment.Name</a>
-        }
-      </p>
+      <div class="col">
+        <p>
+          @foreach (var treatment in treatments){
+            <a href="@treatment.Url">@treatment.Name</a>
+          }
+        </p>
+      </div>
     </div>
   </div>
 </div>
