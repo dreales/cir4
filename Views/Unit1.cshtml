@@ -9,3 +9,29 @@
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
 }
+<div class="hero-image" style="background-image:url( @bannerUrl )">
+  <div class="dark-overlay text-center">
+      <h1>@Model.Content.Name</h1>
+  </div>
+</div>
+<div class="maincontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        @Umbraco.Field("mainContent", altText:"")
+      </div>
+      <div class="col">
+        @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="87a8b37a-b171-42a0-be1d-3b14737d8c02", FormTheme="", ExcludeScripts="0"})
+      </div>
+    </div>
+  </div>
+</div>
+<div class="greyback"><br />
+  <div class="container video">
+    <div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/nKzfDGVkgFQ" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>  
+  </div>
+</div>
