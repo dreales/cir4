@@ -32,10 +32,12 @@
   var allConsultants = Umbraco.Content(1155).Children().Where("Visible");
   List<IPublishedContent> consultants = new List<IPublishedContent>();
   foreach(var consultant in allConsultants ){
-    if (consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments").Where(x => x.Id == Model.Id).Length == 1){
+    var treatments = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
+    foreach(var treatment in treatments){
+      if (treatment.Id == Model.Id){
         consultants.Add(consultant);
+      }
     }
-    j++;
   }
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
