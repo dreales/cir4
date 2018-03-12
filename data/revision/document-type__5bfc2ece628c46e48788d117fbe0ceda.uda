@@ -23,7 +23,7 @@
           "Mandatory": false,
           "Name": "Youtube videos",
           "SortOrder": 0,
-          "Validation": "https://www.youtube.com/watch\\?v=+[a-zA-Z0-9]"
+          "Validation": "https://www.youtube.com/embed/+[a-zA-Z0-9]"
         }
       ]
     }
