@@ -62,6 +62,16 @@
           "Name": "Size",
           "SortOrder": 3,
           "Validation": null
+        },
+        {
+          "Key": "fc81f9e8-08af-4860-be4b-5851b7a946fa",
+          "Alias": "thumbnail",
+          "DataType": "umb://data-type/6370ef36276b4f6b84de5289632af9cb",
+          "Description": null,
+          "Mandatory": true,
+          "Name": "Thumbnail",
+          "SortOrder": 5,
+          "Validation": null
         }
       ]
     }
@@ -71,6 +81,11 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/1df9f033e6d4451fb8d2e0cbc50a836f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/6370ef36276b4f6b84de5289632af9cb",
       "Ordering": true,
       "Mode": 0
     },
