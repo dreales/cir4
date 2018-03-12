@@ -1,7 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Master.cshtml";
+  Layout = "Master.cshtml";
 }
-
-@* the fun starts here *@
-
+<div>
+  @foreach(var item in Model.Content.Children()){
+    <a title="@item.Name" href="@item.Url">@item.Name</a>
+  }
+</div>
