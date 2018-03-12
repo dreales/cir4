@@ -34,7 +34,7 @@
   var showVideo = false;
   if(Model.Content.GetPropertyValue<string[]>("youtubeVideos").Length > 0){
     showVideo = true;
-    videoUrl = Model.Content.GetPropertyValue<string[]>("keyFeatureList")[0];
+    videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
 }
 
