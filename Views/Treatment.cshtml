@@ -36,7 +36,7 @@
     foreach(var treatment in treatments){
       int treatmentId = treatment.Id;
       int modelId = (int)UmbracoContext.Current.PageId;
-      if (treatmentId == ModelId){
+      if (treatmentId == modelId){
         consultants.Add(consultant);
       }
     }
