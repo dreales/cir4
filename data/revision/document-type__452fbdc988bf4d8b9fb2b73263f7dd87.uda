@@ -16,13 +16,23 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "2f5eb7a9-098e-4b8c-a85d-1548a0036a4b",
+          "Alias": "titleInSearch",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title in search",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
           "Key": "cc29b8d2-52e1-4d64-997d-b08f38813eea",
           "Alias": "hideFloatingPhoneNumbers",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
           "Description": null,
           "Mandatory": false,
           "Name": "Hide floating phone numbers",
-          "SortOrder": 4,
+          "SortOrder": 5,
           "Validation": null
         },
         {
@@ -32,7 +42,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Page description",
-          "SortOrder": 1,
+          "SortOrder": 2,
           "Validation": null
         },
         {
@@ -42,7 +52,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Hide from search",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -62,7 +72,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Hide from search engines",
-          "SortOrder": 3,
+          "SortOrder": 4,
           "Validation": null
         }
       ]
@@ -71,6 +81,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
       "Ordering": true,
