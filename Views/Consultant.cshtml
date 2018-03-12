@@ -30,7 +30,7 @@
     profileImage = Model.Content.GetPropertyValue<IPublishedContent>("profileImage").Url;
   }
   
-  var showVideo = (Model.Content.GetPropertyValue<string[]>("keyFeatureList").Length > 0);
+  bool showVideo = (Model.Content.GetPropertyValue<string[]>("keyFeatureList").Length > 0);
   var videoUrl = "";
   if (showVideo){
     videoUrl = Model.Content.GetPropertyValue<string[]>("keyFeatureList")[0];
