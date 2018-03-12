@@ -84,7 +84,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12"><h2>Consultants who offer this treatment</h2></div>
-        foreach(var consultant in consultants){
+        @foreach(var consultant in consultants){
           string image = consultant.GetPropertyValue<IPublishedContent>("profileImage").Url;
           <div class="col-4">
             <a href="@consultant.Url">
