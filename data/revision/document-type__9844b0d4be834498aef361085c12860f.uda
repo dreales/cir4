@@ -37,7 +37,17 @@
           "Description": null,
           "Mandatory": false,
           "Name": "List of units",
-          "SortOrder": 3,
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "51fd9de5-2026-4f5a-a892-f58cc5c265b2",
+          "Alias": "practitionerName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "For example, 'anaesthetist' or 'hip surgeon'",
+          "Mandatory": false,
+          "Name": "Practitioner name",
+          "SortOrder": 2,
           "Validation": null
         },
         {
@@ -47,7 +57,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "List of treatments",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -66,6 +76,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/9844b0d4be834498aef361085c12860f",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
       "Ordering": true,
