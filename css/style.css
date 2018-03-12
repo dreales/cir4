@@ -102,7 +102,7 @@ footer a:hover path{fill:#fffd}
 .profile img{height:300px;width:350px;object-fit:cover;margin:30px 0;max-width:100%}
 .profile h1{margin:50px 0 20px}
 .profile svg{margin:0 9px -4px 0}
-.consultants img{max-width}
+.consultants img{max-width:50%}
 .consultants h3,.consultants p{}
 
 body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
