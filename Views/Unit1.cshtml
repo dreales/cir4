@@ -7,8 +7,8 @@
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
 	
-  var videoUrl = "";
-  var showVideo = false;
+  string videoUrl = "";
+  bool showVideo = false;
   if(Model.Content.GetPropertyValue<string[]>("youtubeVideos").Length > 0){
     showVideo = true;
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
