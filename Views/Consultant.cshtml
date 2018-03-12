@@ -1,35 +1,40 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Consultant>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Master.cshtml";
-	string location = Model.Content.GetPropertyValue<string>("location");
-	string speciality = "";
-	string customPhone = "";
-	string phone = "";
-	string phoneforlink = "";
+  Layout = "Master.cshtml";
+  string location = Model.Content.GetPropertyValue<string>("location");
+  string speciality = "";
+  string customPhone = "";
+  string phone = "";
+  string phoneforlink = "";
+  
+  if (Model.Content.HasValue("customSpeciality")){
+    speciality = Model.Content.GetPropertyValue<string>("customSpeciality");
+  }
+  if (Model.Content.HasValue("customPhone")){
+    customPhone = Model.Content.GetPropertyValue<string>("customPhone");
+  }
+  
+  if (location == "Bath Hospital"){
+    phone = "01761 422 222"; phoneforlink="01761422222";
+  } else if (location == "Reading Hospital"){
+    phone = "0118 922 6888"; phoneforlink = "01189226888";
+  } else if (location == "Nottingham"){
+    phone = "0115 970 5800"; phoneforlink = "01159705800";
+  }
 	
-	if (Model.Content.HasValue("customSpeciality")){
-	    speciality = Model.Content.GetPropertyValue<string>("customSpeciality");
-	}
-	if (Model.Content.HasValue("customPhone")){
-	    customPhone = Model.Content.GetPropertyValue<string>("customPhone");
-	}
+  if (!String.IsNullOrEmpty(customPhone)){ phone = customPhone; }
 	
-	if (location == "Bath Hospital"){
-	    phone = "01761 422 222"; phoneforlink="01761422222";
-	} else if (location == "Reading Hospital"){
-	    phone = "0118 922 6888"; phoneforlink = "01189226888";
-	} else if (location == "Nottingham"){
-	    phone = "0115 970 5800"; phoneforlink = "01159705800";
-	}
-	
-	if (!String.IsNullOrEmpty(customPhone)){ phone = customPhone; }
+  string profileImage = "#"; //default profile image
+  if (Model.Content.HasValue("profileImage") == true){
+    profileImage = Model.Content.GetPropertyValue<IPublishedContent>("profileImage").Url;
+  }
 }
 
 <div class="container">
   <div class="row profile">
     <div class="col-5">
-      <img src="https://www.circlehealth.co.uk/media/1401/n_bradbury_edited.jpg" alt="@Model.Content.Name is a consultant @speciality at Circle @location" />
+      <img src="@profileImage" alt="@Model.Content.Name is a consultant @speciality at Circle @location" />
     </div>
     <div class="col">
         <h1>@Model.Content.Name</h1>
