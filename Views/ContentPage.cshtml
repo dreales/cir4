@@ -10,4 +10,12 @@
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
 }
-
+@if(showBanner){
+  <div class="hero-image" style="background-image:url( @bannerUrl )">
+    <div class="dark-overlay text-center">
+      <h1>@Model.Content.Name</h1>
+    </div>
+  </div>
+} else {
+  <h1>@Model.Content.Name</h1>
+}
