@@ -48,7 +48,7 @@
         {
           "Key": "e945bd18-2b9e-4b13-a858-b1850264f919",
           "Alias": "pageTitle",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "DataType": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
           "Description": "If left blank the node name (above) will be used instead",
           "Mandatory": false,
           "Name": "Custom page title",
@@ -72,7 +72,7 @@
   "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Udi": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
       "Ordering": true,
       "Mode": 0
     },
