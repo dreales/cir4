@@ -33,7 +33,7 @@
   List<IPublishedContent> consultants = new List<IPublishedContent>();
   foreach(var consultant in allConsultants ){
     var treatments = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
-    foreach(var treatment in treatments){
+    foreach(<IPublishedContent> treatment in treatments){
       if (treatment.Id == Model.Id){
         consultants.Add(consultant);
       }
