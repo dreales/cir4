@@ -78,16 +78,18 @@
     </div>
   </div>
 }
-<div class="greyback boxlist">
-  <div  class="container">
-    <div class="row">
-      <div class="col">
-        <p>
-          @foreach (var treatment in treatments){
-            <a href="@treatment.Url">@treatment.Name</a>
-          }
-        </p>
+@if (treatments.Any()){
+  <div class="greyback boxlist">
+    <div  class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            @foreach (var treatment in treatments){
+              <a href="@treatment.Url">@treatment.Name</a>
+            }
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+}
