@@ -36,6 +36,9 @@
     showVideo = true;
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
+  
+  var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments");
+
 }
 
 <div class="container">
