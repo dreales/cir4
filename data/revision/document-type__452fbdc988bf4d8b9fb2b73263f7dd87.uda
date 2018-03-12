@@ -51,7 +51,7 @@
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
           "Description": "Hide from the site search feature",
           "Mandatory": false,
-          "Name": "Hide from search",
+          "Name": "Hide from site search",
           "SortOrder": 3,
           "Validation": null
         },
