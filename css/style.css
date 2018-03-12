@@ -103,7 +103,7 @@ footer a:hover path{fill:#fffd}
 .profile h1{margin:50px 0 20px}
 .profile svg{margin:0 9px -4px 0}
 .consultants img{max-width:50%}
-.consultants .col-4
+.consultants a>div{}
 .consultants h3,.consultants p{}
 
 body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
