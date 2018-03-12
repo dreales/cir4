@@ -3,7 +3,7 @@
   "AllowedTemplates": [
     "umb://template/36e43050f1bf4eb6baa3c949927d542c"
   ],
-  "Icon": "icon-umb-content",
+  "Icon": "icon-notepad-alt",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
