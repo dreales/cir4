@@ -80,12 +80,15 @@
   </div>
 }
 <div class="greyback consultants">
-  <div  class="container">
+  <div class="container">
     <div class="row">
       <div class="col">
-        <p>
-          @foreach (var consultant in consultants){
-            <a href="@consultant.Url">@consultant.Name</a>
+        @foreach (var consultant in consultants){
+          <a href="@consultant.Url">
+            <img src="@consultant.GetPropertyValue("profileImage").Url" />
+            <h3>@consultant.Name</h3>
+            <p>@consultant.GetPropertyValue("customSpeciality")</p>
+          </a>
           }
         </p>
       </div>
