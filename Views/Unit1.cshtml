@@ -1,7 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Master.cshtml";
+  Layout = "Master.cshtml";
+	
+  var videoUrl = "";
+  var showVideo = false;
+  if(Model.Content.GetPropertyValue<string[]>("youtubeVideos").Length > 0){
+    showVideo = true;
+    videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
+  }
 }
-
-@* the fun starts here *@
-
