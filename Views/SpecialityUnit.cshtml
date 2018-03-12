@@ -17,7 +17,7 @@
   
   var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
-  var consultants = "";
+  var consultants = Model.NodeById(1155).Children().Where("Visible").Where(x => x.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments").Where(x => x.Id == Model.Id).Length == 1);
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
