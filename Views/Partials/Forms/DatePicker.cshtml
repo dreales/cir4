@@ -1,17 +1,14 @@
 ﻿@using System.Globalization
 @using Umbraco.Forms.Core
 @{
-    var datePickerYearRange = Configuration.GetSetting("DatePickerYearRange");
-    if (string.IsNullOrEmpty(datePickerYearRange))
-    {
-        datePickerYearRange = "10";
-    }
+  var datePickerYearRange = Configuration.GetSetting("DatePickerYearRange");
+  if (string.IsNullOrEmpty(datePickerYearRange)){
+    datePickerYearRange = "10";
+  }
 }
-
 <link rel="stylesheet" href="/App_Plugins/UmbracoForms/Assets/pikaday/pikaday.css" />
 <script src="/App_Plugins/UmbracoForms/Assets/moment/min/moment-with-locales.min.js" type="text/javascript"></script>
 <script src="/App_Plugins/UmbracoForms/Assets/pikaday/pikaday.js" type="text/javascript"></script>
-
 <script type="text/javascript">
 	$(function() {
 		var locales = {
