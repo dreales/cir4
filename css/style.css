@@ -91,12 +91,6 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .newsfeed a{position:absolute;bottom:0;color:#fff;padding:5px;text-shadow:0 0 3px rgba(0,0,0,.5)}
 .newsfeed svg{margin-bottom:-3px;height:17px}
 
-/*cqc*/
-.cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
-.cqc img{padding:8px}
-.cqc a,.cqc .good{color:#6c276a;padding:7px;margin:0 10px 10px 0;display:inline-block}
-.cqc .good{color:#fff;background:#458f00;border:1px solid #458f00}
-
 /*Consultants*/
 .profile img{height:300px;width:350px;object-fit:cover;margin:30px 0;max-width:100%}
 .profile h1{margin:50px 0 20px}
