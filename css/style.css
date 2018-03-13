@@ -1,6 +1,5 @@
 
 html,body{font-size:16px;line-height:1.7;font-family:"Open Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.7;color:#000;letter-spacing:.4px}
-span{color:inherit}
 /*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
 .btn,button,.waterback *,.singlecolform *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
@@ -126,5 +125,7 @@ body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
 body>aside *{color:#fff}
 body>aside p{border:1px solid #fff;margin:0 0 -1px;padding:10px}
 body>aside span{display:block;font-size:12px}
+
+span{color:inherit}
 
 
