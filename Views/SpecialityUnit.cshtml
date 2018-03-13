@@ -78,14 +78,16 @@
       <div class="row">
         <div class="col-12"><h2>Consultants who are trained in this speciality</h2></div>
         @foreach(var consultant in consultants){
-          string image = consultant.GetPropertyValue<IPublishedContent>("profileImage").Url;
+          string image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").Url;
+          string speciality = (string)consultant.GetPropertyValue("customSpeciality");
+          string location = (string)consultant.GetPropertyValue("location");
           <div class="col-4">
             <a href="@consultant.Url">
-              <img src="@image" />
+              <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
               <div>
                 <h3 class="normal">@consultant.Name</h3>
-                <p class="smaller">@consultant.GetPropertyValue("customSpeciality")</p>
-                <p class="smaller">Circle @consultant.GetPropertyValue("location")</p>
+                <p class="smaller">@speciality</p>
+                <p class="smaller">Circle @location</p>
               </div>
             </a>
           </div>
