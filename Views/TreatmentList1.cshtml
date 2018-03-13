@@ -1,9 +1,7 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
   Layout = "Master.cshtml";
-  
-  var specialities = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
-
+  List<IPublishedContent> specialities = new List<IPublishedContent>(Umbraco.Content(1154).Children().Where("Visible"));
 }
 <div class="container maincontent boxlist">
   <div class="row">
