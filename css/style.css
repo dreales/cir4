@@ -2,7 +2,7 @@
 body,html{-webkit-font-smoothing:antialiased;text-size-adjust:100%;overflow-x:hidden;margin:0}
 ::-webkit-scrollbar,.umbraco-forms-page label,label{display:none!important}
 main{min-height:calc(100vh - 253px);background:#fff}
-.medicodigital{margin:0!important;position:absolute;height:40px!important;bottom:-4px;right:0;opacity:.6}
+.medicodigital{margin:0!important;position:absolute;height:33px!important;bottom:-3px;right:0;opacity:.6}
 
 /*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
