@@ -5,7 +5,7 @@
   foreach(var node in startNode.Children.Where("Visible")){
     if (node.GetPropertyValue<string>("hideFromSearchEngines") != "True"){
       <url>
-        <loc>hi</loc>
+        <loc>@node.UrlWithDomain()</loc>
         <lastmod>@(string.Format("{0:s}+00:00", node.UpdateDate))</lastmod>
       </url>
     }
