@@ -41,7 +41,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #top-nav .number a{padding:4px 5px 0 10px}
 #main-nav,footer nav{padding:.2rem 1rem}
 #main-nav img,footer img{height:62px;margin:8px}
-#main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
+#main-nav .nav-link{color:#fff;font-weight:500;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:40px solid rgba(0,0,0,0);border-radius:0}
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
