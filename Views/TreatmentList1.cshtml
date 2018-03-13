@@ -2,6 +2,9 @@
 @{
   Layout = "Master.cshtml";
   
+  var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("units");
+  var specialities = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
+
 }
 <div class="container maincontent">
   <div class="row">
