@@ -35,14 +35,14 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 .btn,button{padding:12px 30px;border:0;transition:.6s}
 
 /*Header & footer*/
-#top-nav li{padding:0 8px;border-left:1px solid #6664}
+#top-nav li{padding:0 8px;border-left:1px solid rgba(66,66,66,44)}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
 #top-nav .number a{padding:4px 5px 0 10px}
 #main-nav,footer nav{padding:.2rem 1rem}
 #main-nav img,footer img{height:62px;margin:8px}
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:40px solid #0000;border-radius:0}
-#main-nav a:hover,footer a:hover{text-decoration:none;color:#fffd}
+#main-nav a:hover,footer a:hover{text-decoration:none;opacity:.8}
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
 footer{border-top:2px solid #fff;overflow-y:hidden}
@@ -50,7 +50,7 @@ footer a{margin-right:25px}
 footer .first-social{margin-left:30px}
 footer svg{margin:3px -10px 0 0}
 footer path{fill:#fff}
-footer a:hover path{fill:#fffd}
+footer a:hover path{fill:rgba(ff,ff,ff,dd)}
 
 /*Videos & maps*/
 .video>div{width:100%;max-width:800px;margin:30px auto 0;padding-bottom:30px}
@@ -60,7 +60,7 @@ footer a:hover path{fill:#fffd}
 
 /*Banner with dark overlay*/
 .hero-image{background-size:cover;background-position:center;padding:100px 20px 120px}
-.hero-image .dark-overlay{background:#0009;display:block;margin:0 auto;max-width:500px;padding:30px 20px}
+.hero-image .dark-overlay{background:rgba(00,00,00,99);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 
 /*Forms*/
@@ -78,7 +78,7 @@ footer a:hover path{fill:#fffd}
 .toptabs,.tap-pane{padding-top:30px}
 .nav-tabs{padding-top:10px;border:0}
 .nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
-.nav-tabs li a:hover{color:#fffd}
+.nav-tabs li a:hover{opacity:.8}
 .nav-tabs .active{background:#fff}
 .card{border-radius:0;margin-bottom:-1px}
 .card h2{font-weight:700;margin:8px 0 10px}
@@ -106,7 +106,7 @@ footer a:hover path{fill:#fffd}
 .consultants .col-4{padding-top:20px;padding-bottom:20px}
 .consultants a>div{display:inline-block;max-width:calc(100% - 140px);padding:20px 10px}
 .consultants p{margin-bottom:5px}
-.consultants a{height:100%;width:100%;display:block;box-shadow:1px 1px 4px #0005}
+.consultants a{height:100%;width:100%;display:block;box-shadow:1px 1px 4px rgba(00,00,00,55)}
 
 /*Box list*/
 .boxlist a{border:1px solid #fc5960;padding:10px;margin:10px 10px 10px 0;display:inline-block}
@@ -117,7 +117,7 @@ footer a:hover path{fill:#fffd}
 body>aside{position:fixed;max-width:400px;right:0;top:50%;background:#fc5960}
 body>aside *{color:#fff}
 body>aside p{border:1px solid #fff;margin:0 0 -1px;padding:5px 10px}
-body>aside a:hover{color:#fffd}
+body>aside a:hover{opacity:.9}
 body>aside span{display:block;font-size:12px}
 
 
