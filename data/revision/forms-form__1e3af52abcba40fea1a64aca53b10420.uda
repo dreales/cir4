@@ -42,33 +42,6 @@
                   "PreValues": []
                 },
                 {
-                  "Caption": "Email address",
-                  "ToolTip": null,
-                  "Placeholder": null,
-                  "CssClass": null,
-                  "Alias": "email",
-                  "Id": "eae61cf1-01da-4da6-f9c6-df56b0aba741",
-                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
-                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
-                  "DataSourceFieldKey": null,
-                  "Mandatory": true,
-                  "RegEx": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+",
-                  "RequiredErrorMessage": "Please enter your e-mail",
-                  "InvalidErrorMessage": "Please enter a valid e-mail",
-                  "Condition": {
-                    "Id": "00000000-0000-0000-0000-000000000000",
-                    "Enabled": false,
-                    "ActionType": 0,
-                    "LogicType": 0,
-                    "Rules": []
-                  },
-                  "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Email"
-                  },
-                  "PreValues": []
-                },
-                {
                   "Caption": "Phone number",
                   "ToolTip": null,
                   "Placeholder": null,
@@ -92,33 +65,6 @@
                   "Settings": {
                     "DefaultValue": "",
                     "Placeholder": "Phone"
-                  },
-                  "PreValues": []
-                },
-                {
-                  "Caption": "Message",
-                  "ToolTip": null,
-                  "Placeholder": null,
-                  "CssClass": null,
-                  "Alias": "message",
-                  "Id": "ec9abce4-e339-45a3-f143-6ba81f5b8c1d",
-                  "FieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
-                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
-                  "DataSourceFieldKey": null,
-                  "Mandatory": true,
-                  "RegEx": null,
-                  "RequiredErrorMessage": "Please enter a message",
-                  "InvalidErrorMessage": null,
-                  "Condition": {
-                    "Id": "00000000-0000-0000-0000-000000000000",
-                    "Enabled": false,
-                    "ActionType": 0,
-                    "LogicType": 0,
-                    "Rules": []
-                  },
-                  "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Message"
                   },
                   "PreValues": []
                 }
