@@ -10,7 +10,6 @@
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [
-    "umb://document-type/630907ebd2634e62bdbf4d3dd3b8c1d1",
     "umb://document-type/7483c1cea07f4c8383f960362285dc47"
   ],
   "CompositionContentTypes": [
@@ -23,11 +22,6 @@
     {
       "Udi": "umb://document-type/424d6c89e5294050969dccdeef631010",
       "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type/630907ebd2634e62bdbf4d3dd3b8c1d1",
-      "Ordering": false,
       "Mode": 0
     },
     {
