@@ -9,9 +9,7 @@
         <lastmod>@(string.Format("{0:s}+00:00", node.UpdateDate))</lastmod>
       </url>
     }
-    if (node.Children.Any()){
-     @ListChildNodes(node)
-    }
+    if (node.Children.Any()){ @ListChildNodes(node) }
   }
 }
 @{
