@@ -1,7 +1,7 @@
 *,::after,::before{box-sizing:border-box}
-html{font-size:16px;line-height:1.7;text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}
+html{text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}
 header,main,nav{display:block}
-body{margin:0;font-family:"Open Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.7;color:#000;text-align:left;background-color:#fff;letter-spacing:.4px;text-underline-position:under;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;text-align:left;text-underline-position:under;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 label{display:inline-block;margin-bottom:.5rem}
 hr{box-sizing:content-box;height:0;overflow:visible}
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
