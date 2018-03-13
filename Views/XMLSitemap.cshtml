@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+  Layout = null;
+  var home = Model.Content.AncestorOrSelf(1);
+  foreach (var node in home.Children.Where(x => Umbraco.MemberHasAccess(x.Id, x.Path)).Where(x => !Umbraco.IsProtected(x.Id, x.Path)).Where(x => x.IsVisible())){
+    if (node.TemplateId > 0 && node.GetPropertyValue<string>("excludeFromSitemap") == "False"){
+      <url>
+        <loc>@node.UrlWithDomain()</loc>
+        <lastmod>@(string.Format("{0:s}+00:00", node.UpdateDate))</lastmod>
+      </url>
+    }
+    if (node.Level <= maxLevelForSiteMap && node.Children.Any()){
+            @ListChildNodes(node)
+    }
+  }
+}
