@@ -3,7 +3,7 @@
 @{
   Layout = "Master.cshtml";
   
-  var consultants = Umbraco.Content(1155).Children().Where("Visible");
+  List<IPublishedContent> consultants = new List<IPublishedContent>(Umbraco.Content(1155).Children().Where("Visible"));
 }
 <div class="maincontent">
   @if(consultants.Any()){
