@@ -130,6 +130,6 @@ body>aside span{display:block;font-size:12px}
 
 span{color:inherit}
 
-aside.container{padding:0;max-width:400px}
-aside .callmeback input{padding:14px 10px;margin:5px;max-width:96%}
+aside.container{padding:0;max-width:330px!important}
+aside .callmeback input{padding:14px 10px;margin:5px;max-width:95%}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:11.5px}
