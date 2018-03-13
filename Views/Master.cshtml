@@ -75,13 +75,13 @@
           <a class="nav-link" href="/consultants/">Find a specialist</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.circlehealth.co.uk/rehabilitation/">Rehabilitation</a>
+          <a class="nav-link disabled" href="/rehabilitation/">Rehabilitation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.circlehealth.co.uk/msk/">MSK</a>
+          <a class="nav-link disabled" href="/msk/">MSK</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/news/">News</a>
+          <a class="nav-link disabled" href="/news/">News</a>
         </li>
       </ul>
       </div>
@@ -123,11 +123,17 @@
       <a href="https://medicodigital.co.uk" title="Medical websites and digital marketing support from Medico Digital in Bristol"><img class="medicodigital" src="/media/1047/medical-website-design.png" alt="Healthcare web design and medical digital marketing specialists" /></a>
     </nav>
   </footer>
-  <aside>
-    <p><a href="tel:01761328105"><span>Self-pay enquiries </span>01761 328 105</a></p>
-    <p><a href="tel:01761422222"><span>General enquiries </span>01761 422 222</a></p>
-    <p class="text-center"><a href="#">Call me back</a></p>
-    @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="1e3af52a-bcba-40fe-a1a6-4aca53b10420", FormTheme="", ExcludeScripts="1"})
+  <aside class="container">
+    <div class="row">
+      <div class="col">
+        <p><a href="tel:01761328105"><span>Self-pay enquiries </span>01761 328 105</a></p>
+        <p><a href="tel:01761422222"><span>General enquiries </span>01761 422 222</a></p>
+        <p class="text-center"><a href="#">Call me back</a></p>
+      </div>
+      <div class="col">
+        @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="1e3af52a-bcba-40fe-a1a6-4aca53b10420", FormTheme="", ExcludeScripts="1"})
+      </div>
+    </div>
   </aside>
 </body>
 <style>
