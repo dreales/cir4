@@ -60,7 +60,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 
 /*Banner with dark overlay*/
 .hero-image{background-size:cover;background-position:center;padding:100px 20px 120px}
-.hero-image .dark-overlay{background:rgba(0,0,0,.8);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
+.hero-image .dark-overlay{background:rgba(0,0,0,.6);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 
 /*Forms*/
