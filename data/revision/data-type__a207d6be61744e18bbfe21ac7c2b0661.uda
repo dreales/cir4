@@ -2,7 +2,7 @@
   "EditorAlias": "Umbraco.TextboxMultiple",
   "DatabaseType": 0,
   "PreValues": {
-    "maxChars": "250"
+    "maxChars": "320"
   },
   "Parent": null,
   "Udi": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
