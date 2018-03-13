@@ -1,5 +1,5 @@
 
-.medicodigital{margin:0!important;position:absolute;height:33px!important;bottom:-3px;right:0;opacity:.6}
+html,body{font-size:16px;line-height:1.7;font-family:"Open Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.7;color:#000;letter-spacing:.4px}
 
 /*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
