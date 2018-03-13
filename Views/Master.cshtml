@@ -17,8 +17,10 @@
   <link rel="manifest" href="/media/1051/manifest.json" />
   <link rel="shortcut icon" href="/media/1045/favicon.ico" />
   <script async="async" src="/scripts/site.js"></script>
-  <style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/critical.css")))</style>
-  <style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/style.css")))</style>
+  <style>
+    @Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/critical.css")))
+    @Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/style.css")))
+  </style>
   @*<script async="async" defer="defer" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
   <script async="async" defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
@@ -129,12 +131,7 @@
 @@font-face{font-family:"Open Sans";font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2')}
 @@font-face{font-family:"Open Sans";font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpKKSTj5PW.woff2) format('woff2')}
 </style>
+@*<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
 <link rel="stylesheet" href="/css/bootstrap4.css" />
-@*<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/bootstrap4.css")))</style>
-<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery3.3.1.js")))</script>
-<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/bootstrap4.js")))</script>
-<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery-ui1.12.1.js")))</script>
-<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery-validate1.17.0.js")))</script>
-<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/forms.js")))</script>*@
 </html>
