@@ -9,6 +9,14 @@ html,body{font-size:16px;line-height:1.7;font-family:"Open Sans",sans-serif,"App
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page,#main-nav .dropdown-menu a:hover{background:#f0f0f0}/*lgrey*/
 
 /*Text*/
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
+p{margin-top:0;margin-bottom:1rem}
+dl,ul{margin-top:0;margin-bottom:1rem}
+b,strong{font-weight:bolder}
+small{font-size:80%}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}
 .h1,h1{font-size:2.5rem}
 .h2,h2{font-size:2rem}
