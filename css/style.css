@@ -1,5 +1,3 @@
-*,:after,:before{box-sizing:border-box;font-family:'Open Sans',sans-serif!important;font-size:16px;line-height:1.7;letter-spacing:.4px;color:#000;text-underline-position:under}
-body,html{-webkit-font-smoothing:antialiased;text-size-adjust:100%;overflow-x:hidden;margin:0}
 ::-webkit-scrollbar,.umbraco-forms-page label,label{display:none!important}
 main{min-height:calc(100vh - 253px);background:#fff}
 .medicodigital{margin:0!important;position:absolute;height:33px!important;bottom:-3px;right:0;opacity:.6}
