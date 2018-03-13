@@ -3,15 +3,7 @@
 @{
   Layout = "Master.cshtml";
   
-  List<IPublishedContent> consultants = new List<IPublishedContent>();
-  foreach(var consultant in Umbraco.Content(1155).Children().Where("Visible")){
-    foreach(var treatment in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments")){
-      if (treatment.Id == (int)UmbracoContext.Current.PageId){
-        consultants.Add(consultant);
-        break;
-      }
-    }
-  }
+  List<IPublishedContent> consultants = Umbraco.Content(1155).Children().Where("Visible");
 }
 <div class="maincontent">
   @if(consultants.Any()){
