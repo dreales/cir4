@@ -1,0 +1,18 @@
+{
+  "Icon": "icon-picture",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://media-type/b5a82ddccb54425ea24924280b15f659",
+  "Dependencies": [],
+  "Name": "Profile image",
+  "Alias": "profileImage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MediaTypeArtifact",
+  "__version": "2.0.11"
+}
