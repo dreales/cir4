@@ -1,5 +1,4 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@using Umbraco.Core.Models
 @helper ListChildNodes(IPublishedContent startNode){
   foreach(var node in startNode.Children.Where("Visible")){
     if (node.GetPropertyValue<string>("hideFromSearchEngines") != "True"){
