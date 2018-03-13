@@ -43,13 +43,11 @@
     }
     var commands = Html.GetFormThemeScriptCommands(Model);
     @* Render javascript commands to initialise fields *@
-    if (commands.Count > 0){
-        <script>
-            (function () {
-                @foreach (var cmd in commands.Values){
-                    <text>@Html.Raw(cmd)</text>
-                }
-            }());
-        </script>
-    }
+  if (commands.Count > 0){
+    <script>window.addEventListener('DOMContentLoaded',function(){(function(){
+      @foreach (var cmd in commands.Values){
+        <text>@Html.Raw(cmd)</text>
+      }
+    }());});</script>
+  }
 }
