@@ -18,11 +18,11 @@
   <link rel="shortcut icon" href="/media/1045/favicon.ico" />
   <link rel="icon" sizes="192x192" href="/media/1048/circle-health.png">
   <script async="async" src="/scripts/site.js"></script>
-  @*<script async="async" defer="defer" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>*@
-  @*<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>*@
-  @*<script async="async" defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>*@
-  @*<script async="async" defer="defer" src="/scripts/site.js"></script>*@
-  @*<script async="async" defer="defer" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>*@
+  @*<script async="async" defer="defer" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+  <script async="async" defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+  <script async="async" defer="defer" src="/scripts/site.js"></script>
+  <script async="async" defer="defer" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>*@
 </head>
 
 <body>
@@ -124,10 +124,15 @@
     <p><a href="#">Call me back</a></p>
   </aside>
 </body>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
-<style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/bootstrap4.css")))</style>
+<style>
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans SemiBold'),local('OpenSans-SemiBold'),url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpKKSTj5PW.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/style.css")))</style>
-@*<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery3.3.1.js")))</script>
+@*<style>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/bootstrap4.css")))</style>
+<script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery3.3.1.js")))</script>
 <script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/bootstrap4.js")))</script>
 <script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery-ui1.12.1.js")))</script>
 <script>@Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/scripts/jquery-validate1.17.0.js")))</script>
