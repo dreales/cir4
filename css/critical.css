@@ -1,24 +1,44 @@
+*,::after,::before{box-sizing:border-box}
+html{font-size:16px;line-height:1.7;text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}
 header,main,nav{display:block}
-body{margin:0;font-size:1rem;font-weight:400;line-height:1.5;color:rgb(33,37,41);text-align:left;background-color:rgb(255,255,255)}
-h1,h2{margin-top:0;margin-bottom:.5rem}
-p{margin-top:0;margin-bottom:1rem}
-ul{margin-top:0;margin-bottom:1rem}
-a{color:rgb(0,123,255);text-decoration:none;background-color:transparent}
-img{vertical-align:middle;border-style:none}
+body{margin:0;font-family:'Open Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:1rem;font-weight:400;line-height:1.7;color:#000;text-align:left;background-color:#fff;letter-spacing:.4px;text-underline-position:under;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 label{display:inline-block;margin-bottom:.5rem}
-button{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0}
-button,input,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}
+hr{box-sizing:content-box;height:0;overflow:visible}
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
+p{margin-top:0;margin-bottom:1rem}
+dl,ol,ul{margin-top:0;margin-bottom:1rem}
+ol ol,ol ul,ul ol,ul ul{margin-bottom:0}
+b,strong{font-weight:bolder}
+small{font-size:80%}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}
+a:hover{color:#0056b3;text-decoration:underline}
+a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}
+a:not([href]):not([tabindex]):focus{outline:0}
+img{vertical-align:middle;border-style:none}
+svg:not(:root){overflow:hidden}
+table{border-collapse:collapse}
+th{text-align:inherit}
+button{border-radius:0}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}
+button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}
 button,input{overflow:visible}
-button{text-transform:none}
+button,select{text-transform:none}
+textarea{overflow:auto;resize:vertical}
 [type="submit"],button,html [type="button"]{-webkit-appearance:button}
 textarea{overflow:auto;resize:vertical}
 fieldset{min-width:0;padding:0;margin:0;border:0}
 [type="search"]{outline-offset:-2px;-webkit-appearance:none}
 [type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
 *::-webkit-file-upload-button{font-family:inherit;font-size:inherit;font-style:inherit;font-variant:inherit;font-weight:inherit;line-height:inherit;-webkit-appearance:button}
-h1,h2{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}
-h1{font-size:2.5rem}
-h2{font-size:2rem}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}
+.h1,h1{font-size:2.5rem}
+.h2,h2{font-size:2rem}
+.h3,h3{font-size:1.75rem}
+.h4,h4{font-size:1.5rem}
+.h5,h5{font-size:1.25rem}
+.h6,h6{font-size:1rem}
+
 .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
 @media (min-width:576px){.container{max-width:540px}
 }
