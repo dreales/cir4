@@ -62,6 +62,16 @@
           "Name": "Type",
           "SortOrder": 4,
           "Validation": null
+        },
+        {
+          "Key": "41d1728c-c0b1-4bbc-bbdf-e647e280619b",
+          "Alias": "thumbnail",
+          "DataType": "umb://data-type/3e1f5b2729154fc9974fd3e8b8428574",
+          "Description": "If its a profile image please add a thumbnail",
+          "Mandatory": false,
+          "Name": "Thumbnail",
+          "SortOrder": 5,
+          "Validation": null
         }
       ]
     }
@@ -71,6 +81,11 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/1df9f033e6d4451fb8d2e0cbc50a836f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3e1f5b2729154fc9974fd3e8b8428574",
       "Ordering": true,
       "Mode": 0
     },
