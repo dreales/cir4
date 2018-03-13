@@ -57,6 +57,7 @@ fieldset{min-width:0;padding:0;margin:0;border:0}
 .navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:'';background-size:100%;background-position:50% 50%;background-repeat:no-repeat no-repeat}
 .ml-auto{margin-left:auto!important}
 .text-center{text-align:center!important}
+.medicodigital{margin:0!important;position:absolute;height:33px!important;bottom:-3px;right:0;opacity:.6}
 ::-webkit-scrollbar,.umbraco-forms-page label,label{display:none!important}
 main{min-height:calc(100vh - 253px);background:#fff}
 @media(min-width:576px){.container{max-width:540px}}
