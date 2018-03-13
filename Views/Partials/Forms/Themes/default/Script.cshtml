@@ -17,9 +17,9 @@
     var dateFormat = Html.ConvertDateFormat();
     var recordValues = Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(fieldsNotDisplayed));
     var jsCommand = string.Format(@"var contourDateFormat = '{0}',formId = '{1}',fieldSetConditions = {2},fieldConditions = {3},recordvalues = {4};umbracoForms.dependencyCheck(formId);var form = $('#umbraco_form_' + formId + ' .umbraco-forms-page');var conditions = new umbracoForms.conditions(form, fieldSetConditions, fieldConditions, recordvalues);conditions.watch();",dateFormat,formId,fieldSetConditions,fieldConditions,recordValues);
-    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-dependencies.js");
-    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms.js");
-    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-conditions.js");
+    @*Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-dependencies.js");*@
+    @*Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms.js");*@
+    @*Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-conditions.js");*@
     Html.AddFormThemeScriptCommand(Model, jsCommand);
 }
 @* Only render out scripts on the page if the form has not been submitted yet *@
