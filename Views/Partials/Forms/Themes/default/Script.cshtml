@@ -38,13 +38,13 @@
         if (Model.UseClientDependency){
             Html.RequiresJs(script.Value);
         } else {
-            <script type="text/javascript" src="@Url.Content(script.Value)"></script>
+            <script src="@Url.Content(script.Value)"></script>
         }
     }
     var commands = Html.GetFormThemeScriptCommands(Model);
     @* Render javascript commands to initialise fields *@
     if (commands.Count > 0){
-        <script type="text/javascript">
+        <script>
             (function () {
                 @foreach (var cmd in commands.Values){
                     <text>@Html.Raw(cmd)</text>
