@@ -1535,3 +1535,8 @@ body{min-width:992px!important}
 .table td,.table th{background-color:#fff!important}
 .table-bordered td,.table-bordered th{border:1px solid #ddd!important}
 }
+/*cqc*/
+.cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
+.cqc img{padding:8px}
+.cqc a,.cqc .good{color:#6c276a;padding:7px;margin:0 10px 10px 0;display:inline-block}
+.cqc .good{color:#fff;background:#458f00;border:1px solid #458f00}
