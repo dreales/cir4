@@ -3,7 +3,7 @@ html,body{font-size:16px;line-height:1.7;font-family:"Open Sans",sans-serif,"App
 /*Backgrounds*/
 .waterback,#main-nav,footer nav,.singlecolform,.toptabs,.nav-tabs,.btn,button{background:#fc5960}/*wmelon*/
 .btn,button,.waterback *,.singlecolform *,.toptabs *,.nav-tabs *,footer nav *{color:#fff}
-#main-nav a:hover,footer a:hover,.nav-tabs li a:hover,body>aside a:hover{color:rgba(255,255,255,.7);text-decoration:none}
+#main-nav a:hover,footer a:hover,.nav-tabs li a:hover,body>aside a:hover,body>aside a:hover span{color:rgba(255,255,255,.7);text-decoration:none}
 .nav-tabs a,.btn:hover,button:hover{background:#f04d50}/*dred*/
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page,#main-nav .dropdown-menu a:hover{background:#f0f0f0}/*lgrey*/
 
