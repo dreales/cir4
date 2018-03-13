@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-12"><h2>Consultants who are trained in this speciality</h2></div>
         @foreach(var consultant in consultants){
-          string image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").Url;
+          string image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
           string location = (string)consultant.GetPropertyValue("location");
           <div class="col-4">
