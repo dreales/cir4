@@ -9,14 +9,14 @@
 <input type="hidden" id="fsConditions_@Model.FormClientId" value='@Html.Raw(Model.FieldsetConditionsAsJson())' />
 <input type="hidden" id="fieldConditions_@Model.FormClientId" value='@Html.Raw(Model.FieldConditionsAsJson())' />
 <input type="hidden" id="values_@Model.FormClientId" value='@Html.Raw(Model.AllFieldsAsJson())'/>
-<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms-dependencies.js")" type="text/javascript"></script>
-<script type="text/javascript">
+<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms-dependencies.js")"></script>
+<script>
     var contourDateFormat = "@Html.ConvertDateFormat()";
     performDependencyChecks('@Model.FormClientId'); //Check for library dependencies
 </script>
-<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms-conditions.js")" type="text/javascript"></script>
-<script type="text/javascript">
+<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms.js")"></script>
+<script src="@Url.Content("~/App_Plugins/UmbracoForms/Assets/umbracoforms-conditions.js")"></script>
+<script>
     (function ($, formId) {
         var contourFieldValues,
             recordValues = JSON.parse($("#values_" + formId).val()),
