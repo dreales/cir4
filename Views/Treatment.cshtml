@@ -2,10 +2,10 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels
 @using Archetype.Models
 @{
-  var showform = true;
+  bool amp = false;
   if (Request.QueryString["amp"] != null){
     Layout = "AMPTemplate.cshtml";
-    showform = false;
+    amp = true;
   } else {
     Layout = "Master.cshtml";
   }
@@ -76,7 +76,7 @@
     </div>
   </div>
 </div>
-@if (showVideo){
+@if(amp){
   <div class="greyback"><br />
     <div class="container video">
       <div>
@@ -98,7 +98,11 @@
           string location = (string)consultant.GetPropertyValue("location");
           <div class="col-4">
             <a href="@consultant.Url">
-              <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
+              @if(amp){
+                <amp-img src="@image" width="140" height="140" layout="responsive" alt="@consultant.Name is a @speciality at Circle @location" />
+              } else {
+                <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
+              }
               <div>
                 <h3 class="normal">@consultant.Name</h3>
                 <p class="smaller">@speciality</p>
