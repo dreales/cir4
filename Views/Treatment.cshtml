@@ -34,7 +34,6 @@
   }
   
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
-  
   List<IPublishedContent> consultants = new List<IPublishedContent>();
   foreach(var consultant in Umbraco.Content(1155).Children().Where("Visible")){
     foreach(var treatment in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("treatments")){
@@ -68,7 +67,7 @@
             }
         </div>
       </div>
-      @if(showform){
+      @if(!amp){
         <div class="col-md-4">
           @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="87a8b37a-b171-42a0-be1d-3b14737d8c02", FormTheme="", ExcludeScripts="0"})
         </div>
