@@ -2,7 +2,11 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels
 @using Archetype.Models
 @{
-  Layout = "Master.cshtml";
+  if (Request.QueryString["amp"] != null){
+    Layout = "Master.cshtml";
+  } else {
+    Layout = "Master.cshtml";
+  }
   List<KeyValuePair<string, string>> accordion = null;
   int i = 0;
   if (Model.Content.HasProperty("accordion")){
