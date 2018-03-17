@@ -16,12 +16,10 @@
   }
   List<IPublishedContent> treatments = new List<IPublishedContent>();
   foreach(var treatment in Umbraco.Content(1154).Children().Where("Visible")){
-    if(treatment.HasProperty("specialties")){
-        foreach(var speciality in treatment.GetPropertyValue<IEnumerable<IPublishedContent>>("specialties")){
-        if (speciality.Id == (int)UmbracoContext.Current.PageId){
-          treatments.Add(treatment);
-          break;
-        }
+     foreach(var speciality in treatment.GetPropertyValue<IEnumerable<IPublishedContent>>("specialties")){
+      if (speciality.Id == (int)UmbracoContext.Current.PageId){
+        treatments.Add(treatment);
+        break;
       }
     }
   }
