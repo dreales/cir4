@@ -14,8 +14,16 @@
     showVideo = true;
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
-  
-  var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");
+  List<IPublishedContent> treatments = new List<IPublishedContent>();
+  foreach(var treatment in Umbraco.Content(1154).Children().Where("Visible")){
+    foreach(var speciality in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities")){
+      if (speciality.Id == (int)UmbracoContext.Current.PageId){
+        treatments.Add(consultant);
+        break;
+      }
+    }
+  }
+  @*var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");*@
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
 
   List<IPublishedContent> consultants = new List<IPublishedContent>();
