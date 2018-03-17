@@ -16,7 +16,7 @@
   }
   List<IPublishedContent> treatments = new List<IPublishedContent>();
   foreach(var treatment in Umbraco.Content(1153).Children().Where("Visible")){
-     foreach(var speciality in treatment.GetPropertyValue<IEnumerable<IPublishedContent>>("specialties")){
+    foreach(var speciality in treatment.GetPropertyValue<IEnumerable<IPublishedContent>>("specialties")){
       if (speciality.Id == (int)UmbracoContext.Current.PageId){
         treatments.Add(treatment);
         break;
