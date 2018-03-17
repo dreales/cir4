@@ -23,9 +23,6 @@
       }
     }
   }
-  @*var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");*@
-  var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
-
   List<IPublishedContent> consultants = new List<IPublishedContent>();
   foreach(var consultant in Umbraco.Content(1155).Children().Where("Visible")){
     foreach(var speciality in consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities")){
@@ -35,6 +32,8 @@
       }
     }
   }
+  @*var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");*@
+  var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
