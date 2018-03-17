@@ -18,7 +18,7 @@
   foreach(var treatment in Umbraco.Content(1154).Children().Where("Visible")){
     foreach(var speciality in treatment.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities")){
       if (speciality.Id == (int)UmbracoContext.Current.PageId){
-        treatments.Add(consultant);
+        treatments.Add(treatment);
         break;
       }
     }
