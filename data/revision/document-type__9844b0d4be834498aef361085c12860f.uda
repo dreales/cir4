@@ -51,16 +51,6 @@
           "Validation": null
         },
         {
-          "Key": "8569c38d-0d68-4cb1-929f-277faedc227c",
-          "Alias": "listOfTreatments",
-          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "List of treatments",
-          "SortOrder": 3,
-          "Validation": null
-        },
-        {
           "Key": "8e5fcf7a-0976-4883-b6d9-ee8034fab4e1",
           "Alias": "bannerImage",
           "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
@@ -88,11 +78,6 @@
     },
     {
       "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
       "Ordering": true,
       "Mode": 0
     },
