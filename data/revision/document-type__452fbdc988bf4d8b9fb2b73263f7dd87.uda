@@ -26,6 +26,16 @@
           "Validation": null
         },
         {
+          "Key": "65972de6-a9a7-4987-842f-1adae0746741",
+          "Alias": "enableAMP",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Enable an 'Accelerated Mobile Pages' version of this page",
+          "Mandatory": false,
+          "Name": "Enable AMP",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
           "Key": "cc29b8d2-52e1-4d64-997d-b08f38813eea",
           "Alias": "hideFloatingPhoneNumbers",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
