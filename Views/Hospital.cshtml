@@ -23,9 +23,12 @@
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
   List<string> titles = new List<string>();
   List<string> urls = new List<string>();
+  List<string> images = new List<string>();
+  List<string> excerpts = new List<string>();
   foreach (ContentModels.Blogpost post in blogposts){
     titles.Add(post.PageTitle);
     urls.Add(post.Url);
+    images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url;);
   }
   
   string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
