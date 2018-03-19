@@ -28,7 +28,7 @@
   foreach (ContentModels.Blogpost post in blogposts){
     titles.Add(post.PageTitle);
     urls.Add(post.Url);
-    images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url;);
+    images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url);
   }
   
   string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
