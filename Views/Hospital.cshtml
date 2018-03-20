@@ -26,7 +26,7 @@
   List<string> images = new List<string>();
   List<string> excerpts = new List<string>();
   foreach (ContentModels.Blogpost post in blogposts){
-    titles.Add(post.PageTitle);
+    titles.Add(post.PageName);
     urls.Add(post.Url);
     images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url);
   }
