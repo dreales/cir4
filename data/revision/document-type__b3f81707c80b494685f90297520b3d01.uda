@@ -72,7 +72,7 @@
         {
           "Key": "231a9700-8835-4f6d-9768-5fda6e8bc33e",
           "Alias": "whyChooseText",
-          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
           "Description": null,
           "Mandatory": false,
           "Name": "why choose text",
@@ -197,6 +197,11 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
       "Ordering": true,
       "Mode": 0
     },
