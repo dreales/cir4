@@ -95,7 +95,7 @@
           string image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
           string location = (string)consultant.GetPropertyValue("location");
-          <div class="col-4">
+          <div class="col-md-4">
             <a href="@consultant.Url">
               @if(amp){
                 <amp-img src="@image" width="140" height="140" layout="responsive" alt="@consultant.Name is a @speciality at Circle @location" />
