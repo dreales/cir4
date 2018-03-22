@@ -46,19 +46,6 @@ fieldset{min-width:0;padding:0;margin:0;border:0}
 .medicodigital{margin:0!important;position:absolute;height:33px!important;bottom:-3px;right:0;opacity:.6}
 ::-webkit-scrollbar,.umbraco-forms-page label,label{display:none!important}
 main{min-height:calc(100vh - 253px);background:#fff}
-@media(min-width:576px){.container{max-width:540px}}
-@media(min-width:768px){
-.container{max-width:720px}
-.col-md-8{-webkit-box-flex:0;max-width:66.666667%}
-.navbar-expand-md{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-box-pack:start}
-.navbar-expand-md .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal}
-.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}
-.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}
-.navbar-expand-md .navbar-collapse{display:-webkit-box!important}
-.navbar-expand-md .navbar-toggler{display:none}}
-@media(min-width:992px){.container{max-width:960px}}
-@media(min-width:1200px){.container{max-width:1140px}}
-
 
 html,body{font-size:16px;line-height:1.7;font-family:"Open Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.7;color:#000;letter-spacing:.4px}
 /*Backgrounds*/
@@ -195,3 +182,18 @@ aside.container{padding:0;max-width:330px!important}
 aside .callmeback input{padding:14px 10px;margin:5px;max-width:95%}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:11.5px}
 aside .field-validation-error span{position:absolute;transform:translate3D(8px,-22px,0);color:#000}
+
+@media(min-width:576px){.container{max-width:540px}}
+@media(min-width:768px){
+.container{max-width:720px}
+.col-md-8{-webkit-box-flex:0;max-width:66.666667%}
+.navbar-expand-md{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-box-pack:start}
+.navbar-expand-md .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal}
+.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}
+.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}
+.navbar-expand-md .navbar-collapse{display:-webkit-box!important}
+.navbar-expand-md .navbar-toggler{display:none}}
+@media(min-width:992px){.container{max-width:960px}}
+@media(min-width:1200px){.container{max-width:1140px}}
+
+@media(min-width:767px){body>aside{display:none}}
