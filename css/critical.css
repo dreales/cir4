@@ -159,7 +159,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .profile h1{margin:50px 0 20px}
 .profile svg{margin:0 9px -4px 0}
 .consultants img{width:140px;height:140px;object-fit:cover;float:left}
-.consultants .col-4{padding-top:20px;padding-bottom:20px}
+.consultants .col-md-4{padding-top:20px;padding-bottom:20px}
 .consultants a>div{display:inline-block;max-width:calc(100% - 140px);padding:20px 10px}
 .consultants p{margin-bottom:5px}
 .consultants a{height:100%;width:100%;display:block;box-shadow:1px 1px 4px rgba(0,0,0,.5)}
