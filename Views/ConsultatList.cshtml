@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         @foreach(var consultant in consultants){
-        string image = "";
+          string image = "";
           if(CurrentPage.HasValue("profileImage")){
             image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           }
