@@ -3,6 +3,7 @@
 @{
   Layout = "Master.cshtml";
   List<IPublishedContent> consultants = new List<IPublishedContent>(Umbraco.Content(1155).Children().Where("Visible"));
+  string consultantsJson = "";
 }
 <div class="maincontent">
   <div class="consultants">
@@ -15,6 +16,7 @@
           }
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
           string location = (string)consultant.GetPropertyValue("location");
+          consultantsJson += "{n:"+consultant.Name + ",s:"+speciality + ",l:"+location + ",i:"+image + "}";
           <div class="col-md-4">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
@@ -30,3 +32,7 @@
     </div>
   </div>
 </div>
+<script>
+    var consultants = [@consultants.json];
+    console.log(consultants);
+</script>
