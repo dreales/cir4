@@ -5,10 +5,11 @@
   List<IPublishedContent> consultants = new List<IPublishedContent>(Umbraco.Content(1155).Children().Where("Visible"));
   string consultantsJson = "";
   List<IPublishedContent> specialities = new List<IPublishedContent>(Umbraco.Content(1154).Children().Where("Visible"));
-  string  specialitiesJson = "";
+  string  specialitiesJson = "\"";
   foreach (var speciality in specialities){
-    specialitiesJson += speciality.Name  + ",";
+    specialitiesJson += speciality.Name  + "\",\"";
   }
+  specialitiesJson += "\"";
   
 }
 <div class="maincontent">
