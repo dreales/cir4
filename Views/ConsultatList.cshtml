@@ -79,13 +79,13 @@
     return function findMatches(q,cb){
       var matches = [], substringRegex;
       substrRegex = new RegExp(q,'i');
-      $.each(strs,function(i,str){if(substrRegex.test(str)) matches.push(str);});
+      $.each(strs,function(i,str){if(substrRegex.test(str.name)) matches.push(str.name);});
       cb(matches);
     };
   };
   var states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware'];
   
-  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'name',source:substringMatcher(consultants)});
+  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'consultants',source:substringMatcher(consultants)});
 
 
 </script>
