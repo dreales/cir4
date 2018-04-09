@@ -4,6 +4,11 @@
   Layout = "Master.cshtml";
   List<IPublishedContent> consultants = new List<IPublishedContent>(Umbraco.Content(1155).Children().Where("Visible"));
   string consultantsJson = "";
+  List<IPublishedContent> specialities = new List<IPublishedContent>(Umbraco.Content(1154).Children().Where("Visible"));
+  foreach (var speciality in specialities){
+    specialitiesJson += speciality.Name  + ",";
+  }
+  
 }
 <div class="maincontent">
   <div class="container">
@@ -58,6 +63,7 @@
 </div>
 <script>
   var consultants = [ @Html.Raw(consultantsJson) ];
+  var specialities = [ @Html.Raw(specialitiesJson) ]
   console.log(consultants);
   var sort = function(){
     for(var consultant in consultants){
