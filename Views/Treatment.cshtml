@@ -121,9 +121,11 @@
 var h = $('#shorten')[0].scrollHeight;
 $('#more').click(function(e){
     e.stopPropagation();
-    $('#shorten').animate({'height':h})
+    $('#shorten').animate({'height':h});
+    $('#more').css({'display':'none'});
 });
 $(document).click(function(){
     $('div').animate({'height':'50px'})
+    $('#more').css({'display':'inline'});
 })
 </script>
