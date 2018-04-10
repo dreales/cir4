@@ -85,7 +85,7 @@
       cb(matches);
     };
   };
-  consule.log(consultants);
+  console.log(consultants);
   console.log(names);
   $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
 </script>
