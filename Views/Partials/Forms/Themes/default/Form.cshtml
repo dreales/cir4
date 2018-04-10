@@ -20,7 +20,7 @@
 
     @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false)
     {
-        <h4 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h4>
+        <h2 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h2>
     }
 
     @if (Model.ShowValidationSummary)
@@ -58,19 +58,16 @@
                                         }
                                     </label>
                                 }
-
                                 @if (!string.IsNullOrEmpty(f.ToolTip))
                                 {
                                     <span class="umbraco-forms-tooltip help-block">@f.ToolTip</span>
                                 }
-
                                 <div class="umbraco-forms-field-wrapper">
                                     @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
                                     @if (Model.ShowFieldValidaton)
                                     {
                                         @Html.ValidationMessage(f.Id)
                                     }
-
                                 </div>
                             </div>
                          }
