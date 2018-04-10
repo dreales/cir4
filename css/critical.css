@@ -192,7 +192,10 @@ aside .callmeback input{padding:14px 10px;margin:5px 25px;max-width:80%}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:11.5px}
 aside .field-validation-error span{position:absolute;transform:translate3D(28px,-22px,0);color:#000}
 
-@media(min-width:576px){.container{max-width:540px}}
+@media(min-width:576px){
+.container{max-width:540px}
+#more{display:none}
+}
 @media(min-width:768px){
 .container{max-width:720px}
 .col-md-8{-webkit-box-flex:0;max-width:66.666667%}
