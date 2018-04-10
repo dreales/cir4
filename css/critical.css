@@ -109,7 +109,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
 .navbar-collapse.show,.navbar-collapse.collapsing{position:absolute;background:#fff;right:0;top:93px;border:1px solid #fd585f}
-.navbar-collapse.show *{color:#000!important;font-weight:400}
+.navbar-collapse.show *{color:#000!important;font-weight:400!important}
 footer{border-top:2px solid #fff;overflow-y:hidden}
 footer a{margin-right:25px}
 footer .first-social{margin-left:30px}
