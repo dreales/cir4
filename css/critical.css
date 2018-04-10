@@ -210,7 +210,7 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 
 @media(max-width:575px){
 .maincontent #shorten{height:240px;overflow:hidden}
-#more{content:"";position:absolute;bottom:0;width:100%;height:15px;background-image:linear-gradient(to bottom,transparent,#000);;
+#more{background-image:linear-gradient(to bottom,transparent,#000)}
 }
 @media(max-width:767px){
 body>aside{display:none}
