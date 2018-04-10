@@ -150,7 +150,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .nav-tabs .active{background:#fff}
 .card{border-radius:0;margin-bottom:-1px}
 .card h2{margin:8px 0 10px}
-.card h2 a:before{font-family:"Icons";content:"\E114";color:#fc5960;overflow:no-display;}
+.card h2 a:before{font-family:"Icons";content:"\e080";color:#fc5960;overflow:no-display;}
 .card h2 a.collapsed:before{content:"\E113"}
 .card-body{border-top:1px solid rgba(0,0,0,.125)}
 .card-header{border:0}
