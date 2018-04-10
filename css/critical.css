@@ -205,6 +205,14 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 @media(min-width:992px){.container{max-width:960px}}
 @media(min-width:1200px){.container{max-width:1140px}}
 
+@media(max-width:575px){
+.maincontent .shorten{
+    width:100%;
+    height:50px;
+    display:block;
+    overflow:hidden;
+}
+}
 @media(max-width:767px){
 body>aside{display:none}
 h1,h2{font-size:20px}
