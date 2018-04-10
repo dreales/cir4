@@ -66,28 +66,19 @@
 <script src="/scripts/jquery3.3.1.js"></script>
 <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js"></script>
 <script>
-  var consultants = [ @Html.Raw(consultantsJson) ];
-  var specialities = [ @Html.Raw(specialitiesJson) ];
-  names = [];
-  map = {};
-  $.each(consultants,function(i,c){
-    map[c.n] = c;
-    names.push(c.n);
-  });
-  var sort = function(){
-    console.log(0);
-  }
-  var matcher = function(strs){
-    return function findMatches(q,cb){
-      var matches = [], substringRegex;
-      substrRegex = new RegExp(q,'i');
-      $.each(strs,function(i,str){if(substrRegex.test(str)) matches.push(str);});
-      cb(matches);
-    };
+var consultants=[ @Html.Raw(consultantsJson) ],specialities=[ @Html.Raw(specialitiesJson) ],names=[],map={};
+$.each(consultants,function(i,c){map[c.n]=c;names.push(c.n);});
+var sort = function(){
+  console.log(0);
+};
+var matcher = function(ss){
+  return function findMatches(q,cb){
+    var m=[],substringRegex=new RegExp(q,'i');
+    $.each(ss,function(i,s){if(substrRegex.test(s))m.push(s);});
+    cb(m);
   };
-  console.log(consultants);
-  console.log(names);
-  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
+};
+$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
