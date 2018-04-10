@@ -208,6 +208,6 @@ body>aside{display:none}
 h1,h2{font-size:20px}
 #top-nav{display:none}
 .hero-image{padding:50px 20px}
-.hero-image .dark-overlay{padding:20px}
+.hero-image .dark-overlay{padding:10px 20px 3px}
 }
 
