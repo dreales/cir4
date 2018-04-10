@@ -205,7 +205,7 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 
 @media(max-width:767px){
 body>aside{display:none}
-h2{font-size:16px}
+h1,h2{font-size:16px}
 #top-nav{display:none}
 }
 
