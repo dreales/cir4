@@ -72,8 +72,8 @@ var sort = function(){
 };
 var matcher = function(ss){
   return function findMatches(q,cb){
-    var m=[],substringRegex=new RegExp(q,'i');
-    $.each(ss,function(i,s){if(substrRegex.test(s))m.push(s);});
+    var m=[],sr= new RegExp(q,'i');
+    $.each(ss,function(i,s){if(sr.test(s)) m.push(s);});
     cb(m);
   };
 };
