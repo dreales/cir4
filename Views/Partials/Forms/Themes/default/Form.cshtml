@@ -65,23 +65,18 @@
                                 }
 
                                 <div class="umbraco-forms-field-wrapper">
-
                                     @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
-
                                     @if (Model.ShowFieldValidaton)
                                     {
                                         @Html.ValidationMessage(f.Id)
                                     }
 
                                 </div>
-
                             </div>
                          }
-
                     </div>
                  }
             </div>
-
         </fieldset>
     }
 
@@ -90,7 +85,7 @@
     </div>
 
 
-    <div class="umbraco-forms-navigation row-fluid">
+    <div class="umbraco-forms-navigation row">
 
         <div class="col-md-12">
             @if (Model.IsMultiPage)
