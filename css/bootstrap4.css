@@ -19,7 +19,6 @@ caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;c
 input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
 input[type=date],input[type=datetime-local],input[type=month],input[type=time]{-webkit-appearance:listbox}
 fieldset{min-width:0;padding:0;margin:0;border:0}
-legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}
 progress{vertical-align:baseline}
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
 [type=search]{outline-offset:-2px;-webkit-appearance:none}
