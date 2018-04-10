@@ -67,9 +67,13 @@
 <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js"></script>
 <script>
   var consultants = [ @Html.Raw(consultantsJson) ];
-  var specialities = [ @Html.Raw(specialitiesJson) ]
-  console.log(consultants);
-  console.log(specialities);
+  var specialities = [ @Html.Raw(specialitiesJson) ];
+  names = [];
+  map = {};
+  $.each(consultants,function(i,c){
+    map[c.name] = c;
+    names.push(c.name);
+  });
   var sort = function(){
     console.log(0);
   }
@@ -77,13 +81,11 @@
     return function findMatches(q,cb){
       var matches = [], substringRegex;
       substrRegex = new RegExp(q,'i');
-      $.each(strs,function(i,str){if(substrRegex.test(str.name)) matches.push(str.name);});
+      $.each(strs,function(i,str){if(substrRegex.test(str)) matches.push(str);});
       cb(matches);
     };
   };
-  var states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware'];
-  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'consultants',
-    source:function(q,process){substringMatcher(_.map(consultants,function(consultant){return consultant.name;}))}});
+  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'consultants',source:substringMatcher(names)});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
