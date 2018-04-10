@@ -77,7 +77,7 @@
     return function findMatches(q,cb){
       var matches = [], substringRegex;
       substrRegex = new RegExp(q,'i');
-      $.each(strs,function(i,str){if(substrRegex.test(str)) matches.push(str);});
+      $.each(strs,function(i,str){if(substrRegex.test(str.name)) matches.push(str.name);});
       cb(matches);
     };
   };
