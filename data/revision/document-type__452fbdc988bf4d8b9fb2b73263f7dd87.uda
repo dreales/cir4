@@ -36,6 +36,16 @@
           "Validation": null
         },
         {
+          "Key": "c2d40136-d102-4ffc-867e-ad64ccb88e0e",
+          "Alias": "customMobileTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "If a value is entered, this will replace the search bar on mobiles",
+          "Mandatory": false,
+          "Name": "Custom mobile title",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
           "Key": "cc29b8d2-52e1-4d64-997d-b08f38813eea",
           "Alias": "hideFloatingPhoneNumbers",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
@@ -115,5 +125,5 @@
   "Name": "Template",
   "Alias": "template",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
