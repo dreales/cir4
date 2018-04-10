@@ -53,7 +53,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <div class="shorten">
+        <div id="shorten">
           @Umbraco.Field("mainContent", altText:"")
         </div>
         <a id="more" href="#">Read more </a>
@@ -117,3 +117,18 @@
     </div>
   </div>
 }
+<script>
+var h = $('.shorten')[0].scrollHeight;
+$('#more').click(function(e) {
+    e.stopPropagation();
+    $('div').animate({
+        'height': h
+    })
+});
+
+$(document).click(function() {
+    $('div').animate({
+        'height': '50px'
+    })
+})
+</script>
