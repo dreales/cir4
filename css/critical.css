@@ -190,6 +190,7 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 
 @media(min-width:576px){.container{max-width:540px}}
 @media(min-width:768px){
+#top-nav{display:none}
 .container{max-width:720px}
 .col-md-8{-webkit-box-flex:0;max-width:66.666667%}
 .navbar-expand-md{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-box-pack:start}
