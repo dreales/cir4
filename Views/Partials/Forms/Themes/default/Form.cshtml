@@ -1,4 +1,4 @@
-@inherits WebViewPage<FormViewModel>
+﻿@inherits WebViewPage<FormViewModel>
 @using Umbraco.Forms.Core
 @using Umbraco.Forms.Mvc
 @using Umbraco.Forms.Mvc.Models
@@ -37,8 +37,7 @@
             {
                 <legend>@fs.Caption</legend>
             }
-
-            <div class="row-fluid">
+            <div class="row">
 
                 @foreach (var c in fs.Containers)
                 {
