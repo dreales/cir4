@@ -85,6 +85,7 @@
       cb(matches);
     };
   };
+  console.log(names);
   $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'consultants',source:substringMatcher(names)});
 </script>
 <style>
