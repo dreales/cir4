@@ -119,16 +119,11 @@
 }
 <script>
 var h = $('.shorten')[0].scrollHeight;
-$('#more').click(function(e) {
+$('#more').click(function(e){
     e.stopPropagation();
-    $('div').animate({
-        'height': h
-    })
+    $('#shorten').animate({'height':h})
 });
-
-$(document).click(function() {
-    $('div').animate({
-        'height': '50px'
-    })
+$(document).click(function(){
+    $('div').animate({'height':'50px'})
 })
 </script>
