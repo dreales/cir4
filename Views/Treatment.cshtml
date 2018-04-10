@@ -53,18 +53,21 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
+        <div>
           @Umbraco.Field("mainContent", altText:"")
-          <div id="accordion">
-            @foreach(KeyValuePair<string,string> panel in accordion){i++;
-              <div class="card">
-                <div class="card-header">
+        </div>
+        <a id="more" href="#">Read more </a>
+        <div id="accordion">
+          @foreach(KeyValuePair<string,string> panel in accordion){i++;
+            <div class="card">
+              <div class="card-header">
                 <h2><a href="#" data-toggle="collapse" data-target="#collapse-@i" aria-expanded="false" aria-controls="collapse-@i" class="collapsed">@panel.Key</a></h2>
               </div>
               <div id="collapse-@i" class="collapse" data-parent="#accordion">
                 <div class="card-body">@Html.Raw(panel.Value)</div>
               </div>
             </div>
-            }
+          }
         </div>
       </div>
       @if(!amp){
