@@ -77,7 +77,7 @@
   var sort = function(){
     console.log(0);
   }
-  var substringMatcher = function(strs){
+  var matcher = function(strs){
     return function findMatches(q,cb){
       var matches = [], substringRegex;
       substrRegex = new RegExp(q,'i');
@@ -86,7 +86,7 @@
     };
   };
   console.log(names);
-  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{name:'consultants',source:substringMatcher(names)});
+  $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
