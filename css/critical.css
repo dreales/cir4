@@ -78,7 +78,7 @@ h1,h3{font-weight:700}
 .normal{font-size:16px}
 h1{text-transform:capitalize}
 .smaller,#top-nav li:not(.number) a{font-size:12px}
-.watermelon,h1,h2,#top-nav .number a,.dropdown-menu a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
+.watermelon,h1,h2,#top-nav .number a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 .profile path,.newsfeed path{fill:#fc5960}
 a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *,.profile h2{color:#000}/*black*/
