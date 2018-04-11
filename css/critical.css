@@ -104,6 +104,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #top-nav li{padding:0 8px;border-left:1px solid rgba(66,66,66,.2)}
 #top-nav li:first-child,#top-nav li:last-child{border:0}
 #top-nav .number a{padding:4px 5px 0 10px}
+#top-nav input{padding:.175rem .75rem;margin-left:10px}
 #main-nav,footer nav{padding:.2rem .6rem}
 #main-nav img,footer img{height:62px;margin:8px}
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
