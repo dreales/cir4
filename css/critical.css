@@ -83,6 +83,8 @@ a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *,.profile h2{color:#000}/*black*/
 span{color:inherit}
 
+
+
 /*Layout*/
 .space{margin:20px 0}
 .spacep{padding:20px 0}
@@ -130,6 +132,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image .dark-overlay{background:rgba(0,0,0,.6);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 .hero-image .dark-overlay h2{margin-top:10px}
+.dark-overlay h1{font-weight:700px}
 
 /*Forms*/
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
