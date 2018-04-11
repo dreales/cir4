@@ -161,7 +161,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .card{border-radius:0;margin-bottom:-1px}
 .card h2{margin:8px 0 10px}
 .card h2 a:before{font-family:"Icons";content:"\e114";color:#fc5960;padding-right:5px;padding-top:3px;font-size:16px;text-decoration:none!important}
-.card h2 a.collapsed:before{content:"\E080"}
+.card h2 a.collapsed:before{content:"\E080";color:#666}
 .card-body{border-top:1px solid rgba(0,0,0,.125)}
 .card-header{border:0}
 .card h2 a{display:inline-flex;text-decoration:none!important}
