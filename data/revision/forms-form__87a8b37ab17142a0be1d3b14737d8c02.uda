@@ -134,7 +134,7 @@
           }
         }
       ],
-      "Caption": "Fast track your treatment:",
+      "Caption": "Fast track your treatment",
       "SortOrder": 0,
       "Id": "00000000-0000-0000-0000-000000000000",
       "Form": "00000000-0000-0000-0000-000000000000"
@@ -183,5 +183,5 @@
   "Dependencies": [],
   "Name": "Single col form",
   "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
