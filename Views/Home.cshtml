@@ -2,4 +2,42 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
   Layout = "Master.cshtml";
+  string bannerUrl = "/media/1032/bath.jpg"; //default hero image
+  string box1Url = "/media/1032/bath.jpg"; //default why visit image
+  string box2Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
+  string box3Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  string box4Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  
+  if (Model.Content.HasValue("bannerImage") == true){
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
+  if (Model.Content.HasValue("box1Image") == true){
+    box1Url = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+  }
+  if (Model.Content.HasValue("box2Image") == true){
+    box2Url = Model.Content.GetPropertyValue<IPublishedContent>("box2Image").Url;
+  }
+  if (Model.Content.HasValue("box3Image") == true){
+    box3Url = Model.Content.GetPropertyValue<IPublishedContent>("box3Image").Url;
+  }
+  if (Model.Content.HasValue("box4Image") == true){
+    box4Url = Model.Content.GetPropertyValue<IPublishedContent>("box4Image").Url;
+  }
 }
+<div class="hero-image" style="background-image:url( @bannerUrl )">
+  <div class="dark-overlay text-center">
+    <h1>Circle @Model.Content.Name</h1>
+    <p class="larger">@Umbraco.Field("heroTagline", altText:"")</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1 text-center">
+      <br /><br /><p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p>
+    </div>
+    <div class="col-6" style="background-image:url( @box1Url )"></div>
+    <div class="col-6" style="background-image:url( @box2Url )"></div>
+    <div class="col-6" style="background-image:url( @box3Url )"></div>
+    <div class="col-6" style="background-image:url( @box4Url )"></div>
+  </div>
+</div>
