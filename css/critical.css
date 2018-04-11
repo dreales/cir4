@@ -132,7 +132,13 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image .dark-overlay{background:rgba(0,0,0,.6);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 .hero-image .dark-overlay h2{margin-top:10px}
-.dark-overlay h1{font-weight:700px}
+
+/* Bold white with shadow */
+@media(max-width:575px){
+.hero-image .dark-overlay h1{font-weight:700;text-shadow:#000 0 0 3px;}
+.hero-image .dark-overlay{background:none}
+.hero-image{filter:brightness(90%)}
+}
 
 /*Forms*/
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:15px 10px;margin-bottom:10px}
