@@ -41,6 +41,17 @@
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("units");
   var specialities = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
 
+  List<KeyValuePair<string, string>> accordion = null;
+  int i = 0;
+  if (Model.Content.HasProperty("accordion")){
+    accordion = new List<KeyValuePair<string, string>>();
+    ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
+    foreach(ArchetypeFieldsetModel field in fieldlist){
+      string title = field.GetValue<string>("title");
+      string panel = field.GetValue<string>("panel");
+      accordion.Add(new KeyValuePair<string, string>(title, panel));
+    }
+  }
 }
 
 <div class="container">
@@ -62,6 +73,28 @@
     <div class="row">
       <div class="col-md-8">
           @Umbraco.Field("profile", altText:"")
+          <div id="accordion">
+            @foreach(KeyValuePair<string,string> panel in accordion){i++;
+              <div class="card">
+                <div class="card-header">
+                  <h2><a href="#" data-toggle="collapse" data-target="#collapse-@i" aria-expanded="false" aria-controls="collapse-@i" class="collapsed"><span>@panel.Key</span></a></h2>
+                </div>
+                <div id="collapse-@i" class="collapse" data-parent="#accordion">
+                  <div class="card-body">@Html.Raw(panel.Value)</div>
+                </div>
+              </div>
+            }
+          </div>
+          @if(showVideo){
+            <div class="video">
+              <div>
+                <div>
+                  <iframe src=" @videoUrl " width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
       </div>
       <div class="col">
         @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="87a8b37a-b171-42a0-be1d-3b14737d8c02", FormTheme="", ExcludeScripts="0"})
@@ -69,15 +102,6 @@
     </div>
   </div>
 </div>
-@if (showVideo){
-  <div class="container video">
-    <div>
-      <div>
-        <iframe src=" @videoUrl " width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
-      </div>  
-    </div>
-  </div>
-}
 @if(treatments.Any()){
   <div class="boxlist">
     <div  class="container">
