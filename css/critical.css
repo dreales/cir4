@@ -178,7 +178,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 
 /*Consultants*/
 .profile img{height:300px;width:350px;object-fit:cover;margin:30px 0;max-width:100%}
-.profile h1{margin:50px 0 20px}
+.profile h1{margin:50px 0 0}
 .profile h2{font-weight:400}
 .profile svg{margin:0 9px -4px 0}
 .consultants img{width:120px;height:120px;object-fit:cover;float:left;border:1px solid #f1f1f1}
