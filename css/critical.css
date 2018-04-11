@@ -153,13 +153,12 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .singlecolform input,.singlecolform textarea{border:0;color:#666}
 
 /*Tabs & accordion*/
-#accordion{padding:10px 0 20px}
 .toptabs,.tap-pane{padding-top:30px}
 .nav-tabs{padding-top:10px;border:0}
 .nav-tabs li a{margin:1px 2px;border:0!important;border-radius:0!important;text-decoration:underline!important;padding:20px 30px}
 .nav-tabs .active{background:#fff}
 .card{border-radius:0;margin-bottom:-1px}
-.card h2{margin:8px 0 10px}
+.card h2{margin:7px 0}
 .card h2 a:before{font-family:"Icons";content:"\e114";color:#fc5960;padding-right:5px;padding-top:3px;font-size:16px;text-decoration:none!important}
 .card h2 a.collapsed:before{content:"\E080";color:#666}
 .card-body{border-top:1px solid rgba(0,0,0,.125)}
