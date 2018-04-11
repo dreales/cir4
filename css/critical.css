@@ -91,7 +91,7 @@ p a{text-decoration:underline}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 .maincontent>div>div>div>h2:first-child{margin-top:0}
-.maincontent{padding-top:25px;padding-bottom:25px}
+.maincontent{padding-top:25px}
 .nopad{padding:0!important}
 .imgtext .greyback div{padding:30px;min-height:200px}
 
