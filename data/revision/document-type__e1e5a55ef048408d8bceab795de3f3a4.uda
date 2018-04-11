@@ -31,6 +31,16 @@
           "Validation": null
         },
         {
+          "Key": "22149bb2-e50f-434d-8d91-9d58456d4644",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 9,
+          "Validation": null
+        },
+        {
           "Key": "29e79c88-8ef8-4641-ac26-5b9b9dfa0956",
           "Alias": "units",
           "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
@@ -132,6 +142,11 @@
       "Mode": 0
     },
     {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
       "Ordering": true,
       "Mode": 0
@@ -160,5 +175,5 @@
   "Name": "Consultant",
   "Alias": "consultant",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
