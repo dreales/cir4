@@ -91,7 +91,7 @@
   <div class="consultants">
     <div class="container">
       <div class="row">
-        <div class="col-8"><h2>Consultants who offer this treatment</h2></div>
+        <div class="col-12"><h2>Consultants who offer this treatment</h2></div>
         @foreach(var consultant in consultants){
           string image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
