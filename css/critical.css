@@ -163,6 +163,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .card h2 a.collapsed:before{content:"\E080"}
 .card-body{border-top:1px solid rgba(0,0,0,.125)}
 .card-header{border:0}
+.card h2 a{display:inline-flex}
 
 /*Blog feed*/
 .newsfeed{margin:60px 0}
