@@ -34,7 +34,6 @@ fieldset{min-width:0;padding:0;margin:0;border:0}
 .dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:rgb(33,37,41);text-align:inherit;white-space:nowrap;background-color:transparent;border:0}
 .nav-link{display:block;padding:.5rem 1rem}
 .navbar{position:relative;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:justify;padding:.5rem 1rem}
-.navbar-brand{padding:0 .3rem}
 .navbar-nav{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-direction:normal;padding-left:0;margin-bottom:0;list-style:none}
 .navbar-nav .nav-link{padding-right:0;padding-left:0}
 .navbar-nav .dropdown-menu{position:static;float:none}
