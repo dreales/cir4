@@ -69,6 +69,15 @@
             </div>
           }
         </div>
+        @if(showVideo){
+          <div class="video">
+            <div>
+              <div>
+                <iframe src=" @videoUrl " width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+          </div>
+        }
       </div>
       @if(!amp){
         <div class="col-md-4">
@@ -78,21 +87,6 @@
     </div>
   </div>
 </div>
-@if(showVideo){
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 video">
-          <div>
-            <div>
-              <iframe src=" @videoUrl " width="640" height="360" allowfullscreen="allowfullscreen"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-}
 @if(consultants.Any()){
   <div class="consultants">
     <div class="container">
