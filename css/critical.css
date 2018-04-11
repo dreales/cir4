@@ -220,7 +220,7 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 
 @media(max-width:575px){
 .maincontent #shorten{height:240px;overflow:hidden}
-.maincontent #shorten:after{
+.maincontent #shortenold:after{
   content  : "";
   position : absolute;
   z-index  : 1;
