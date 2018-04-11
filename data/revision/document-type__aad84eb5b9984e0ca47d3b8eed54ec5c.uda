@@ -15,10 +15,118 @@
   "CompositionContentTypes": [
     "umb://document-type/424d6c89e5294050969dccdeef631010"
   ],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "0d70fd70-8930-4e0b-8e2f-dc3432ada2c8",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "00d898ec-1b7e-4683-8505-edaab1a7b3ae",
+          "Alias": "box4Text",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 4 Text",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "105b2cff-05f9-45a5-9a3f-4a983933f302",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner Image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "19871e5e-9157-46f9-9438-b27544f1a664",
+          "Alias": "box3Image",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 3 Image",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "4f1dd18c-8f5c-466f-bde3-5f68ee046812",
+          "Alias": "box2Text",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 2 Text",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "84a21752-6c84-48d8-8ea7-c1ff3c5efeeb",
+          "Alias": "box1Image",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 1 Image",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "9d35e149-ba38-41f1-a75b-1b8954112f12",
+          "Alias": "box2Image",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 2 Image",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "aad7e5a9-df99-478b-b6d6-2e05fdfc0e18",
+          "Alias": "box4Image",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 4 Image",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "b51aebc6-b915-44c9-8ee8-4a990d93f765",
+          "Alias": "box3Text",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Box 3 Text",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "c78f4fc8-ae2f-4fa7-989a-3ede8684a57f",
+          "Alias": "box1Text",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 1 Text",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/aad84eb5b9984e0ca47d3b8eed54ec5c",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://document-type/424d6c89e5294050969dccdeef631010",
       "Ordering": true,
@@ -38,5 +146,5 @@
   "Name": "Home",
   "Alias": "home",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
