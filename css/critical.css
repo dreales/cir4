@@ -231,6 +231,7 @@ aside .field-validation-error span{position:absolute;transform:translate3D(28px,
 
 @media(max-width:575px){
 .maincontent #shorten{height:240px;overflow:hidden}
+.profile img{height:160px;width:160px}
 .maincontent #shortenold:after{
   content  : "";
   position : absolute;
