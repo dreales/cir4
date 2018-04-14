@@ -107,7 +107,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #top-nav .number a{padding:4px 5px 0 10px}
 #top-nav input{padding:.175rem .75rem;margin-left:10px}
 #main-nav,footer nav{padding:.2rem .6rem}
-#main-nav img,footer img{height:62px;margin:8px}
+#main-nav imgsvg.logo,footer svg.logo{height:62px;margin:8px}
 #main-nav .nav-link{color:#fff;font-weight:600;margin-right:15px}
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:40px solid rgba(0,0,0,0);border-radius:0}
 #main-nav input{flex-grow:1;width:40%;margin:0 10px;background:#fd585f;color:#fff;border-color:#fff;text-align:center}
