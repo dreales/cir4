@@ -70,19 +70,12 @@ $.each(consultants,function(i,c){map[c.n]=c;names.push(c.n);});
 var sort = function(){
   console.log(0);
 };
-var matcher = function(ss){
-  return function findMatches(q,cb){
-    var m=[],sr= new RegExp(q,'i');
-    $.each(ss,function(i,s){if(sr.test(s)) m.push(s);});
-    cb(m);
-  };
-};
 var selectFunction = function(e,o){
   window.location.href = 'newPage.html';
-};
+}
 $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
 $('.typeahead').bind('typeahead:select', function(ev, ob) {
-  console.log(ev);
+  console.log(map[ob]);
 });
 </script>
 <style>
