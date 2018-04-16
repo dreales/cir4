@@ -80,7 +80,7 @@ var matcher = function(ss){
 var selectFunction = function(e,o){
   window.location.href = 'newPage.html';
 };
-$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select', selectFunction(e,o));
+$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select', selectFunction(ev,o));
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
