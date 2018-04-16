@@ -47,7 +47,7 @@
           }
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
           string location = (string)consultant.GetPropertyValue("location");
-          consultantsJson += "{n:\"" + consultant.Name + "\",s:\"" + speciality + "\",l:\"" + location + "\"},";
+          consultantsJson += "{n:\"" + consultant.Name + "\",s:\"" + speciality + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
           <div class="col-md-4">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
@@ -77,7 +77,10 @@ var matcher = function(ss){
     cb(m);
   };
 };
-$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
+var selectFunction = function(e,o){
+  window.location.href = 'newPage.html';
+};
+$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select', selectFunction(e,o));
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
