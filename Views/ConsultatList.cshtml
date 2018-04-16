@@ -83,6 +83,7 @@ $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher
 $('.typeahead').bind('typeahead:select', function(ev, ob) {
   window.location.href = 'https://richs-unassuming-otter.s1.umbraco.io/' + map[ob].u;
 });
+console.log(specialities);
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
