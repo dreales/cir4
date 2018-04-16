@@ -81,8 +81,8 @@ var selectFunction = function(e,o){
   window.location.href = 'newPage.html';
 };
 $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
-$('.typeahead').bind('typeahead:select', function(ev, suggestion) {
-  console.log(ev);
+$('.typeahead').bind('typeahead:select', function(ev, ob) {
+  console.log(ob);
 });
 </script>
 <style>
