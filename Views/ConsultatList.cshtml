@@ -81,7 +81,7 @@ var selectFunction = function(e,o){
 };
 $('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
 $('.typeahead').bind('typeahead:select', function(ev, ob) {
-  window.location.href = 'https://richs-unassuming-otter.s1.umbraco.io/' + map[ob];
+  window.location.href = 'https://richs-unassuming-otter.s1.umbraco.io/' + map[ob].u;
 });
 </script>
 <style>
