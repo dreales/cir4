@@ -79,10 +79,7 @@ var matcher = function(ss){
 var selectFunction = function(e,o){
   
 };
-$('.typeahead').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)});
-$('.typeahead').bind('typeahead:select', function(ev, ob) {
-  window.location.href = 'https://richs-unassuming-otter.s1.umbraco.io/' + map[ob].u;
-});
+$('#searchName').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
 console.log(specialities);
 </script>
 <style>
