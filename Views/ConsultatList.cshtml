@@ -26,10 +26,10 @@
       <div class="form-group mx-sm-2 mb-2">
         <label for="selectLocation">Select location</label>
         <select class="form-control" id="selectLocation">
-          <option>All locations</option>
-          <option>Circle Bath Hospital</option>
-          <option>Circle Nottingham</option>
-          <option>Circle Reading Hospital</option>
+          <option value=" ">All locations</option>
+          <option value="Bath">Circle Bath Hospital</option>
+          <option Value="Nottingham">Circle Nottingham</option>
+          <option value="Reading">Circle Reading Hospital</option>
         </select>
       </div>
       <div class="form-group mx-sm-2 mb-2">
@@ -54,7 +54,7 @@
           }
           string location = (string)consultant.GetPropertyValue("location");
           consultantsJson += "{n:\"" + consultant.Name + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
-          <div class="col-md-4 @specialityString @location.Replace(" ","")">
+          <div class="col-md-4 @specialityString @location ">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @customSpeciality at Circle @location" />
               <div>
@@ -83,8 +83,10 @@ var matcher = function(ss){
     cb(m);
   };
 };
+var locationSelect = function()
 $('#searchName').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
 $('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){$('.consultants .col-md-4').css('display','none');$('.consultants .col-md-4.'+o.replace(/\s+/g,'')).css('display','block');});
+$('#selectLocation').change(function(){$('.consultants .col-md-4').css('display','none');$('.consultants .col-md-4.'+$('#selectLocation').val()).css('display','block');});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
