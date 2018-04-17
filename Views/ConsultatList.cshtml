@@ -54,7 +54,7 @@
           }
           string location = (string)consultant.GetPropertyValue("location");
           consultantsJson += "{n:\"" + consultant.Name + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
-          <div class="col-md-4 @specialityString">
+          <div class="col-md-4 @specialityString @location.Replace(" ","")">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @customSpeciality at Circle @location" />
               <div>
