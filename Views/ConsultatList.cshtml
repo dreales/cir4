@@ -53,7 +53,7 @@
             specialityString += speciality.Name + " ";
           }
           string location = (string)consultant.GetPropertyValue("location");
-          consultantsJson += "{n:\"" + consultant.Name + "\",s:\"" + speciality + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
+          consultantsJson += "{n:\"" + consultant.Name + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
           <div class="col-md-4 @specialityString">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @customSpeciality at Circle @location" />
