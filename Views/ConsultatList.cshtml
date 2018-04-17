@@ -47,9 +47,9 @@
             image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           }
           string customSpeciality = (string)consultant.GetPropertyValue("customSpeciality");
-          var specialities = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
+          var theseSpecialities = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
           string specialityString = "";
-          foreach (var speciality in specialities){
+          foreach (var speciality in theseSpecialities){
             specialityString += speciality.Name + " ";
           }
           string location = (string)consultant.GetPropertyValue("location");
