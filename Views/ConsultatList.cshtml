@@ -50,7 +50,7 @@
           var theseSpecialities = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
           string specialityString = "";
           foreach (var speciality in theseSpecialities){
-            specialityString += speciality.Name.Replace(" ",string.empty) + " ";
+            specialityString += speciality.Name.Replace(" ","") + " ";
           }
           string location = (string)consultant.GetPropertyValue("location");
           consultantsJson += "{n:\"" + consultant.Name + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
