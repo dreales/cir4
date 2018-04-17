@@ -71,7 +71,7 @@
 </div>
 <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js"></script>
 <script>
-var consultants=[ @Html.Raw(consultantsJson) ],specialities=[ @Html.Raw(specialitiesJson) ],names=[],map={};
+var consultants=[ @Html.Raw(consultantsJson) ],specialities=[ @Html.Raw(specialitiesJson) ],names=[],map={},spec=false,loc=false;
 $.each(consultants,function(i,c){map[c.n]=c;names.push(c.n);});
 var sort = function(){
   console.log(0);
@@ -83,9 +83,30 @@ var matcher = function(ss){
     cb(m);
   };
 };
+var search = function(a,b){
+  var class;
+  $('.consultants .col-md-4').css('display','none');
+  if(a&&b){
+    class=a+'.'+b;
+  }else if(a){
+    class=a;
+  }else if(b){
+    class=b
+  }else{
+    console.log('Search error');
+    class="";
+  }
+  $('.consultants .col-md-4.'+class).css('display','block');
+}
 $('#searchName').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
-$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){$('.consultants .col-md-4').css('display','none');$('.consultants .col-md-4.'+o.replace(/\s+/g,'')).css('display','block');});
-$('#selectLocation').change(function(){$('.consultants .col-md-4').css('display','none');$('.consultants .col-md-4.'+$('#selectLocation').val()).css('display','block');});
+$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){
+  $('.consultants .col-md-4').css('display','none');
+  $('.consultants .col-md-4.'+o.replace(/\s+/g,'')).css('display','block');
+});
+$('#selectLocation').change(function(){
+  $('.consultants .col-md-4').css('display','none');
+  $('.consultants .col-md-4.'+$('#selectLocation').val()).css('display','block');
+});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
