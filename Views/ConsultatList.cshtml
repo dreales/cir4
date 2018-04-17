@@ -46,12 +46,17 @@
           if(consultant.HasValue("profileImage")){
             image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
           }
-          string speciality = (string)consultant.GetPropertyValue("customSpeciality");
+          string customSpeciality = (string)consultant.GetPropertyValue("customSpeciality");
+          var specialities = consultant.GetPropertyValue<IEnumerable<IPublishedContent>>("specialities");
+          string specialityString = "";
+          foreach (var speciality in specialities){
+            specialityString += speciality.Name + " ";
+          }
           string location = (string)consultant.GetPropertyValue("location");
           consultantsJson += "{n:\"" + consultant.Name + "\",s:\"" + speciality + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
-          <div class="col-md-4 @speciality">
+          <div class="col-md-4 @specialityString">
             <a href="@consultant.Url">
-              <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
+              <img src="@image" alt="@consultant.Name is a @customSpeciality at Circle @location" />
               <div>
                 <h3 class="normal">@consultant.Name</h3>
                 <p class="smaller">@speciality</p>
