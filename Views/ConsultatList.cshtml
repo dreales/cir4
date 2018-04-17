@@ -10,6 +10,7 @@
     specialitiesJson += speciality.Name  + "\",\"";
   }
   specialitiesJson += "\"";
+  var i = -1;
 }
 <div class="maincontent">
   <div class="container">
@@ -40,6 +41,7 @@
     <div class="container">
       <div class="row">
         @foreach(var consultant in consultants){
+          ++i;
           string image = "";
           if(consultant.HasValue("profileImage")){
             image = (string)consultant.GetPropertyValue<IPublishedContent>("profileImage").GetCropUrl("thumb");
@@ -47,7 +49,7 @@
           string speciality = (string)consultant.GetPropertyValue("customSpeciality");
           string location = (string)consultant.GetPropertyValue("location");
           consultantsJson += "{n:\"" + consultant.Name + "\",s:\"" + speciality + "\",l:\"" + location + "\",u:\"" + consultant.Url + "\"},";
-          <div class="col-md-4">
+          <div class="col-md-4 @speciality">
             <a href="@consultant.Url">
               <img src="@image" alt="@consultant.Name is a @speciality at Circle @location" />
               <div>
@@ -71,17 +73,13 @@ var sort = function(){
 };
 var matcher = function(ss){
   return function findMatches(q,cb){
-    var m=[],sr= new RegExp(q,'i');
-    $.each(ss,function(i,s){if(sr.test(s)) m.push(s);});
+    var m=[],sr=new RegExp(q,'i');
+    $.each(ss,function(i,s){if(sr.test(s))m.push(s);});
     cb(m);
   };
 };
-var selectFunction = function(e,o){
-  
-};
-$('#searchName').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
-$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){console.log(0)});
-console.log(specialities);
+$('#searchName').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
+$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){$('.consultants .col-md-4:not(.'+speciality')').css('display','yellow');});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
