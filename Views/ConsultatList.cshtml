@@ -80,6 +80,7 @@ var selectFunction = function(e,o){
   
 };
 $('#searchName').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
+$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:1},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){console.log(0)});
 console.log(specialities);
 </script>
 <style>
