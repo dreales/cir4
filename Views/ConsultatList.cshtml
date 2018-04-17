@@ -84,7 +84,7 @@ var matcher = function(ss){
   };
 };
 $('#searchName').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
-$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){$('.consultants .col-md-4:not(.'+o.replace(/\s+/g,'')+')').css('display','none');});
+$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:2},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){$('.consultants .col-md-4').css('display','none');$('.consultants .col-md-4.'+o.replace(/\s+/g,'')).css('display','block');});
 </script>
 <style>
 .tt-dropdown-menu{max-height:150px;overflow-y:auto}
