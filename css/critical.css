@@ -58,7 +58,7 @@ html,body{font-size:16px;line-height:1.3;font-family:"Open Sans",sans-serif,"App
 
 /*Text*/
 p{margin-top:0;margin-bottom:1rem}
-dl,ul{margin-top:0;margin-bottom:1rem}
+dl,ul{margin-top:0;margin-bottom:1rem;padding-left:25px}
 b,strong{font-weight:bolder}
 a{text-decoration:none}
 a:hover,.maincontent p a,.maincontent li a{text-decoration:underline}
