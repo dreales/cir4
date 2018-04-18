@@ -8,6 +8,18 @@
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
   
+  List<KeyValuePair<string, string>> accordion = null;
+  int i = 0;
+  if (Model.Content.HasProperty("accordion")){
+    accordion = new List<KeyValuePair<string, string>>();
+    ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
+    foreach(ArchetypeFieldsetModel field in fieldlist){
+      string title = field.GetValue<string>("title");
+      string panel = field.GetValue<string>("panel");
+      accordion.Add(new KeyValuePair<string, string>(title, panel));
+    }
+  }
+  
   string videoUrl = "";
   bool showVideo = false;
   if(Model.Content.GetPropertyValue<string[]>("youtubeVideos").Length > 0){
@@ -32,7 +44,6 @@
       }
     }
   }
-  @*var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");*@
   var units = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfUnits");
 }
 <div class="hero-image" style="background-image:url( @bannerUrl )">
