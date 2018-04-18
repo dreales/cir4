@@ -126,7 +126,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image .dark-overlay *{color:#fff}
 .hero-image .dark-overlay h2{margin-top:10px}
 @media(max-width:575px){
-.hero-image .dark-overlay h1{font-weight:700;text-shadow:#000 0 0 3px;}
+.hero-image .dark-overlay h1{font-weight:700;text-shadow:#000 0 0 3px}
 .hero-image .dark-overlay{background:none}
 .hero-image{filter:brightness(90%)}
 }
