@@ -87,12 +87,12 @@ var search = function(a,b){
     cl=a+'.'+loc;
     spec=a;
   }else if(b&&spec){
-    cl=b;
+    cl=b+'.'+spec;
     loc=b;
-  }else if(a){
+  }else if(a&&!loc){
     cl=a;
     spec=a;
-  }else if(b){
+  }else if(b&&!spec){
     cl=b;
     loc=b;
   }else{
