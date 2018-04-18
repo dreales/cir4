@@ -103,7 +103,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 .btn,button{padding:12px 30px;border:0;transition:.6s}
 .form-inline.search{display:flex;margin:0 -8px}
 .form-inline.search .form-group{flex-grow:1}
-.form-inline.search input,.form-inline.search select,.form-inline.search span{width:100%}
+.form-inline.search input,.form-inline.search select,.form-inline.search span{width:100%;-webkit-appearance:none}
 .tt-open{width:100%;background:#fff;border:1px soild #f1f1f1}
 
 /*Header & footer*/
