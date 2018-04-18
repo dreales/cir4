@@ -86,12 +86,18 @@ var matcher = function(ss){
 var search = function(a,b){
   var class;
   $('.consultants .col-md-4').css('display','none');
-  if(a&&b){
-    class=a+'.'+b;
-  }else if(a){
+  if(a&&loc){
+    class=a+'.'+loc;
+    spec=a;
+  }else if(b&&spec){
+    class=b;
+    loc=b;
+  } else if(a){
     class=a;
-  }else if(b){
-    class=b
+    spec=a;
+  } else if(b){
+    class=b;
+    spec=b;
   }else{
     console.log('Search error');
     class="";
