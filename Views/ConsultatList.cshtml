@@ -99,8 +99,8 @@ var search = function(s,l){
   console.log(cl);
   $('.consultants .col-md-4.'+cl).css('display','block');
 }
-$('#searchName').typeahead({hint:true,highlight:true,minLength:3;limit:15},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
-$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:3;limit:15},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){search(o.replace(/\s+/g,''),false);});
+$('#searchName').typeahead({hint:true,highlight:true,minLength:3,limit:15},{source:matcher(names)}).bind('typeahead:select',function(e,o){window.location.href='https://richs-unassuming-otter.s1.umbraco.io/'+map[o].u;});
+$('#searchSpeciality').typeahead({hint:true,highlight:true,minLength:3,limit:15},{source:matcher(specialities)}).bind('typeahead:select',function(e,o){search(o.replace(/\s+/g,''),false);});
 $('#selectLocation').change(function(){search(false,$('#selectLocation').val());});
 </script>
 <style>
