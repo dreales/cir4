@@ -755,7 +755,6 @@ button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:
 .popover-header:empty{display:none}
 .popover-body{padding:.5rem .75rem;color:#212529}
 
-
 .align-baseline{vertical-align:baseline!important}
 .align-top{vertical-align:top!important}
 .align-middle{vertical-align:middle!important}
@@ -834,16 +833,6 @@ a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:
 .d-xl-table-cell{display:table-cell!important}
 .d-xl-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}
 .d-xl-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}
-}
-@media print{.d-print-none{display:none!important}
-.d-print-inline{display:inline!important}
-.d-print-inline-block{display:inline-block!important}
-.d-print-block{display:block!important}
-.d-print-table{display:table!important}
-.d-print-table-row{display:table-row!important}
-.d-print-table-cell{display:table-cell!important}
-.d-print-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}
-.d-print-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}
 }
 .embed-responsive{position:relative;display:block;width:100%;padding:0;overflow:hidden}
 .embed-responsive::before{display:block;content:""}
@@ -1406,24 +1395,6 @@ a.text-primary:focus,a.text-primary:hover{color:#0062cc!important}
 .text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .visible{visibility:visible!important}
 .invisible{visibility:hidden!important}
-@media print{*,::after,::before{text-shadow:none!important;box-shadow:none!important}
-a:not(.btn){text-decoration:underline}
-abbr[title]::after{content:" (" attr(title) ")"}
-pre{white-space:pre-wrap!important}
-blockquote,pre{border:1px solid #999;page-break-inside:avoid}
-thead{display:table-header-group}
-img,tr{page-break-inside:avoid}
-h2,h3,p{orphans:3;widows:3}
-h2,h3{page-break-after:avoid}
-@page{size:a3}
-body{min-width:992px!important}
-.container{min-width:992px!important}
-.navbar{display:none}
-.badge{border:1px solid #000}
-.table{border-collapse:collapse!important}
-.table td,.table th{background-color:#fff!important}
-.table-bordered td,.table-bordered th{border:1px solid #ddd!important}
-}
 /*cqc*/
 .cqc{margin:10px 0;padding:5px 15px;max-width:300px;background:#fff}
 .cqc img{padding:8px}
