@@ -14,6 +14,18 @@
     videoUrl = Model.Content.GetPropertyValue<string[]>("youtubeVideos")[0];
   }
   
+  List<KeyValuePair<string, string>> accordion = null;
+  int i = 0;
+  if (Model.Content.HasProperty("accordion")){
+    accordion = new List<KeyValuePair<string, string>>();
+    ArchetypeModel fieldlist = Model.Content.GetPropertyValue<ArchetypeModel>("accordion");
+    foreach(ArchetypeFieldsetModel field in fieldlist){
+      string title = field.GetValue<string>("title");
+      string panel = field.GetValue<string>("panel");
+      accordion.Add(new KeyValuePair<string, string>(title, panel));
+    }
+  }
+  
   var treatments = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("listOfTreatments");
 
   List<IPublishedContent> consultants = new List<IPublishedContent>();
