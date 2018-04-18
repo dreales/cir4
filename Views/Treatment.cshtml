@@ -53,10 +53,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <div id="shorten">
-          @Umbraco.Field("mainContent", altText:"")
-        </div>
-        <a id="more" href="#">Read more </a>
+        @Umbraco.Field("mainContent", altText:"")
         @if(accordion.Any()){
           <div id="accordion">
             @foreach(KeyValuePair<string,string> panel in accordion){i++;
