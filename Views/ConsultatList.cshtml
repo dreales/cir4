@@ -73,9 +73,6 @@
 <script>
 var consultants=[ @Html.Raw(consultantsJson) ],specialities=[ @Html.Raw(specialitiesJson) ],names=[],map={},spec=false,loc=false;
 $.each(consultants,function(i,c){map[c.n]=c;names.push(c.n);});
-var sort = function(){
-  console.log(0);
-};
 var matcher = function(ss){
   return function findMatches(q,cb){
     var m=[],sr=new RegExp(q,'i');
@@ -92,10 +89,10 @@ var search = function(a,b){
   }else if(b&&spec){
     class=b;
     loc=b;
-  } else if(a){
+  }else if(a){
     class=a;
     spec=a;
-  } else if(b){
+  }else if(b){
     class=b;
     loc=b;
   }else{
