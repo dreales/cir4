@@ -164,13 +164,12 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .newsfeed a{position:absolute;bottom:0;color:#fff;padding:5px;text-shadow:0 0 3px rgba(0,0,0,.9)}
 .newsfeed svg{margin-bottom:-3px;height:17px}
 /*Box list*/
-.boxlist p a{color:#000;border:1px solid #fc5960;padding:10px;margin-right:10px;display:inline-block;text-decoration:none;margin-bottom:10px;text-align:center;flex-grow:1;flex-shrink:0;text-decoration:none;max-width:500px}
-.boxlist p a:hover{text-decoration:underline}
+.boxlist p a,.boxlist a{color:#000;border:1px solid #fc5960;padding:10px;margin-right:10px;display:inline-block;text-decoration:none;margin-bottom:10px;text-align:center;flex-grow:1;flex-shrink:0;text-decoration:none;max-width:500px}
+.boxlist p a:hover,.boxlist a:hover{text-decoration:underline}
 .boxlist svg{margin-bottom:-3px}
 .boxlist path{fill:#fc5960}
 .boxlist.one{margin-top:10px}
 .boxlist p{display:flex;flex-wrap:wrap}
-
 
 /*Consultants*/
 .profile{border-bottom:1px solid #f1f1f1}
