@@ -219,7 +219,7 @@ aside .umbraco-forms-page .row{margin:0}
 @media(max-width:575px){
 .maincontent #shorten{height:240px;overflow:hidden}
 .profile img{height:230px;width:90%;margin:25px auto;display:block}
-.profile h1{border-top:25px}
+.profile h1{margin-top:25px}
 .row.profile{margin-left:-35px;margin-right:-35px}
 .maincontent #shortenold:after{
   content:"";
