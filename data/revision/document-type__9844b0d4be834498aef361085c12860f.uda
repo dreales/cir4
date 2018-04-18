@@ -59,6 +59,16 @@
           "Name": "Banner image",
           "SortOrder": 0,
           "Validation": null
+        },
+        {
+          "Key": "a6ff8f10-005a-4ede-9daf-c5575af1b3b5",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 5,
+          "Validation": null
         }
       ]
     }
@@ -87,6 +97,11 @@
       "Mode": 0
     },
     {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
@@ -105,5 +120,5 @@
   "Name": "Speciality",
   "Alias": "specialityUnit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
