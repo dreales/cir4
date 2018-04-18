@@ -83,7 +83,7 @@ h1{text-transform:capitalize}
 a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *,.profile h2{color:#000}/*black*/
 span{color:inherit}
-p a{text-decoration:underline}
+p a,li a{text-decoration:underline}
 
 
 
