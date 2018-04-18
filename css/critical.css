@@ -101,6 +101,8 @@ p a{text-decoration:underline}
 input,textarea{border-radius:0!important;width:100%}
 input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{border:1px solid #ced4da}
 .btn,button{padding:12px 30px;border:0;transition:.6s}
+.form-inline.search{display:flex}
+.form-inline.search input,.form-inline.search select{flex-grow:1}
 
 /*Header & footer*/
 #top-nav li{padding:0 3px}
@@ -135,8 +137,6 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image .dark-overlay{background:rgba(0,0,0,.6);display:block;margin:0 auto;max-width:500px;padding:30px 20px}
 .hero-image .dark-overlay *{color:#fff}
 .hero-image .dark-overlay h2{margin-top:10px}
-
-/* Bold white with shadow */
 @media(max-width:575px){
 .hero-image .dark-overlay h1{font-weight:700;text-shadow:#000 0 0 3px;}
 .hero-image .dark-overlay{background:none}
@@ -207,7 +207,6 @@ body>aside span{display:block;font-size:12px}
 body>aside .text-center{padding-bottom:12px}
 body>aside .umbraco-forms-page .col-md-12{padding:0}
 body>aside a{text-decoration:none}
-
 aside.container{padding:0;max-width:330px!important}
 aside .callmeback input{padding:14px 10px;margin:2px 25px 3px;max-width:80%}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:11.5px}
