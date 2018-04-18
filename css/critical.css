@@ -218,7 +218,7 @@ aside .umbraco-forms-page .row{margin:0}
 
 @media(max-width:575px){
 .maincontent #shorten{height:240px;overflow:hidden}
-.profile img{height:160px;width:160px}
+.profile img{height:230px;width:90%;margin:25px auto;display:block}
 .maincontent #shortenold:after{
   content  : "";
   position : absolute;
