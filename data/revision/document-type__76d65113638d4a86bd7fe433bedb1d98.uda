@@ -21,6 +21,16 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
+          "Key": "4e88baed-0788-4577-9756-ef20daeeaf05",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
           "Key": "7e815de8-f1fe-48a2-b31b-91900efa614e",
           "Alias": "bannerImage",
           "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
@@ -72,6 +82,11 @@
       "Mode": 0
     },
     {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
@@ -90,5 +105,5 @@
   "Name": "Unit",
   "Alias": "unit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
