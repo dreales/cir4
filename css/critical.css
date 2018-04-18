@@ -169,7 +169,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .boxlist svg{margin-bottom:-3px}
 .boxlist path{fill:#fc5960}
 .boxlist.one{margin-top:10px}
-.boxlist p{display:flex;flex-wrap:wrap}
+.boxlist p{display:flex;flex-wrap:wrap;margin-bottom:0}
 
 /*Consultants*/
 .profile{border-bottom:1px solid #f1f1f1}
