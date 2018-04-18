@@ -207,7 +207,7 @@ aside.container .umbraco-forms-page .col-md-12{padding:0}
 aside.container a{text-decoration:none}
 aside .callmeback input{padding:14px 10px;margin:2.5px 5px 2.6px;max-width:calc(100% - 10px)}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:8px}
-aside .field-validation-error span{position:absolute;transform:translate3D(28px,-22px,0);color:#000}
+aside .field-validation-error span{position:absolute;transform:translate3D(8px,-19px,0);color:#000}
 aside .umbraco-forms-page .row{margin:0}
 
 @media(min-width:576px){
