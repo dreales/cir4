@@ -136,7 +136,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .greytwocolumn textarea{height:146px}
 .greytwocolumn h2{margin-top:10px}
 .greytwocolumn .umbraco-forms-page{padding:20px 30px;margin:40px 0 20px}
-.singlecolform{padding:25px}
+.singlecolform{padding:25px;margin-bottom:25px}
 .singlecolform h2{margin:0 0 10px;font-weight:700}
 .singlecolform .btn{border:1px solid #fff;color:#fff;margin-bottom:0}
 .singlecolform .btn:hover{background:#fff;color:#fc5960}
