@@ -64,7 +64,7 @@
                   },
                   "Settings": {
                     "DefaultValue": "",
-                    "Placeholder": "Phone"
+                    "Placeholder": "Phone number"
                   },
                   "PreValues": []
                 }
@@ -129,5 +129,5 @@
   "Dependencies": [],
   "Name": "Call me back",
   "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
