@@ -57,33 +57,25 @@ html,body{font-size:16px;line-height:1.3;font-family:"Open Sans",sans-serif,"App
 .greyback,body,#top-nav,.greytwocolumn .umbraco-forms-page,#main-nav .dropdown-menu a:hover{background:#f0f0f0}/*lgrey*/
 
 /*Text*/
-h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
 p{margin-top:0;margin-bottom:1rem}
 dl,ul{margin-top:0;margin-bottom:1rem}
 b,strong{font-weight:bolder}
-small{font-size:80%}
 a{text-decoration:none}
-a:hover{text-decoration:underline}
+a:hover,.maincontent p a,.maincontent li a{text-decoration:underline}
 
-.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}
-.h1,h1{font-size:2.5rem}
-.h2,h2{font-size:2rem}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin:0 0.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;font-weight:700}
+.h1,h1{font-size:2.5rem;text-transform:capitalize}
+.h2,h2,.larger{font-size:1.25rem;margin:0 0 2px}
 .h3,h3{font-size:1.1rem}
-.h4,h4,.h5,h5,.h6,h6{font-size:1rem}
+.h4,h4,.h5,h5,.h6,h6,.normal{font-size:1rem}
+.smaller,#top-nav li:not(.number) a{font-size:.75rem}
 
-h2,.larger p,p.larger{font-size:20px;margin:0 0 2px;font-weight:700}
-h1,h3{font-weight:700}
-.normal{font-size:16px}
-h1{text-transform:capitalize}
-.smaller,#top-nav li:not(.number) a{font-size:12px}
+/*Colors*/
 .watermelon,h1,h2,#top-nav .number a,a,.wm-first>p:first-child,.wm-first>p:first-child span,.nav-tabs .active{color:#fc5960}/*wmelon*/
 .profile path,.newsfeed path{fill:#fc5960}
 a:hover,#main-nav .dropdown-menu a:hover{color:#f04d50}/*dred*/
 #top-nav li a,.profile a,.cqc *,.profile h2{color:#000}/*black*/
 span{color:inherit}
-.maincontent p a,.maincontent li a{text-decoration:underline}
-
-
 
 /*Layout*/
 .space{margin:20px 0}
