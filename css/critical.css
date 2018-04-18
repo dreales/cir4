@@ -243,7 +243,7 @@ h2{font-size:16px}
 #top-nav{display:none}
 .hero-image{padding:50px 20px}
 .hero-image .dark-overlay{padding:10px 20px 3px}
-#accordion{padding:20px 0}
+#accordion{padding:0 0 20px}
 .singlecolform textarea{height:160px}
 	.medicodigital{display:none}
 }
