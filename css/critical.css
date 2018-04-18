@@ -91,7 +91,7 @@ span{color:inherit}
 .space{margin:20px 0}
 .spacep{padding:20px 0}
 .maincontent>div>div>div>h2:first-child{margin-top:0}
-.maincontent{padding-top:25px}
+.maincontent{padding:25px 0}
 .nopad{padding:0!important}
 .imgtext .greyback div{padding:30px;min-height:200px}
 
