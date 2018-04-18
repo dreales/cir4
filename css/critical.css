@@ -196,16 +196,15 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .boxlist.one{margin-top:10px}
 
 /*Foating contact box*/
-body>aside{position:fixed;max-width:400px;right:-192px;top:50%;background:#fc5960;transition:right 1s cubic-bezier(.4,0,.2,1);border:1px solid #fff;}
-body>aside.pop{right:0}
-body>aside *{color:#fff}
-body>aside p{border:1px solid #fff;border-top:0;border-left:0;margin:0 0 -1px;padding:10px}
-body>aside p:last-child{border-bottom:0}
-body>aside span{display:block;font-size:12px}
-body>aside .text-center{padding-bottom:12px}
-body>aside .umbraco-forms-page .col-md-12{padding:0}
-body>aside a{text-decoration:none}
-aside.container{padding:0;max-width:330px!important}
+aside.container{padding:0;max-width:310px!important;position:fixed;right:-192px;top:50%;background:#fc5960;transition:right 1s cubic-bezier(.4,0,.2,1);border:1px solid #fff}
+aside.container.pop{right:0}
+aside.container *{color:#fff}
+aside.container p{border:1px solid #fff;border-top:0;border-left:0;margin:0 0 -1px;padding:10px}
+aside.container p:last-child{border-bottom:0}
+aside.container span{display:block;font-size:12px}
+aside.container .text-center{padding-bottom:12px}
+aside.container .umbraco-forms-page .col-md-12{padding:0}
+aside.container a{text-decoration:none}
 aside .callmeback input{padding:14px 10px;margin:2px 25px 3px;max-width:80%}
 aside .callmeback .btn{border-top:1px solid #fff;margin:0;max-width:100%;margin-top:0;padding:11.5px}
 aside .field-validation-error span{position:absolute;transform:translate3D(28px,-22px,0);color:#000}
