@@ -28,7 +28,17 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Text",
-          "SortOrder": 8,
+          "SortOrder": 15,
+          "Validation": null
+        },
+        {
+          "Key": "09da3c09-fefb-4e56-8641-7631a59f5669",
+          "Alias": "box1Link",
+          "DataType": "umb://data-type/fd1e0da556064862b6795d0cf3a52a59",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 1 Link",
+          "SortOrder": 4,
           "Validation": null
         },
         {
@@ -42,13 +52,53 @@
           "Validation": null
         },
         {
+          "Key": "14efe3e1-8772-4e23-aabe-e82ead429f5f",
+          "Alias": "box3Title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 3 Title",
+          "SortOrder": 10,
+          "Validation": null
+        },
+        {
           "Key": "19871e5e-9157-46f9-9438-b27544f1a664",
           "Alias": "box3Image",
           "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 3 Image",
-          "SortOrder": 3,
+          "SortOrder": 9,
+          "Validation": null
+        },
+        {
+          "Key": "1c894174-f231-45f6-a402-751046c28c9c",
+          "Alias": "box4Link",
+          "DataType": "umb://data-type/fd1e0da556064862b6795d0cf3a52a59",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 4 Link",
+          "SortOrder": 16,
+          "Validation": null
+        },
+        {
+          "Key": "43593a3d-fdbb-46d9-90da-e95679fd1256",
+          "Alias": "box1Title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 1 Title",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "46002026-84e9-403f-8780-c9fef0887160",
+          "Alias": "box2Link",
+          "DataType": "umb://data-type/fd1e0da556064862b6795d0cf3a52a59",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 2 Link",
+          "SortOrder": 8,
           "Validation": null
         },
         {
@@ -58,6 +108,26 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Text",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "51b7551e-27d9-4bce-a31a-73c781183c95",
+          "Alias": "box4Title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 4 Title",
+          "SortOrder": 14,
+          "Validation": null
+        },
+        {
+          "Key": "5f4734ac-e389-407d-8697-fe3cfbf614a1",
+          "Alias": "box2Title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 2 Title",
           "SortOrder": 6,
           "Validation": null
         },
@@ -72,13 +142,23 @@
           "Validation": null
         },
         {
+          "Key": "8f757e47-d649-4e70-a04c-76bd21b65057",
+          "Alias": "box3Link",
+          "DataType": "umb://data-type/fd1e0da556064862b6795d0cf3a52a59",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Box 3 Link",
+          "SortOrder": 12,
+          "Validation": null
+        },
+        {
           "Key": "9d35e149-ba38-41f1-a75b-1b8954112f12",
           "Alias": "box2Image",
           "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Image",
-          "SortOrder": 2,
+          "SortOrder": 5,
           "Validation": null
         },
         {
@@ -88,7 +168,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Image",
-          "SortOrder": 4,
+          "SortOrder": 13,
           "Validation": null
         },
         {
@@ -98,7 +178,7 @@
           "Description": "",
           "Mandatory": false,
           "Name": "Box 3 Text",
-          "SortOrder": 7,
+          "SortOrder": 11,
           "Validation": null
         },
         {
@@ -108,7 +188,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Text",
-          "SortOrder": 5,
+          "SortOrder": 3,
           "Validation": null
         }
       ]
@@ -118,12 +198,22 @@
   "Udi": "umb://document-type/aad84eb5b9984e0ca47d3b8eed54ec5c",
   "Dependencies": [
     {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
       "Mode": 0
     },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/fd1e0da556064862b6795d0cf3a52a59",
       "Ordering": true,
       "Mode": 0
     },
