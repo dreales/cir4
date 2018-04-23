@@ -83,7 +83,7 @@ span{color:inherit}
 .maincontent>div>div>div>h2:first-child{margin-top:0}
 .maincontent{padding:25px 0}
 .nopad{padding:0!important}
-.imgtext .greyback div{padding:30px;min-height:200px}
+.imgtext div div{padding:30px;min-height:200px}
 
 /*Inputs*/
 *:focus{outline:0!important;box-shadow:none!important}
@@ -163,6 +163,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .newsfeed>.col-sm-6{height:240px}
 .newsfeed a{position:absolute;bottom:0;color:#fff;padding:5px;text-shadow:0 0 3px rgba(0,0,0,.9)}
 .newsfeed svg{margin-bottom:-3px;height:17px}
+
 /*Box list*/
 .boxlist p a,.boxlist a{color:#000;border:1px solid #fc5960;padding:10px 8px;margin-right:10px;display:inline-block;text-decoration:none;margin-bottom:10px;text-align:center;flex-grow:1;flex-shrink:0;text-decoration:none;max-width:500px}
 .boxlist p a:hover,.boxlist a:hover{text-decoration:underline}
