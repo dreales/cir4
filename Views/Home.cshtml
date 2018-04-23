@@ -24,13 +24,13 @@
     box4Url = Model.Content.GetPropertyValue<IPublishedContent>("box4Image").Url;
   }
 }
-<div class="hero-image" style="background-image:url( @bannerUrl )">
+<div class="hero-image hidemob" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
     <h1>Circle Health</h1>
     <p class="larger">@Umbraco.Field("bannerTagline", altText:"")</p>
   </div>
 </div>
-<div class="container">
+<div class="container hidemob">
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
       <br /><p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p><br />
@@ -39,36 +39,36 @@
 </div>
 <div class="container-fluid nopad">
   <div class="row no-gutters imgtext">
-    <div class="col-6 im" style="background:url( @box1Url )">
+    <div class="col-6" style="background:url( @box1Url )">
       <h2>@Umbraco.Field("box1Title", altText:"")</h2>
     </div>
-    <div class="col-6">
+    <div class="col-6 hidemob">
       <div>
         <p>@Umbraco.Field("box1Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 hidemob">
       <div>
         <p>@Umbraco.Field("box2Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-6 im" style="background-image:url( @box2Url )">
+    <div class="col-6" style="background-image:url( @box2Url )">
       <h2>@Umbraco.Field("box2Title", altText:"")</h2>
     </div>
-    <div class="col-6 im" style="background:url( @box3Url )">
+    <div class="col-6" style="background:url( @box3Url )">
       <h2>@Umbraco.Field("box3Title", altText:"")</h2>
     </div>
-    <div class="col-6">
+    <div class="col-6 hidemob">
       <div>
         <p>@Umbraco.Field("box3Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 hidemob">
       <div>
         <p>@Umbraco.Field("box4Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-6 im" style="background-image:url( @box4Url )">
+    <div class="col-6" style="background-image:url( @box4Url )">
       <h2>@Umbraco.Field("box4Title", altText:"")</h2>
     </div>
   </div>
