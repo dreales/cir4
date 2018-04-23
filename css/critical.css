@@ -84,6 +84,7 @@ span{color:inherit}
 .nopad{padding:0!important}
 .imgtext div div{padding:30px;min-height:200px}
 .imgtext im{display:flex;align-items:center;justify-content:center}
+.imgtext h2{color:#fff;text-shadow:#000 0 0 3px}
 
 /*Inputs*/
 *:focus{outline:0!important;box-shadow:none!important}
@@ -126,7 +127,7 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image .dark-overlay *{color:#fff}
 .hero-image .dark-overlay h2{margin-top:10px}
 @media(max-width:575px){
-.hero-image .dark-overlay h1{font-weight:700;text-shadow:#000 0 0 3px}
+.hero-image .dark-overlay h1{text-shadow:#000 0 0 3px}
 .hero-image .dark-overlay{background:none}
 .hero-image{filter:brightness(90%)}
 }
