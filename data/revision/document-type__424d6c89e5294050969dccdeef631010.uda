@@ -70,5 +70,5 @@
   "Name": "Main page template",
   "Alias": "template1",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.11"
+  "__version": "2.0.13"
 }
