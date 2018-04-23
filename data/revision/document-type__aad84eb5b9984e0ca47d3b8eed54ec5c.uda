@@ -19,7 +19,7 @@
     {
       "Key": "0d70fd70-8930-4e0b-8e2f-dc3432ada2c8",
       "Name": "Content",
-      "SortOrder": 1,
+      "SortOrder": 0,
       "PropertyTypes": [
         {
           "Key": "00d898ec-1b7e-4683-8505-edaab1a7b3ae",
