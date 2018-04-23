@@ -28,7 +28,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Text",
-          "SortOrder": 16,
+          "SortOrder": 17,
           "Validation": null
         },
         {
@@ -38,7 +38,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Link",
-          "SortOrder": 5,
+          "SortOrder": 6,
           "Validation": null
         },
         {
@@ -58,7 +58,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 3 Title",
-          "SortOrder": 11,
+          "SortOrder": 12,
           "Validation": null
         },
         {
@@ -68,7 +68,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 3 Image",
-          "SortOrder": 10,
+          "SortOrder": 11,
           "Validation": null
         },
         {
@@ -78,7 +78,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Link",
-          "SortOrder": 17,
+          "SortOrder": 18,
           "Validation": null
         },
         {
@@ -88,7 +88,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Title",
-          "SortOrder": 3,
+          "SortOrder": 4,
           "Validation": null
         },
         {
@@ -98,7 +98,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Link",
-          "SortOrder": 9,
+          "SortOrder": 10,
           "Validation": null
         },
         {
@@ -108,7 +108,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Text",
-          "SortOrder": 8,
+          "SortOrder": 9,
           "Validation": null
         },
         {
@@ -118,7 +118,17 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Title",
-          "SortOrder": 15,
+          "SortOrder": 16,
+          "Validation": null
+        },
+        {
+          "Key": "5aa042e6-2f65-43de-9c28-e0443c406e95",
+          "Alias": "bannerTagline",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner Tagline",
+          "SortOrder": 1,
           "Validation": null
         },
         {
@@ -128,7 +138,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Title",
-          "SortOrder": 7,
+          "SortOrder": 8,
           "Validation": null
         },
         {
@@ -138,7 +148,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Image",
-          "SortOrder": 2,
+          "SortOrder": 3,
           "Validation": null
         },
         {
@@ -148,7 +158,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 3 Link",
-          "SortOrder": 13,
+          "SortOrder": 14,
           "Validation": null
         },
         {
@@ -158,7 +168,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Image",
-          "SortOrder": 6,
+          "SortOrder": 7,
           "Validation": null
         },
         {
@@ -168,7 +178,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Image",
-          "SortOrder": 14,
+          "SortOrder": 15,
           "Validation": null
         },
         {
@@ -178,7 +188,7 @@
           "Description": "",
           "Mandatory": false,
           "Name": "Box 3 Text",
-          "SortOrder": 12,
+          "SortOrder": 13,
           "Validation": null
         },
         {
@@ -188,7 +198,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Text",
-          "SortOrder": 4,
+          "SortOrder": 5,
           "Validation": null
         },
         {
@@ -198,7 +208,7 @@
           "Description": null,
           "Mandatory": false,
           "Name": "Welcome Message",
-          "SortOrder": 1,
+          "SortOrder": 2,
           "Validation": null
         }
       ]
