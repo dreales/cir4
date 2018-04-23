@@ -82,8 +82,8 @@ span{color:inherit}
 .maincontent>div>div>div>h2:first-child{margin-top:0}
 .maincontent{padding:25px 0}
 .nopad{padding:0!important}
-.imgtext div div{padding:30px;min-height:200px}
-.imgtext>div{display:flex;align-items:center;justify-content:center;min-height:50vh}
+.imgtext div div{padding:30px}
+.imgtext>div{display:flex;align-items:center;justify-content:center;min-height:calc(50vh - 100px)}
 .imgtext h2{color:#fff;text-shadow:#000 0 0 3px}
 
 /*Inputs*/
