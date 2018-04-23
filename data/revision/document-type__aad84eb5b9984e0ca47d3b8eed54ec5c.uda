@@ -24,7 +24,7 @@
         {
           "Key": "00d898ec-1b7e-4683-8505-edaab1a7b3ae",
           "Alias": "box4Text",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 4 Text",
@@ -54,7 +54,7 @@
         {
           "Key": "4f1dd18c-8f5c-466f-bde3-5f68ee046812",
           "Alias": "box2Text",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 2 Text",
@@ -94,7 +94,7 @@
         {
           "Key": "b51aebc6-b915-44c9-8ee8-4a990d93f765",
           "Alias": "box3Text",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": "",
           "Mandatory": false,
           "Name": "Box 3 Text",
@@ -104,7 +104,7 @@
         {
           "Key": "c78f4fc8-ae2f-4fa7-989a-3ede8684a57f",
           "Alias": "box1Text",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Description": null,
           "Mandatory": false,
           "Name": "Box 1 Text",
@@ -118,12 +118,12 @@
   "Udi": "umb://document-type/aad84eb5b9984e0ca47d3b8eed54ec5c",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true,
       "Mode": 0
     },
