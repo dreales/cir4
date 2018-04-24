@@ -136,6 +136,9 @@ footer a:hover path{fill:rgba(255,255,255,.7)}
 .hero-image{filter:brightness(90%)}
 }
 
+/* Homepage */
+.center-grow{text-align:center}
+
 /*Forms*/
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:10px;margin-bottom:10px}
 .greytwocolumn textarea{height:146px}
