@@ -1,4 +1,4 @@
-﻿@inherits System.Web.Mvc.WebViewPage<Umbraco.Forms.Mvc.Models.FormViewModel>
+@inherits System.Web.Mvc.WebViewPage<Umbraco.Forms.Mvc.Models.FormViewModel>
 @using ClientDependency.Core.Mvc
 @using Umbraco.Forms.Mvc
 @using Umbraco.Forms.MVC.Extensions
@@ -42,9 +42,9 @@
 
 
 
-    //Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-dependencies.js");
-    //Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms.js");
-    //Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-conditions.js");
+    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-dependencies.js");
+    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms.js");
+    Html.AddFormThemeScriptFile(Model, "~/App_Plugins/UmbracoForms/Assets/Themes/Default/umbracoforms-conditions.js");
     
     Html.AddFormThemeScriptCommand(Model, jsCommand);
 }
