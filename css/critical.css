@@ -109,7 +109,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 .topfooter h2{font-weight:700}
 .navbar-collapse.show,.navbar-collapse.collapsing{position:absolute;background:#fff;right:-1px;top:97px;border:1px solid #fd585f;padding:10px 10px 10px 20px;z-index:99}
 .navbar-collapse.show *,.navbar-collapse.collapsing *{color:#000!important;font-weight:400!important;z-index:1}
-footer{border-top:2px solid #fff;overflow-y:hidden}
+footer{border-top:2px solid #fff;overflow-y:hidden;min-height:80px}
 footer a{margin-right:25px}
 footer .first-social{margin-left:30px}
 footer svg{margin:3px -10px 0 0}
