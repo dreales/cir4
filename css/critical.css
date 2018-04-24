@@ -103,6 +103,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #main-nav .dropdown-menu{margin-top:-14px;border:1px solid #fd585f;border-top:45px solid rgba(0,0,0,0);border-radius:0}
 #main-nav input{flex-grow:1;width:40%;margin:0 10px;background:#fd585f;color:#fff;border-color:#fff;text-align:center}
 #main-nav input::placeholder{color:#fff}
+#main-nav h1+input{display:none}
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
 .navbar-collapse.show,.navbar-collapse.collapsing{position:absolute;background:#fff;right:-1px;top:93px;border:1px solid #fd585f;padding:10px 10px 10px 20px}
@@ -113,6 +114,7 @@ footer .first-social{margin-left:30px}
 footer svg{margin:3px -10px 0 0}
 footer path, header path{fill:#fff}
 footer a:hover path{fill:rgba(255,255,255,.7)}
+
 
 /*Videos & maps*/
 .video{margin-top:25px}
