@@ -29,7 +29,7 @@
           "Key": "5be742aa-a2fc-42c8-8b98-8501ce797d3b",
           "Alias": "customMobileTitle",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
+          "Description": "If a value is entered, this will replace the search bar on mobile.",
           "Mandatory": false,
           "Name": "Custom mobile title",
           "SortOrder": 3,
