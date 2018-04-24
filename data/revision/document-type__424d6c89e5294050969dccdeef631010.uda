@@ -26,6 +26,16 @@
           "Validation": null
         },
         {
+          "Key": "5be742aa-a2fc-42c8-8b98-8501ce797d3b",
+          "Alias": "customMobileTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Custom mobile title",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
           "Key": "e64058a6-2a99-40b1-8c41-dcf192e3c279",
           "Alias": "pageTitle",
           "DataType": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
