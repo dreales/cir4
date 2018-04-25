@@ -116,8 +116,8 @@ footer .first-social{margin-left:30px}
 footer svg{margin:3px -10px 0 0}
 footer path, header path{fill:#fff}
 footer a:hover path{fill:rgba(255,255,255,.7)}
-footer .dropdown{width:100%;text-align:center;color:#fff;font-size:20px}
-footer .dropdown a{margin:0;color:#fff}
+footer .dropdown{width:100%;text-align:center;color:#fff;font-size:20px;border:0}
+footer .dropdown a{margin:0;color:#fff;padding:12px 24px}
 footer .dropdown .dropdown-menu{bottom:55px;top:unset;width:100%;background:#fd585f;text-align:center}
 
 /*Videos & maps*/
