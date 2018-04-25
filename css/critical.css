@@ -118,7 +118,7 @@ footer path, header path{fill:#fff}
 footer a:hover path{fill:rgba(255,255,255,.7)}
 footer .dropdown{width:100%;text-align:center;color:#fff;font-size:20px}
 footer .dropdown a{margin:0}
-
+footer .dropdown .dropdown-menu{bottom:0;top:unset;width:100%}
 
 /*Videos & maps*/
 .video{margin-top:25px}
