@@ -117,8 +117,8 @@ footer svg{margin:3px -10px 0 0}
 footer path, header path{fill:#fff}
 footer a:hover path{fill:rgba(255,255,255,.7)}
 footer .dropdown{width:100%;text-align:center;color:#fff;font-size:20px}
-footer .dropdown a{margin:0}
-footer .dropdown .dropdown-menu{bottom:0;top:unset;width:100%}
+footer .dropdown a{margin:0;color:#fff}
+footer .dropdown .dropdown-menu{bottom:0;top:unset;width:100%;background:#fd585f;text-align:center}
 
 /*Videos & maps*/
 .video{margin-top:25px}
