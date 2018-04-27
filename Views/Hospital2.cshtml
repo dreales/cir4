@@ -1,6 +1,37 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
 	Layout = "Master.cshtml";
+	
+	string banner1Url = "/media/1032/bath.jpg"; //default hero image
+  string banner2Url = "/media/1032/bath.jpg"; //default why visit image
+  string box1Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
+  string box2Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  if (Model.Content.HasValue("bannerImage") == true){
+    banner1Url = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
+  }
+  if (Model.Content.HasValue("whyChooseImage") == true){
+    banner2Url = Model.Content.GetPropertyValue<IPublishedContent>("whyChooseImage").Url;
+  }
+  if (Model.Content.HasValue("box1Image") == true){
+    box1Url = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+  }
+  if (Model.Content.HasValue("box2Image") == true){
+    box2Url = Model.Content.GetPropertyValue<IPublishedContent>("box2Image").Url;
+  }
+  
+  var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
+  List<string> titles = new List<string>();
+  List<string> urls = new List<string>();
+  List<string> images = new List<string>();
+  List<string> excerpts = new List<string>();
+  foreach (ContentModels.Blogpost post in blogposts){
+    titles.Add(post.Name);
+    urls.Add(post.Url);
+    images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url);
+  }
+  
+  string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
+  
 }
 
 @* the fun starts here *@
