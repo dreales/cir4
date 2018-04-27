@@ -104,7 +104,7 @@ input,textarea,.cqc a,input.form-control:focus,textarea.form-control:focus{borde
 #main-nav input{flex-grow:1;width:40%;margin:0 10px;background:#fd585f;color:#fff;border-color:#fff;text-align:center}
 #main-nav input::placeholder{color:#fff}
 #main-nav h1+input{display:none!important}
-#main-nav h1{color:#fff;margin:0;font-size:18px}
+#main-nav h1{color:#fff;margin:0;font-size:18px;text-transform:none}
 .topfooter{padding:30px 0}
 .topfooter h2{font-weight:700}
 .navbar-collapse.show,.navbar-collapse.collapsing{position:absolute;background:#fff;right:-1px;top:97px;border:1px solid #fd585f;padding:10px 10px 10px 20px;z-index:99}
