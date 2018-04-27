@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/Hospital2.cshtml",
+  "Master": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+  "Udi": "umb://template/0745204236c24429bcf4bfc4045b9e7a",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/5c1b4797c20e4b48a92e54eaca1c4874",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/Hospital2.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Hospital 2",
+  "Alias": "Hospital2",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.13"
+}
