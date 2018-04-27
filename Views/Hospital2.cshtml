@@ -2,15 +2,14 @@
 @{
 	Layout = "Master.cshtml";
 	
-	string banner1Url = "/media/1032/bath.jpg"; //default hero image
-  string banner2Url = "/media/1032/bath.jpg"; //default why visit image
-  string box1Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
-  string box2Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  string banner1Url = "/media/1032/bath.jpg"; //default hero image
+  string box1Url = "/media/1032/bath.jpg"; //default why visit image
+  string box2Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
+  string box3Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  string box4Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  
   if (Model.Content.HasValue("bannerImage") == true){
-    banner1Url = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
-  }
-  if (Model.Content.HasValue("whyChooseImage") == true){
-    banner2Url = Model.Content.GetPropertyValue<IPublishedContent>("whyChooseImage").Url;
+    bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
   if (Model.Content.HasValue("box1Image") == true){
     box1Url = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
@@ -18,6 +17,13 @@
   if (Model.Content.HasValue("box2Image") == true){
     box2Url = Model.Content.GetPropertyValue<IPublishedContent>("box2Image").Url;
   }
+  if (Model.Content.HasValue("box3Image") == true){
+    box3Url = Model.Content.GetPropertyValue<IPublishedContent>("box3Image").Url;
+  }
+  if (Model.Content.HasValue("box4Image") == true){
+    box4Url = Model.Content.GetPropertyValue<IPublishedContent>("box4Image").Url;
+  }
+}
   
   var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
   List<string> titles = new List<string>();
@@ -34,7 +40,7 @@
   
 }
 
-<div class="hero-image" style="background-image:url( @banner1Url )">
+<div class="hero-image" style="background-image:url( @bannerUrl )">
   <div class="dark-overlay text-center">
     <h1>Circle @Model.Content.Name</h1>
     <p class="larger">@Umbraco.Field("heroTagline", altText:"")</p>
