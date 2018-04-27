@@ -34,5 +34,20 @@
   
 }
 
-@* the fun starts here *@
+<div class="hero-image" style="background-image:url( @banner1Url )">
+  <div class="dark-overlay text-center">
+    <h1>Circle @Model.Content.Name</h1>
+    <p class="larger">@Umbraco.Field("heroTagline", altText:"")</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1 text-center">
+      <br /><br /><p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p>
+      @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="adf160f1-39f5-44c0-b01d-9e2da32bf093", FormTheme="", ExcludeScripts="0"})
+      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:@numberForLink">@Umbraco.Field("referrerNumber", altText:"01761422288")</a>.</p><br />
+    </div>
+  </div>
+</div>
+
 
