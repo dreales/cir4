@@ -139,7 +139,7 @@ footer .dropdown .dropdown-menu{bottom:55px;top:unset;width:100%;background:#fd5
 }
 
 /* Homepage */
-.center-grow{text-align:center;display:flex;align-items:center}
+.center-grow{text-align:center;display:flex;align-items:center;min-height:100px}
 
 /*Forms*/
 .umbraco-forms-page input,.umbraco-forms-page textarea{padding:10px;margin-bottom:10px}
