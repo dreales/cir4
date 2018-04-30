@@ -7,6 +7,11 @@
   string box2Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
   string box3Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
   string box4Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  string box5Url = "/media/1032/bath.jpg"; //default why visit image
+  string box6Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
+  string box7Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  string box8Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  
   
   if (Model.Content.HasValue("bannerImage") == true){
     bannerUrl = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
@@ -22,6 +27,18 @@
   }
   if (Model.Content.HasValue("box4Image") == true){
     box4Url = Model.Content.GetPropertyValue<IPublishedContent>("box4Image").Url;
+  }
+  if (Model.Content.HasValue("box5Image") == true){
+    box5Url = Model.Content.GetPropertyValue<IPublishedContent>("box5Image").Url;
+  }
+  if (Model.Content.HasValue("box6Image") == true){
+    box6Url = Model.Content.GetPropertyValue<IPublishedContent>("box6Image").Url;
+  }
+  if (Model.Content.HasValue("box7Image") == true){
+    box7Url = Model.Content.GetPropertyValue<IPublishedContent>("box7Image").Url;
+  }
+  if (Model.Content.HasValue("box8Image") == true){
+    box8Url = Model.Content.GetPropertyValue<IPublishedContent>("box8Image").Url;
   }
 }
   
@@ -89,6 +106,38 @@
     </div>
     <div class="col-6" style="background-image:url( @box4Url )">
       <h2>@Umbraco.Field("box4Title", altText:"")</h2>
+    </div>
+    <div class="col-6 hidemob">
+      <div>
+        <p>@Umbraco.Field("box5Text", altText:"")</p>
+      </div>
+    </div>
+    <div class="col-6" style="background-image:url( @box5Url )">
+      <h2>@Umbraco.Field("box5Title", altText:"")</h2>
+    </div>
+    <div class="col-6" style="background-image:url( @box6Url )">
+      <h2>@Umbraco.Field("box6Title", altText:"")</h2>
+    </div>
+    <div class="col-6 hidemob">
+      <div>
+        <p>@Umbraco.Field("box6Text", altText:"")</p>
+      </div>
+    </div>
+    <div class="col-6 hidemob">
+      <div>
+        <p>@Umbraco.Field("box7Text", altText:"")</p>
+      </div>
+    </div>
+    <div class="col-6" style="background-image:url( @box7Url )">
+      <h2>@Umbraco.Field("box7Title", altText:"")</h2>
+    </div>
+    <div class="col-6" style="background-image:url( @box8Url )">
+      <h2>@Umbraco.Field("box8Title", altText:"")</h2>
+    </div>
+    <div class="col-6 hidemob">
+      <div>
+        <p>@Umbraco.Field("box7Text", altText:"")</p>
+      </div>
     </div>
   </div>
 </div>
