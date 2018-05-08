@@ -3,26 +3,122 @@
   "AllowedTemplates": [
     "umb://template/a21453a8956e43f38ea48bef30d19469"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-medical-emergency",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+    "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "5841c313-3285-401c-8c70-238f895adcbc",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "20bc7294-5b75-47e2-98f3-e18b4ebcb9d1",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "28247298-4f46-4e1a-9be1-f976f2c3d7be",
+          "Alias": "listOfUnits",
+          "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of units",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "51fd9de5-2026-4f5a-a892-f58cc5c265b2",
+          "Alias": "practitionerName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "For example, 'anaesthetist' or 'hip surgeon'",
+          "Mandatory": false,
+          "Name": "Practitioner name",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "8e5fcf7a-0976-4883-b6d9-ee8034fab4e1",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "a6ff8f10-005a-4ede-9daf-c5575af1b3b5",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/9844b0d4be834498aef361085c12860f",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/a21453a8956e43f38ea48bef30d19469",
       "Ordering": true,
       "Mode": 0
     }
   ],
-  "Name": "Speciality/Unit",
+  "Name": "Speciality",
   "Alias": "specialityUnit",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.13"
 }

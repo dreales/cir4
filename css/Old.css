@@ -1,0 +1,8 @@
+/*
+	This is saved for reference and not ever loaded,
+	put whatever you want here but please add a comment
+*/
+
+/* form inputs watermelon color with white text */
+.singlecolform input,.singlecolform textarea{border:0;border-bottom:1.6px solid #fff;background:#fd585f}
+.singlecolform ::placeholder{color:#fff}

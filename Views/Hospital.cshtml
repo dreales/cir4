@@ -2,29 +2,56 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
   Layout = "Master.cshtml";
-  string bannerImageUrl = "/media/1032/bath.jpg";
-  if (Model.Content.HasValue("Image") == true){
-    bannerImageUrl = Model.Content.GetPropertyValue<IPublishedContent>("image").Url;
+  
+  string banner1Url = "/media/1032/bath.jpg"; //default hero image
+  string banner2Url = "/media/1032/bath.jpg"; //default why visit image
+  string box1Url = "/media/1032/bath.jpg"; //1st 1/2 width box image
+  string box2Url = "/media/1032/bath.jpg"; //2st 1/2 width box image
+  if (Model.Content.HasValue("bannerImage") == true){
+    banner1Url = Model.Content.GetPropertyValue<IPublishedContent>("bannerImage").Url;
   }
+  if (Model.Content.HasValue("whyChooseImage") == true){
+    banner2Url = Model.Content.GetPropertyValue<IPublishedContent>("whyChooseImage").Url;
+  }
+  if (Model.Content.HasValue("box1Image") == true){
+    box1Url = Model.Content.GetPropertyValue<IPublishedContent>("box1Image").Url;
+  }
+  if (Model.Content.HasValue("box2Image") == true){
+    box2Url = Model.Content.GetPropertyValue<IPublishedContent>("box2Image").Url;
+  }
+  
+  var blogposts = Umbraco.TypedContent(1113).Children.OrderByDescending(x => x.CreateDate).Take(5);
+  List<string> titles = new List<string>();
+  List<string> urls = new List<string>();
+  List<string> images = new List<string>();
+  List<string> excerpts = new List<string>();
+  foreach (ContentModels.Blogpost post in blogposts){
+    titles.Add(post.Name);
+    urls.Add(post.Url);
+    images.Add(post.GetPropertyValue<IPublishedContent>("bannerImage").Url);
+  }
+  
+  string numberForLink = Model.Content.GetPropertyValue<string>("referrerNumber", true, string.Empty).Replace(" ", string.Empty);
+  
 }
 
-<div class="hero-image" style="background:url( @bannerImageUrl )">
+<div class="hero-image" style="background-image:url( @banner1Url )">
   <div class="dark-overlay text-center">
-      <h1>Circle @Model.Content.Name</h1>
-      <p class="larger">@Umbraco.Field("tagline", altText:"")</p>
+    <h1>Circle @Model.Content.Name</h1>
+    <p class="larger">@Umbraco.Field("heroTagline", altText:"")</p>
   </div>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
-      <p class="larger">@Umbraco.Field("welcomeMessage", altText:"Our hospitals are designed to feel different. We know a hospital visit can be daunting, so we have created a modern hospital experience which feels more like you're stepping into a luxury hotel.")</p>
+      <br /><br /><p class="larger">@Umbraco.Field("welcomeMessage", altText:"")</p>
       @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="adf160f1-39f5-44c0-b01d-9e2da32bf093", FormTheme="", ExcludeScripts="0"})
-      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:01761422288">01761 422288</a>.</p><br />
+      <p class="space">If you're a GP or other healthcare professional wishing to refer your patient, please call us on <a href="tel:@numberForLink">@Umbraco.Field("referrerNumber", altText:"01761422288")</a>.</p><br />
     </div>
   </div>
 </div>
 
-<div class="bg-melon">
+<div class="toptabs">
   <div class="container">
     <div class="row">
       <div class="col-10 offset-1 text-center">
@@ -46,58 +73,112 @@
     <div class="col-sm-10 offset-sm-1">
       <div class="tab-content">
         <div class="tab-pane fade show active" id="self-pay" role="tabpanel" aria-labelledby="self-pay">
-          <br /><p class="watermelon">Be seen by a specialist quickly for your diagnosis and treatment.</p>
-          <p>You do not have to wait for your appointment at Circle Bath Hospital. You can be seen quickly by one of our experienced consultant specialists. Our competitive fixed price packages mean that you can get better faster. Because they’re comprehensive, you do not have to worry about any hidden extras. </p>
+          <br /><p class="wmelon">Be seen by a specialist quickly for your diagnosis and treatment.</p>
+          <p>@Umbraco.Field("selfFundingInfo", altText:"")</p>
           <button>Book an appointment</button>
         </div>
         <div class="tab-pane fade" id="insured" role="tabpanel" aria-labelledby="insured">
-          <p>Circle Bath treats patients with private medical insurance. If you have insurance, Circle Bath will invoice the insurance company for any procedures, tests and diagnostics carried out. There may be certain items not covered by your insurance company, such as private prescriptions, so you should always contact your insurer regarding their ‘excess payment policy' to check your level of cover. For items not covered under the insurance, the team at Circle Bath will contact you to discuss payment directly.</p>
-          <button>Book an appointment</button>
+          <p>@Umbraco.Field("insuredInfo", altText:"")</p>
+          <button>More information</button>
         </div>
       </div>
     </div>
   </div>
 </div><br />
-<div class="hero-image" style="background:url( @bannerImageUrl )">
+<div class="hero-image" style="background-image:url( @banner2Url )">
   <div class="dark-overlay text-center">
     <h2>Why visit Circle @Model.Content.Name?</h2>
-    <p>@Umbraco.Field("tagline", altText:"")</p>
+    <p>@Umbraco.Field("whyChooseText", altText:"")</p>
     <button>Take a virtual tour of Circle Bath Hospital</button>
   </div>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center">
-      <h2>World class patient experience</h2>
-      <p>Our founding beleif at Circle is that by combining clinical excellence, the best doctors, urses and medical care with a supurb patient experience, a calming environment and five-star hospitality, you will be more relaxed and so recover faster.</p>
+      <br /><br /><h2>World class patient experience</h2>
+      <p>@Umbraco.Field("boxesInfoText", altText:"")</p>
     </div>
   </div>
 </div><br /><br />
-<div class="container-fluid">
-  <div class="row no-gutters">
-    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
-    <div class="col-sm img-text-box">
+<div class="container-fluid nopad">
+  <div class="row no-gutters imgtext">
+    <div class="col-sm" style="background:url( @box1Url )"></div>
+    <div class="col-sm greyback">
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
-        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+        <p>@Umbraco.Field("box1Text", altText:"")</p>
       </div>
     </div>
     <div class="w-100"></div>
-    <div class="col-sm img-text-box">
+    <div class="col-sm greyback">
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae mi ultrices efficitur. Sed eget est et nisl sagittis suscipit at quis leo. Nunc blandit sem vel urna posuere tempus. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in.</p>
-        <p>Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Aliquam ut magna velit. Vivamus pretium accumsan elit, ut pellentesque lacus tempus a. Nullam erat tellus, pellentesque eget tincidunt in. Nullam erat tellus, pellentesque eget tincidunt in, ultrices vitae nibh.</p>
+        <p>@Umbraco.Field("box2Text", altText:"")</p>
       </div>
     </div>
-    <div class="col-sm" style="background:url( @bannerImageUrl )"></div>
+    <div class="col-sm" style="background-image:url( @box2Url )"></div>
   </div>
 </div>      
 <div class="container">
   <div class="row no-gutters newsfeed">
-    <div class="col-sm-6" style="background:url( @bannerImageUrl )">
-        <a href="">
-           
-          <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
-        </a>
+    <div class="col-sm" style="background-image:url( @images[0] )">
+      <a href="@urls[0]">
+        @titles[0]
+        <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+      </a>
     </div>
+    <div class="col-sm" style="background-image:url( @images[1] )">
+      <a href="@urls[1]">
+        @titles[1]
+        <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+    </a>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm" style="background-image:url( @images[2] )">
+      <a href="@urls[2]">
+        @titles[2]
+        <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+      </a>
+    </div>
+    <div class="col-sm" style="background-image:url( @images[3] )">
+      <a href="@urls[3]">
+        @titles[3]
+        <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+      </a>
+    </div>
+    <div class="col-sm" style="background-image:url( @images[4] )">
+      <a href="@urls[4]">
+        @titles[4]
+        <svg height="17" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+      </a>
+    </div>
+  </div>
 </div>
+<div class="full-map">
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      var l={lat:51.518555,lng:-.1496715},
+      map=new google.maps.Map(document.getElementById('map'),{zoom:13,center:l,mapTypeControl:false,fullscreenControl:false,styles:[{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#fff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#fff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]}),
+      m=new google.maps.Marker({position:l,map:map});
+    }
+  </script>
+</div>
+<div class="waterback topfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="87a8b37a-b171-42a0-be1d-3b14737d8c02", FormTheme="", ExcludeScripts="0"})
+      </div>
+      <div class="col-sm-5 offset-sm-2">
+        <h2>Address</h2>
+        <p>Foxcote Ave<br />Peasedown St John<br />Bath<br />BA2 8SQ<br /><br />(when using a sat-nav BA2 8SF is more useful)</p>
+        <div class="cqc">
+		  <img src="https://www.circlehealth.co.uk/media/2275/asset_cqclogo_update.png" alt="CQC logo" />
+		  <p>Circle @Model.Content.Name<br /><strong>CQC overall rating</strong> @Umbraco.Field("cqcDate")</p>
+		  <p class="good">@Umbraco.Field("cqcRating")</p>
+		  <a alt="See full report (opens in new window)" target="_blank" href="@Umbraco.Field("cqcLink", altText:"")">See the report</a>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG1Gxm084eI_U0C-8BDPGOx78DmIRERU&callback=initMap"></script>

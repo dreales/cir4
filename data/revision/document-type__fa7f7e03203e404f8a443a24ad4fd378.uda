@@ -3,18 +3,129 @@
   "AllowedTemplates": [
     "umb://template/2328b43aa0c54fe6907742f08b095f90"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-wand",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+    "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "1e56e38d-9cbb-43f4-92a6-99d0def8f013",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "02593abd-5a7d-44fc-a06a-cdedcd746d42",
+          "Alias": "location",
+          "DataType": "umb://data-type/fd5960c88272459a86e6e67d7875badc",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Locations available",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "0a9c9472-ae3f-4167-b374-fa410c7e6277",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "3fe99f2e-691f-4f2a-a75d-be4bd59c6f58",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "6b4c2478-4dcd-4b7c-a16c-e3b21745013a",
+          "Alias": "specialties",
+          "DataType": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Specialties",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "734933f4-f6b3-42d3-b068-8194b95a6df7",
+          "Alias": "units",
+          "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Units",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "eeb76f86-a0d5-4693-bdfa-528965942ade",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": "Add content for accordion",
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/fa7f7e03203e404f8a443a24ad4fd378",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/fd5960c88272459a86e6e67d7875badc",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/2328b43aa0c54fe6907742f08b095f90",
       "Ordering": true,
@@ -24,5 +135,5 @@
   "Name": "Treatment",
   "Alias": "treatment",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }

@@ -3,18 +3,169 @@
   "AllowedTemplates": [
     "umb://template/d19b0421e42a4f67879694cef3ce6c88"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-umb-users",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
   "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+    "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "8865f93a-47a9-4ff1-b78d-c553bbface28",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "017f3c12-271a-411e-b301-a7f517a32f12",
+          "Alias": "specialities",
+          "DataType": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Specialities",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "22149bb2-e50f-434d-8d91-9d58456d4644",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 9,
+          "Validation": null
+        },
+        {
+          "Key": "29e79c88-8ef8-4641-ac26-5b9b9dfa0956",
+          "Alias": "units",
+          "DataType": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Units",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "52f6c56c-2bb8-41a2-9ab1-7e9853d8a0c2",
+          "Alias": "location",
+          "DataType": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
+          "Description": "Currently the Bath and Reading option doesn't work - if needed it can be quickly implemented - contact admin",
+          "Mandatory": true,
+          "Name": "Hospital(s) worked at",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "796e77bf-4728-4239-b814-3c41d36f0063",
+          "Alias": "profileImage",
+          "DataType": "umb://data-type/83707a47d6fb4918a4910f3a00135082",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Profile Image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "798fdd14-7a00-4cc0-b870-43203ce9b3c0",
+          "Alias": "profile",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Profile",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "8b668af9-81b8-4d67-84b0-d322db133e4a",
+          "Alias": "qualifications",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Qualifications",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "aa648020-7aba-4c86-a0c5-712a0c8c0b28",
+          "Alias": "customSpeciality",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "If not filled in the speciality will be generated from their selected specialities",
+          "Mandatory": false,
+          "Name": "Custom speciality text",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "ee5311e7-b19d-49b1-af74-44c50b53daef",
+          "Alias": "treatments",
+          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Treatments",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/83707a47d6fb4918a4910f3a00135082",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9f24a09c37b74ff5926e231df1d5d41a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ea8bccfcce9a47da8eca97bccdac79c2",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ec2ec764dac1471db0a756ef1e70477f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/d19b0421e42a4f67879694cef3ce6c88",
       "Ordering": true,
@@ -24,5 +175,5 @@
   "Name": "Consultant",
   "Alias": "consultant",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.13"
 }

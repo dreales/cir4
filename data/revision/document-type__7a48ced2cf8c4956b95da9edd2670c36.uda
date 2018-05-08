@@ -11,7 +11,7 @@
   "Parent": null,
   "AllowedChildContentTypes": [],
   "CompositionContentTypes": [
-    "umb://document-type/661053679bb54fd7922c61bdc3ed3a70"
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
   ],
   "PropertyGroups": [
     {
@@ -20,13 +20,23 @@
       "SortOrder": 0,
       "PropertyTypes": [
         {
-          "Key": "2e488b20-d902-4ed2-825e-0286486c857d",
-          "Alias": "categories",
-          "DataType": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+          "Key": "37b4b836-e687-4e34-ba99-a0373ec114c9",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
           "Description": null,
           "Mandatory": false,
-          "Name": "Categories (tags)",
+          "Name": "Main content",
           "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "51028e0a-4e79-49aa-a64d-f9cca2a106c2",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
           "Validation": null
         },
         {
@@ -38,26 +48,6 @@
           "Name": "Excerpt",
           "SortOrder": 2,
           "Validation": null
-        },
-        {
-          "Key": "8cb2b126-a757-414e-b55a-350f37fcd280",
-          "Alias": "bodyText",
-          "DataType": "umb://data-type/1cd1f7c5f2ed4aa2ac7cfb2ab363a743",
-          "Description": null,
-          "Mandatory": false,
-          "Name": "Content",
-          "SortOrder": 3,
-          "Validation": null
-        },
-        {
-          "Key": "eef288d2-eca6-430a-af9e-c35631f28dd4",
-          "Alias": "pageTitle",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "The title of the page, this is also the first text in a google search result. The ideal length is between 40 and 60 characters",
-          "Mandatory": true,
-          "Name": "Page Title",
-          "SortOrder": 0,
-          "Validation": null
         }
       ]
     }
@@ -66,17 +56,12 @@
   "Udi": "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/1cd1f7c5f2ed4aa2ac7cfb2ab363a743",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
       "Ordering": true,
       "Mode": 0
     },
@@ -86,7 +71,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
     },
@@ -96,8 +81,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Blogpost",
+  "Name": "News post",
   "Alias": "blogpost",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }

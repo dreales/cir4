@@ -1,0 +1,42 @@
+{
+  "DefaultTemplate": "umb://template/dd6f7dcb72ea4796951a937e5be74cbe",
+  "AllowedTemplates": [
+    "umb://template/dd6f7dcb72ea4796951a937e5be74cbe"
+  ],
+  "Icon": "icon-bulleted-list",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/9844b0d4be834498aef361085c12860f"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/882bf01ffcd840eab78e3e532e44a4fa",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/9844b0d4be834498aef361085c12860f",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/dd6f7dcb72ea4796951a937e5be74cbe",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Speciality list",
+  "Alias": "specialityUnitList",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

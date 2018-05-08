@@ -1,11 +1,11 @@
 {
-  "Alias": "Contact Form",
+  "Alias": "Grey, two column",
   "Created": "2018-01-08T14:07:36.8717817+00:00",
   "Pages": [
     {
       "FieldSets": [
         {
-          "Caption": null,
+          "Caption": "Just enter your details below and we'll ring you to provide a quote or answer your questions.",
           "SortOrder": 0,
           "Id": "2c2a56bd-0bd0-4323-ac09-992f02dbb9d5",
           "Page": "00000000-0000-0000-0000-000000000000",
@@ -19,14 +19,14 @@
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
-                  "Alias": "name",
-                  "Id": "2d86134a-ca01-4da7-c720-bf48fce8b79e",
+                  "Alias": "name2c",
+                  "Id": "a9e8e7e8-a4de-4cdb-b755-fb6043d4dfd6",
                   "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
                   "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
                   "DataSourceFieldKey": null,
                   "Mandatory": true,
                   "RegEx": null,
-                  "RequiredErrorMessage": "Please leave your name",
+                  "RequiredErrorMessage": null,
                   "InvalidErrorMessage": null,
                   "Condition": {
                     "Id": "00000000-0000-0000-0000-000000000000",
@@ -36,51 +36,24 @@
                     "Rules": []
                   },
                   "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Name"
+                    "Placeholder": "Name",
+                    "DefaultValue": ""
                   },
                   "PreValues": []
                 },
                 {
-                  "Caption": "Email address",
+                  "Caption": "Email",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
-                  "Alias": "email",
-                  "Id": "eae61cf1-01da-4da6-f9c6-df56b0aba741",
+                  "Alias": "email2c",
+                  "Id": "c99f64cd-b202-4a0d-f060-362b2a42b873",
                   "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
                   "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
                   "DataSourceFieldKey": null,
                   "Mandatory": true,
                   "RegEx": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+",
-                  "RequiredErrorMessage": "Please enter your e-mail",
-                  "InvalidErrorMessage": "Please enter a valid e-mail",
-                  "Condition": {
-                    "Id": "00000000-0000-0000-0000-000000000000",
-                    "Enabled": false,
-                    "ActionType": 0,
-                    "LogicType": 0,
-                    "Rules": []
-                  },
-                  "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Email"
-                  },
-                  "PreValues": []
-                },
-                {
-                  "Caption": "Phone number",
-                  "ToolTip": null,
-                  "Placeholder": null,
-                  "CssClass": null,
-                  "Alias": "phoneNumber",
-                  "Id": "21550c3d-769d-4700-8db0-f30cd95e0a95",
-                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
-                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
-                  "DataSourceFieldKey": null,
-                  "Mandatory": true,
-                  "RegEx": null,
-                  "RequiredErrorMessage": "Please enter a phone number",
+                  "RequiredErrorMessage": null,
                   "InvalidErrorMessage": null,
                   "Condition": {
                     "Id": "00000000-0000-0000-0000-000000000000",
@@ -90,8 +63,35 @@
                     "Rules": []
                   },
                   "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Phone"
+                    "Placeholder": "Email",
+                    "DefaultValue": ""
+                  },
+                  "PreValues": []
+                },
+                {
+                  "Caption": "Phone",
+                  "ToolTip": null,
+                  "Placeholder": null,
+                  "CssClass": null,
+                  "Alias": "phone2s",
+                  "Id": "bb341dba-d2c7-41d8-c549-215991ea4780",
+                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "DataSourceFieldKey": null,
+                  "Mandatory": true,
+                  "RegEx": null,
+                  "RequiredErrorMessage": null,
+                  "InvalidErrorMessage": null,
+                  "Condition": {
+                    "Id": "00000000-0000-0000-0000-000000000000",
+                    "Enabled": false,
+                    "ActionType": 0,
+                    "LogicType": 0,
+                    "Rules": []
+                  },
+                  "Settings": {
+                    "Placeholder": "Phone",
+                    "DefaultValue": ""
                   },
                   "PreValues": []
                 }
@@ -102,18 +102,18 @@
               "Width": 6,
               "Fields": [
                 {
-                  "Caption": "Message",
+                  "Caption": "Message2c",
                   "ToolTip": null,
                   "Placeholder": null,
                   "CssClass": null,
-                  "Alias": "message",
-                  "Id": "ec9abce4-e339-45a3-f143-6ba81f5b8c1d",
+                  "Alias": "message2c",
+                  "Id": "c1ff4497-2d2a-4be0-9325-7f8e47c2fe16",
                   "FieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
                   "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
                   "DataSourceFieldKey": null,
                   "Mandatory": true,
                   "RegEx": null,
-                  "RequiredErrorMessage": "Please enter a message",
+                  "RequiredErrorMessage": null,
                   "InvalidErrorMessage": null,
                   "Condition": {
                     "Id": "00000000-0000-0000-0000-000000000000",
@@ -123,8 +123,8 @@
                     "Rules": []
                   },
                   "Settings": {
-                    "DefaultValue": "",
-                    "Placeholder": "Message"
+                    "Placeholder": "Message",
+                    "DefaultValue": ""
                   },
                   "PreValues": []
                 }
@@ -147,7 +147,7 @@
     }
   ],
   "Id": "adf160f1-39f5-44c0-b01d-9e2da32bf093",
-  "FieldIndicationType": 1,
+  "FieldIndicationType": 0,
   "Indicator": "*",
   "ShowValidationSummary": false,
   "HideFieldValidation": false,
@@ -161,15 +161,33 @@
   "CssClass": null,
   "DisableDefaultStylesheet": true,
   "UseClientDependency": false,
-  "WorkflowIds": [],
+  "WorkflowIds": [
+    "a8ea669d-a3c5-4b39-a422-42c39fdf6343"
+  ],
   "DataSource": null,
-  "SubmitLabel": "Send Message",
+  "SubmitLabel": "Send message",
   "NextLabel": "Next",
   "PrevLabel": "Previous",
-  "Workflows": null,
+  "Workflows": [
+    {
+      "Id": "a8ea669d-a3c5-4b39-a422-42c39fdf6343",
+      "Name": "Slack enquiry tracker",
+      "Form": "adf160f1-39f5-44c0-b01d-9e2da32bf093",
+      "Active": true,
+      "WorkflowTypeId": "ccbfb0d5-adaa-4729-8b4c-4bb439dc0202",
+      "ExecutesOn": 3,
+      "Settings": {
+        "Token": "xoxb-326667099958-3C3BISVQg59PrUF0j118fbnx",
+        "Channel": "#circle-enquiries",
+        "Username": "circle_umbraco",
+        "AvatarUrl": "http://www.zendcube.com/img/tools/umbraco.jpg"
+      },
+      "SortOrder": 0
+    }
+  ],
   "Udi": "umb://forms-form/adf160f139f544c0b01d9e2da32bf093",
   "Dependencies": [],
-  "Name": "Contact Form",
+  "Name": "Grey, two column",
   "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
   "__version": "2.0.11"
 }

@@ -1,0 +1,133 @@
+{
+  "Alias": "Call me back",
+  "Created": "2018-03-13T16:21:25.0599617+00:00",
+  "Pages": [
+    {
+      "FieldSets": [
+        {
+          "Caption": "",
+          "SortOrder": 0,
+          "Id": "2c2a56bd-0bd0-4323-ac09-992f02dbb9d5",
+          "Page": "00000000-0000-0000-0000-000000000000",
+          "Containers": [
+            {
+              "Caption": null,
+              "Width": 12,
+              "Fields": [
+                {
+                  "Caption": "Name",
+                  "ToolTip": null,
+                  "Placeholder": null,
+                  "CssClass": null,
+                  "Alias": "name",
+                  "Id": "2d86134a-ca01-4da7-c720-bf48fce8b79e",
+                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "DataSourceFieldKey": null,
+                  "Mandatory": true,
+                  "RegEx": null,
+                  "RequiredErrorMessage": "Please leave your name",
+                  "InvalidErrorMessage": null,
+                  "Condition": {
+                    "Id": "00000000-0000-0000-0000-000000000000",
+                    "Enabled": false,
+                    "ActionType": 0,
+                    "LogicType": 0,
+                    "Rules": []
+                  },
+                  "Settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Name"
+                  },
+                  "PreValues": []
+                },
+                {
+                  "Caption": "Phone number",
+                  "ToolTip": null,
+                  "Placeholder": null,
+                  "CssClass": null,
+                  "Alias": "phoneNumber",
+                  "Id": "21550c3d-769d-4700-8db0-f30cd95e0a95",
+                  "FieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "PreValueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "DataSourceFieldKey": null,
+                  "Mandatory": true,
+                  "RegEx": null,
+                  "RequiredErrorMessage": "Please enter a phone number",
+                  "InvalidErrorMessage": null,
+                  "Condition": {
+                    "Id": "00000000-0000-0000-0000-000000000000",
+                    "Enabled": false,
+                    "ActionType": 0,
+                    "LogicType": 0,
+                    "Rules": []
+                  },
+                  "Settings": {
+                    "DefaultValue": "",
+                    "Placeholder": "Phone number"
+                  },
+                  "PreValues": []
+                }
+              ]
+            }
+          ],
+          "Condition": {
+            "Id": "00000000-0000-0000-0000-000000000000",
+            "Enabled": false,
+            "ActionType": 0,
+            "LogicType": 0,
+            "Rules": []
+          }
+        }
+      ],
+      "Caption": "",
+      "SortOrder": 0,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Form": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "Id": "1e3af52a-bcba-40fe-a1a6-4aca53b10420",
+  "FieldIndicationType": 0,
+  "Indicator": "*",
+  "ShowValidationSummary": false,
+  "HideFieldValidation": false,
+  "RequiredErrorMessage": "Please provide a value for {0}",
+  "InvalidErrorMessage": "Please provide a valid value for {0}",
+  "MessageOnSubmit": "Thank you",
+  "GoToPageOnSubmit": null,
+  "XPathOnSubmit": null,
+  "ManualApproval": false,
+  "StoreRecordsLocally": true,
+  "CssClass": null,
+  "DisableDefaultStylesheet": true,
+  "UseClientDependency": false,
+  "WorkflowIds": [
+    "df072a0c-7812-41a9-a7ce-e3d1154030d8"
+  ],
+  "DataSource": null,
+  "SubmitLabel": "Send message",
+  "NextLabel": "Next",
+  "PrevLabel": "Previous",
+  "Workflows": [
+    {
+      "Id": "df072a0c-7812-41a9-a7ce-e3d1154030d8",
+      "Name": "Webform counter",
+      "Form": "1e3af52a-bcba-40fe-a1a6-4aca53b10420",
+      "Active": true,
+      "WorkflowTypeId": "ccbfb0d5-adaa-4729-8b4c-4bb439dc0202",
+      "ExecutesOn": 3,
+      "Settings": {
+        "Token": "xoxb-326667099958-3C3BISVQg59PrUF0j118fbnx",
+        "Channel": "#circle-enquiries",
+        "Username": "circle_umbraco",
+        "AvatarUrl": "http://www.zendcube.com/img/tools/umbraco.jpg"
+      },
+      "SortOrder": 0
+    }
+  ],
+  "Udi": "umb://forms-form/1e3af52abcba40fea1a64aca53b10420",
+  "Dependencies": [],
+  "Name": "Call me back",
+  "__type": "Umbraco.Deploy.Forms,Umbraco.Deploy.Forms.Artifacts.FormArtifact",
+  "__version": "2.0.13"
+}

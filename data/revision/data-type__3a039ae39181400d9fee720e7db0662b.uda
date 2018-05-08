@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.MediaPicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "disableFolderSelect": null,
+    "multiPicker": null,
+    "onlyImages": "1",
+    "startNodeId": "umb://media/6e32aed0cbb04bed9d48c8857eec0761"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/3a039ae39181400d9fee720e7db0662b",
+  "Dependencies": [],
+  "Name": "Profile thumbnail",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

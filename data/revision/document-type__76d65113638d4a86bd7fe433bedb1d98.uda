@@ -1,0 +1,109 @@
+{
+  "DefaultTemplate": "umb://template/d32336a5323f49debf6413e72da6c9fa",
+  "AllowedTemplates": [
+    "umb://template/d32336a5323f49debf6413e72da6c9fa"
+  ],
+  "Icon": "icon-medical-emergency",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+    "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "4f3b3f3e-52e4-43e5-b799-5c9f58aaaa0a",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "4e88baed-0788-4577-9756-ef20daeeaf05",
+          "Alias": "accordion",
+          "DataType": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accordion",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "7e815de8-f1fe-48a2-b31b-91900efa614e",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "a0863c4d-5963-4c64-b9d4-8947383fa4eb",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e710434e-ae6a-4f44-b70d-068c45d7eec0",
+          "Alias": "listOfTreatments",
+          "DataType": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "List of treatments",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/76d65113638d4a86bd7fe433bedb1d98",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7660a5b5ff8e4f1ca55aca003edc5604",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d32336a5323f49debf6413e72da6c9fa",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Unit",
+  "Alias": "unit",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.13"
+}

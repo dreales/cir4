@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Imulus.Archetype",
+  "DatabaseType": 0,
+  "PreValues": {
+    "archetypeConfig": "{\r\n  \"showAdvancedOptions\": false,\r\n  \"startWithAddButton\": true,\r\n  \"hideFieldsetToolbar\": false,\r\n  \"enableMultipleFieldsets\": false,\r\n  \"hideFieldsetControls\": false,\r\n  \"hidePropertyLabel\": false,\r\n  \"maxFieldsets\": null,\r\n  \"enableCollapsing\": false,\r\n  \"enableMultipleOpen\": false,\r\n  \"enableCloning\": true,\r\n  \"enableDisabling\": true,\r\n  \"enableDeepDatatypeRequests\": false,\r\n  \"enablePublishing\": false,\r\n  \"enableMemberGroups\": false,\r\n  \"enableCrossDragging\": false,\r\n  \"fieldsets\": [\r\n    {\r\n      \"alias\": \"accordionControl\",\r\n      \"remove\": false,\r\n      \"collapse\": false,\r\n      \"labelTemplate\": \"{{panelTitle}}\",\r\n      \"icon\": \"\",\r\n      \"label\": \"Accordion control\",\r\n      \"properties\": [\r\n        {\r\n          \"alias\": \"title\",\r\n          \"remove\": false,\r\n          \"collapse\": true,\r\n          \"label\": \"Title\",\r\n          \"helpText\": \"\",\r\n          \"dataTypeGuid\": \"0cc0eba1-9960-42c9-bf9b-60e150b429ae\",\r\n          \"value\": \"\",\r\n          \"required\": true,\r\n          \"aliasIsDirty\": true\r\n        },\r\n        {\r\n          \"alias\": \"panel\",\r\n          \"remove\": false,\r\n          \"collapse\": true,\r\n          \"label\": \"Panel\",\r\n          \"helpText\": \"\",\r\n          \"dataTypeGuid\": \"ca90c950-0aff-4e72-b976-a30b1ac57dad\",\r\n          \"value\": \"\",\r\n          \"required\": true,\r\n          \"aliasIsDirty\": true\r\n        }\r\n      ],\r\n      \"group\": null,\r\n      \"aliasIsDirty\": true\r\n    }\r\n  ],\r\n  \"fieldsetGroups\": [],\r\n  \"minFieldsets\": null,\r\n  \"hidePropertyLabels\": true\r\n}",
+    "hideLabel": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/c9505381cba84dfdb277a1549b414763",
+  "Dependencies": [],
+  "Name": "Accordion",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

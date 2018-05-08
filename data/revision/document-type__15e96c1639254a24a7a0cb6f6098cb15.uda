@@ -1,0 +1,42 @@
+{
+  "DefaultTemplate": "umb://template/dd6f7dcb72ea4796951a937e5be74cbe",
+  "AllowedTemplates": [
+    "umb://template/dd6f7dcb72ea4796951a937e5be74cbe"
+  ],
+  "Icon": "icon-bulleted-list",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/fa7f7e03203e404f8a443a24ad4fd378"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/15e96c1639254a24a7a0cb6f6098cb15",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/fa7f7e03203e404f8a443a24ad4fd378",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/dd6f7dcb72ea4796951a937e5be74cbe",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Treatment list",
+  "Alias": "treatmentList",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

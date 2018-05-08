@@ -2,119 +2,162 @@
 @using Umbraco.Core
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-    Layout = null;
+  Layout = null;
 }
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
   <title>@Model.Content.Name | Circle Health</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="theme-color" content="#fc5960" />
+  <link rel="manifest" href="/media/1051/manifest.json" />
+  <link rel="shortcut icon" href="/media/1045/favicon.ico" />
+  <script src="/scripts/site.js"></script>
+  <link rel="stylesheet" href="/css/critical.css" />
+  <style>
+    @@font-face{font-family:"Open Sans";font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2')}
+    @@font-face{font-family:"Open Sans";font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpKKSTj5PW.woff2) format('woff2')}
+    @@font-face{font-family:'Icons';src:url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2) format('woff2')
+  </style>
 </head>
-
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light" id="top-nav">
+    <nav class="navbar navbar-expand-md" id="top-nav">
       <div class="collapse navbar-collapse" id="top-navbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/about-circle/">About Circle</a>
+            <a class="nav-link" href="/about-circle-health/">About Circle</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/careers/">Careers</a>
+            <a class="nav-link" href="https://recruitmentplus.circlehealth.co.uk/">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/gp-information/">GP information</a>
+            <a class="nav-link" href="/gps-and-other-referrers/">GPs and referrers</a>
           </li>
           <li class="nav-item number">
             <a class="nav-link" href="tel:02036136779">020 3613 6779</a>
           </li>
           <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" id="searchBox" placeholder="Search" aria-label="Search">
-            </form>
+            <input class="form-control" type="search" id="searchBox" placeholder="Search">
           </li>
         </ul>
       </div>
     </nav>
-  
-    <nav class="navbar navbar-expand-md navbar-dark" id="main-nav">
-      <a class="navbar-brand" href="/"><img src="/media/1031/circle-health-white.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-md" id="main-nav">
+      <a class="navbar-brand" href="/"><svg class="logo" viewBox="0 0 433 442"><path d="M294.75,395.46c-4.16,0-7.93-7.13-16.07-7.13-12.46,0-20.05,9.06-20.05,24.12,0,13.89,7.77,24.31,19.3,24.31,8.89,0,13-6.75,16.45-6.75,3,0,4.9,1.35,4.9,3.5,0,4.62-10.94,12-21,12-18.33,0-30.61-14.48-30.61-33.41,0-20.47,13.8-32.66,29.68-32.66,12.49,0,21.74,7.94,21.74,12.38,0,2.12-1.52,3.67-4.35,3.67" transform="translate(-90.5 -189.5)"/><path d="M316.13,436.58c0,4.45-1.32,6.76-4,6.76-4.16,0-4.7-1.17-4.7-10V405.87c0-4.61.93-6.93,4.15-6.93,4.54,0,4.54,2.13,4.54,10.42Z" transform="translate(-90.5 -189.5)"/><path d="M345.14,399.51c1.52,0,3.23.21,3.23,3.09,0,3.24-5.24,2.72-10.6,8.19-2.5,2.54-2.65,6.29-2.65,9.59V437c0,4.44-1.31,6.57-3.78,6.57-4.93,0-5.67-1.16-5.67-9.27V405.12c0-4.45,1.52-6.75,4.73-6.75,2.64,0,5,1.53,9.06,1.53,3.42,0,3.05-.39,5.68-.39" transform="translate(-90.5 -189.5)"/><path d="M383,407.81c-2.06,0-5.86-3.86-10.94-3.86-7.59,0-13.43,6.55-13.43,17,0,9.28,4.71,17.4,13.43,17.4,7,0,8.67-4.06,12.46-4.06,1.89,0,2.83.77,2.83,2.49,0,2.53-7,8.52-16.81,8.52-13.25,0-22.31-8.52-22.31-23.95,0-12.75,7.56-24.33,22.31-24.33,8.87,0,16.62,3.88,16.62,7.74,0,2.31-1.51,3.07-4.16,3.07" transform="translate(-90.5 -189.5)"/><path d="M403.63,438.82c0,3.27-1.53,4.81-4.55,4.81-4.54,0-5.12-1.54-5.12-11.57V388.6c0-5.19.79-7.9,4.74-7.9,3.78,0,4.93,2.11,4.93,6Z" transform="translate(-90.5 -189.5)"/><path d="M406.24,599.9c-45.43,24-98.24,28.88-147.18,16.49a199.66,199.66,0,0,0,30.8,2.39c113.91,0,220.55-94.67,220.55-211S403.77,202.47,289.86,202.47a207.06,207.06,0,0,0-48.32,5.65c53.4-16.9,112.9-11.55,163.27,15.12C474.33,260,517.2,335.61,517.91,414.82,517.2,494.1,475,563.48,406.24,599.9M158.4,418.35c0-86.92,69.27-157.66,154.4-157.66s154.39,70.74,154.39,157.66S397.91,576,312.8,576,158.4,505.26,158.4,418.35M442.11,235.84c-52.27-43-123.06-56.26-187.45-39a202,202,0,0,0-72.89,36.7C126,269.28,90.5,332.86,90.5,407.81a225.14,225.14,0,0,0,19.25,91.9C150,598.34,259.85,651.55,361.32,624.44,455.9,599.16,522.07,504.72,523,406.4c-.63-66.71-30-128.73-80.88-170.56" transform="translate(-90.5 -189.5)"/><path d="M429.33,416.51h3.21c4.56,0,8.91-1,8.91-4.85,0-4.81-3.79-8.67-10.61-8.67-7.18,0-11.52,3.08-11.52,8.11,0,4.62,4.34,5.41,10,5.41m3.78,22.31c7,0,9.15-4.55,12.94-4.55,1.88,0,2.83.77,2.83,2.49,0,2.53-7,8.52-16.82,8.52-13.27,0-22.39-8.08-22.39-23.54,0-14.28,7.17-23.37,20.82-23.37,16.25,0,19.84,13.5,19.84,18.52,0,2.31-1.14,3.49-4.17,3.49l-11.9.3c-11.73,0-15.89,1.61-15.89,8.17,0,5.81,5.56,10,14.74,10" transform="translate(-90.5 -189.5)"/></svg></a>
+      @if(Model.Content.HasValue("customMobileTitle")){
+        <h1 class="d-md-none">@Model.Content.GetPropertyValue("customMobileTitle")</h1>
+      }
+      <input class="form-control d-flex d-md-none" type="search" id="searchBox2" placeholder="Search...">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation"><svg viewBox="0 0 24 24" height="34px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 Z M 2 11 L 2 13 L 22 13 L 22 11 Z M 2 17 L 2 19 L 22 19 L 22 17 Z "/></svg></button>
       <div class="collapse navbar-collapse" id="main-navbar">
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Hospitals</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/bath-hospital/">Circle Bath</a>
-            <a class="dropdown-item" href="/reading-hospital/">Circle Reading</a>
-            <a class="dropdown-item" href="/nottingham/">Circle Nottingham</a>
-            <a class="dropdown-item" href="/birmingham-hospital/">Circle Birmingham</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/treatments/">Treatments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/consultants/">Find a specialist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="/rehabilitation/">Rehabilitation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="/msk/">MSK</a>
-        </li>
-      </ul>
+          <li class="nav-item dropdown hidemob">
+            <a class="nav-link" href="#" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Hospitals</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/bath-hospital/">Circle Bath</a>
+              <a class="dropdown-item" href="/reading-hospital/">Circle Reading</a>
+              <a class="dropdown-item" href="/nottingham/">Circle Nottingham</a>
+              <a class="dropdown-item" href="/birmingham-hospital/">Circle Birmingham</a>
+            </div>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="/bath-hospital/">Circle Bath Hospital</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="/reading-hospital/">Circle Reading Hospital</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="/nottingham/">Circle Notingham</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="/birmingham-hospital/">Circle Birmingham Hospital</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/treatments/">Treatments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/consultants/">Find a specialist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https:/www.circlehealth.co.uk/rehabilitation/">Rehabilitation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https:/www.circlehealth.co.uk/msk/">MSK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news/">News</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
-  
   <main>
     @RenderBody()
   </main>
-
   <footer>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="/"><img src="/media/1031/circle-health-white.png" /></a>
-      <div class="collapse navbar-collapse" id="main-navbar">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand hidemob" href="/"><svg class="logo" viewBox="0 0 433 442"><path d="M294.75,395.46c-4.16,0-7.93-7.13-16.07-7.13-12.46,0-20.05,9.06-20.05,24.12,0,13.89,7.77,24.31,19.3,24.31,8.89,0,13-6.75,16.45-6.75,3,0,4.9,1.35,4.9,3.5,0,4.62-10.94,12-21,12-18.33,0-30.61-14.48-30.61-33.41,0-20.47,13.8-32.66,29.68-32.66,12.49,0,21.74,7.94,21.74,12.38,0,2.12-1.52,3.67-4.35,3.67" transform="translate(-90.5 -189.5)"/><path d="M316.13,436.58c0,4.45-1.32,6.76-4,6.76-4.16,0-4.7-1.17-4.7-10V405.87c0-4.61.93-6.93,4.15-6.93,4.54,0,4.54,2.13,4.54,10.42Z" transform="translate(-90.5 -189.5)"/><path d="M345.14,399.51c1.52,0,3.23.21,3.23,3.09,0,3.24-5.24,2.72-10.6,8.19-2.5,2.54-2.65,6.29-2.65,9.59V437c0,4.44-1.31,6.57-3.78,6.57-4.93,0-5.67-1.16-5.67-9.27V405.12c0-4.45,1.52-6.75,4.73-6.75,2.64,0,5,1.53,9.06,1.53,3.42,0,3.05-.39,5.68-.39" transform="translate(-90.5 -189.5)"/><path d="M383,407.81c-2.06,0-5.86-3.86-10.94-3.86-7.59,0-13.43,6.55-13.43,17,0,9.28,4.71,17.4,13.43,17.4,7,0,8.67-4.06,12.46-4.06,1.89,0,2.83.77,2.83,2.49,0,2.53-7,8.52-16.81,8.52-13.25,0-22.31-8.52-22.31-23.95,0-12.75,7.56-24.33,22.31-24.33,8.87,0,16.62,3.88,16.62,7.74,0,2.31-1.51,3.07-4.16,3.07" transform="translate(-90.5 -189.5)"/><path d="M403.63,438.82c0,3.27-1.53,4.81-4.55,4.81-4.54,0-5.12-1.54-5.12-11.57V388.6c0-5.19.79-7.9,4.74-7.9,3.78,0,4.93,2.11,4.93,6Z" transform="translate(-90.5 -189.5)"/><path d="M406.24,599.9c-45.43,24-98.24,28.88-147.18,16.49a199.66,199.66,0,0,0,30.8,2.39c113.91,0,220.55-94.67,220.55-211S403.77,202.47,289.86,202.47a207.06,207.06,0,0,0-48.32,5.65c53.4-16.9,112.9-11.55,163.27,15.12C474.33,260,517.2,335.61,517.91,414.82,517.2,494.1,475,563.48,406.24,599.9M158.4,418.35c0-86.92,69.27-157.66,154.4-157.66s154.39,70.74,154.39,157.66S397.91,576,312.8,576,158.4,505.26,158.4,418.35M442.11,235.84c-52.27-43-123.06-56.26-187.45-39a202,202,0,0,0-72.89,36.7C126,269.28,90.5,332.86,90.5,407.81a225.14,225.14,0,0,0,19.25,91.9C150,598.34,259.85,651.55,361.32,624.44,455.9,599.16,522.07,504.72,523,406.4c-.63-66.71-30-128.73-80.88-170.56" transform="translate(-90.5 -189.5)"/><path d="M429.33,416.51h3.21c4.56,0,8.91-1,8.91-4.85,0-4.81-3.79-8.67-10.61-8.67-7.18,0-11.52,3.08-11.52,8.11,0,4.62,4.34,5.41,10,5.41m3.78,22.31c7,0,9.15-4.55,12.94-4.55,1.88,0,2.83.77,2.83,2.49,0,2.53-7,8.52-16.82,8.52-13.27,0-22.39-8.08-22.39-23.54,0-14.28,7.17-23.37,20.82-23.37,16.25,0,19.84,13.5,19.84,18.52,0,2.31-1.14,3.49-4.17,3.49l-11.9.3c-11.73,0-15.89,1.61-15.89,8.17,0,5.81,5.56,10,14.74,10" transform="translate(-90.5 -189.5)"/></svg></a>
+      <div class="nav-item dropdown dropup d-md-none">
+        <a class="nav-link" href="#" id="footerDropdown" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Call us</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="tel:+441761422222">Bath Hospital | 01761 422222</a>
+          <a class="dropdown-item" href="tel:+441234639000">Bedfordshire MSK | 01234 639000</a>
+          <a class="dropdown-item" href="tel:+442070345250">Birmingham Hospital | 020 7034 5250</a>
+          <a class="dropdown-item" href="tel:+442038398382">Greenwich MSK | 020 3839 8382</a>
+          <a class="dropdown-item" href="tel:+4411597058002">Nottingham | 0115 970 5800</a>
+          <a class="dropdown-item" href="tel:+441189226888">Reading Hospital | 0118 922 6888</a>
+          <a class="dropdown-item" href="tel:+441189226838">Rehabilitation | 0118 922 6838</a>
+          <a class="dropdown-item" href="tel:+442070345250">Head Office | 020 7034 5250</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="bottom-navbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/careers/">Careers</a>
+            <a href="/about-circle-health/">About Circle</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/terms-and-conditions/">Legal notices</a>
+            <a href="/careers/">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/privacy-policy/">Privacy policy</a>
+            <a href="/legal-notices/">Legal notices</a>
           </li>
           <li class="nav-item first-social">
-            <a href="https://www.facebook.com/circlepartnership"><svg height="20" viewBox="0 0 1792 1792"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></a>
+            <a target="_blank" href="https://www.facebook.com/circlepartnership"><svg height="20" viewBox="0 0 1792 1792"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></a>
           </li>
           <li class="nav-item">
-            <a href="https://www.youtube.com/channel/UCz1tqdf7KtkX2I8umgt2yig"><svg height="20" viewBox="0 0 1792 1792"><path d="M711 1128l484-250-484-253v503zm185-862q168 0 324.5 4.5t229.5 9.5l73 4q1 0 17 1.5t23 3 23.5 4.5 28.5 8 28 13 31 19.5 29 26.5q6 6 15.5 18.5t29 58.5 26.5 101q8 64 12.5 136.5t5.5 113.5v176q1 145-18 290-7 55-25 99.5t-32 61.5l-14 17q-14 15-29 26.5t-31 19-28 12.5-28.5 8-24 4.5-23 3-16.5 1.5q-251 19-627 19-207-2-359.5-6.5t-200.5-7.5l-49-4-36-4q-36-5-54.5-10t-51-21-56.5-41q-6-6-15.5-18.5t-29-58.5-26.5-101q-8-64-12.5-136.5t-5.5-113.5v-176q-1-145 18-290 7-55 25-99.5t32-61.5l14-17q14-15 29-26.5t31-19.5 28-13 28.5-8 23.5-4.5 23-3 17-1.5q251-18 627-18z"/></svg></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCz1tqdf7KtkX2I8umgt2yig"><svg height="20" viewBox="0 0 1792 1792"><path d="M711 1128l484-250-484-253v503zm185-862q168 0 324.5 4.5t229.5 9.5l73 4q1 0 17 1.5t23 3 23.5 4.5 28.5 8 28 13 31 19.5 29 26.5q6 6 15.5 18.5t29 58.5 26.5 101q8 64 12.5 136.5t5.5 113.5v176q1 145-18 290-7 55-25 99.5t-32 61.5l-14 17q-14 15-29 26.5t-31 19-28 12.5-28.5 8-24 4.5-23 3-16.5 1.5q-251 19-627 19-207-2-359.5-6.5t-200.5-7.5l-49-4-36-4q-36-5-54.5-10t-51-21-56.5-41q-6-6-15.5-18.5t-29-58.5-26.5-101q-8-64-12.5-136.5t-5.5-113.5v-176q-1-145 18-290 7-55 25-99.5t32-61.5l14-17q14-15 29-26.5t31-19.5 28-13 28.5-8 23.5-4.5 23-3 17-1.5q251-18 627-18z"/></svg></a>
           </li>
           <li class="nav-item">
-            <a href="https://www.twitter.com/CircleHealth"><svg height="20" viewBox="0 0 1792 1792"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></a>
+            <a target="_blank" href="https://www.twitter.com/CircleHealth"><svg height="20" viewBox="0 0 1792 1792"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></a>
           </li>
-        <ul>
+          <li class="nav-item">
+            <a target="_blank" href="https://plus.google.com/u/0/100594660766021725124"><svg height="20" viewBox="0 0 2304 1792" ><path d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zm867-122v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z"/></svg></a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" href="https://medicodigital.co.uk" title="Medical websites and digital marketing support from Medico Digital in Bristol"><svg height="20" viewBox="50 40 175 125"><g transform="matrix(1.25,0,0,-1.25,0,233.025)"><path d="m 79.443123,95.580872 -19.085729,0 -9.542867,16.944608 9.542867,16.9446 19.085729,0 9.542879,-16.9446 -9.542879,-16.944608 z M 55.214215,138.60131 40.527129,112.52548 55.214215,86.449647 l 29.372095,0 14.687087,26.075833 -14.687087,26.07583 -29.372095,0 z" /><path d="m 144.72252,130.33601 -45.696742,0 -3.989585,-6.722 5.091577,-8.579 3.98959,6.723 35.51358,0 17.75628,-29.918997 -17.75628,-29.919 -35.51358,0 -15.983017,26.93 -1.662241,-2.8 -0.89023,-1.5 -1.780459,0 -3.297756,0 18.522121,-31.208 45.696742,0 22.84889,38.497 -22.84889,38.496997 z" /></g></svg></a>
+          </li>
+        </ul>
       </div>
     </nav>
   </footer>
-    
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" async />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet" async />
-  <link href="/css/style.css" rel="stylesheet" async />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="/scripts/site.js"></script>
+  <aside class="container" id="float">
+    <div class="row no-gutters">
+      <div class="col-5">
+        <p><a href="tel:01761328105"><span>Self-pay enquiries </span>01761 328 105</a></p>
+        <p><a href="tel:01761422222"><span>General enquiries </span>01761 422 222</a></p>
+        <p class="text-center"><a onclick="var a=document.getElementById('float');console.log(a);if(a.classList.contains('pop')){a.classList.remove('pop');}else{a.classList.add('pop');}">Call me back</a></p>
+      </div>
+      <div class="col">
+        @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="1e3af52a-bcba-40fe-a1a6-4aca53b10420", FormTheme="", ExcludeScripts="1"})
+      </div>
+    </div>
+  </aside>
 </body>
+<link rel="stylesheet" href="/css/bootstrap4.css" />
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/scripts/sw.js');}</script>
 </html>

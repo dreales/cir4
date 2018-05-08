@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.MediaPicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "disableFolderSelect": "0",
+    "multiPicker": null,
+    "onlyImages": "1",
+    "startNodeId": ""
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/887cb5f4e59241eba9915908198a41ec",
+  "Dependencies": [],
+  "Name": "Image picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

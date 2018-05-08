@@ -3,26 +3,40 @@
   "AllowedTemplates": [
     "umb://template/674168f2639e4806b6dd06ab68144097"
   ],
-  "Icon": "icon-document",
+  "Icon": "icon-user-females-alt",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
   "IsContainer": false,
   "Parent": null,
-  "AllowedChildContentTypes": [],
-  "CompositionContentTypes": [],
+  "AllowedChildContentTypes": [
+    "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
   "PropertyGroups": [],
   "PropertyTypes": [],
   "Udi": "umb://document-type/304f05273bf043ba99565d44be4e2375",
   "Dependencies": [
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/e1e5a55ef048408d8bceab795de3f3a4",
+      "Ordering": false,
+      "Mode": 0
+    },
     {
       "Udi": "umb://template/674168f2639e4806b6dd06ab68144097",
       "Ordering": true,
       "Mode": 0
     }
   ],
-  "Name": "Consultant List",
+  "Name": "Consultant list",
   "Alias": "consultatList",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }

@@ -1,0 +1,85 @@
+﻿@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Umbraco.Core
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+  Layout = null;
+  var path = "https://richs-unassuming-otter.s1.umbraco.io" + Request.Path;
+}
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script async="async" src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="@path " />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+  <title>@Model.Content.Name | Circle Health</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="theme-color" content="#fc5960" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+    @Html.Raw(System.IO.File.ReadAllText(Server.MapPath("~/css/style-amp.css")))
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md" id="top-nav">
+      <div class="collapse navbar-collapse" id="top-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about-circle-health/">About Circle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/careers/">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gps-and-other-referrers/">GPs and referrers</a>
+          </li>
+          <li class="nav-item number">
+            <a class="nav-link" href="tel:02036136779">020 3613 6779</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control" type="search" id="searchBox" placeholder="Search">
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md" id="main-nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Hospitals</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/bath-hospital/">Circle Bath</a>
+            <a class="dropdown-item" href="/reading-hospital/">Circle Reading</a>
+            <a class="dropdown-item" href="/nottingham/">Circle Nottingham</a>
+            <a class="dropdown-item" href="/birmingham-hospital/">Circle Birmingham</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/treatments/">Treatments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/consultants/">Find a specialist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https:/www.circlehealth.co.uk/rehabilitation/">Rehabilitation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https:/www.circlehealth.co.uk/msk/">MSK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/news/">News</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    @RenderBody()
+  </main>
+</body>
+</html>

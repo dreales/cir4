@@ -1,0 +1,44 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "8fbc037a-c01e-4872-ba49-3383551b11f5",
+      "Name": "Videos",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "ac711f79-d9e7-4704-b655-944e53ec856a",
+          "Alias": "youtubeVideos",
+          "DataType": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
+          "Description": "A list of youtube video urls to be displayed. Please use the format: https://www.youtube.com/embed/xxxxxxxxxxxx Currently only the first video will be displayed.",
+          "Mandatory": false,
+          "Name": "Youtube videos",
+          "SortOrder": 0,
+          "Validation": "https://www.youtube.com/embed/+[a-zA-Z0-9]"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5bfc2ece628c46e48788d117fbe0ceda",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/192a9e0f14274828af008d6f40d15f96",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Video template",
+  "Alias": "videos",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

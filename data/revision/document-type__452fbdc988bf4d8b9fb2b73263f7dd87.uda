@@ -1,0 +1,129 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "c0fe285b-4c47-4372-a8db-6fd54678a6d0",
+      "Name": "Page options",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2f5eb7a9-098e-4b8c-a85d-1548a0036a4b",
+          "Alias": "titleInSearch",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The page name in the site search. If left blank the node name will be used.",
+          "Mandatory": false,
+          "Name": "Custom search title",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "65972de6-a9a7-4987-842f-1adae0746741",
+          "Alias": "enableAMP",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Enable an 'Accelerated Mobile Pages' version of this page",
+          "Mandatory": false,
+          "Name": "Enable AMP",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "c2d40136-d102-4ffc-867e-ad64ccb88e0e",
+          "Alias": "customMobileTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "If a value is entered, this will replace the search bar on mobiles",
+          "Mandatory": false,
+          "Name": "Custom mobile title",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "cc29b8d2-52e1-4d64-997d-b08f38813eea",
+          "Alias": "hideFloatingPhoneNumbers",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Hide the floating numbers on the right of the screen.",
+          "Mandatory": false,
+          "Name": "Hide floating phone numbers",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "d7392e90-e08d-423d-9c24-970ee48c3397",
+          "Alias": "pageDescription",
+          "DataType": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+          "Description": "Page description for search engines.",
+          "Mandatory": false,
+          "Name": "Page description",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "dbd161eb-48e3-4836-b6b9-e60bd153adea",
+          "Alias": "hideFromSearch",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Hide from the site search feature",
+          "Mandatory": false,
+          "Name": "Hide from site search",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "e945bd18-2b9e-4b13-a858-b1850264f919",
+          "Alias": "pageTitle",
+          "DataType": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
+          "Description": "The title on search engines and browser tabs. If left blank the node name will be used.",
+          "Mandatory": false,
+          "Name": "Custom page title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "f252132d-13a2-4805-956a-f127b8a5c89a",
+          "Alias": "hideFromSearchEngines",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Discourage search engines from displaying this page.",
+          "Mandatory": false,
+          "Name": "Hide from search engines",
+          "SortOrder": 4,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7cf6105b621141288cb6df5efae457cf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a207d6be61744e18bbfe21ac7c2b0661",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Template",
+  "Alias": "template",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.13"
+}

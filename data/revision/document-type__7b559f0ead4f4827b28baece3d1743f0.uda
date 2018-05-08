@@ -7,14 +7,13 @@
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
-  "IsContainer": true,
+  "IsContainer": false,
   "Parent": null,
   "AllowedChildContentTypes": [
     "umb://document-type/7a48ced2cf8c4956b95da9edd2670c36"
   ],
   "CompositionContentTypes": [
-    "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
-    "umb://document-type/8f48c028c3514e989535fd10b62f95d1"
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
   ],
   "PropertyGroups": [
     {
@@ -31,16 +30,6 @@
           "Name": "How many posts should be shown?",
           "SortOrder": 0,
           "Validation": null
-        },
-        {
-          "Key": "9ae95a54-8379-4a4f-b0ca-5815d1a01e40",
-          "Alias": "disqusShortname",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": "To use comments, you'll need to sign up for Disqus and enter your shortname here (more info: https://help.disqus.com/customer/portal/articles/472097-universal-embed-code)",
-          "Mandatory": false,
-          "Name": "Disqus Shortname",
-          "SortOrder": 1,
-          "Validation": null
         }
       ]
     }
@@ -49,17 +38,12 @@
   "Udi": "umb://document-type/7b559f0ead4f4827b28baece3d1743f0",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://data-type/889bac096ea1428e914e80f0b0dd9ee9",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
     },
@@ -69,18 +53,13 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/8f48c028c3514e989535fd10b62f95d1",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://template/f02104e370f044fd997a23a4534ef4b7",
       "Ordering": true,
       "Mode": 0
     }
   ],
-  "Name": "Blog",
+  "Name": "News",
   "Alias": "blog",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }

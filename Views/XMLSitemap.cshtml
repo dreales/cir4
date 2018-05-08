@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@helper ListChildNodes(IPublishedContent startNode){
+  foreach(var node in startNode.Children.Where("Visible")){
+    if (node.GetPropertyValue<string>("hideFromSearchEngines") != "True"){
+      <url>
+        <loc>@node.UrlWithDomain()</loc>
+        <lastmod>@(string.Format("{0:s}+00:00", node.UpdateDate))</lastmod>
+      </url>
+    }
+    if (node.Children.Any()){ @ListChildNodes(node) }
+  }
+}
+@{
+  Layout = null;
+  Response.ContentType = "text/xml";
+}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    @ListChildNodes(Umbraco.Content(1094))
+</urlset>

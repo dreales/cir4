@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.MediaPicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "disableFolderSelect": "1",
+    "multiPicker": null,
+    "onlyImages": "1",
+    "startNodeId": "umb://media/6c41807f159c41ffb5a7481c437592b0"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+  "Dependencies": [],
+  "Name": "Banner image picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

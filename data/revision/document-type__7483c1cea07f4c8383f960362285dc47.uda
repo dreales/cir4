@@ -3,35 +3,60 @@
   "AllowedTemplates": [
     "umb://template/36e43050f1bf4eb6baa3c949927d542c"
   ],
-  "Icon": "icon-umb-content",
+  "Icon": "icon-notepad-alt",
   "Thumbnail": "folder.png",
   "Description": null,
   "AllowedAtRoot": false,
   "IsContainer": false,
   "Parent": null,
-  "AllowedChildContentTypes": [
-    "umb://document-type/7483c1cea07f4c8383f960362285dc47"
-  ],
+  "AllowedChildContentTypes": [],
   "CompositionContentTypes": [
-    "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
-    "umb://document-type/8f48c028c3514e989535fd10b62f95d1"
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
   ],
-  "PropertyGroups": [],
+  "PropertyGroups": [
+    {
+      "Key": "4879401e-67db-40a0-9233-e58938cb51ee",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "14e3c182-a52f-4df7-9b69-c66430660dd8",
+          "Alias": "bannerImage",
+          "DataType": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Banner image",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "31782f5a-b5db-4e77-8454-b5702b9b32ca",
+          "Alias": "mainContent",
+          "DataType": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Main content",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/7483c1cea07f4c8383f960362285dc47",
   "Dependencies": [
     {
-      "Udi": "umb://document-type/661053679bb54fd7922c61bdc3ed3a70",
+      "Udi": "umb://data-type/0df7f133bff447ddaeb1cb89736b04bf",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/7483c1cea07f4c8383f960362285dc47",
-      "Ordering": false,
+      "Udi": "umb://data-type/3cac76759a89482bbe95c926bb98c220",
+      "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/8f48c028c3514e989535fd10b62f95d1",
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
       "Ordering": true,
       "Mode": 0
     },
@@ -41,8 +66,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Content Page",
+  "Name": "Normal page",
   "Alias": "contentPage",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
-  "__version": "2.0.10"
+  "__version": "2.0.11"
 }

@@ -1,0 +1,35 @@
+{
+  "DefaultTemplate": "umb://template/196321738e2e4f36bf1670935b9b24ca",
+  "AllowedTemplates": [
+    "umb://template/196321738e2e4f36bf1670935b9b24ca"
+  ],
+  "Icon": "icon-sitemap",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/630907ebd2634e62bdbf4d3dd3b8c1d1",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/452fbdc988bf4d8b9fb2b73263f7dd87",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/196321738e2e4f36bf1670935b9b24ca",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "XML sitemap",
+  "Alias": "xMLSitemap",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

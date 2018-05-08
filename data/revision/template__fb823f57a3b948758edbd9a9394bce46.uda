@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/AMPTemplate.cshtml",
+  "Master": null,
+  "Udi": "umb://template/fb823f57a3b948758edbd9a9394bce46",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/AMPTemplate.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "AMP Template",
+  "Alias": "AMPTemplate",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}
