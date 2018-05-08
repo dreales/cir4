@@ -583,68 +583,6 @@
             Handles User cache invalidation/refreshing
             </summary>
         </member>
-        <member name="T:Umbraco.Web.Features.DisabledFeatures">
-            <summary>
-            Represents disabled features.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Features.DisabledFeatures.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Umbraco.Web.Features.DisabledFeatures"/> class.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Features.DisabledFeatures.Controllers">
-            <summary>
-            Gets the disabled controllers.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Features.EnabledFeatures">
-            <summary>
-            Represents enabled features.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Features.EnabledFeatures.RenderNoTemplate">
-            <summary>
-            Specifies if rendering pipeline should ignore HasTemplate check when handling a request.
-            <remarks>This is to allow JSON preview of content with no template set.</remarks>
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Features.UmbracoFeatures">
-            <summary>
-            Represents the Umbraco features.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Features.UmbracoFeatures.#ctor">
-            <summary>
-             Initializes a new instance of the <see cref="T:Umbraco.Web.Features.UmbracoFeatures"/> class.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Features.UmbracoFeatures.Disabled">
-            <summary>
-            Gets the disabled features.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Features.UmbracoFeatures.Enabled">
-            <summary>
-            Gets the enabled features.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Features.UmbracoFeatures.IsEnabled(System.Type)">
-            <summary>
-            Determines whether a feature is enabled.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Features.FeaturesResolver.SetFeatures(Umbraco.Web.Features.UmbracoFeatures)">
-            <summary>
-            Sets the features.
-            </summary>
-            <remarks>For developers, at application startup.</remarks>
-        </member>
-        <member name="P:Umbraco.Web.Features.FeaturesResolver.Features">
-            <summary>
-            Gets the features.
-            </summary>
-        </member>
         <member name="T:Umbraco.Web.Editors.BackOfficeNotificationsController">
             <summary>
             An abstract controller that automatically checks if any request is a non-GET and if the 
@@ -2703,6 +2641,80 @@
             <param name="media">Specifies the already resolved content item to check against, setting this ignores the nodeId</param>
             <returns></returns>
         </member>
+        <member name="T:Umbraco.Web.Features.DisabledFeatures">
+            <summary>
+            Represents disabled features.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Features.DisabledFeatures.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Umbraco.Web.Features.DisabledFeatures"/> class.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.DisabledFeatures.Controllers">
+            <summary>
+            Gets the disabled controllers.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.DisabledFeatures.DisableDevicePreview">
+            <summary>
+            Disables the device preview feature of previewing.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.DisabledFeatures.DisableTemplates">
+            <summary>
+            If true, all references to templates will be removed in the back office and routing
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Features.EnabledFeatures">
+            <summary>
+            Represents enabled features.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.EnabledFeatures.PreviewExtendedView">
+            <summary>
+            This allows us to inject a razor view into the Umbraco preview view to extend it
+            </summary>
+            <remarks>
+            This is set to a virtual path of a razor view file
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Features.UmbracoFeatures">
+            <summary>
+            Represents the Umbraco features.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Features.UmbracoFeatures.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Umbraco.Web.Features.UmbracoFeatures"/> class.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.UmbracoFeatures.Disabled">
+            <summary>
+            Gets the disabled features.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Features.UmbracoFeatures.Enabled">
+            <summary>
+            Gets the enabled features.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Features.UmbracoFeatures.IsControllerEnabled(System.Type)">
+            <summary>
+            Determines whether a controller is enabled.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Features.FeaturesResolver.SetFeatures(Umbraco.Web.Features.UmbracoFeatures)">
+            <summary>
+            Sets the features.
+            </summary>
+            <remarks>For developers, at application startup.</remarks>
+        </member>
+        <member name="P:Umbraco.Web.Features.FeaturesResolver.Features">
+            <summary>
+            Gets the features.
+            </summary>
+        </member>
         <member name="M:Umbraco.Web.Models.BackOfficeTourFilter.FilterPlugin(System.Text.RegularExpressions.Regex)">
             <summary>
             Create a filter to filter out a whole plugin's tours
@@ -2739,679 +2751,9 @@
             Example, tourAlias="test.*" = we will filter out all tour aliases that start with the word "test" regardless of the plugin or file name
             </remarks>
         </member>
-        <member name="M:Umbraco.Web.Models.Mapping.AutoMapperExtensions.MapWithUmbracoContext``2(``0,Umbraco.Web.UmbracoContext)">
+        <member name="T:Umbraco.Web.Models.ContentEditing.BackOfficePreview">
             <summary>
-            This maps an object and passes in the current <see cref="T:Umbraco.Web.UmbracoContext"/> so the mapping logic can use it
-            </summary>
-            <typeparam name="TIn"></typeparam>
-            <typeparam name="TOut"></typeparam>
-            <param name="obj"></param>
-            <param name="umbCtx"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.AutoMapperExtensions.GetUmbracoContext(AutoMapper.ResolutionContext)">
-            <summary>
-            Returns an <see cref="T:Umbraco.Web.UmbracoContext"/> from the mapping options
-            </summary>
-            <param name="res"></param>
-            <returns></returns>
-            <remarks>
-            If an UmbracoContext is not found in the mapping options, it will try to retrieve it from the singleton
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentTreeNodeUrlResolver`2">
-            <summary>
-            Gets the tree node url for the content or media
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberTreeNodeUrlResolver">
-            <summary>
-            Gets the tree node url for the IMember
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeModelMapperExtensions">
-            <summary>
-            Used as a shared way to do the underlying mapping for content types base classes
-            </summary>
-            <remarks>
-            We used to use 'Include' Automapper inheritance functionality and although this works, the unit test
-                to assert mappings fails which is an Automapper bug. So instead we will use an extension method for the mappings
-                to re-use mappings.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.ContentTypeModelMapperExtensions.MapBaseContentTypeSaveToEntity``3(AutoMapper.IMappingExpression{``0,``2},Umbraco.Core.ApplicationContext)">
-            <summary>
-            Display -> Entity class base mapping logic
-            </summary>
-            <typeparam name="TSource"></typeparam>
-            <typeparam name="TDestination"></typeparam>
-            <typeparam name="TSourcePropertyType"></typeparam>
-            <param name="mapping"></param>
-            <param name="applicationContext"></param>
-            <returns></returns>        
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeUdiResolver">
-            <summary>
-            Resolves a UDI for a content type based on it's type
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions">
-            <summary>
-            Mapping extension methods for re-use with other mappers (saves code duplication)
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions.IgnoreDeletableEntityCommonProperties``2(AutoMapper.IMappingExpression{``0,``1})">
-            <summary>
-            Ignores readonly properties and the date values
-            </summary>
-            <param name="mapping"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions.IgnoreEntityCommonProperties``2(AutoMapper.IMappingExpression{``0,``1})">
-            <summary>
-            Ignores readonly properties and the date values
-            </summary>
-            <param name="mapping"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.UserGroupDefaultPermissionsResolver">
-            <summary>
-            Converts an IUserGroup instance into a dictionary of permissions by category
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.PropertyTypeGroupResolver`1.GetContentTypeForPropertyGroup(Umbraco.Core.Models.IContentTypeComposition,System.Int32)">
-            <summary>
-            Gets the content type that defines a property group, within a composition.
-            </summary>
-            <param name="contentType">The composition.</param>
-            <param name="propertyGroupId">The identifier of the property group.</param>
-            <returns>The composition content type that defines the specified property group.</returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.PropertyTypeGroupResolver`1.GetContentTypeForPropertyType(Umbraco.Core.Models.IContentTypeComposition,System.Int32)">
-            <summary>
-            Gets the content type that defines a property group, within a composition.
-            </summary>
-            <param name="contentType">The composition.</param>
-            <param name="propertyTypeId">The identifier of the property type.</param>
-            <returns>The composition content type that defines the specified property group.</returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MiscModelsMapper">
-            <summary>
-            A model mapper used to map models for the various dashboards
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MacroModelMapper">
-            <summary>
-            Declares model mappings for macros.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper">
-            <summary>
-            Declares model mappings for members.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.GetLoginProperty(Umbraco.Core.Services.IMemberService,Umbraco.Core.Models.IMember,Umbraco.Core.Services.ILocalizedTextService)">
-            <summary>
-            Returns the login property display field
-            </summary>
-            <param name="memberService"></param>
-            <param name="member"></param>
-            <param name="localizedText"></param>
-            <returns></returns>
-            <remarks>
-            If the membership provider installed is the umbraco membership provider, then we will allow changing the username, however if
-            the membership provider is a custom one, we cannot allow chaning the username because MembershipProvider's do not actually natively
-            allow that.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberDtoPropertiesValueResolver">
-            <summary>
-            This ensures that the custom membership provider properties are not mapped - these property values are controller by the membership provider
-            </summary>
-            <remarks>
-            Because these properties don't exist on the form, if we don't remove them for this map we'll get validation errors when posting data
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver">
-            <summary>
-            A custom tab/property resolver for members which will ensure that the built-in membership properties are or arent' displayed
-            depending on if the member type has these properties
-            </summary>
-            <remarks>
-            This also ensures that the IsLocked out property is readonly when the member is not locked out - this is because
-            an admin cannot actually set isLockedOut = true, they can only unlock.
-            
-            This also ensures that the IsSensitive property display value is set based on the configured IMemberType property type
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver.ResolveCore(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IMember)">
-            <summary>
-            Overridden to deal with custom member properties and permissions
-            </summary>
-            <param name="umbracoContext"></param>
-            <param name="content"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver.MapProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Core.Models.Property})">
-            <summary>
-            Overridden to assign the IsSensitive property values
-            </summary>
-            <param name="umbracoContext"></param>
-            <param name="content"></param>
-            <param name="properties"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberProviderFieldMappingResolver">
-            <summary>
-            A resolver to map the provider field aliases
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MembershipUserTypeConverter">
-            <summary>
-            A converter to go from a <see cref="T:System.Web.Security.MembershipUser"/> to a <see cref="T:Umbraco.Web.Models.ContentEditing.MemberDisplay"/>
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberBasicPropertiesResolver">
-            <summary>
-            A resolver to map <see cref="T:Umbraco.Core.Models.IMember"/> properties to a collection of <see cref="T:Umbraco.Web.Models.ContentEditing.ContentPropertyBasic"/>
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.DatabaseTypeResolver">
-            <summary>
-            Gets the DataTypeDatabaseType from the selected property editor for the data type
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.DataTypeModelMapper">
-            <summary>
-            Configure's model mappings for Data types
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.PreValueDisplayResolver.MapPreValueValuesToPreValueFields(Umbraco.Web.Models.ContentEditing.PreValueFieldDisplay[],System.Collections.Generic.IDictionary{System.String,System.Object})">
-            <summary>
-            Maps pre-values in the dictionary to the values for the fields
-            </summary>
-            <param name="fields"></param>
-            <param name="preValues"></param>        
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyBasicConverter`1">
-            <summary>
-            Creates a base generic ContentPropertyBasic from a Property
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.ContentPropertyBasicConverter`1.ConvertCore(Umbraco.Core.Models.Property)">
-            <summary>
-            Assigns the PropertyEditor, Id, Alias and Value to the property
-            </summary>
-            <param name="property"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyDisplayConverter">
-            <summary>
-            Creates a ContentPropertyDisplay from a Property
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyDtoConverter">
-            <summary>
-            Creates a ContentPropertyDto from a Property
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyModelMapper">
-            <summary>
-            A mapper which declares how to map content properties. These mappings are shared among media (and probably members) which is 
-            why they are in their own mapper
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.CreatorResolver">
-            <summary>
-            Maps the Creator for content
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MediaModelMapper">
-            <summary>
-            Declares model mappings for media.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.MediaModelMapper.MediaTypeBasicResolver">
-            <summary>
-            Resolves a <see cref="T:Umbraco.Web.Models.ContentEditing.ContentTypeBasic"/> from the <see cref="T:Umbraco.Core.Models.IContent"/> item and checks if the current user
-            has access to see this data
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeModelMapper">
-            <summary>
-            Defines mappings for content/media/members type mappings
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper">
-            <summary>
-            Declares how model mappings for content
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper.ContentTypeBasicResolver">
-            <summary>
-            Resolves a <see cref="T:Umbraco.Web.Models.ContentEditing.ContentTypeBasic"/> from the <see cref="T:Umbraco.Core.Models.IContent"/> item and checks if the current user
-            has access to see this data
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper.ActionButtonsResolver">
-            <summary>
-            Creates the list of action buttons allowed for this user - Publish, Send to publish, save, unpublish returned as the button's 'letter'
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.OwnerResolver`1">
-            <summary>
-            Maps the Owner for IContentBase
-            </summary>
-            <typeparam name="TPersisted"></typeparam>
-        </member>
-        <member name="T:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1">
-            <summary>
-            Creates the tabs collection with properties assigned for display models
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.Resolve(AutoMapper.ResolutionResult)">
-            <summary>
-            Implements the <see cref="T:AutoMapper.IValueResolver"/>
-            </summary>
-            <param name="source"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.AddListView``1(Umbraco.Web.Models.ContentEditing.TabbedContentItem{Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay,``0},System.String,Umbraco.Core.Services.IDataTypeService,Umbraco.Core.Services.ILocalizedTextService)">
-            <summary>
-            Adds the container (listview) tab to the document
-            </summary>
-            <typeparam name="TPersisted"></typeparam>
-            <param name="display"></param>
-            <param name="entityType">This must be either 'content' or 'media'</param>
-            <param name="dataTypeService"></param>
-            <param name="localizedTextService"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.ResolveCore(Umbraco.Web.UmbracoContext,`0)">
-            <summary>
-            Create the list of tabs for the <see cref="T:Umbraco.Core.Models.IContentBase"/>
-            </summary>
-            <param name="umbracoContext"></param>
-            <param name="content">Source value</param>
-            <returns>Destination</returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.GetCustomGenericProperties(Umbraco.Core.Models.IContentBase)">
-            <summary>
-            Returns a collection of custom generic properties that exist on the generic properties tab
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.MapGenericProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Web.Models.ContentEditing.Tab{Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay}})">
-            <summary>
-            Maps properties on to the generic properties tab
-            </summary>
-            <param name="umbracoContext"></param>
-            <param name="content"></param>
-            <param name="tabs"></param>
-            <remarks>
-            The generic properties tab is responsible for 
-            setting up the properties such as Created date, updated date, template selected, etc...
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.MapProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Core.Models.Property})">
-            <summary>
-            Maps a list of <see cref="T:Umbraco.Core.Models.Property"/> to a list of <see cref="T:Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay"/>
-            </summary>
-            <param name="umbracoContext"></param>
-            <param name="content"></param>
-            <param name="properties"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.ExportMember">
-            <summary>
-            Represents the export member menu item
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.CreateChildEntity">
-            <summary>
-            Represents the refresh node menu item
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.MenuItemList">
-            <summary>
-            A custom menu list
-            </summary>
-            <remarks>
-            NOTE: We need a sub collection to the MenuItemCollection object due to how json serialization works.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add(umbraco.interfaces.IAction,System.String)">
-            <summary>
-            Adds a menu item
-            </summary>
-            <param name="action"></param>
-            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``2(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
-            <summary>
-            Adds a menu item
-            </summary>
-            <typeparam name="TMenuItem"></typeparam>
-            <typeparam name="TAction"></typeparam>
-            <param name="hasSeparator"></param>
-            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-            <param name="additionalData"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String)">
-            <summary>
-            Adds a menu item
-            </summary>
-            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String,System.String,System.String,System.Boolean)">
-            <summary>
-            Adds a menu item with a key value pair which is merged to the AdditionalData bag
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key"></param>
-            <param name="value"></param>
-            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-            <param name="hasSeparator"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
-            <summary>
-            Adds a menu item with a dictionary which is merged to the AdditionalData bag
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="hasSeparator"></param>
-            /// <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-            <param name="additionalData"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.CreateMenuItem``1(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="hasSeparator"></param>
-            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
-            <param name="additionalData"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.DetectLegacyActionMenu(System.Type,Umbraco.Web.Models.Trees.MenuItem)">
-            <summary>
-            Checks if the IAction type passed in is attributed with LegacyActionMenuItemAttribute and if so 
-            ensures that the correct action metadata is added.
-            </summary>
-            <param name="actionType"></param>
-            <param name="menuItem"></param>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.ActionMenuItem">
-            <summary>
-            A menu item that represents some JS that needs to execute when the menu item is clicked.
-            </summary>
-            <remarks>
-            These types of menu items are rare but they do exist. Things like refresh node simply execute
-            JS and don't launch a dialog.
-            
-            Each action menu item describes what angular service that it's method exists in and what the method name is.
-            
-            An action menu item must describe the angular service name for which it's method exists. It may also define what the 
-            method name is that will be called in this service but if one is not specified then we will assume the method name is the
-            same as the Type name of the current action menu class.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.ActionMenuItemAttribute">
-            <summary>
-            The attribute to assign to any ActionMenuItem objects.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.ActionMenuItemAttribute.#ctor(System.String,System.String)">
-            <summary>
-            This constructor defines both the angular service and method name to use
-            </summary>
-            <param name="serviceName"></param>
-            <param name="methodName"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.ActionMenuItemAttribute.#ctor(System.String)">
-            <summary>
-            This constructor will assume that the method name equals the type name of the action menu class
-            </summary>
-            <param name="serviceName"></param>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.MenuItem">
-            <summary>
-            A context menu item
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.MenuItem.AdditionalData">
-            <summary>
-            A dictionary to support any additional meta data that should be rendered for the node which is 
-            useful for custom action commands such as 'create', 'copy', etc...
-            </summary>
-            <remarks>
-            We will also use the meta data collection for dealing with legacy menu items (i.e. for loading custom URLs or
-            executing custom JS).
-            </remarks>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.MenuItem.SeperatorBefore">
-            <summary>
-            Ensures a menu separator will exist before this menu item
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.Models.Trees.MenuItem.DialogTitleKey">
-            <summary>
-            Used as a key for the AdditionalData to specify a specific dialog title instead of the menu title
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionUrlKey">
-            <summary>
-            Used to specify the URL that the dialog will launch to in an iframe
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionViewKey">
-            <summary>
-            Used to specify the angular view that the dialog will launch
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.Models.Trees.MenuItem.JsActionKey">
-            <summary>
-            Used to specify the js method to execute for the menu item 
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionRouteKey">
-            <summary>
-            Used to specify an angular route to go to for the menu item
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.NavigateToRoute(System.String)">
-            <summary>
-            Sets the menu item to navigate to the specified angular route path
-            </summary>
-            <param name="route"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.ExecuteLegacyJs(System.String)">
-            <summary>
-            Adds the required meta data to the menu item so that angular knows to attempt to call the Js method.
-            </summary>
-            <param name="jsToExecute"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.LaunchDialogView(System.String,System.String)">
-            <summary>
-            Sets the menu item to display a dialog based on an angular view path
-            </summary>
-            <param name="view"></param>
-            <param name="dialogTitle"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.LaunchDialogUrl(System.String,System.String)">
-            <summary>
-            Sets the menu item to display a dialog based on a url path in an iframe
-            </summary>
-            <param name="url"></param>
-            <param name="dialogTitle"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.SetDialogTitle(System.String)">
-            <summary>
-            Puts a dialog title into the meta data to be displayed on the dialog of the menu item (if there is one)
-            instead of the menu name
-            </summary>
-            <param name="dialogTitle"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.MenuItem.SetActionUrl(System.String,Umbraco.Web.Trees.ActionUrlMethod)">
-            <summary>
-            Configures the menu item to launch a URL with the specified action (dialog or new window)
-            </summary>
-            <param name="url"></param>
-            <param name="method"></param>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.MenuItemCollection">
-            <summary>
-            A menu item collection for a given tree node
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.MenuItemCollection.DefaultMenuAlias">
-            <summary>
-            Sets the default menu item alias to be shown when the menu is launched - this is optional and if not set then the menu will just be shown normally.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.MenuItemCollection.Items">
-            <summary>
-            The list of menu items
-            </summary>
-            <remarks>
-            We require this so the json serialization works correctly
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.RefreshNode">
-            <summary>
-            Represents the refresh node menu item
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.SectionRootNode">
-            <summary>
-            A special tree node that represents the section root node for any section.
-            </summary>
-            <remarks>
-            This is required to return the tree data for a given section. Some sections may only contain one tree which means it's section
-            root should also display a menu, whereas other sections have multiple trees and the section root shouldn't display a menu.
-            
-            The section root also contains an explicit collection of children.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.Trees.TreeNode">
-            <summary>
-            Represents a model in the tree
-            </summary>
-            <remarks>
-            TreeNode is sealed to prevent developers from adding additional json data to the response
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNode.#ctor(System.String,System.String,System.String,System.String)">
-            <summary>
-            Internal constructor, to create a tree node use the CreateTreeNode methods of the TreeApiController.
-            </summary>
-            <param name="nodeId"></param>
-            <param name="parentId">The parent id for the current node</param>
-            <param name="getChildNodesUrl"></param>
-            <param name="menuUrl"></param>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.HasChildren">
-            <summary>
-            A flag to set whether or not this node has children
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.NodeType">
-            <summary>
-            The tree nodetype which refers to the type of node rendered in the tree
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.RoutePath">
-            <summary>
-            Optional: The Route path for the editor for this node
-            </summary>
-            <remarks>
-            If this is not set, then the route path will be automatically determined by: {section}/edit/{id}
-            </remarks>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.ChildNodesUrl">
-            <summary>
-            The JSON url to load the nodes children
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.MenuUrl">
-            <summary>
-            The JSON url to load the menu from
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.IconIsClass">
-            <summary>
-            Returns true if the icon represents a CSS class instead of a file path
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.IconFilePath">
-            <summary>
-            Returns the icon file path if the icon is not a class, otherwise returns an empty string
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.Trees.TreeNode.CssClasses">
-            <summary>
-            A list of additional/custom css classes to assign to the node
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.AssignLegacyJsCallback(Umbraco.Web.Models.Trees.TreeNode,System.String)">
-            <summary>
-            Legacy tree node's assign a JS method callback for when an item is clicked, this method facilitates that.
-            </summary>
-            <param name="treeNode"></param>
-            <param name="jsCallback"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetContainerStyle(Umbraco.Web.Models.Trees.TreeNode)">
-            <summary>
-            Sets the node style to show that it is currently protected publicly
-            </summary>
-            <param name="treeNode"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetProtectedStyle(Umbraco.Web.Models.Trees.TreeNode)">
-            <summary>
-            Sets the node style to show that it is currently protected publicly
-            </summary>
-            <param name="treeNode"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetLockedStyle(Umbraco.Web.Models.Trees.TreeNode)">
-            <summary>
-            Sets the node style to show that it is currently locked / non-deletable
-            </summary>
-            <param name="treeNode"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetHasUnpublishedVersionStyle(Umbraco.Web.Models.Trees.TreeNode)">
-            <summary>
-            Sets the node style to show that it is has unpublished versions (but is currently published)
-            </summary>
-            <param name="treeNode"></param>
-        </member>
-        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetNotPublishedStyle(Umbraco.Web.Models.Trees.TreeNode)">
-            <summary>
-            Sets the node style to show that it is is not published
-            </summary>
-            <param name="treeNode"></param>
-        </member>
-        <member name="T:Umbraco.Web.Models.BackOfficeTourFile">
-            <summary>
-            A model representing the file used to load a tour.
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.BackOfficeTourFile.FileName">
-            <summary>
-            The file name for the tour
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.Models.BackOfficeTourFile.PluginName">
-            <summary>
-            The plugin folder that the tour comes from
-            </summary>
-            <remarks>
-            If this is null it means it's a Core tour
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.Models.BackOfficeTourStep">
-            <summary>
-            A model representing a step in a tour.
+            The model representing Previewing of a content item from the back office
             </summary>
         </member>
         <member name="T:Umbraco.Web.Models.ContentEditing.AssignedContentPermissions">
@@ -4602,6 +3944,681 @@
             The current pre-values for this property
             </summary>
         </member>
+        <member name="M:Umbraco.Web.Models.Mapping.AutoMapperExtensions.MapWithUmbracoContext``2(``0,Umbraco.Web.UmbracoContext)">
+            <summary>
+            This maps an object and passes in the current <see cref="T:Umbraco.Web.UmbracoContext"/> so the mapping logic can use it
+            </summary>
+            <typeparam name="TIn"></typeparam>
+            <typeparam name="TOut"></typeparam>
+            <param name="obj"></param>
+            <param name="umbCtx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.AutoMapperExtensions.GetUmbracoContext(AutoMapper.ResolutionContext)">
+            <summary>
+            Returns an <see cref="T:Umbraco.Web.UmbracoContext"/> from the mapping options
+            </summary>
+            <param name="res"></param>
+            <returns></returns>
+            <remarks>
+            If an UmbracoContext is not found in the mapping options, it will try to retrieve it from the singleton
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentTreeNodeUrlResolver`2">
+            <summary>
+            Gets the tree node url for the content or media
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberTreeNodeUrlResolver">
+            <summary>
+            Gets the tree node url for the IMember
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeModelMapperExtensions">
+            <summary>
+            Used as a shared way to do the underlying mapping for content types base classes
+            </summary>
+            <remarks>
+            We used to use 'Include' Automapper inheritance functionality and although this works, the unit test
+                to assert mappings fails which is an Automapper bug. So instead we will use an extension method for the mappings
+                to re-use mappings.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.ContentTypeModelMapperExtensions.MapBaseContentTypeSaveToEntity``3(AutoMapper.IMappingExpression{``0,``2},Umbraco.Core.ApplicationContext)">
+            <summary>
+            Display -> Entity class base mapping logic
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TDestination"></typeparam>
+            <typeparam name="TSourcePropertyType"></typeparam>
+            <param name="mapping"></param>
+            <param name="applicationContext"></param>
+            <returns></returns>        
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeUdiResolver">
+            <summary>
+            Resolves a UDI for a content type based on it's type
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions">
+            <summary>
+            Mapping extension methods for re-use with other mappers (saves code duplication)
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions.IgnoreDeletableEntityCommonProperties``2(AutoMapper.IMappingExpression{``0,``1})">
+            <summary>
+            Ignores readonly properties and the date values
+            </summary>
+            <param name="mapping"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.EntityModelMapperExtensions.IgnoreEntityCommonProperties``2(AutoMapper.IMappingExpression{``0,``1})">
+            <summary>
+            Ignores readonly properties and the date values
+            </summary>
+            <param name="mapping"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.UserGroupDefaultPermissionsResolver">
+            <summary>
+            Converts an IUserGroup instance into a dictionary of permissions by category
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.PropertyTypeGroupResolver`1.GetContentTypeForPropertyGroup(Umbraco.Core.Models.IContentTypeComposition,System.Int32)">
+            <summary>
+            Gets the content type that defines a property group, within a composition.
+            </summary>
+            <param name="contentType">The composition.</param>
+            <param name="propertyGroupId">The identifier of the property group.</param>
+            <returns>The composition content type that defines the specified property group.</returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.PropertyTypeGroupResolver`1.GetContentTypeForPropertyType(Umbraco.Core.Models.IContentTypeComposition,System.Int32)">
+            <summary>
+            Gets the content type that defines a property group, within a composition.
+            </summary>
+            <param name="contentType">The composition.</param>
+            <param name="propertyTypeId">The identifier of the property type.</param>
+            <returns>The composition content type that defines the specified property group.</returns>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MiscModelsMapper">
+            <summary>
+            A model mapper used to map models for the various dashboards
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MacroModelMapper">
+            <summary>
+            Declares model mappings for macros.
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper">
+            <summary>
+            Declares model mappings for members.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.GetLoginProperty(Umbraco.Core.Services.IMemberService,Umbraco.Core.Models.IMember,Umbraco.Core.Services.ILocalizedTextService)">
+            <summary>
+            Returns the login property display field
+            </summary>
+            <param name="memberService"></param>
+            <param name="member"></param>
+            <param name="localizedText"></param>
+            <returns></returns>
+            <remarks>
+            If the membership provider installed is the umbraco membership provider, then we will allow changing the username, however if
+            the membership provider is a custom one, we cannot allow chaning the username because MembershipProvider's do not actually natively
+            allow that.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberDtoPropertiesValueResolver">
+            <summary>
+            This ensures that the custom membership provider properties are not mapped - these property values are controller by the membership provider
+            </summary>
+            <remarks>
+            Because these properties don't exist on the form, if we don't remove them for this map we'll get validation errors when posting data
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver">
+            <summary>
+            A custom tab/property resolver for members which will ensure that the built-in membership properties are or arent' displayed
+            depending on if the member type has these properties
+            </summary>
+            <remarks>
+            This also ensures that the IsLocked out property is readonly when the member is not locked out - this is because
+            an admin cannot actually set isLockedOut = true, they can only unlock.
+            
+            This also ensures that the IsSensitive property display value is set based on the configured IMemberType property type
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver.ResolveCore(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IMember)">
+            <summary>
+            Overridden to deal with custom member properties and permissions
+            </summary>
+            <param name="umbracoContext"></param>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberTabsAndPropertiesResolver.MapProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Core.Models.Property})">
+            <summary>
+            Overridden to assign the IsSensitive property values
+            </summary>
+            <param name="umbracoContext"></param>
+            <param name="content"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberProviderFieldMappingResolver">
+            <summary>
+            A resolver to map the provider field aliases
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MembershipUserTypeConverter">
+            <summary>
+            A converter to go from a <see cref="T:System.Web.Security.MembershipUser"/> to a <see cref="T:Umbraco.Web.Models.ContentEditing.MemberDisplay"/>
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MemberModelMapper.MemberBasicPropertiesResolver">
+            <summary>
+            A resolver to map <see cref="T:Umbraco.Core.Models.IMember"/> properties to a collection of <see cref="T:Umbraco.Web.Models.ContentEditing.ContentPropertyBasic"/>
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.DatabaseTypeResolver">
+            <summary>
+            Gets the DataTypeDatabaseType from the selected property editor for the data type
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.DataTypeModelMapper">
+            <summary>
+            Configure's model mappings for Data types
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.PreValueDisplayResolver.MapPreValueValuesToPreValueFields(Umbraco.Web.Models.ContentEditing.PreValueFieldDisplay[],System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Maps pre-values in the dictionary to the values for the fields
+            </summary>
+            <param name="fields"></param>
+            <param name="preValues"></param>        
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyBasicConverter`1">
+            <summary>
+            Creates a base generic ContentPropertyBasic from a Property
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.ContentPropertyBasicConverter`1.ConvertCore(Umbraco.Core.Models.Property)">
+            <summary>
+            Assigns the PropertyEditor, Id, Alias and Value to the property
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyDisplayConverter">
+            <summary>
+            Creates a ContentPropertyDisplay from a Property
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyDtoConverter">
+            <summary>
+            Creates a ContentPropertyDto from a Property
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentPropertyModelMapper">
+            <summary>
+            A mapper which declares how to map content properties. These mappings are shared among media (and probably members) which is 
+            why they are in their own mapper
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.CreatorResolver">
+            <summary>
+            Maps the Creator for content
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MediaModelMapper">
+            <summary>
+            Declares model mappings for media.
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.MediaModelMapper.MediaTypeBasicResolver">
+            <summary>
+            Resolves a <see cref="T:Umbraco.Web.Models.ContentEditing.ContentTypeBasic"/> from the <see cref="T:Umbraco.Core.Models.IContent"/> item and checks if the current user
+            has access to see this data
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentTypeModelMapper">
+            <summary>
+            Defines mappings for content/media/members type mappings
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper">
+            <summary>
+            Declares how model mappings for content
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper.ContentTypeBasicResolver">
+            <summary>
+            Resolves a <see cref="T:Umbraco.Web.Models.ContentEditing.ContentTypeBasic"/> from the <see cref="T:Umbraco.Core.Models.IContent"/> item and checks if the current user
+            has access to see this data
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.ContentModelMapper.ActionButtonsResolver">
+            <summary>
+            Creates the list of action buttons allowed for this user - Publish, Send to publish, save, unpublish returned as the button's 'letter'
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.OwnerResolver`1">
+            <summary>
+            Maps the Owner for IContentBase
+            </summary>
+            <typeparam name="TPersisted"></typeparam>
+        </member>
+        <member name="T:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1">
+            <summary>
+            Creates the tabs collection with properties assigned for display models
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.Resolve(AutoMapper.ResolutionResult)">
+            <summary>
+            Implements the <see cref="T:AutoMapper.IValueResolver"/>
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.AddListView``1(Umbraco.Web.Models.ContentEditing.TabbedContentItem{Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay,``0},System.String,Umbraco.Core.Services.IDataTypeService,Umbraco.Core.Services.ILocalizedTextService)">
+            <summary>
+            Adds the container (listview) tab to the document
+            </summary>
+            <typeparam name="TPersisted"></typeparam>
+            <param name="display"></param>
+            <param name="entityType">This must be either 'content' or 'media'</param>
+            <param name="dataTypeService"></param>
+            <param name="localizedTextService"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.ResolveCore(Umbraco.Web.UmbracoContext,`0)">
+            <summary>
+            Create the list of tabs for the <see cref="T:Umbraco.Core.Models.IContentBase"/>
+            </summary>
+            <param name="umbracoContext"></param>
+            <param name="content">Source value</param>
+            <returns>Destination</returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.GetCustomGenericProperties(Umbraco.Core.Models.IContentBase)">
+            <summary>
+            Returns a collection of custom generic properties that exist on the generic properties tab
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.MapGenericProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Web.Models.ContentEditing.Tab{Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay}})">
+            <summary>
+            Maps properties on to the generic properties tab
+            </summary>
+            <param name="umbracoContext"></param>
+            <param name="content"></param>
+            <param name="tabs"></param>
+            <remarks>
+            The generic properties tab is responsible for 
+            setting up the properties such as Created date, updated date, template selected, etc...
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.Models.Mapping.TabsAndPropertiesResolver`1.MapProperties(Umbraco.Web.UmbracoContext,Umbraco.Core.Models.IContentBase,System.Collections.Generic.List{Umbraco.Core.Models.Property})">
+            <summary>
+            Maps a list of <see cref="T:Umbraco.Core.Models.Property"/> to a list of <see cref="T:Umbraco.Web.Models.ContentEditing.ContentPropertyDisplay"/>
+            </summary>
+            <param name="umbracoContext"></param>
+            <param name="content"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.ExportMember">
+            <summary>
+            Represents the export member menu item
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.CreateChildEntity">
+            <summary>
+            Represents the refresh node menu item
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.MenuItemList">
+            <summary>
+            A custom menu list
+            </summary>
+            <remarks>
+            NOTE: We need a sub collection to the MenuItemCollection object due to how json serialization works.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add(umbraco.interfaces.IAction,System.String)">
+            <summary>
+            Adds a menu item
+            </summary>
+            <param name="action"></param>
+            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``2(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Adds a menu item
+            </summary>
+            <typeparam name="TMenuItem"></typeparam>
+            <typeparam name="TAction"></typeparam>
+            <param name="hasSeparator"></param>
+            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+            <param name="additionalData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String)">
+            <summary>
+            Adds a menu item
+            </summary>
+            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Adds a menu item with a key value pair which is merged to the AdditionalData bag
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+            <param name="hasSeparator"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.Add``1(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Adds a menu item with a dictionary which is merged to the AdditionalData bag
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="hasSeparator"></param>
+            /// <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+            <param name="additionalData"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.CreateMenuItem``1(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="hasSeparator"></param>
+            <param name="name">The text to display for the menu item, will default to the IAction alias if not specified</param>
+            <param name="additionalData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItemList.DetectLegacyActionMenu(System.Type,Umbraco.Web.Models.Trees.MenuItem)">
+            <summary>
+            Checks if the IAction type passed in is attributed with LegacyActionMenuItemAttribute and if so 
+            ensures that the correct action metadata is added.
+            </summary>
+            <param name="actionType"></param>
+            <param name="menuItem"></param>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.ActionMenuItem">
+            <summary>
+            A menu item that represents some JS that needs to execute when the menu item is clicked.
+            </summary>
+            <remarks>
+            These types of menu items are rare but they do exist. Things like refresh node simply execute
+            JS and don't launch a dialog.
+            
+            Each action menu item describes what angular service that it's method exists in and what the method name is.
+            
+            An action menu item must describe the angular service name for which it's method exists. It may also define what the 
+            method name is that will be called in this service but if one is not specified then we will assume the method name is the
+            same as the Type name of the current action menu class.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.ActionMenuItemAttribute">
+            <summary>
+            The attribute to assign to any ActionMenuItem objects.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.ActionMenuItemAttribute.#ctor(System.String,System.String)">
+            <summary>
+            This constructor defines both the angular service and method name to use
+            </summary>
+            <param name="serviceName"></param>
+            <param name="methodName"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.ActionMenuItemAttribute.#ctor(System.String)">
+            <summary>
+            This constructor will assume that the method name equals the type name of the action menu class
+            </summary>
+            <param name="serviceName"></param>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.MenuItem">
+            <summary>
+            A context menu item
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.MenuItem.AdditionalData">
+            <summary>
+            A dictionary to support any additional meta data that should be rendered for the node which is 
+            useful for custom action commands such as 'create', 'copy', etc...
+            </summary>
+            <remarks>
+            We will also use the meta data collection for dealing with legacy menu items (i.e. for loading custom URLs or
+            executing custom JS).
+            </remarks>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.MenuItem.SeperatorBefore">
+            <summary>
+            Ensures a menu separator will exist before this menu item
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.Models.Trees.MenuItem.DialogTitleKey">
+            <summary>
+            Used as a key for the AdditionalData to specify a specific dialog title instead of the menu title
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionUrlKey">
+            <summary>
+            Used to specify the URL that the dialog will launch to in an iframe
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionViewKey">
+            <summary>
+            Used to specify the angular view that the dialog will launch
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.Models.Trees.MenuItem.JsActionKey">
+            <summary>
+            Used to specify the js method to execute for the menu item 
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.Models.Trees.MenuItem.ActionRouteKey">
+            <summary>
+            Used to specify an angular route to go to for the menu item
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.NavigateToRoute(System.String)">
+            <summary>
+            Sets the menu item to navigate to the specified angular route path
+            </summary>
+            <param name="route"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.ExecuteLegacyJs(System.String)">
+            <summary>
+            Adds the required meta data to the menu item so that angular knows to attempt to call the Js method.
+            </summary>
+            <param name="jsToExecute"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.LaunchDialogView(System.String,System.String)">
+            <summary>
+            Sets the menu item to display a dialog based on an angular view path
+            </summary>
+            <param name="view"></param>
+            <param name="dialogTitle"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.LaunchDialogUrl(System.String,System.String)">
+            <summary>
+            Sets the menu item to display a dialog based on a url path in an iframe
+            </summary>
+            <param name="url"></param>
+            <param name="dialogTitle"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.SetDialogTitle(System.String)">
+            <summary>
+            Puts a dialog title into the meta data to be displayed on the dialog of the menu item (if there is one)
+            instead of the menu name
+            </summary>
+            <param name="dialogTitle"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.MenuItem.SetActionUrl(System.String,Umbraco.Web.Trees.ActionUrlMethod)">
+            <summary>
+            Configures the menu item to launch a URL with the specified action (dialog or new window)
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.MenuItemCollection">
+            <summary>
+            A menu item collection for a given tree node
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.MenuItemCollection.DefaultMenuAlias">
+            <summary>
+            Sets the default menu item alias to be shown when the menu is launched - this is optional and if not set then the menu will just be shown normally.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.MenuItemCollection.Items">
+            <summary>
+            The list of menu items
+            </summary>
+            <remarks>
+            We require this so the json serialization works correctly
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.RefreshNode">
+            <summary>
+            Represents the refresh node menu item
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.SectionRootNode">
+            <summary>
+            A special tree node that represents the section root node for any section.
+            </summary>
+            <remarks>
+            This is required to return the tree data for a given section. Some sections may only contain one tree which means it's section
+            root should also display a menu, whereas other sections have multiple trees and the section root shouldn't display a menu.
+            
+            The section root also contains an explicit collection of children.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.Trees.TreeNode">
+            <summary>
+            Represents a model in the tree
+            </summary>
+            <remarks>
+            TreeNode is sealed to prevent developers from adding additional json data to the response
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNode.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Internal constructor, to create a tree node use the CreateTreeNode methods of the TreeApiController.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="parentId">The parent id for the current node</param>
+            <param name="getChildNodesUrl"></param>
+            <param name="menuUrl"></param>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.HasChildren">
+            <summary>
+            A flag to set whether or not this node has children
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.NodeType">
+            <summary>
+            The tree nodetype which refers to the type of node rendered in the tree
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.RoutePath">
+            <summary>
+            Optional: The Route path for the editor for this node
+            </summary>
+            <remarks>
+            If this is not set, then the route path will be automatically determined by: {section}/edit/{id}
+            </remarks>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.ChildNodesUrl">
+            <summary>
+            The JSON url to load the nodes children
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.MenuUrl">
+            <summary>
+            The JSON url to load the menu from
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.IconIsClass">
+            <summary>
+            Returns true if the icon represents a CSS class instead of a file path
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.IconFilePath">
+            <summary>
+            Returns the icon file path if the icon is not a class, otherwise returns an empty string
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.Trees.TreeNode.CssClasses">
+            <summary>
+            A list of additional/custom css classes to assign to the node
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.AssignLegacyJsCallback(Umbraco.Web.Models.Trees.TreeNode,System.String)">
+            <summary>
+            Legacy tree node's assign a JS method callback for when an item is clicked, this method facilitates that.
+            </summary>
+            <param name="treeNode"></param>
+            <param name="jsCallback"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetContainerStyle(Umbraco.Web.Models.Trees.TreeNode)">
+            <summary>
+            Sets the node style to show that it is currently protected publicly
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetProtectedStyle(Umbraco.Web.Models.Trees.TreeNode)">
+            <summary>
+            Sets the node style to show that it is currently protected publicly
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetLockedStyle(Umbraco.Web.Models.Trees.TreeNode)">
+            <summary>
+            Sets the node style to show that it is currently locked / non-deletable
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetHasUnpublishedVersionStyle(Umbraco.Web.Models.Trees.TreeNode)">
+            <summary>
+            Sets the node style to show that it is has unpublished versions (but is currently published)
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="M:Umbraco.Web.Models.Trees.TreeNodeExtensions.SetNotPublishedStyle(Umbraco.Web.Models.Trees.TreeNode)">
+            <summary>
+            Sets the node style to show that it is is not published
+            </summary>
+            <param name="treeNode"></param>
+        </member>
+        <member name="T:Umbraco.Web.Models.BackOfficeTourFile">
+            <summary>
+            A model representing the file used to load a tour.
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.BackOfficeTourFile.FileName">
+            <summary>
+            The file name for the tour
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.Models.BackOfficeTourFile.PluginName">
+            <summary>
+            The plugin folder that the tour comes from
+            </summary>
+            <remarks>
+            If this is null it means it's a Core tour
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.Models.BackOfficeTourStep">
+            <summary>
+            A model representing a step in a tour.
+            </summary>
+        </member>
         <member name="T:Umbraco.Web.Models.LocalPackageInstallModel">
             <summary>
             A model that represents uploading a local package
@@ -5298,6 +5315,1076 @@
             <summary>
             Returns the current Culture assigned to the page being rendered
             </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DropdownFlexiblePropertyEditor.CreatePreValueEditor">
+            <summary>
+            Return a custom pre-value editor
+            </summary>
+            <returns></returns>
+            <remarks>
+            We are just going to re-use the ValueListPreValueEditor
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DropdownFlexiblePropertyEditor.CreateValueEditor">
+            <summary>
+            We need to override the value editor so that we can ensure the string value is published in cache and not the integer ID value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ContentPicker2PropertyEditor">
+            <summary>
+            Content property editor that stores UDI
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DecimalPropertyEditor.CreateValueEditor">
+            <summary>
+            Overridden to ensure that the value is validated
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DecimalPropertyEditor.DecimalPreValueEditor">
+            <summary>
+            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.MediaPicker2PropertyEditor">
+            <summary>
+            Media picker property editors that stores UDI
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultiNodeTreePicker2PropertyEditor.MultiNodePickerPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            This ensures the multiPicker pre-val is set based on the maxNumber of nodes set
+            </summary>
+            <param name="defaultPreVals"></param>
+            <param name="persistedPreVals"></param>
+            <returns></returns>
+            <remarks>
+            Due to compatibility with 7.0.0 the multiPicker pre-val might already exist in the db, but we've removed that setting in 7.0.1 so we need to detect it and if it is
+            there, then we'll set the maxNumber to '1'
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.TextOnlyValueEditor">
+            <summary>
+            Custom value editor which ensures that the value stored is just plain text and that 
+            no magic json formatting occurs when translating it to and from the database values
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.TextOnlyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            A method used to format the database value to a value that can be used by the editor
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+            <remarks>
+            The object returned will always be a string and if the database type is not a valid string type an exception is thrown
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter">
+            <summary>
+            The content picker property value converter.
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.PropertiesToExclude">
+            <summary>
+            The properties to exclude.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Checks if this converter can convert the property editor and registers if it can.
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the raw string into a nodeId integer
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the source nodeId into a IPublishedContent (or DynamicPublishedContent)
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertSourceToXPath(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            The convert source to xPath.
+            </summary>
+            <param name="propertyType">
+            The property type.
+            </param>
+            <param name="source">
+            The source.
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ImageCropDataSetConverter">
+            <summary>
+            Used to do some type conversions from ImageCropDataSet to string and JObject
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ImageCropperValueConverter">
+            <summary>
+            Used to strongly type the value for the image cropper
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter">
+            <summary>
+            The media picker property value converter.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.IsMultipleDataType(System.Int32,System.String)">
+            <summary>
+            The is multiple data type.
+            </summary>
+            <param name="dataTypeId">
+            The data type id.
+            </param>
+            <param name="propertyEditorAlias"></param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Checks if this converter can convert the property editor and registers if it can.
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the raw string into a nodeId integer
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the source nodeId into a IPublishedContent (or DynamicPublishedContent)
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter">
+            <summary>
+            The multi node tree picker property editor value converter.
+            </summary>
+        </member>
+        <member name="F:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.PropertiesToExclude">
+            <summary>
+            The properties to exclude.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Checks if this converter can convert the property editor and registers if it can.
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the raw string into a nodeId integer array
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the source nodeId into a IEnumerable of IPublishedContent (or DynamicPublishedContent)
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.GetPublishedContent``1(``0,Umbraco.Core.Models.UmbracoObjectTypes@,Umbraco.Core.Models.UmbracoObjectTypes,System.Func{``0,Umbraco.Core.Models.IPublishedContent})">
+            <summary>
+            Attempt to get an IPublishedContent instance based on ID and content type
+            </summary>
+            <param name="nodeId">The content node ID</param>
+            <param name="actualType">The type of content being requested</param>
+            <param name="expectedType">The type of content expected/supported by <paramref name="contentFetcher"/></param>
+            <param name="contentFetcher">A function to fetch content of type <paramref name="expectedType"/></param>
+            <returns>The requested content, or null if either it does not exist or <paramref name="actualType"/> does not match <paramref name="expectedType"/></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter">
+            <summary>
+            The multiple media picker and double legacy media picker property value converter, should be deleted for v8
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Checks if this converter can convert the property editor and registers if it can.
+            </summary>
+            <param name="propertyType">
+            The property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the raw string into a nodeId integer array or a single integer
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the source nodeId into a IPublishedContent or IEnumerable of IPublishedContent (or DynamicPublishedContent) depending on data type setting
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.GetPropertyCacheLevel(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,Umbraco.Core.PropertyEditors.PropertyCacheValue)">
+            <summary>
+            The get property cache level.
+            </summary>
+            <param name="propertyType">
+            The property type.
+            </param>
+            <param name="cacheValue">
+            The cache value.
+            </param>
+            <returns>
+            The <see cref="T:Umbraco.Core.PropertyEditors.PropertyCacheLevel"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.GetPropertyValueType(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            The get property value type.
+            </summary>
+            <param name="propertyType">
+            The property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Type"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.IsMultipleDataType(System.Int32,System.String)">
+            <summary>
+            The is multiple data type.
+            </summary>
+            <param name="dataTypeId">
+            The data type id.
+            </param>
+            <param name="propertyEditorAlias"></param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MacroContainerValueConverter">
+            <summary>
+            Ensures macro syntax is parsed for the macro container which will work when getting the field
+            values in any way (i.e. dynamically, using Field(), or IPublishedContent)
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter">
+            <summary>
+            The related links property value converter.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Checks if this converter can convert the property editor and registers if it can.
+            </summary>
+            <param name="propertyType">
+            The property type.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Convert the source nodeId into a RelatedLinks object
+            </summary>
+            <param name="propertyType">
+            The published property type.
+            </param>
+            <param name="source">
+            The value of the property
+            </param>
+            <param name="preview">
+            The preview.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter">
+            <summary>
+            A value converter for TinyMCE that will ensure any macro content is rendered properly even when 
+            used dynamically.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.GridPropertyEditor.CreateValueEditor">
+            <summary>
+            Overridden to ensure that the value is validated
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.GridPropertyEditor.GridPropertyEditorApplicationStartup">
+            <summary>
+            we're using a sub -class because this has the logic to prevent it from executing if the application is not configured
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.GridPropertyEditor.GridPropertyEditorApplicationStartup.ApplicationStarted(Umbraco.Core.UmbracoApplicationBase,Umbraco.Core.ApplicationContext)">
+            <summary>
+            We're going to bind to the Examine events so we can ensure grid data is index nicely.
+            </summary>        
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.TagsDataController">
+            <summary>
+            A controller used for type-ahead values for tags
+            </summary>
+            <remarks>
+            DO NOT inherit from UmbracoAuthorizedJsonController since we don't want to use the angularized
+            json formatter as it causes probs.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor"/> class.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.CreateValueEditor">
+            <summary>
+            Creates the corresponding property value editor.
+            </summary>
+            <returns>The corresponding property value editor.</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.CreatePreValueEditor">
+            <summary>
+            Creates the corresponding preValue editor.
+            </summary>
+            <returns>The corresponding preValue editor.</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.IsCropperField(Umbraco.Core.Models.Property,System.Boolean)">
+            <summary>
+            Gets a value indicating whether a property is an image cropper field.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="ensureValue">A value indicating whether to check that the property has a non-empty value.</param>
+            <returns>A value indicating whether a property is an image cropper field, and (optionaly) has a non-empty value.</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.GetJObject(System.String,System.Boolean)">
+            <summary>
+            Parses the property value into a json object.
+            </summary>
+            <param name="value">The property value.</param>
+            <param name="writeLog">A value indicating whether to log the error.</param>
+            <returns>The json object corresponding to the property value.</returns>
+            <remarks>In case of an error, optionaly logs the error and returns null.</remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.GetFilesToDelete(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.Property})">
+            <summary>
+            Gets the files that need to be deleted when entities are deleted.
+            </summary>
+            <param name="properties">The properties that were deleted.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.ContentServiceCopied(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.CopyEventArgs{Umbraco.Core.Models.IContent})">
+            <summary>
+            After a content has been copied, also copy uploaded files.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.MediaServiceCreated(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.NewEventArgs{Umbraco.Core.Models.IMedia})">
+            <summary>
+            After a media has been created, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.MediaServiceSaving(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IMedia})">
+            <summary>
+            After a media has been saved, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.ContentServiceSaving(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IContent})">
+            <summary>
+            After a content item has been saved, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.AutoFillProperties(Umbraco.Core.Models.IContentBase)">
+            <summary>
+            Auto-fill properties (or clear).
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor">
+            <summary>
+            The value editor for the image cropper property editor.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            This is called to merge in the prevalue crops with the value that is saved - similar to the property value converter for the front-end
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            Converts the value received from the editor into the value can be stored in the database.
+            </summary>
+            <param name="editorValue">The value received from the editor.</param>
+            <param name="currentValue">The current value of the property</param>
+            <returns>The converted value.</returns>
+            <remarks>
+            <para>The <paramref name="currentValue"/> is used to re-use the folder, if possible.</para>
+            <para>editorValue.Value is used to figure out editorFile and, if it has been cleared, remove the old file - but
+            it is editorValue.AdditionalData["files"] that is used to determine the actual file that has been uploaded.</para>
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MacroContainerPropertyEditor.CreatePreValueEditor">
+            <summary>
+            Creates a pre value editor instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultiNodeTreePickerPropertyEditor.CreatePreValueEditor">
+            <summary>
+            overridden to change the pre-value picker to use INT ids
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultipleMediaPickerPropertyEditor.CreatePreValueEditor">
+            <summary>
+            overridden to change the pre-value picker to use INT ids
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.PropertyEditorAssetAttribute">
+            <summary>
+            Indicates that the property editor requires this asset be loaded when the back office is loaded
+            </summary>
+            <remarks>
+            This wraps a CDF asset
+            </remarks>
+        </member>
+        <member name="P:Umbraco.Web.PropertyEditors.PropertyEditorAssetAttribute.DependencyFile">
+            <summary>
+            Returns a CDF file reference
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.RteEmbedController">
+            <summary>
+            A controller used for the embed dialog
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor">
+            <summary>
+            A property editor to allow multiple checkbox selection of pre-defined items.
+            </summary>
+            <remarks>
+            Due to remaining backwards compatible, this stores the id of the checkbox items in the database 
+            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the string value is published
+            in cache and not the int ID.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor.CreatePreValueEditor">
+            <summary>
+            Return a custom pre-value editor
+            </summary>
+            <returns></returns>
+            <remarks>
+            We are just going to re-use the ValueListPreValueEditor
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor.CreateValueEditor">
+            <summary>
+            We need to override the value editor so that we can ensure the string value is published in cache and not the integer ID value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ColorPickerPropertyEditor.CreatePreValueEditor">
+            <summary>
+            Return a custom pre-value editor
+            </summary>
+            <returns></returns>
+            <remarks>
+            ColorListPreValueEditor uses the ValueListPreValueEditor with a custom view and controller.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DatePropertyEditor.DatePropertyValueEditor">
+            <summary>
+            CUstom value editor so we can serialize with the correct date format (excluding time)
+            and includes the date validator
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.PropertyEditors.DateTimePropertyEditor.DefaultPreValues">
+            <summary>
+            Overridden because we ONLY support Date + Time format
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DateTimeValidator">
+            <summary>
+            Used to validate if the value is a valid date/time
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultiplePropertyEditor">
+            <summary>
+            A property editor to allow multiple selection of pre-defined items
+            </summary>
+            <remarks>
+            Due to maintaining backwards compatibility this data type stores the value as a string which is a comma separated value of the 
+            ids of the individual items so we have logic in here to deal with that.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.IntegerPropertyEditor.CreateValueEditor">
+            <summary>
+            Overridden to ensure that the value is validated
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.IntegerPropertyEditor.IntegerPreValueEditor">
+            <summary>
+            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.MediaPickerPropertyEditor">
+            <summary>
+            Legacy media property editor that stores Integer Ids
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor">
+            <summary>
+            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            Need to change how we persist the values so they are compatible with the legacy way we store values
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            Need to deal with the legacy way of storing pre-values and turn them into nice values for the editor
+            </summary>
+            <param name="defaultPreVals"></param>
+            <param name="persistedPreVals"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor">
+            <summary>
+            Custom value editor so we can format the value for the editor and the database
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            The value passed in from the editor will be an array of simple objects so we'll need to parse them to get the string
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
+            <remarks>
+            We will also check the pre-values here, if there are more items than what is allowed we'll just trim the end
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            We are actually passing back an array of simple objects instead of an array of strings because in angular a primitive (string) value
+            cannot have 2 way binding, so to get around that each item in the array needs to be an object with a string.
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+            <remarks>
+            The legacy property editor saved this data as new line delimited! strange but we have to maintain that.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor">
+            <summary>
+            Custom value editor to handle posted json data and to return json data for the multiple selected items as well as ensuring
+            that the multiple selected int IDs are published to cache as a delimited string (values)
+            </summary>
+            <remarks>
+            This is re-used by editors such as the multiple drop down list or check box list
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertDbToString(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            If publishing ids, we don't need to do anything, otherwise we need to look up the pre-values and get the string values
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            Override so that we can return a json array to the editor for multi-select values
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            When multiple values are selected a json array will be posted back so we need to format for storage in 
+            the database which is a comma separated ID value
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor">
+            <summary>
+            A property editor to allow multiple selection of pre-defined items
+            </summary>
+            <remarks>
+            Due to maintaining backwards compatibility this data type stores the value as a string which is a comma separated value of the 
+            ids of the individual items so we have logic in here to deal with that.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor.DropDownMultiplePreValueEditor">
+            <summary>
+            A pre-value editor for the 'drop down list multiple' property editor that ensures that 'multiple' is saved for the config in the db but is not 
+            rendered as a pre-value field.
+            </summary>
+            <remarks>
+            This is mostly to maintain backwards compatibility with old property editors. Devs can now simply use the Drop down property editor and check the multiple pre-value checkbox
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor.DropDownMultiplePreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            Always
+            </summary>
+            <param name="defaultPreVals"></param>
+            <param name="persistedPreVals"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.RadioButtonsPropertyEditor">
+            <summary>
+            A property editor to allow the individual selection of pre-defined items.
+            </summary>
+            <remarks>
+            Due to remaining backwards compatible, this stores the id of the item in the database which is why it is marked
+            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the INT ID value is published
+            in cache and not the string value.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.RichTextPreValueController">
+            <summary>
+            ApiController to provide RTE configuration with available plugins and commands from the RTE config
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.TagPropertyEditorTagDefinition">
+            <summary>
+            Used to dynamically change the tag group and storage type based on the pre-values
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.PropertyEditors.TagsPropertyEditor.DefaultPreValues">
+            <summary>
+            Override to supply the default group
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            This needs to return IEnumerable{string}
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredValidator">
+            <summary>
+            Returns the validator used for the required field validation which is specified on the PropertyType
+            </summary>
+            <remarks>
+            This will become legacy as soon as we implement overridable pre-values.
+            
+            The default validator used is the RequiredValueValidator but this can be overridden by property editors
+            if they need to do some custom validation, or if the value being validated is a json object.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredTagsValueValidator">
+            <summary>
+            Custom validator to validate a required value against an empty json value
+            </summary>
+            <remarks>
+            This is required because the Tags property editor is not of type 'JSON', it's just string so the underlying
+            validator does not validate against an empty json string
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredTagsValueValidator.Validate(System.Object,System.String,Umbraco.Core.Models.PreValueCollection,Umbraco.Core.PropertyEditors.PropertyEditor)">
+            <summary>
+            Validates a null value or an empty json value
+            </summary>
+            <param name="value"></param>
+            <param name="config"></param>
+            <param name="preValues"></param>
+            <param name="editor"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueListPreValueEditor">
+            <summary>
+            Pre-value editor used to create a list of items
+            </summary>
+            <remarks>
+            This pre-value editor is shared with editors like drop down, checkbox list, etc....
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.CreatePreValueFields">
+            <summary>
+            Creates the pre-value fields
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            The editor is expecting a json array for a field with a key named "items" so we need to format the persisted values
+            to this format to be used in the editor.
+            </summary>
+            <param name="defaultPreVals"></param>
+            <param name="persistedPreVals"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.PreValueAsDictionary(Umbraco.Core.Models.PreValue)">
+            <summary>
+            Formats the prevalue as a dictionary (as we need to return not just the value, but also the sort-order, to the client)
+            </summary>
+            <param name="preValue">The prevalue to format</param>
+            <returns>Dictionary object containing the prevalue formatted with the field names as keys and the value of those fields as the values</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            Need to format the delimited posted string to individual values
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns>
+            A string/string dictionary since all values that need to be persisted in the database are strings.
+            </returns>
+            <remarks>
+            This is mostly because we want to maintain compatibility with v6 drop down property editors that store their prevalues in different db rows.
+            </remarks>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.EnsureUniqueValuesValidator">
+            <summary>
+            A custom validator to ensure that all values in the list are unique
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DropDownPropertyEditor">
+            <summary>
+            A property editor to allow the individual selection of pre-defined items.
+            </summary>
+            <remarks>
+            Due to remaining backwards compatible, this stores the id of the drop down item in the database which is why it is marked
+            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the string value is published
+            in cache and not the int ID.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DropDownPropertyEditor.CreateValueEditor">
+            <summary>
+            We need to override the value editor so that we can ensure the string value is published in cache and not the integer ID value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.PublishValueValueEditor">
+            <summary>
+            A custom value editor for any property editor that stores a pre-value int id so that we can ensure that the 'value' not the ID get's put into cache
+            </summary>
+            <remarks>
+            This is required for legacy/backwards compatibility, otherwise we'd just store the string version and cache the string version without
+            needing additional lookups.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.PublishValueValueEditor.ConvertDbToString(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            Need to lookup the pre-values and put the string version in cache, not the ID (which is what is stored in the db)
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.DropDownWithKeysPropertyEditor">
+            <summary>
+            A property editor to allow the individual selection of pre-defined items.
+            </summary>
+            <remarks>
+            Due to remaining backwards compatible, this stores the id of the drop down item in the database which is why it is marked
+            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the INT ID value is published
+            in cache and not the string value.
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.DropDownWithKeysPropertyEditor.CreatePreValueEditor">
+            <summary>
+            Return a custom pre-value editor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPropertyValueEditor">
+            <summary>
+            Custom value editor to mark it as readonly
+            </summary>
+        </member>
+        <member name="P:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPropertyValueEditor.IsReadOnly">
+            <summary>
+            This editor is for display purposes only, any values bound to it will not be saved back to the database
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            Other than for the pre-value fields defined on this property editor, chuck all the values into one field so devs can see what is stored there.
+            We want this in case we've converted a legacy property editor over to a label as we should still show the pre-values stored for the data type.
+            </summary>
+            <param name="defaultPreVals"></param>
+            <param name="persistedPreVals"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            When saving we want to avoid saving an empty "legacy property editor values" field if there are none.
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.PropertyValueEditorWrapper">
+            <summary>
+            Useful when returning a custom value editor when your property editor is attributed, it ensures the attribute
+            values are copied across to your custom value editor.
+            </summary>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.ContentPickerPropertyEditor">
+            <summary>
+            Legacy content property editor that stores Integer Ids
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.ContentPickerPropertyEditor.CreatePreValueEditor">
+            <summary>
+            overridden to change the pre-value picker to use INT ids
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.CreateValueEditor">
+            <summary>
+            Creates the corresponding property value editor.
+            </summary>
+            <returns>The corresponding property value editor.</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.IsUploadField(Umbraco.Core.Models.Property,System.Boolean)">
+            <summary>
+            Gets a value indicating whether a property is an upload field.
+            </summary>
+            <param name="property">The property.</param>
+            <param name="ensureValue">A value indicating whether to check that the property has a non-empty value.</param>
+            <returns>A value indicating whether a property is an upload field, and (optionaly) has a non-empty value.</returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.GetFilesToDelete(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.Property})">
+            <summary>
+            Gets the files that need to be deleted when entities are deleted.
+            </summary>
+            <param name="properties">The properties that were deleted.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.ContentServiceCopied(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.CopyEventArgs{Umbraco.Core.Models.IContent})">
+            <summary>
+            After a content has been copied, also copy uploaded files.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.MediaServiceCreated(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.NewEventArgs{Umbraco.Core.Models.IMedia})">
+            <summary>
+            After a media has been created, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.MediaServiceSaving(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IMedia})">
+            <summary>
+            After a media has been saved, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.ContentServiceSaving(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IContent})">
+            <summary>
+            After a content item has been saved, auto-fill the properties.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event arguments.</param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.AutoFillProperties(Umbraco.Core.Models.IContentBase)">
+            <summary>
+            Auto-fill properties (or clear).
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.FileUploadPropertyValueEditor">
+            <summary>
+            The value editor for the file upload property editor.
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            Converts the value received from the editor into the value can be stored in the database.
+            </summary>
+            <param name="editorValue">The value received from the editor.</param>
+            <param name="currentValue">The current value of the property</param>
+            <returns>The converted value.</returns>
+            <remarks>
+            <para>The <paramref name="currentValue"/> is used to re-use the folder, if possible.</para>
+            <para>The <paramref name="editorValue"/> is value passed in from the editor. We normally don't care what
+            the editorValue.Value is set to because we are more interested in the files collection associated with it,
+            however we do care about the value if we are clearing files. By default the editorValue.Value will just
+            be set to the name of the file - but again, we just ignore this and deal with the file collection in
+            editorValue.AdditionalData.ContainsKey("files")</para>
+            <para>We only process ONE file. We understand that the current value may contain more than one file,
+            and that more than one file may be uploaded, so we take care of them all, but we only store ONE file.
+            Other places (FileUploadPropertyEditor...) do NOT deal with multiple files, and our logic for reusing
+            folders would NOT work, etc.</para>
+            </remarks>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.CreateValueEditor">
+            <summary>
+            Create a custom value editor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor">
+            <summary>
+            A custom value editor to ensure that macro syntax is parsed when being persisted and formatted correctly for display in the editor
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConfigureForDisplay(Umbraco.Core.Models.PreValueCollection)">
+            <summary>
+            override so that we can hide the label based on the pre-value
+            </summary>
+            <param name="preValues"></param>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
+            <summary>
+            Format the data for the editor
+            </summary>
+            <param name="property"></param>
+            <param name="propertyType"></param>
+            <param name="dataTypeService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
+            <summary>
+            Format the data for persistence
+            </summary>
+            <param name="editorValue"></param>
+            <param name="currentValue"></param>
+            <returns></returns>
         </member>
         <member name="T:Umbraco.Web.TourFilterResolver">
             <summary>
@@ -6645,6 +7732,23 @@
             </summary>
             <param name="umbracoContext"></param>
         </member>
+        <member name="M:Umbraco.Web.Mvc.UmbracoAuthorizeAttribute.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Umbraco.Web.Mvc.UmbracoAuthorizeAttribute.#ctor(System.String)">
+            <summary>
+            Constructor specifying to redirect to the specified location if not authorized
+            </summary>
+            <param name="redirectUrl"></param>
+        </member>
+        <member name="M:Umbraco.Web.Mvc.UmbracoAuthorizeAttribute.#ctor(System.Boolean)">
+            <summary>
+            Constructor specifying to redirect to the umbraco login page if not authorized
+            </summary>
+            <param name="redirectToUmbracoLogin"></param>
+        </member>
         <member name="M:Umbraco.Web.Mvc.UmbracoAuthorizeAttribute.AuthorizeCore(System.Web.HttpContextBase)">
             <summary>
             Ensures that the user must be in the Administrator or the Install role
@@ -7773,1061 +8877,6 @@
             Gets the request object from the app instance if it is available
             </summary>
             <param name="sender">The application object</param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ContentPicker2PropertyEditor">
-            <summary>
-            Content property editor that stores UDI
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.DecimalPropertyEditor.CreateValueEditor">
-            <summary>
-            Overridden to ensure that the value is validated
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DecimalPropertyEditor.DecimalPreValueEditor">
-            <summary>
-            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.MediaPicker2PropertyEditor">
-            <summary>
-            Media picker property editors that stores UDI
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultiNodeTreePicker2PropertyEditor.MultiNodePickerPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            This ensures the multiPicker pre-val is set based on the maxNumber of nodes set
-            </summary>
-            <param name="defaultPreVals"></param>
-            <param name="persistedPreVals"></param>
-            <returns></returns>
-            <remarks>
-            Due to compatibility with 7.0.0 the multiPicker pre-val might already exist in the db, but we've removed that setting in 7.0.1 so we need to detect it and if it is
-            there, then we'll set the maxNumber to '1'
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.TextOnlyValueEditor">
-            <summary>
-            Custom value editor which ensures that the value stored is just plain text and that 
-            no magic json formatting occurs when translating it to and from the database values
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.TextOnlyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            A method used to format the database value to a value that can be used by the editor
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-            <remarks>
-            The object returned will always be a string and if the database type is not a valid string type an exception is thrown
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter">
-            <summary>
-            The content picker property value converter.
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.PropertiesToExclude">
-            <summary>
-            The properties to exclude.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            Checks if this converter can convert the property editor and registers if it can.
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the raw string into a nodeId integer
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the source nodeId into a IPublishedContent (or DynamicPublishedContent)
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.ContentPickerPropertyConverter.ConvertSourceToXPath(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            The convert source to xPath.
-            </summary>
-            <param name="propertyType">
-            The property type.
-            </param>
-            <param name="source">
-            The source.
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ImageCropDataSetConverter">
-            <summary>
-            Used to do some type conversions from ImageCropDataSet to string and JObject
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.ImageCropperValueConverter">
-            <summary>
-            Used to strongly type the value for the image cropper
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter">
-            <summary>
-            The media picker property value converter.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.IsMultipleDataType(System.Int32,System.String)">
-            <summary>
-            The is multiple data type.
-            </summary>
-            <param name="dataTypeId">
-            The data type id.
-            </param>
-            <param name="propertyEditorAlias"></param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            Checks if this converter can convert the property editor and registers if it can.
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the raw string into a nodeId integer
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MediaPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the source nodeId into a IPublishedContent (or DynamicPublishedContent)
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter">
-            <summary>
-            The multi node tree picker property editor value converter.
-            </summary>
-        </member>
-        <member name="F:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.PropertiesToExclude">
-            <summary>
-            The properties to exclude.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            Checks if this converter can convert the property editor and registers if it can.
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the raw string into a nodeId integer array
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the source nodeId into a IEnumerable of IPublishedContent (or DynamicPublishedContent)
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.MultiNodeTreePickerPropertyConverter.GetPublishedContent``1(``0,Umbraco.Core.Models.UmbracoObjectTypes@,Umbraco.Core.Models.UmbracoObjectTypes,System.Func{``0,Umbraco.Core.Models.IPublishedContent})">
-            <summary>
-            Attempt to get an IPublishedContent instance based on ID and content type
-            </summary>
-            <param name="nodeId">The content node ID</param>
-            <param name="actualType">The type of content being requested</param>
-            <param name="expectedType">The type of content expected/supported by <paramref name="contentFetcher"/></param>
-            <param name="contentFetcher">A function to fetch content of type <paramref name="expectedType"/></param>
-            <returns>The requested content, or null if either it does not exist or <paramref name="actualType"/> does not match <paramref name="expectedType"/></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter">
-            <summary>
-            The multiple media picker and double legacy media picker property value converter, should be deleted for v8
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            Checks if this converter can convert the property editor and registers if it can.
-            </summary>
-            <param name="propertyType">
-            The property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the raw string into a nodeId integer array or a single integer
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the source nodeId into a IPublishedContent or IEnumerable of IPublishedContent (or DynamicPublishedContent) depending on data type setting
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.GetPropertyCacheLevel(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,Umbraco.Core.PropertyEditors.PropertyCacheValue)">
-            <summary>
-            The get property cache level.
-            </summary>
-            <param name="propertyType">
-            The property type.
-            </param>
-            <param name="cacheValue">
-            The cache value.
-            </param>
-            <returns>
-            The <see cref="T:Umbraco.Core.PropertyEditors.PropertyCacheLevel"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.GetPropertyValueType(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            The get property value type.
-            </summary>
-            <param name="propertyType">
-            The property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Type"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.LegacyMediaPickerPropertyConverter.IsMultipleDataType(System.Int32,System.String)">
-            <summary>
-            The is multiple data type.
-            </summary>
-            <param name="dataTypeId">
-            The data type id.
-            </param>
-            <param name="propertyEditorAlias"></param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.MacroContainerValueConverter">
-            <summary>
-            Ensures macro syntax is parsed for the macro container which will work when getting the field
-            values in any way (i.e. dynamically, using Field(), or IPublishedContent)
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter">
-            <summary>
-            The related links property value converter.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
-            <summary>
-            Checks if this converter can convert the property editor and registers if it can.
-            </summary>
-            <param name="propertyType">
-            The property type.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksPropertyConverter.ConvertSourceToObject(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
-            <summary>
-            Convert the source nodeId into a RelatedLinks object
-            </summary>
-            <param name="propertyType">
-            The published property type.
-            </param>
-            <param name="source">
-            The value of the property
-            </param>
-            <param name="preview">
-            The preview.
-            </param>
-            <returns>
-            The <see cref="T:System.Object"/>.
-            </returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter">
-            <summary>
-            A value converter for TinyMCE that will ensure any macro content is rendered properly even when 
-            used dynamically.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.GridPropertyEditor.CreateValueEditor">
-            <summary>
-            Overridden to ensure that the value is validated
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.GridPropertyEditor.GridPropertyEditorApplicationStartup">
-            <summary>
-            we're using a sub -class because this has the logic to prevent it from executing if the application is not configured
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.GridPropertyEditor.GridPropertyEditorApplicationStartup.ApplicationStarted(Umbraco.Core.UmbracoApplicationBase,Umbraco.Core.ApplicationContext)">
-            <summary>
-            We're going to bind to the Examine events so we can ensure grid data is index nicely.
-            </summary>        
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.TagsDataController">
-            <summary>
-            A controller used for type-ahead values for tags
-            </summary>
-            <remarks>
-            DO NOT inherit from UmbracoAuthorizedJsonController since we don't want to use the angularized
-            json formatter as it causes probs.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor"/> class.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.CreateValueEditor">
-            <summary>
-            Creates the corresponding property value editor.
-            </summary>
-            <returns>The corresponding property value editor.</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.CreatePreValueEditor">
-            <summary>
-            Creates the corresponding preValue editor.
-            </summary>
-            <returns>The corresponding preValue editor.</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.IsCropperField(Umbraco.Core.Models.Property,System.Boolean)">
-            <summary>
-            Gets a value indicating whether a property is an image cropper field.
-            </summary>
-            <param name="property">The property.</param>
-            <param name="ensureValue">A value indicating whether to check that the property has a non-empty value.</param>
-            <returns>A value indicating whether a property is an image cropper field, and (optionaly) has a non-empty value.</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.GetJObject(System.String,System.Boolean)">
-            <summary>
-            Parses the property value into a json object.
-            </summary>
-            <param name="value">The property value.</param>
-            <param name="writeLog">A value indicating whether to log the error.</param>
-            <returns>The json object corresponding to the property value.</returns>
-            <remarks>In case of an error, optionaly logs the error and returns null.</remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.GetFilesToDelete(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.Property})">
-            <summary>
-            Gets the files that need to be deleted when entities are deleted.
-            </summary>
-            <param name="properties">The properties that were deleted.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.ContentServiceCopied(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.CopyEventArgs{Umbraco.Core.Models.IContent})">
-            <summary>
-            After a content has been copied, also copy uploaded files.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.MediaServiceCreated(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.NewEventArgs{Umbraco.Core.Models.IMedia})">
-            <summary>
-            After a media has been created, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.MediaServiceSaving(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IMedia})">
-            <summary>
-            After a media has been saved, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.ContentServiceSaving(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IContent})">
-            <summary>
-            After a content item has been saved, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyEditor.AutoFillProperties(Umbraco.Core.Models.IContentBase)">
-            <summary>
-            Auto-fill properties (or clear).
-            </summary>
-            <param name="content">The content.</param>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor">
-            <summary>
-            The value editor for the image cropper property editor.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            This is called to merge in the prevalue crops with the value that is saved - similar to the property value converter for the front-end
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ImageCropperPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            Converts the value received from the editor into the value can be stored in the database.
-            </summary>
-            <param name="editorValue">The value received from the editor.</param>
-            <param name="currentValue">The current value of the property</param>
-            <returns>The converted value.</returns>
-            <remarks>
-            <para>The <paramref name="currentValue"/> is used to re-use the folder, if possible.</para>
-            <para>editorValue.Value is used to figure out editorFile and, if it has been cleared, remove the old file - but
-            it is editorValue.AdditionalData["files"] that is used to determine the actual file that has been uploaded.</para>
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MacroContainerPropertyEditor.CreatePreValueEditor">
-            <summary>
-            Creates a pre value editor instance
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultiNodeTreePickerPropertyEditor.CreatePreValueEditor">
-            <summary>
-            overridden to change the pre-value picker to use INT ids
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultipleMediaPickerPropertyEditor.CreatePreValueEditor">
-            <summary>
-            overridden to change the pre-value picker to use INT ids
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.PropertyEditorAssetAttribute">
-            <summary>
-            Indicates that the property editor requires this asset be loaded when the back office is loaded
-            </summary>
-            <remarks>
-            This wraps a CDF asset
-            </remarks>
-        </member>
-        <member name="P:Umbraco.Web.PropertyEditors.PropertyEditorAssetAttribute.DependencyFile">
-            <summary>
-            Returns a CDF file reference
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.RteEmbedController">
-            <summary>
-            A controller used for the embed dialog
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor">
-            <summary>
-            A property editor to allow multiple checkbox selection of pre-defined items.
-            </summary>
-            <remarks>
-            Due to remaining backwards compatible, this stores the id of the checkbox items in the database 
-            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the string value is published
-            in cache and not the int ID.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor.CreatePreValueEditor">
-            <summary>
-            Return a custom pre-value editor
-            </summary>
-            <returns></returns>
-            <remarks>
-            We are just going to re-use the ValueListPreValueEditor
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.CheckBoxListPropertyEditor.CreateValueEditor">
-            <summary>
-            We need to override the value editor so that we can ensure the string value is published in cache and not the integer ID value.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ColorPickerPropertyEditor.CreatePreValueEditor">
-            <summary>
-            Return a custom pre-value editor
-            </summary>
-            <returns></returns>
-            <remarks>
-            ColorListPreValueEditor uses the ValueListPreValueEditor with a custom view and controller.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DatePropertyEditor.DatePropertyValueEditor">
-            <summary>
-            CUstom value editor so we can serialize with the correct date format (excluding time)
-            and includes the date validator
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.PropertyEditors.DateTimePropertyEditor.DefaultPreValues">
-            <summary>
-            Overridden because we ONLY support Date + Time format
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DateTimeValidator">
-            <summary>
-            Used to validate if the value is a valid date/time
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultiplePropertyEditor">
-            <summary>
-            A property editor to allow multiple selection of pre-defined items
-            </summary>
-            <remarks>
-            Due to maintaining backwards compatibility this data type stores the value as a string which is a comma separated value of the 
-            ids of the individual items so we have logic in here to deal with that.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.IntegerPropertyEditor.CreateValueEditor">
-            <summary>
-            Overridden to ensure that the value is validated
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.IntegerPropertyEditor.IntegerPreValueEditor">
-            <summary>
-            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.MediaPickerPropertyEditor">
-            <summary>
-            Legacy media property editor that stores Integer Ids
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor">
-            <summary>
-            A custom pre-value editor class to deal with the legacy way that the pre-value data is stored.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            Need to change how we persist the values so they are compatible with the legacy way we store values
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            Need to deal with the legacy way of storing pre-values and turn them into nice values for the editor
-            </summary>
-            <param name="defaultPreVals"></param>
-            <param name="persistedPreVals"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor">
-            <summary>
-            Custom value editor so we can format the value for the editor and the database
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            The value passed in from the editor will be an array of simple objects so we'll need to parse them to get the string
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns></returns>
-            <remarks>
-            We will also check the pre-values here, if there are more items than what is allowed we'll just trim the end
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.MultipleTextStringPropertyEditor.MultipleTextStringPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            We are actually passing back an array of simple objects instead of an array of strings because in angular a primitive (string) value
-            cannot have 2 way binding, so to get around that each item in the array needs to be an object with a string.
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-            <remarks>
-            The legacy property editor saved this data as new line delimited! strange but we have to maintain that.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor">
-            <summary>
-            Custom value editor to handle posted json data and to return json data for the multiple selected items as well as ensuring
-            that the multiple selected int IDs are published to cache as a delimited string (values)
-            </summary>
-            <remarks>
-            This is re-used by editors such as the multiple drop down list or check box list
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertDbToString(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            If publishing ids, we don't need to do anything, otherwise we need to look up the pre-values and get the string values
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            Override so that we can return a json array to the editor for multi-select values
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.PublishValuesMultipleValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            When multiple values are selected a json array will be posted back so we need to format for storage in 
-            the database which is a comma separated ID value
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor">
-            <summary>
-            A property editor to allow multiple selection of pre-defined items
-            </summary>
-            <remarks>
-            Due to maintaining backwards compatibility this data type stores the value as a string which is a comma separated value of the 
-            ids of the individual items so we have logic in here to deal with that.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor.DropDownMultiplePreValueEditor">
-            <summary>
-            A pre-value editor for the 'drop down list multiple' property editor that ensures that 'multiple' is saved for the config in the db but is not 
-            rendered as a pre-value field.
-            </summary>
-            <remarks>
-            This is mostly to maintain backwards compatibility with old property editors. Devs can now simply use the Drop down property editor and check the multiple pre-value checkbox
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.DropDownMultipleWithKeysPropertyEditor.DropDownMultiplePreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            Always
-            </summary>
-            <param name="defaultPreVals"></param>
-            <param name="persistedPreVals"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.RadioButtonsPropertyEditor">
-            <summary>
-            A property editor to allow the individual selection of pre-defined items.
-            </summary>
-            <remarks>
-            Due to remaining backwards compatible, this stores the id of the item in the database which is why it is marked
-            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the INT ID value is published
-            in cache and not the string value.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.RichTextPreValueController">
-            <summary>
-            ApiController to provide RTE configuration with available plugins and commands from the RTE config
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.TagPropertyEditorTagDefinition">
-            <summary>
-            Used to dynamically change the tag group and storage type based on the pre-values
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.PropertyEditors.TagsPropertyEditor.DefaultPreValues">
-            <summary>
-            Override to supply the default group
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            This needs to return IEnumerable{string}
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns></returns>
-        </member>
-        <member name="P:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredValidator">
-            <summary>
-            Returns the validator used for the required field validation which is specified on the PropertyType
-            </summary>
-            <remarks>
-            This will become legacy as soon as we implement overridable pre-values.
-            
-            The default validator used is the RequiredValueValidator but this can be overridden by property editors
-            if they need to do some custom validation, or if the value being validated is a json object.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredTagsValueValidator">
-            <summary>
-            Custom validator to validate a required value against an empty json value
-            </summary>
-            <remarks>
-            This is required because the Tags property editor is not of type 'JSON', it's just string so the underlying
-            validator does not validate against an empty json string
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.TagsPropertyEditor.TagPropertyValueEditor.RequiredTagsValueValidator.Validate(System.Object,System.String,Umbraco.Core.Models.PreValueCollection,Umbraco.Core.PropertyEditors.PropertyEditor)">
-            <summary>
-            Validates a null value or an empty json value
-            </summary>
-            <param name="value"></param>
-            <param name="config"></param>
-            <param name="preValues"></param>
-            <param name="editor"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueListPreValueEditor">
-            <summary>
-            Pre-value editor used to create a list of items
-            </summary>
-            <remarks>
-            This pre-value editor is shared with editors like drop down, checkbox list, etc....
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.CreatePreValueFields">
-            <summary>
-            Creates the pre-value fields
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            The editor is expecting a json array for a field with a key named "items" so we need to format the persisted values
-            to this format to be used in the editor.
-            </summary>
-            <param name="defaultPreVals"></param>
-            <param name="persistedPreVals"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.PreValueAsDictionary(Umbraco.Core.Models.PreValue)">
-            <summary>
-            Formats the prevalue as a dictionary (as we need to return not just the value, but also the sort-order, to the client)
-            </summary>
-            <param name="preValue">The prevalue to format</param>
-            <returns>Dictionary object containing the prevalue formatted with the field names as keys and the value of those fields as the values</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            Need to format the delimited posted string to individual values
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns>
-            A string/string dictionary since all values that need to be persisted in the database are strings.
-            </returns>
-            <remarks>
-            This is mostly because we want to maintain compatibility with v6 drop down property editors that store their prevalues in different db rows.
-            </remarks>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ValueListPreValueEditor.EnsureUniqueValuesValidator">
-            <summary>
-            A custom validator to ensure that all values in the list are unique
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DropDownPropertyEditor">
-            <summary>
-            A property editor to allow the individual selection of pre-defined items.
-            </summary>
-            <remarks>
-            Due to remaining backwards compatible, this stores the id of the drop down item in the database which is why it is marked
-            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the string value is published
-            in cache and not the int ID.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.DropDownPropertyEditor.CreateValueEditor">
-            <summary>
-            We need to override the value editor so that we can ensure the string value is published in cache and not the integer ID value.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.PublishValueValueEditor">
-            <summary>
-            A custom value editor for any property editor that stores a pre-value int id so that we can ensure that the 'value' not the ID get's put into cache
-            </summary>
-            <remarks>
-            This is required for legacy/backwards compatibility, otherwise we'd just store the string version and cache the string version without
-            needing additional lookups.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.PublishValueValueEditor.ConvertDbToString(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            Need to lookup the pre-values and put the string version in cache, not the ID (which is what is stored in the db)
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.DropDownWithKeysPropertyEditor">
-            <summary>
-            A property editor to allow the individual selection of pre-defined items.
-            </summary>
-            <remarks>
-            Due to remaining backwards compatible, this stores the id of the drop down item in the database which is why it is marked
-            as INT and we have logic in here to ensure it is formatted correctly including ensuring that the INT ID value is published
-            in cache and not the string value.
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.DropDownWithKeysPropertyEditor.CreatePreValueEditor">
-            <summary>
-            Return a custom pre-value editor
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPropertyValueEditor">
-            <summary>
-            Custom value editor to mark it as readonly
-            </summary>
-        </member>
-        <member name="P:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPropertyValueEditor.IsReadOnly">
-            <summary>
-            This editor is for display purposes only, any values bound to it will not be saved back to the database
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPreValueEditor.ConvertDbToEditor(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            Other than for the pre-value fields defined on this property editor, chuck all the values into one field so devs can see what is stored there.
-            We want this in case we've converted a legacy property editor over to a label as we should still show the pre-values stored for the data type.
-            </summary>
-            <param name="defaultPreVals"></param>
-            <param name="persistedPreVals"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.LabelPropertyEditor.LabelPreValueEditor.ConvertEditorToDb(System.Collections.Generic.IDictionary{System.String,System.Object},Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            When saving we want to avoid saving an empty "legacy property editor values" field if there are none.
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.PropertyValueEditorWrapper">
-            <summary>
-            Useful when returning a custom value editor when your property editor is attributed, it ensures the attribute
-            values are copied across to your custom value editor.
-            </summary>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.ContentPickerPropertyEditor">
-            <summary>
-            Legacy content property editor that stores Integer Ids
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.ContentPickerPropertyEditor.CreatePreValueEditor">
-            <summary>
-            overridden to change the pre-value picker to use INT ids
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.CreateValueEditor">
-            <summary>
-            Creates the corresponding property value editor.
-            </summary>
-            <returns>The corresponding property value editor.</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.IsUploadField(Umbraco.Core.Models.Property,System.Boolean)">
-            <summary>
-            Gets a value indicating whether a property is an upload field.
-            </summary>
-            <param name="property">The property.</param>
-            <param name="ensureValue">A value indicating whether to check that the property has a non-empty value.</param>
-            <returns>A value indicating whether a property is an upload field, and (optionaly) has a non-empty value.</returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.GetFilesToDelete(System.Collections.Generic.IEnumerable{Umbraco.Core.Models.Property})">
-            <summary>
-            Gets the files that need to be deleted when entities are deleted.
-            </summary>
-            <param name="properties">The properties that were deleted.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.ContentServiceCopied(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.CopyEventArgs{Umbraco.Core.Models.IContent})">
-            <summary>
-            After a content has been copied, also copy uploaded files.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.MediaServiceCreated(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.NewEventArgs{Umbraco.Core.Models.IMedia})">
-            <summary>
-            After a media has been created, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.MediaServiceSaving(Umbraco.Core.Services.IMediaService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IMedia})">
-            <summary>
-            After a media has been saved, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.ContentServiceSaving(Umbraco.Core.Services.IContentService,Umbraco.Core.Events.SaveEventArgs{Umbraco.Core.Models.IContent})">
-            <summary>
-            After a content item has been saved, auto-fill the properties.
-            </summary>
-            <param name="sender">The event sender.</param>
-            <param name="args">The event arguments.</param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyEditor.AutoFillProperties(Umbraco.Core.Models.IContentBase)">
-            <summary>
-            Auto-fill properties (or clear).
-            </summary>
-            <param name="content">The content.</param>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.FileUploadPropertyValueEditor">
-            <summary>
-            The value editor for the file upload property editor.
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.FileUploadPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            Converts the value received from the editor into the value can be stored in the database.
-            </summary>
-            <param name="editorValue">The value received from the editor.</param>
-            <param name="currentValue">The current value of the property</param>
-            <returns>The converted value.</returns>
-            <remarks>
-            <para>The <paramref name="currentValue"/> is used to re-use the folder, if possible.</para>
-            <para>The <paramref name="editorValue"/> is value passed in from the editor. We normally don't care what
-            the editorValue.Value is set to because we are more interested in the files collection associated with it,
-            however we do care about the value if we are clearing files. By default the editorValue.Value will just
-            be set to the name of the file - but again, we just ignore this and deal with the file collection in
-            editorValue.AdditionalData.ContainsKey("files")</para>
-            <para>We only process ONE file. We understand that the current value may contain more than one file,
-            and that more than one file may be uploaded, so we take care of them all, but we only store ONE file.
-            Other places (FileUploadPropertyEditor...) do NOT deal with multiple files, and our logic for reusing
-            folders would NOT work, etc.</para>
-            </remarks>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.CreateValueEditor">
-            <summary>
-            Create a custom value editor
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor">
-            <summary>
-            A custom value editor to ensure that macro syntax is parsed when being persisted and formatted correctly for display in the editor
-            </summary>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConfigureForDisplay(Umbraco.Core.Models.PreValueCollection)">
-            <summary>
-            override so that we can hide the label based on the pre-value
-            </summary>
-            <param name="preValues"></param>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConvertDbToEditor(Umbraco.Core.Models.Property,Umbraco.Core.Models.PropertyType,Umbraco.Core.Services.IDataTypeService)">
-            <summary>
-            Format the data for the editor
-            </summary>
-            <param name="property"></param>
-            <param name="propertyType"></param>
-            <param name="dataTypeService"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Umbraco.Web.PropertyEditors.RichTextPropertyEditor.RichTextPropertyValueEditor.ConvertEditorToDb(Umbraco.Core.Models.Editors.ContentPropertyData,System.Object)">
-            <summary>
-            Format the data for persistence
-            </summary>
-            <param name="editorValue"></param>
-            <param name="currentValue"></param>
             <returns></returns>
         </member>
         <member name="M:Umbraco.Web.PublishedContentQueryExtensions.TypedContent(Umbraco.Web.ITypedPublishedContentQuery,Umbraco.Core.Udi)">
